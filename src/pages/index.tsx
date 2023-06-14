@@ -147,6 +147,7 @@ const IndexPage: React.FC<PageProps> = () => {
       <p style={paragraphStyles}>
         Edit <code style={codeStyles}>src/pages/index.tsx</code> to see this page
         update in real-time. 😎
+        New line.
       </p>
       <ul style={doclistStyles}>
         {docLinks.map(doc => (
