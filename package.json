@@ -1,0 +1,40 @@
+{
+  "name": "adnd-compendium-static-frontend",
+  "version": "1.0.0",
+  "private": true,
+  "description": "adnd-compendium-static-frontend",
+  "author": "decheine",
+  "keywords": [
+    "gatsby"
+  ],
+  "scripts": {
+    "develop": "gatsby develop",
+    "start": "gatsby develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean",
+    "typecheck": "tsc --noEmit",
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public",
+    "deploy:ci": "gatsby build --prefix-paths && gh-pages -d public -r https://$GH_TOKEN@github.com/decheine/adnd-compendium-static-frontend.git"
+  },
+  "dependencies": {
+    "@mdx-js/react": "^2.3.0",
+    "gatsby": "^5.10.0",
+    "gatsby-plugin-image": "^3.10.0",
+    "gatsby-plugin-manifest": "^5.10.0",
+    "gatsby-plugin-mdx": "^5.10.0",
+    "gatsby-plugin-sharp": "^5.10.0",
+    "gatsby-plugin-sitemap": "^6.10.0",
+    "gatsby-source-filesystem": "^5.10.0",
+    "gatsby-transformer-sharp": "^5.10.0",
+    "gh-pages": "^5.0.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.2.6",
+    "@types/react": "^18.2.9",
+    "@types/react-dom": "^18.2.4",
+    "typescript": "^5.1.3"
+  }
+}

@@ -1,0 +1,24 @@
+name: Gatsby Deploy
+
+on:
+  push:
+    branches: main
+
+env:
+  GH_TOKEN: ${{ secrets.GH_PAGES }}
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: GitHub Config
+        run: |
+          git config --global user.email "decheine@wisc.edu"
+          git config --global user.name "decheine"
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Install dependencies
+        run: |
+          npm install
+      - name: Deploy
+        run: npm run deploy:ci
