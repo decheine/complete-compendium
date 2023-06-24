@@ -1,0 +1,108 @@
+.CategoryList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  
+    /* margin-left: 15%; */
+    /* margin-right: 15%; */
+  }
+
+  .CategoryList .setting-frame {
+    /* margin: 1em; */
+    /* height: auto; */
+    border:rgba(0, 0, 0, 0.25) 1px solid;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 4px;
+    margin: 1em;
+    transition-duration: 100ms;
+  }
+
+  .CategoryList .setting-frame:hover {
+    transform: translate(-5px, -5px);
+    box-shadow: 5px 9px 4px rgba(0, 0, 0, 0.25);
+    transition-duration: 100ms;
+  }
+
+  .CategoryList .category {
+    /* display: block; */
+    display: flex;
+    padding: 8pt;
+    text-decoration: none;
+
+  }
+  
+  
+/* Setting Button will be a set size and have the image centered */
+  .CategoryList .setting-button {
+    background-color: #fff;
+
+    /* margin: 1em; */
+    /* border-bottom:rgba(0, 0, 0, 0.25) 4px solid; */
+    text-align: center;
+    /* center items vertically */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* center items horizontally */
+    /* align-items: center; */
+    /* height: 42pt; */
+    width: 260px;
+    /* object-fit: contain; */
+    /* padding-left: 1em; */
+    /* padding-right: 1em; */
+    }
+  
+  /* .CategoryList .setting-image {
+    width: 100px;
+    height: 100px;
+    margin-top: 1em;
+    margin-bottom: 1em;
+  } */
+  
+  /* .setting-text {
+    margin-top: 1em;
+    margin-bottom: 1em;
+  } */
+
+  .catImg {
+    /* padding-left: 12pt;
+    padding-right: 12pt;
+    padding-bottom: 12pt;
+    padding-top: 12pt; */
+    /* width: 182px; */
+    /* padding: 12pt; */
+    /* margin: 1em; */
+    /* height: inherit; */
+    padding-bottom: 12pt;
+    height: 60px;
+    /* flex-shrink: 1; */
+    /* height:  */
+    /* width: inherit; */
+    object-fit: contain;
+
+  }
+  
+
+  .setting-subtitle {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    flex-grow: 1;
+    text-decoration: none;
+  }
+
+  .setting-title {
+    font-size: 1em;
+    font-weight: 600;
+    text-decoration: none;
+    color: black;
+    font-family: Helvetica, sans-serif;
+    /* margin-top: 1em; */
+    /* margin-bottom: 1em; */
+  }
+
+  .setting-world {
+    color: black;
+    font-family: Helvetica, sans-serif;
+    font-style: italic;
+  }

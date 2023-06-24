@@ -1,0 +1,126 @@
+
+/* html {
+    scroll-padding-top: 4rem;
+} */
+body {
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
+}
+
+nav.toc a {
+    color: var(--color-main-darker);
+    text-decoration: none;
+}
+
+main > h2, h3 {
+    scroll-margin-top: 4rem;
+}
+
+.about-wrapper{
+    display: flex;
+    flex-direction: row;
+}
+
+div.toc-entry-wrapper{
+    display: flex;
+    flex-direction: row;
+}
+
+/* All list li */
+li.inactive, li.active{
+    list-style-type: none;
+    line-height: 28px;
+}
+
+/* All links */
+li.active > div > a{
+    color: #0E6FFF;
+
+}
+
+/* Hover Effect */
+li.inactive > div > a:hover {
+    color: #0E6FFF;
+
+}
+
+li.active > div > a{
+    color: #0E6FFF;
+
+}
+
+/* Both Bullets */
+/* li.active > div > .bullet, */
+
+/* Active Bullet */
+li.active > div > .bullet {
+    list-style-type: disc;
+    width: 8px;
+    min-width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    border: 2px solid #0E6FFF;
+    background-color: #0E6FFF;
+    margin: 8px;
+    color: #0E6FFF;
+    font-size: 16pt;
+}
+
+/* Inactive Bullet */
+li.inactive > div > .bullet {
+    list-style-type: circle;
+    width: 8px;
+    min-width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    border: 2px solid;
+    margin: 8px;
+    color: var(--color-main-darker);
+    font-size: 16pt;
+}
+
+
+li.inactive {
+    color: var(--color-main-darker)
+}
+
+
+
+/* div.toc-bullet-filled {
+    width: 8px;
+    min-width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    border: 2px solid #0E6FFF;
+    background-color: #0E6FFF;
+    margin: 8px;
+}
+
+div.toc-bullet-empty {
+    width: 8px;
+    min-width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    border: 2px solid;
+    margin: 8px;
+} */
+
+nav.toc {
+    width: 220px;
+    min-width: 220px;
+    padding: 16px;
+    margin: 8px;
+    align-self: flex-start;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 48px;
+    max-height: calc(100vh - 70px);
+    overflow: auto;
+    /* overflow: auto; */
+  }
+
+  @media screen and (max-width: 800px) {
+    nav.toc {
+      display: none;
+    }
+  }
+  

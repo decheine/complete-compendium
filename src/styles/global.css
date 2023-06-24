@@ -1,0 +1,52 @@
+
+@font-face {
+    font-family: "frizquadrata_ltbold";
+    src: url("../fonts/friz_quadrata_lt_bold-webfont.woff2")
+        format("woff2"),
+      url("../fonts/friz_quadrata_lt_bold-webfont.woff")
+        format("woff");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: "FrizQuadrata";
+    src: url("../fonts/frizquadrata-webfont.woff2")
+        format("woff2"),
+      url("../fonts/frizquadrata-webfont.woff")
+        format("woff");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: "HelveticaNeue";
+    src: url("../fonts/HelveticaNeue-Medium.otf");
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: "Helvetica CE 55 Roman";
+    src: url("../fonts/Helvetica\ Neue\ CE\ 55\ Roman.ttf");
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: "Leksa Sans";
+    src: url("../fonts/LeksaSans.otf");
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: "Leksa Sans Bold";
+    src: url("../fonts/LeksaSans-Bold.otf");
+    font-display: swap;
+  }
+
+  /* @font-face {
+    font-family: "Leksa Sans DemiBold";
+    src: url("../fonts/LeksaSans-DemiBold.otf");
+    font-display: swap;
+  } */

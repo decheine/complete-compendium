@@ -1,0 +1,103 @@
+/* Offset scroll link */
+.card-link > a.anchor  {
+    display: block;
+    position: relative;
+    top: -250px;
+    visibility: hidden;
+}
+
+.HomeCard {
+    /* Designs and shadow */
+    padding-left: 33px;
+    padding-right: 33px;
+    padding-top: 22px;
+    padding-bottom: 33px;
+    margin: 14px;
+    background-color: white;
+    /* Rounded corners */
+    border-radius: 12px;
+    /* Ratio of 88/85 */
+    width: 270px;
+    /* height: 290px; */
+    min-height: 290px;
+    /* Shadow */
+    box-shadow: 10px 10px 50px rgba(39, 92, 141, 0.10);
+    z-index: 2;
+}
+
+.card-frame {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    /* margin: 0 auto; */
+    /* padding: 44px; */
+    min-height: 290px;
+    /* width: 100%; */
+}
+
+.flex-top {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.flex-top > .card-title {
+    font-family: 'Leksa Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 2rem;
+    /* line-height: 58px; */
+
+    width: 100%;
+    /* identical to box height */
+
+    text-transform: capitalize;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    /* Base/Black */
+
+    color: #23242A;
+
+}
+
+.flex-top > .card-body {
+    all: unset;
+    font-family: 'Leksa Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    
+    /* Base/Black */
+    
+    color: #23242A;
+    
+}
+
+.card-link {
+    width: 100%;
+
+    font-family: 'Leksa Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 29px;
+    /* identical to box height */
+
+    display: flex;
+    align-items: center;
+    text-align: right;
+    
+    text-decoration-line: underline;
+    /* text-transform: capitalize; */
+}
+
+.card-link > a {
+    text-decoration: none;
+    text-align: right;
+    width: 100%;
+    color: #0E6FFF;
+}

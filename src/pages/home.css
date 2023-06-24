@@ -1,0 +1,339 @@
+:root {
+    --color-main-darker: #1250A2;
+  }
+  
+  
+  .hero_tsr {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  
+  .hero-container {
+    /* background: radial-gradient(
+      50% 50% at 50% 50%,
+      #ffffff 64.76%,
+      rgba(245, 238, 219, 1) 100%
+    ); */
+    background-image: url(/images/paper.webp);
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    align-items: center;
+    object-fit: contain;
+
+    /* inner shadow */
+    box-shadow: inset 0px -2px 14px rgba(0, 0, 0, 0.25);
+  
+    /* Rectangle 7 */
+  
+    /* Weathered Paper */
+  
+    /* transform: rotate(90deg); */
+  }
+  
+  .hero-container > h1.adnd {
+    /* Monstrous Compendium */
+  
+    /* Monstrous Title 2 */
+    font-family: 'Helvetica Neue';
+  /* font-style: "65 Medium"; */
+  /* font-variant: "65 Medium"; */
+  font-weight: 500;
+  font-size: 23px;
+  line-height: 120%;
+  /* or 31px */
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.11em;
+  text-transform: uppercase;
+  margin-top: 4rem;
+  padding-left: 1em;
+  padding-right: 1em;
+  /* Blue Medium */
+
+  color: #1250A2;
+  }
+  
+  .hero-container > h2 {
+    /* Complete* */
+  
+    /* Monstrous Title 3 */
+    font-family: "Leksa Sans";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 64px;
+    /* line-height: 104px; */
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: capitalize;
+    color: #1250A2;
+
+    margin-block-start: unset;
+    margin-block-end: unset;
+    margin-inline-start: unset;
+    margin-inline-end: unset;
+
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+  }
+
+  /* Monster Button Styling */
+
+  .random_monster_button {
+    /* Rectangle 8 */
+    background: #1250A2;
+    border-radius: 8px;
+    /* width: 200px; */
+    height: max-content;
+    max-width: 70vw;
+    margin-top: 2rem;
+    margin-bottom: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+    border:rgba(0, 0, 0, 0.25) 1px solid;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 4px;
+    transition-duration: 100ms;
+  }
+
+  .random_monster_button > .RandomMonsterButton {
+    /* Complete* */
+  margin-block-start: unset;
+    margin-block-end: unset;
+    margin-inline-start: unset;
+    margin-inline-end: unset;
+
+    /* Monstrous Title 3 */
+    position: relative;
+    font-family: "Leksa Sans DemiBold";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    /* line-height: 104px; */
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    text-transform: capitalize;
+    /* color: #1250A2; */
+    color: white;
+    
+
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  
+  .random_monster_button:hover {
+    transform: translate(-5px, -5px);
+    box-shadow: 5px 9px 4px rgba(0, 0, 0, 0.25);
+    transition-duration: 100ms;
+  }
+
+
+  /* Unset all from RandomMonsterButton.css */
+  .random_monster_button > .RandomMonsterButton > a {
+    all: unset;
+  }
+
+  .random_monster_button > .RandomMonsterButton > a > div {
+    all: unset;
+  }
+
+
+  .hero-container > p {
+    margin-top: 8px;
+    /* color: #fff; */
+    font-size: 32px;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+      "Lucida Sans", Arial, sans-serif;
+  }
+  
+  .hero-btns {
+    margin-top: 32px;
+  }
+  
+  .hero-btns .btn {
+    margin: 6px;
+  }
+  
+  .fa-play-circle {
+    margin-left: 4px;
+  }
+  
+  @media screen and (max-width: 700px) {
+    .hero-container > h1 {
+      /* font-size: 32pt; */
+    }
+
+    .hero-container > h2 {
+      font-size: 56px;
+    }
+  }
+
+  @media screen and (max-width: 500px) {
+    .hero-container > h1 {
+      /* font-size: 32pt; */
+    }
+
+    .hero-container > h2 {
+      font-size: 48px;
+    }
+  }
+
+  @media screen and (max-width: 400px) {
+    .hero-container > h1 {
+      /* font-size: 32pt; */
+    }
+
+    .hero-container > h2 {
+      font-size: 40px;
+    }
+    .random_monster_button > .RandomMonsterButton {
+      font-size: 18px;
+    }
+  }
+
+  @media screen and (max-width: 300px) {
+    .hero-container > h1 {
+      /* font-size: 32pt; */
+    }
+
+    .hero-container > h2 {
+      font-size: 32px;
+    }
+  }
+
+  @media screen and (max-width: 200px) {
+    .hero-container > h1 {
+      /* font-size: 32pt; */
+    }
+
+    .hero-container > h2 {
+      font-size: 24px;
+    }
+    .random_monster_button > .RandomMonsterButton {
+      font-size: 14px;
+    }
+  }
+  
+
+  video {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: -1;
+  }
+
+  .home {
+    background-color: #F3F4F6;
+    top: 0;
+    left: 0;
+    height: 100%;
+    z-index: 0;
+  }
+
+  .add {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 24pt;
+    margin-bottom: 12pt;
+  }
+  
+  /* Blue and black horizontal lines */
+  .hr1 {
+    color: black;
+    background-color: black;
+    height: 3px;
+    margin-top: 7px;
+    margin-bottom: 7px;
+    clear: both;
+  }
+  .hr2 {
+    color: #4169e1;
+    background-color: var(--color-main-darker);
+    border: none;
+    height: 8px;
+    margin-top: 0px;
+  }
+  
+  .summary {
+    padding: 2rem;
+    /* position: relative; */
+    padding-bottom: 6rem;
+  }
+  
+  .summary_banner_container {
+    /* display: block; */
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1200px;
+  }
+  
+  .summary_banner {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    padding-right: 2em;
+    padding-left: 2em;
+  }
+  
+  .summary_img_container {
+    flex: 1;
+    align-self: center;
+  }
+  
+  .summary_img {
+    /* align-self: center; */
+    display: block;
+    margin: auto;
+    width: 200px;
+  }
+  
+  .summary_text {
+    flex: 2;
+    /* Description */
+    /* padding-left: 2em;
+    padding-right: 2em; */
+    height: auto;
+  }
+  
+  .summary_par {
+    font-family: "Palatino Linotype";
+  
+    font-family: Palatino Linotype;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    /* font-size: calc(0.66vw + 0.66vh); */
+    text-align: justify;
+    text-indent: 40px;
+  }
+  /* Mobile view  */
+  
+  @media screen and (max-width: 960px) {
+    .summary_img_container {
+      display: none;
+    }
+  }
+
+  @media screen and (max-width: 400px) {
+    .summary_par {
+      font-size: 16px;
+    }
+  }
+  

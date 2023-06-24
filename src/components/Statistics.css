@@ -1,0 +1,108 @@
+
+.statistics {
+    position: relative;
+    top: -3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1rem;
+    margin-top: 2rem;
+    margin-bottom: 0rem;
+}
+
+.statistics_container {
+    /* border 2B4285 */
+    border: 2px solid #2B4285;
+    width: 70%;
+    border-radius: 10px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 1rem;
+    max-width: 1000px;
+}
+
+.statistics_grid {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+}
+
+/* Header */
+.statistics_header {
+    position: absolute;
+    top: -3rem;
+    background-color: #F3F4F6;
+    z-index: 1;
+}
+/* Disable the header for now. */
+.statistics_header > h1 {
+    display: none;
+    position: relative;
+    text-align: left;
+    /* top: 1.5rem; */
+    /* font-size: 2.5rem; */
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    padding-left: 1.5rem;
+    padding-right: 5rem;
+    
+}
+
+.statistics_grid > .statistic {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 2rem;
+    /* width: 25%; */
+    width: min-content;
+}
+
+.stat-number{
+    font-size: 3rem;
+    font-weight: 600;
+    
+    margin-bottom: 0rem;
+    font-family: 'Leksa Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 54px;
+
+    color: #000000;
+}
+
+.stat-name{
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-bottom: 0.5rem;
+    font-family: 'Leksa Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    /* identical to box height */
+
+    letter-spacing: 0.025em;
+
+    /* Main Darker */
+
+    color: #2B4285;
+}
+
+
+
+
+/* min value response */
+@media (max-width: 700px) {
+    /* .statistics_grid > .statistic {
+        width: 50%;
+    } */
+    .statistics_container {
+        padding-left: 0rem;
+        padding-right: 0rem;
+    }
+}

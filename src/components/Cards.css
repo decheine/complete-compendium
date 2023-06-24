@@ -1,0 +1,21 @@
+.card-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+    max-width: 1200px;
+    position: relative;
+    top: -6rem;
+}
+
+div.Cards {
+    /* position: fixed; */
+    top: -6rem;
+    
+    z-index: 3;
+}

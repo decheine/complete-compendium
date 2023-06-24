@@ -1,0 +1,28 @@
+.h1 {
+    margin-top: 10pt;
+    margin-bottom: 10pt;
+    font-family: Friz Quadrata;
+  }
+  
+  .catalog-title {
+    /* font-weight: bold; */
+    font-family: 'Leksa Sans Bold';
+    text-align: center;
+  }
+
+  .CatalogDescription {
+    font-family: 'leksa-sans';
+    text-align: center;
+    /* margin-top: 26pt; */
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+  .background-catalog {
+    /* background-image: url("/public/images/paper.jpg"); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+

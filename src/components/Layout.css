@@ -1,0 +1,46 @@
+:root {
+    --responsive-width: 1200px;
+}
+
+.layout-wrapper {
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 60px);
+    width: 100%;
+    
+}
+
+.layout {
+    /* Gutter */
+    /* margin-left: 4em; */
+    /* margin-right: 4em; */
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    
+    margin-bottom: auto;
+    /* variable named responsive-width */
+    max-width: var(--responsive-width);
+    padding-left: calc(100vw - 100%);
+    
+}
+
+.layout-main {
+    display: flex;
+    flex-direction: column;
+}
+/* After 1400px in width */
+@media screen and (max-width: 1300px) {
+    .layout {
+        /* max-width: calc(0.80 * var(--responsive-width)); */
+        max-width: 82vw;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .layout {
+        max-width: 82vw;
+        /* padding-left: 1rem; */
+        /* padding-right: 1rem; */
+    }
+}
