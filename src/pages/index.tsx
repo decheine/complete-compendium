@@ -3,6 +3,7 @@ import type { HeadFC, PageProps } from "gatsby"
 
 import "./home.css";
 import "./styles.css"
+import "../styles/global.css"
 
 import Navbar from "../components/Navbar"
 import RandomMonsterButton from "../components/RandomMonsterButton";
