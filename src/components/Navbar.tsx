@@ -44,9 +44,16 @@ function Navbar() {
     const [click, setClick] = useState(false);
     const [button, setButton] = useState(true);
 
+    var initialWidth = 1920
+    var initialHeight = 1080
+    if(typeof window !== 'undefined'){
+      initialWidth = window.innerWidth
+      initialHeight = window.innerHeight
+    }
+
     const [windowSize, setWindowSize] = useState([
-      window.innerWidth,
-      window.innerHeight,
+      initialWidth,
+      initialHeight,
     ]);
 
     const check = [
@@ -94,13 +101,32 @@ function Navbar() {
         }
     };
 
-    // useEffect(() => {
-    //     showButton();
-    // }, []);
+//     const useWindowSize = (initialState = "100%", { ttl = 100 } = {}) => {
+//   // initialState is used before the component mounts client-side
+//   const [height, setHeight] = useState(initialState)
+
+//   useEffect(() => {
+//     const calculateHeight = debounce(() => {
+//       setHeight(window.innerHeight)
+//     }, ttl)
+
+//     calculateHeight()
+//     window.addEventListener("resize", calculateHeight)
+
+//     return () => {
+//       // deregister event listener on component dismount
+//       window.removeEventListener("resize", calculateHeight)
+//     }
+//   }, [ttl])
+
+//   return height
+// }
 
     useEffect(() => {
       const handleWindowResize = () => {
-        setWindowSize([window.innerWidth, window.innerHeight]);
+        if(typeof window !== 'undefined'){
+          setWindowSize([window.innerWidth, window.innerHeight]);
+        }
         // if (windowSize[0] <= 700) {
         //   if(!button){
         //     setButton(true);
@@ -113,11 +139,15 @@ function Navbar() {
         //   }
         // }
       };
-  
-      window.addEventListener('resize', handleWindowResize);
+      
+      if(typeof window !== 'undefined'){
+        window.addEventListener('resize', handleWindowResize);
+      }
       
       return () => {
-        window.removeEventListener('resize', handleWindowResize);
+        if(typeof window !== 'undefined'){
+          window.removeEventListener('resize', handleWindowResize);
+        }
       };
     }, []);
     
@@ -125,12 +155,12 @@ function Navbar() {
       if (windowSize[0] <= 700) {
         // if(!button){
           setButton(true);
-          console.log("short set show button to ", button, windowSize[0])
+          // console.log("short set show button to ", button, windowSize[0])
         // }
       } else {
         // if(button){
           setButton(false);
-          console.log("wide setshow button to ", button, windowSize[0])
+          // console.log("wide setshow button to ", button, windowSize[0])
         // }
       }
     }, [windowSize[0]])
