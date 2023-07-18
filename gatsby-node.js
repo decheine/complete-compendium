@@ -157,8 +157,6 @@ exports.createPages = async ({ actions }) => {
 
   // Figure out how to inject data into the GraphQL data layer
 
-  const bookmonsterTemplate = require.resolve('./src/templates/bookmonster.tsx')
-
 
   catalog_data.forEach(book_object => {
     var acronym = title_acronym[book_object.setting]
@@ -168,7 +166,12 @@ exports.createPages = async ({ actions }) => {
     }
     var path = stem + `/${book_object.publish_id}`
     
-    // Create Page
+    // testing
+    if(book_object.publish_id == "TerrorsfromAbove"){
+      console.log("Homebrew found", book_object, path)
+    }
+
+    // Create Book Page
     createPage({
       path: path,
       component: bookTemplate,
