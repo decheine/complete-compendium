@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 
 // import { library } from '@fortawesome/fontawesome-svg-core'
 // import { fas } from '@fortawesome/free-solid-svg-icons'
@@ -44,6 +44,11 @@ function Navbar() {
     const [click, setClick] = useState(false);
     const [button, setButton] = useState(true);
 
+    const [windowSize, setWindowSize] = useState([
+      window.innerWidth,
+      window.innerHeight,
+    ]);
+
     const check = [
       {id: "hamberger-input", checked: 0}
     ]
@@ -75,26 +80,70 @@ function Navbar() {
     };
     // displays on mobile
     const showButton = () => {
-        if (window.innerWidth <= 700) {
-            setButton(false);
-        } else {
+      // Width: {windowSize[0]}
+        if (windowSize[0] <= 700) {
+          if(!button){
             setButton(true);
+            console.log("short set show button to ", button, windowSize[0])
+          }
+        } else {
+          if(button){
+            setButton(false);
+            console.log("wide setshow button to ", button, windowSize[0])
+          }
         }
     };
 
-    useEffect(() => {
-        showButton();
-    }, []);
+    // useEffect(() => {
+    //     showButton();
+    // }, []);
 
-    if(typeof window !== 'undefined'){
-      window.addEventListener('resize', showButton);
-    }
-    if(!button){
+    useEffect(() => {
+      const handleWindowResize = () => {
+        setWindowSize([window.innerWidth, window.innerHeight]);
+        // if (windowSize[0] <= 700) {
+        //   if(!button){
+        //     setButton(true);
+        //     console.log("short set show button to ", button, windowSize[0])
+        //   }
+        // } else {
+        //   if(button){
+        //     setButton(false);
+        //     console.log("wide setshow button to ", button, windowSize[0])
+        //   }
+        // }
+      };
+  
+      window.addEventListener('resize', handleWindowResize);
+      
+      return () => {
+        window.removeEventListener('resize', handleWindowResize);
+      };
+    }, []);
+    
+    useEffect(() => {
+      if (windowSize[0] <= 700) {
+        // if(!button){
+          setButton(true);
+          console.log("short set show button to ", button, windowSize[0])
+        // }
+      } else {
+        // if(button){
+          setButton(false);
+          console.log("wide setshow button to ", button, windowSize[0])
+        // }
+      }
+    }, [windowSize[0]])
+
+    // if(typeof window !== 'undefined'){
+    //   window.addEventListener('resize', showButton);
+    // }
+    if(button){
         return (
             <div className="navbar-container" >
             <div className="menu-mobile">
                 <a href='/' className='navbar-logo'  >
-                    Home    
+                    Home
                 </a>
                 {/* {overlay_checkbox} */}
                 <input type="checkbox" id="hamburger-input" className="burger-shower" onClick={handleClick}/>
@@ -143,7 +192,6 @@ function Navbar() {
                     </nav>
                   </label>
                 ))}
-                
                 <label className="overlay" htmlFor='hamburger-input'></label>
             </div>
             </div>
@@ -155,7 +203,6 @@ function Navbar() {
               <div className="navbar-wrapper">
                 <a href='/' className='navbar-logo'>
                   Home
-                  
                 </a>
                 <ul className='nav-menu'>
                   <li className='nav-item'>
@@ -164,10 +211,7 @@ function Navbar() {
                     </a>
                   </li>
                   <li className='nav-item'>
-                    <a href='/catalog'
-                      className='nav-links'
-                      // onClick={closeMobileMenu}
-                    >
+                    <a href='/catalog' className='nav-links'>
                       Catalog
                     </a>
                   </li>
