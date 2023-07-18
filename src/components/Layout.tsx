@@ -1,11 +1,11 @@
 import React from "react"
 
-// import Footer from "./Footer";
 import Navbar from "./Navbar";
 import BreadCrumb from "./BreadCrumb";
 // import './Layout.css'
 import * as layoutStyle from '@styles/modules/layout.module.css'
 
+import Footer from "./Footer";
 /**
  * 
  * @param param0 
@@ -32,7 +32,7 @@ const Layout = ({ children } :any) => {
           {/* {pathname !== "/" ? <BreadCrumb title={breadCrumbs[1]} setting={breadCrumbs[2]} book={breadCrumbs[3]} monster_key={breadCrumbs[4]}/> : null} */}
           {children}
         </div>
-        {/* <Footer/> */}
+        <Footer/>
       </div>
     );
 };

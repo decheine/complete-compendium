@@ -6,10 +6,10 @@ import "./styles.css"
 import "../styles/global.css"
 
 import Navbar from "../components/Navbar"
+import Footer from "../components/Footer";
 import RandomMonsterButton from "../components/RandomMonsterButton";
 import { Cards } from "../components/Cards";
 import { StatisticBlock } from "../components/Statistics";
-import Footer from "../components/Footer";
 // import Layout from "../components/Layout";
 
 const pageStyles = {
