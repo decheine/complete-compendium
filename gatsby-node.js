@@ -39,7 +39,7 @@ exports.createPages = async ({ actions }) => {
   //////////////////////
   // Testing (Colors)
   const catalog_data = require('./src/data/Full_Catalog.json')
-  const title_acronym = require('./src/data/SettingTitletoAcronym.json')
+  const title_acronym = require('./src/data/SettingTitleToAcronym.json')
   const AcronymToSetting = require('./src/data/AcronymsSetting.json')
 
   // Template
