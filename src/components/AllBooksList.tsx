@@ -8,8 +8,8 @@ const CatAcronyms = require('../data/CatAcronyms.json')
 
 const bookListStyle = {
     display: "flex",
-    flexwrap: "wrap",
-    justifyContent: "space-evently"
+    flexWrap: "wrap",
+    justifyContent: "space-evenly"
 }
 
 export function AllBooksList() {
