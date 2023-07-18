@@ -49,7 +49,7 @@ export function CategoriesList(){
     }, [])
 
     
-    console.log("settings: ", settings, settingNames)
+    // console.log("settings: ", settings, settingNames)
 
     return (
         <>

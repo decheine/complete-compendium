@@ -19,7 +19,7 @@ const RandomMonsterButton = () => {
     const getRandomMonster = () => {
         // if DataService.monsterTitles is undefined
         const monsterKeys = Object.keys(AA_KEYS_TITLES);
-        console.log("Random. localmonsterkeys",monsterKeys  )
+        //console.log("Random. localmonsterkeys",monsterKeys  )
         if(monsterKeys !== undefined){
 
             const random_key = monsterKeys[getRandomInt(monsterKeys.length)];

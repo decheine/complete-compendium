@@ -1,10 +1,16 @@
 import React from 'react'
 import BookCard from './BookCard'
 
-import './BookList.css'
+// import './BookList.css'
 const BOOKS = require('../data/sortedtsr.json')
 const Categories = require('../data/Categories.json')
 const CatAcronyms = require('../data/CatAcronyms.json')
+
+const bookListStyle = {
+    display: "flex",
+    flexwrap: "wrap",
+    justifyContent: "space-evently"
+}
 
 export function AllBooksList() {
 
@@ -25,7 +31,7 @@ export function AllBooksList() {
     }
     
     return (
-        <div className="BookList">
+        <div style={bookListStyle}>
         {items}
         </div>
     )

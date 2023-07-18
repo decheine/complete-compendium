@@ -5,7 +5,8 @@ import React, { useState, useEffect } from 'react';
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 // import { faBars } from '@fortawesome/free-solid-svg-icons'
 import './Navbar.css';
-import './Sidebar.css';
+// import * as navbarStyle from '@styles/modules/navbar.module.css';
+// import './Sidebar.css';
 
 // library.add(fas, faBars)
 
@@ -85,7 +86,9 @@ function Navbar() {
         showButton();
     }, []);
 
-    window.addEventListener('resize', showButton);
+    if(typeof window !== 'undefined'){
+      window.addEventListener('resize', showButton);
+    }
     if(!button){
         return (
             <div className="navbar-container" >

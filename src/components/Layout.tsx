@@ -1,9 +1,10 @@
 import React from "react"
 
-import BreadCrumb from "../components/BreadCrumbFrame";
-import Footer from "./Footer";
+// import Footer from "./Footer";
 import Navbar from "./Navbar";
-import './Layout.css'
+import BreadCrumb from "./BreadCrumb";
+// import './Layout.css'
+import * as layoutStyle from '@styles/modules/layout.module.css'
 
 /**
  * 
@@ -16,14 +17,22 @@ import './Layout.css'
  */
 
 const Layout = ({ children } :any) => {
-    console.log("Layout: ")
+    const url = typeof window !== 'undefined' ? window.location.pathname : '';
+    // console.log("Layout: ")
+    // split path
+    const relative_locs = url.split("/")
+    relative_locs.pop();
+    relative_locs.shift();
+    // console.log(relative_locs)
     return (
-      <div className="layout-wrapper">
+      <div className={layoutStyle.layoutWrapper}>
         <Navbar/>
-        <div className="layout">
+        <div className={layoutStyle.layout}>
+        <BreadCrumb path={relative_locs}/>
           {/* {pathname !== "/" ? <BreadCrumb title={breadCrumbs[1]} setting={breadCrumbs[2]} book={breadCrumbs[3]} monster_key={breadCrumbs[4]}/> : null} */}
           {children}
         </div>
+        {/* <Footer/> */}
       </div>
     );
 };

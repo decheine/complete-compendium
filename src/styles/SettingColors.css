@@ -1,0 +1,73 @@
+/* Colors */
+:root {
+    --color-add2_01: #1250A2;
+    --color-aq:      #957000;
+    --color-al:      #568132;
+    --color-br:      #427aa9;
+    --color-ds:      #c25404;
+    --color-dr:      #957000;
+    --color-dl:      #9b6400;
+    --color-du:      #4C4B51;
+    --color-ff:      #b15f3d;
+    --color-fr:      #191970;
+    --color-gh:      #ff8c46;
+    --color-kt:      #FECA15;
+    --color-lm:      #2d8181;
+    --color-rd:      #7f0000;
+    --color-mz:      #976e09;
+    --color-ms:      #e02d2d;
+    --color-ps:      #976e09;
+    --color-rv:      #7f0000;
+    --color-rs:      #993366;
+    --color-sj:      #4279a9;
+    --color-th:      #c64f28;
+}
+
+/* Horizontal Lines */
+
+/* Default */
+hr {
+    background-color: var(--color-main-darker);
+    height: 7px;
+    margin-top: 7px;
+    margin-bottom: 7px;
+}
+
+/* Horizontal Lines */
+hr.hr1 {
+    color: black;
+    background-color: black;
+    height: 3px;
+    margin-top: 7px;
+    margin-bottom: 7px;
+    clear: none;
+}
+
+hr.hr2 {
+    background-color: var(--color-main-darker);
+    height: 7px;
+    margin-top: 7px;
+    margin-bottom: 7px;
+}
+
+hr.hr2-add2_01 {background-color: var(--color-add2_01);}
+hr.hr2-aq {background-color: var(--color-aq);}
+hr.hr2-al {background-color: var(--color-al);}
+hr.hr2-br {background-color: var(--color-br);}
+hr.hr2-ds {background-color: var(--color-ds);}
+hr.hr2-dr {background-color: var(--color-dr);}
+hr.hr2-dl {background-color: var(--color-dl);}
+hr.hr2-du {background-color: var(--color-du);}
+hr.hr2-ff {background-color: var(--color-ff);}
+hr.hr2-fr {background-color: var(--color-fr);}
+hr.hr2-gh {background-color: var(--color-gh);}
+hr.hr2-kt {background-color: var(--color-kt);}
+hr.hr2-lm {background-color: var(--color-lm);}
+hr.hr2-rd {background-color: var(--color-rd);}
+hr.hr2-mz {background-color: var(--color-mz);}
+hr.hr2-ms {background-color: var(--color-ms);}
+hr.hr2-ps {background-color: var(--color-ps);}
+hr.hr2-rv {background-color: var(--color-rv);}
+hr.hr2-rs {background-color: var(--color-rs);}
+hr.hr2-sj {background-color: var(--color-sj);}
+hr.hr2-th {background-color: var(--color-th);}

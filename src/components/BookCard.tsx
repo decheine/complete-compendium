@@ -10,7 +10,9 @@ import React from 'react';
  */
 
 
-import "./BookCard.css"
+// import "./BookCard.css"
+
+import * as bookCardStyle from "@styles/modules/bookcard.module.css"
 
 // BookCard props type
 type BookCardProps = {
@@ -25,9 +27,10 @@ function BookCard(props: BookCardProps){
 
     let book_image = null;
     book_image = <img    src={image_url} 
-            className = "book_img-2"
+            className = {bookCardStyle.book_img2}
             alt={props.title + 'Cover art'} 
             title={props.title} 
+            loading='lazy'
             onError={({currentTarget}) => {
                 currentTarget.onerror = null;
                 currentTarget.alt = "This monster is missing it's image. It will be found eventually.";
@@ -38,32 +41,32 @@ function BookCard(props: BookCardProps){
         
 
         
-        <div className="book-card">
-            <div className="book-card-header-rectangle">
-                <p className="book-card-header">{props.title}</p>
+        <div className={bookCardStyle.bookCard}>
+            <div className={bookCardStyle.bookCardHeaderRectangle}>
+                <p className={bookCardStyle.bookCardHeader}>{props.title}</p>
             </div>
-            <div className="book_arrow">
-                <div className="book_point-left"></div>
-                <div className="book_line"></div>
-                <div className="book_point-right"></div>
+            <div className={bookCardStyle.book_arrow}>
+                <div className={bookCardStyle.book_pointLeft}></div>
+                <div className={bookCardStyle.book_line}></div>
+                <div className={bookCardStyle.book_pointRight}></div>
             </div>
-            {/* <Link to={`/catalog/${props.category}/${props.id}`}  className="book-link">
-            <div className="hover14 column">
+            {/* <Link to={`/catalog/${props.category}/${props.id}`}  className={bookCardStyle.bookLink}>
+            <div className={bookCardStyle.hover14 column}>
                 <figure>
-                    <img className="book_img-2" src={'/images/Books/Hi Resolution/' +  props.id + '.jpg'} alt={props.title}/>
+                    <img className={bookCardStyle.book_img-2} src={'/images/Books/Hi Resolution/' +  props.id + '.jpg'} alt={props.title}/>
                 </figure>
                 </div>
             </Link> */}
-            <a href={`/catalog/${props.category}/${props.id}`}  className="book-link">
-            <div className="hover01 column">
+            <a href={`/catalog/${props.category}/${props.id}`}  className={bookCardStyle.bookLink}>
+            <div className={bookCardStyle.hover01}>
                 <figure>
                     {book_image}
                 </figure>
                 </div>
             </a>
-            <div className="group-1-2">
-                <div className="book-card-footer-rectangle">
-                    <p className="book-card-description-text">{props.id}</p>
+            <div className={bookCardStyle.group12}>
+                <div className={bookCardStyle.bookCardFooterRectangle}>
+                    <p className={bookCardStyle.bookCardDescriptionText}>{props.id}</p>
                 </div>
             </div>
         </div>

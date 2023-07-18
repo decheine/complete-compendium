@@ -7,8 +7,9 @@ import './about.css';
 import Layout from "../components/Layout";
 
 export function about() {
-
-    document.title = "Complete Compendium - About"
+    if(typeof document !== 'undefined'){
+        document.title = "Complete Compendium - About"
+    }
     return (
         // upper page with category links
     <>

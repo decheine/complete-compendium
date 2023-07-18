@@ -1,6 +1,13 @@
 :root {
-    --color-main-darker: #1250A2;
-  }
+  --arrow-head-height: 8px;
+  --arrow-thickness: 4px;
+  --card-width: 275px;
+  --img-height: 350px;
+  --card-header-height: 64px;
+  --responsive-width: 1200px;
+  --color-main-darker: #1250A2;
+
+}
   
   
   .hero_tsr {
@@ -313,11 +320,11 @@
   }
   
   .summary_par {
-    font-family: "Palatino Linotype";
-  
-    font-family: Palatino Linotype;
+    /* font-family: "Palatino Linotype"; */
+    font-family: 'Leksa Sans';
+    font-weight: 400;
     font-style: normal;
-    font-weight: normal;
+  
     font-size: 24px;
     /* font-size: calc(0.66vw + 0.66vh); */
     text-align: justify;

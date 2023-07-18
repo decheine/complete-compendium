@@ -11,6 +11,8 @@ import {useMemo, useState, useEffect} from 'react';
 
 import './Statistics.css';
 
+const stats_json = require('../data/statistics.json')
+
 type StatisticProps = {
     name: string;
     value: string;
@@ -34,30 +36,17 @@ export interface IStatistics{
 
 export const StatisticBlock = () => {
     // Fetch data from the API
-    const [data, setData] = React.useState<any>(null);
-    useEffect(() => {
-        let active = true
-        loadStatistics()
-        return () => { active = false }
-
-        async function loadStatistics() {
-            // const response = await DataService.getStatistics();
-            if (active) {
-                // setData(response);
-            }
-        }
-    }, []);
-    console.log(data)
+    
     // if data is not null and has members, render the statistics
     var settings_number
     var books_number
     var pages_number
     var unique_number;
     // if (data === null){
-        settings_number = data === null ? "..." : Number(data[0]["stat_value"]).toLocaleString('en', {useGrouping: true});
-        books_number = data == null ? "..." : Number(data[1]["stat_value"]).toLocaleString('en', {useGrouping: true});
-        pages_number = data == null ? "..." : Number(data[2]["stat_value"]).toLocaleString('en', {useGrouping: true});
-        unique_number = data == null ? "..." : Number(data[3]["stat_value"]).toLocaleString('en', {useGrouping: true});
+    settings_number = stats_json["settings_count"];
+    books_number = stats_json["books_count"];
+    pages_number = stats_json["pages_count"];
+    unique_number = stats_json["unique_count"];
     // }
     // if (data && data.settings_number
     //     && data.books_number

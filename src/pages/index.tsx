@@ -1,5 +1,5 @@
 import * as React from "react"
-import type { HeadFC, PageProps } from "gatsby"
+import { graphql, HeadProps, HeadFC, PageProps } from "gatsby"
 
 import "./home.css";
 import "./styles.css"
@@ -10,7 +10,7 @@ import RandomMonsterButton from "../components/RandomMonsterButton";
 import { Cards } from "../components/Cards";
 import { StatisticBlock } from "../components/Statistics";
 import Footer from "../components/Footer";
-import Layout from "../components/Layout";
+// import Layout from "../components/Layout";
 
 const pageStyles = {
   color: "#232129",
@@ -201,9 +201,23 @@ const links = [
 //   )
 // }
 
+/////////////////////////
+// Gatsby Stuff
+
+type DataProps = {
+  site: {
+    siteMetadata: {
+      title: string
+    }
+  }
+}
+
+
+
 const IndexPage: React.FC<PageProps> = () => {
   return (
     <main>
+      <link rel="stylesheet" href="https://use.typekit.net/som5rdn.css"></link>
       <>
           <Navbar/>
             <div className="home">
@@ -241,8 +255,8 @@ const IndexPage: React.FC<PageProps> = () => {
                   </div>
                 </div>
               </div>
-              <Footer />
             </div>
+          <Footer />
         </>
     </main>
   )
@@ -250,4 +264,19 @@ const IndexPage: React.FC<PageProps> = () => {
 
 export default IndexPage
 
-export const Head: HeadFC = () => <title>Home Page</title>
+// export const Head: HeadFC = () => <title>Home Page</title>
+export function Head(props: HeadProps<DataProps>) {
+  return (
+    <title>{props.data.site.siteMetadata.title}</title>
+  )
+}
+
+export const query = graphql`
+  {
+    site {
+      siteMetadata {
+        title
+      }
+    }
+  }
+`

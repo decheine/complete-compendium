@@ -1,29 +1,31 @@
 import React from 'react'
-
-import './catalog.css'
+import Layout from '../components/Layout';
 
 import { CategoriesList } from '../components/CategoriesList';
 import { AllBooksList } from '../components/AllBooksList';
-import NavBar from "../components/Navbar"
+
+import * as catalogStyle from '@styles/modules/catalog.module.css'
 
 export function catalog() {
-    document.title = "Catalog - Complete Compendium"
+    if(typeof document !== 'undefined'){
+      document.title = "Catalog - Complete Compendium"
+    }
     return (
         // upper page with category links
       <>
-      {/* <Layout> */}
-      <NavBar/>
-        <div className='background-catalog'>
-          <h2 className='catalog-title' id='settings'>All Campaign Settings</h2>
-          <div className="CatalogDescription">
+      <Layout>
+      {/* <NavBar/> */}
+        <div className='backgroundCatalog'>
+          <h2 className='catalogTitle' id='settings'>All Campaign Settings</h2>
+          <div className={catalogStyle.CatalogDescription}>
               Browse monster books by setting or browse all at once.
           </div>
           <CategoriesList/>
           {/* All Books */}
-          <h2 className="catalog-title" id='books'>All Books</h2>
+          <h2 className={catalogStyle.catalogTitle} id='books'>All Books</h2>
           <AllBooksList/>
         </div>
-      {/* </Layout> */}
+      </Layout>
       </>
       // lower page with all book list
     );

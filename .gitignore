@@ -15,7 +15,10 @@ yarn.lock
 
 # production
 /build
-/public
+/public/*
+public/*
+/public/~partytown/*
+/public/icons
 
 # misc
 .DS_Store
