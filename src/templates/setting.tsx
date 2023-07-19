@@ -76,7 +76,7 @@ const SettingTemplate: React.FC<Props> = ({ pageContext }) => {
         // console.log("setting acronym: ", pageContext.category)
         return (
             <>
-                <Layout>
+                <Layout url={`/catalog/${pageContext.category}`}>
 
                     {/* <div className={settingStyles.settingLogo}> */}
                     <div style={settingImgStyle}>

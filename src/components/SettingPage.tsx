@@ -27,7 +27,7 @@ function SettingPage() {
         console.log("setting acronym: ", category)
         return (
             <>
-                <Layout>
+                <Layout url='catalog'>
 
                     <div className="setting-logo">
                         <img className="headerimg" src={'/images/grf/' +  category + '.gif'} alt={category + 'category image'}></img>

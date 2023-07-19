@@ -53,6 +53,8 @@ const BreadCrumb = ( props: MyProps) => {
     var path = ""
     var path_count = 0;
     var text = ""
+
+    console.log("breadcrumb", props)
     
     var path_origin = props.path[0]
 

@@ -13,7 +13,7 @@ export function about() {
     return (
         // upper page with category links
     <>
-    <Layout>
+    <Layout url='/about'>
         <div className="about-wrapper">
         <main>
             <h1>About</h1>

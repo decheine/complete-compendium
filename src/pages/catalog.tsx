@@ -13,7 +13,7 @@ export function catalog() {
     return (
         // upper page with category links
       <>
-      <Layout>
+      <Layout url='/catalog' props={""}>
       {/* <NavBar/> */}
         <div className='backgroundCatalog'>
           <h2 className='catalogTitle' id='settings'>All Campaign Settings</h2>

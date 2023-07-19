@@ -234,6 +234,8 @@ exports.createPages = async ({ actions }) => {
           title: tmp_book_monster_object.title,
           prev_key: prev_key,
           next_key: next_key,
+          catelog_book: book_object.publish_id,
+          catelog_setting: acronym
         }
         
       })

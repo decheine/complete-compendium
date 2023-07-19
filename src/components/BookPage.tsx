@@ -58,7 +58,7 @@ const BookPageLoader = () => {
     return (
         <>
         <div className="background"></div>
-        <Layout>
+        <Layout url="/">
             {/* Background Image Paper */}
             
             {/* Image */}

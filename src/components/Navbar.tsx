@@ -5,6 +5,7 @@ import React, { useState, useEffect, useRef } from 'react';
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 // import { faBars } from '@fortawesome/free-solid-svg-icons'
 import './Navbar.css';
+import { Link } from 'gatsby';
 // import * as navbarStyle from '@styles/modules/navbar.module.css';
 // import './Sidebar.css';
 
@@ -172,9 +173,9 @@ function Navbar() {
         return (
             <div className="navbar-container" >
             <div className="menu-mobile">
-                <a href='/' className='navbar-logo'  >
+                <Link to='/' className='navbar-logo'  >
                     Home
-                </a>
+                </Link>
                 {/* {overlay_checkbox} */}
                 <input type="checkbox" id="hamburger-input" className="burger-shower" onClick={handleClick}/>
                 {check.map((item, idx) => (
@@ -184,39 +185,39 @@ function Navbar() {
                       <h3>Menu</h3>
                       <ul>
                         <label className='nav-item' onClick={handleClick}>
-                            <a href='/' className='nav-links'>
+                            <Link to='/' className='nav-links'>
                                 Home
-                            </a>
+                            </Link>
                         </label>
                         <li className='nav-item'>
-                            <a href='/appendix' className='nav-links' onClick={handleClick}>
+                            <Link to='/appendix' className='nav-links' onClick={handleClick}>
                                 Appendix
-                            </a>
+                            </Link>
                         </li>
                         <li className='nav-item'>
-                          <a href='/catalog'
+                          <Link to='/catalog'
                             className='nav-links'
                             onClick={handleClick}
                           >
                             Catalog
-                          </a>
+                          </Link>
                         </li>
                         <li className='nav-item'>
-                          <a href='/about'
+                          <Link to='/about'
                             className='nav-links'
                             onClick={handleClick}
                           >
                             About
-                          </a>
+                          </Link>
                         </li>
                         <li className='nav-item'>
-                          <a href='/search'
+                          <Link to='/search'
                             className='nav-links'
                             onClick={handleClick}
                           >
                             Search &nbsp;  
                             {/* <FontAwesomeIcon icon="search" /> */}
-                          </a>
+                          </Link>
                         </li>
                       </ul>
                     </nav>
@@ -231,36 +232,35 @@ function Navbar() {
             <>
             <div className="navbar">
               <div className="navbar-wrapper">
-                <a href='/' className='navbar-logo'>
+                <Link to='/' className='navbar-logo'>
                   Home
-                </a>
+                </Link>
                 <ul className='nav-menu'>
                   <li className='nav-item'>
-                    <a href='/appendix' className='nav-links' onClick={closeMobileMenu}>
+                    <Link to='/appendix' className='nav-links'>
                       Appendix
-                    </a>
+                    </Link>
                   </li>
                   <li className='nav-item'>
-                    <a href='/catalog' className='nav-links'>
+                    <Link to='/catalog' className='nav-links'>
                       Catalog
-                    </a>
+                    </Link>
                   </li>
                   <li className='nav-item'>
-                    <a href='/about'
+                    <Link to='/about'
                       className='nav-links'
                       // onClick={closeMobileMenu}
                     >
                       About
-                    </a>
+                    </Link>
                   </li>
                   <li className='nav-item'>
-                    <a href='/search'
+                    <Link to='/search'
                       className='nav-links'
                       // onClick={closeMobileMenu}
                     >
                       Search &nbsp;  
-                      {/* <FontAwesomeIcon icon="search" /> */}
-                    </a>
+                    </Link>
                   </li>
       
                 </ul> 

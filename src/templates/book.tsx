@@ -93,7 +93,7 @@ const BookTemplate: React.FC<Props> = ({ pageContext }) => {
 
   // const { book_data } = data
   return (
-    <Layout>
+    <Layout url={`/catalog/${CatAcronyms[setting]}/${publish_id}`}>
       <div className="frame">
                 <div className={bookStyles.card1}>
                     <div className={bookStyles.col1}>

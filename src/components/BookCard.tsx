@@ -13,6 +13,7 @@ import React from 'react';
 // import "./BookCard.css"
 
 import * as bookCardStyle from "@styles/modules/bookcard.module.css"
+import { Link } from 'gatsby';
 
 // BookCard props type
 type BookCardProps = {
@@ -22,21 +23,6 @@ type BookCardProps = {
 }
 
 function BookCard(props: BookCardProps){
-    let image_url = '/images/Books/Hi Resolution/' +  props.id + '.jpg'
-    let image_placeholder = "/img/placeholder.svg"
-
-    let book_image = null;
-    book_image = <img    src={image_url} 
-            className = {bookCardStyle.book_img2}
-            alt={props.title + 'Cover art'} 
-            title={props.title} 
-            loading='lazy'
-            onError={({currentTarget}) => {
-                currentTarget.onerror = null;
-                currentTarget.alt = "This monster is missing it's image. It will be found eventually.";
-                currentTarget.src = image_placeholder;
-                currentTarget.title = "Missing book cover image of " + props.title;
-            }}/>
     return (
         
 
@@ -57,13 +43,24 @@ function BookCard(props: BookCardProps){
                 </figure>
                 </div>
             </Link> */}
-            <a href={`/catalog/${props.category}/${props.id}`}  className={bookCardStyle.bookLink}>
+            <Link to={`/catalog/${props.category}/${props.id}`}  className={bookCardStyle.bookLink}>
             <div className={bookCardStyle.hover01}>
                 <figure>
-                    {book_image}
+                <img    src={'/images/Books/Hi Resolution/' +  props.id + '.jpg'} 
+                        className = {bookCardStyle.book_img2}
+                        alt={props.title + 'Cover art'} 
+                        title={props.title} 
+                        loading='lazy'
+                        onError={({currentTarget}) => {
+                            currentTarget.onerror = null;
+                            currentTarget.alt = "This monster is missing it's image. It will be found eventually.";
+                            currentTarget.src = "/img/placeholder.svg";
+                            currentTarget.title = "Missing book cover image of " + props.title;
+                        }}
+                />
                 </figure>
                 </div>
-            </a>
+            </Link>
             <div className={bookCardStyle.group12}>
                 <div className={bookCardStyle.bookCardFooterRectangle}>
                     <p className={bookCardStyle.bookCardDescriptionText}>{props.id}</p>

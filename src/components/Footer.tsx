@@ -2,6 +2,7 @@
 
 import React from 'react';
 import './Footer.css';
+import { Link } from 'gatsby';
 
 function Footer() {
     return (
@@ -18,9 +19,9 @@ function Footer() {
                             Pages
                         </div>
                         <div className="footer-link-items">
-                            <a href="/appendix">Appendix</a>
-                            <a href="/catalog">Catalog</a>
-                            <a href="/about">About</a>
+                            <Link to="/appendix">Appendix</Link>
+                            <Link to="/catalog">Catalog</Link>
+                            <Link to="/about">About</Link>
                         </div>
                     </div>
                 </div>

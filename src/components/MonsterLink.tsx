@@ -2,7 +2,7 @@
 
 import React from "react";
 
-import type { HeadFC, PageProps } from "gatsby"
+import { Link, type HeadFC, type PageProps } from "gatsby"
 import styled from "styled-components"
 
 
@@ -29,7 +29,7 @@ const MonsterLinkWrapper = styled.div`
 const MonsterLink = ( {monster_key, monster_title }: MonsterLinkProps) => {
     return (
         <MonsterLinkWrapper>
-            <a href={`/appendix/${monster_key}`} className="monster-link" >{monster_title}</a>
+            <Link href={`/appendix/${monster_key}`} className="monster-link" >{monster_title}</Link>
         </MonsterLinkWrapper>
     )
 }

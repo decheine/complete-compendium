@@ -50,6 +50,8 @@ type MonsterPageContext = {
     title: string
     prev_key: string
     next_key: string
+    catelog_book: string
+    catelog_setting: string
 }
 
 
@@ -65,6 +67,9 @@ type MonsterDataWrapper = {
     title: string
     prev_key: string
     next_key: string
+    catelog_book: string
+    catelog_setting: string
+    
 }
 
 interface Props {
@@ -83,6 +88,8 @@ const BookMonsterTemplate: React.FC<Props> = ({pageContext }) => {
   const sources = monster_page_data.sources
   const previous_monster_key = monster_page_data.prev_key
   const next_monster_key = monster_page_data.next_key
+  const catelog_book = monster_page_data.catelog_book
+  const catelog_setting = monster_page_data.catelog_setting
 //   console.log(previous_monster_key, next_monster_key)
   // Checking Main Image
   //  If the regex pattern matches, know we NEED an image. So set the url to where it should be with monster_key
@@ -145,7 +152,7 @@ const BookMonsterTemplate: React.FC<Props> = ({pageContext }) => {
 
   // const { book_data } = data
   return (
-    <Layout>
+    <Layout url={`/catalog/${catelog_setting}/${catelog_book}/${monster_key}`}>
       <div>
         <div>
           <div className={monsterPageStyles.monsterNavLinks}>

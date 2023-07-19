@@ -7,6 +7,7 @@ import { useState, useEffect } from 'react';
 import './RandomMonsterButton.css';
 
 import AA_KEYS_TITLES from '../data/AA_KEYS_TITLES.json'
+import { Link } from "gatsby";
 
 function getRandomInt(max: number) {
     return Math.floor(Math.random() * max);
@@ -33,9 +34,9 @@ const RandomMonsterButton = () => {
 
     return (
         <div className="RandomMonsterButton">
-            <a href={"/appendix/" + monster_key}>
+            <Link to={"/appendix/" + monster_key}>
                 <div className="random-button" onClick={getRandomMonster}>Random Monster</div>
-            </a>
+            </Link>
         </div>
     );
 }

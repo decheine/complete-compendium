@@ -4,6 +4,7 @@ import React, { useEffect, useState } from "react";
 // and then build the result.
 
 import './CategoriesList.css'
+import { Link } from "gatsby";
 // import CatAcronyms from '../../../data/CatAcronyms.json'
 const ACRONYMS = require('../data/CatAcronyms.json')
 const WORLDS = require('../data/CatWorlds.json')
@@ -11,7 +12,8 @@ const WORLDS = require('../data/CatWorlds.json')
 
 // import { SettingPage } from "./SettingPage";
 
-import data_settings from '../data/settings.json'
+const data_settings = require('../data/settings.json')
+const settings_list = require('@data/AcronymsSetting.json')
 
 type SettingType = {
     setting_key: string,
@@ -48,6 +50,34 @@ export function CategoriesList(){
         
     }, [])
 
+    let buffer: React.JSX.Element[] = []
+
+    Object.entries(settings_list).forEach(([key, value], index) => {
+        
+        // name Bobby Hadz 0
+        // country Chile 1
+        // console.log(key, value, index);
+        // console.log(`${key}: ${value}`);
+        if(typeof value !== 'string'){
+
+        } else {
+            buffer.push(
+                <div className={"setting-frame"} title={key} key={key}>
+                    <Link to={`/catalog/${key}`} className="category">
+                        <div className="setting-button">
+                            <img className="catImg" src={'/images/grf/' +  key + '.gif'} alt={value + 'image'}></img>
+                            
+                            <div className="setting-subtitle">
+                                <div className="setting-title">{value}</div>
+                                <div className="setting-world">{WORLDS[key]}</div>
+                            </div>
+                        </div>
+                    </Link>
+                </div>
+            )
+        }
+      });
+
     
     // console.log("settings: ", settings, settingNames)
 
@@ -56,22 +86,7 @@ export function CategoriesList(){
         
         
         <div className="CategoryList">
-            {settingNames.map(( category: string)=>{
-                return (
-                    <div className={"setting-frame"} title={category} key={category}>
-                        <a href={`/catalog/${ACRONYMS[category]}`} className="category">
-                            <div className="setting-button">
-                                <img className="catImg" src={'/images/grf/' +  ACRONYMS[category] + '.gif'} alt={category + 'image'}></img>
-                                
-                                <div className="setting-subtitle">
-                                    <div className="setting-title">{category}</div>
-                                    <div className="setting-world">{WORLDS[category]}</div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                );
-            })}
+            {buffer}
         </div>
         
         </>

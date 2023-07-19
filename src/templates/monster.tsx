@@ -147,7 +147,7 @@ const MonsterTemplate: React.FC<Props> = ({pageContext} ) => {
 
   // const { book_data } = data
   return (
-    <Layout>
+    <Layout url={`/appendix/${monster_key}`}>
       <div>
         <div>
           <div className={monsterPageStyles.monsterNavLinks}>

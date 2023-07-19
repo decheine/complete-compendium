@@ -14,7 +14,7 @@ export function searchPage() {
     return (
         // upper page with category links
     <>
-    <Layout>
+    <Layout url='/search'>
         <div className="about-wrapper">
         <main>
             <h1>Search</h1>
