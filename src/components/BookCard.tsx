@@ -23,7 +23,7 @@ type BookCardProps = {
 
 function BookCard(props: BookCardProps){
     let image_url = '/images/Books/Hi Resolution/' +  props.id + '.jpg'
-    let image_placeholder = "https://upload.wikimedia.org/wikipedia/commons/6/65/No-Image-Placeholder.svg"
+    let image_placeholder = "/img/placeholder.svg"
 
     let book_image = null;
     book_image = <img    src={image_url} 
