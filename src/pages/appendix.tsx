@@ -67,7 +67,7 @@ export function appendix() {
     return (
         // upper page with category links
         <>
-        <Layout url='appendix'>
+        <Layout url='/appendix'>
             
         <div className='background-appendix'>
 

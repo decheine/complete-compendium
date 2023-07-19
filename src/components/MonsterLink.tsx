@@ -29,7 +29,7 @@ const MonsterLinkWrapper = styled.div`
 const MonsterLink = ( {monster_key, monster_title }: MonsterLinkProps) => {
     return (
         <MonsterLinkWrapper>
-            <Link href={`/appendix/${monster_key}`} className="monster-link" >{monster_title}</Link>
+            <Link to={`/appendix/${monster_key}`} className="monster-link" >{monster_title}</Link>
         </MonsterLinkWrapper>
     )
 }
