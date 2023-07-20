@@ -3,6 +3,8 @@ import type { GatsbyConfig } from "gatsby";
 const config: GatsbyConfig = {
   siteMetadata: {
     title: `AD&D 2nd Edition Complete Monstrous Compendium`,
+    description: `Complete browsable, searchable appendix of EVERY monster, sourcebook, manual, and campaign setting in Advanced Dungeons & Dragons 2nd Edition.`,
+    author: `Nick Decheine`,
     siteUrl: `https://www.completecompendium.com`
   },
   // More easily incorporate content into your pages through automatic TypeScript type generation and better GraphQL IntelliSense.

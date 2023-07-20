@@ -10,6 +10,9 @@ import Footer from "../components/Footer";
 import RandomMonsterButton from "../components/RandomMonsterButton";
 import { Cards } from "../components/Cards";
 import { StatisticBlock } from "../components/Statistics";
+
+import { SEO } from "../components/SEO";
+
 // import Layout from "../components/Layout";
 
 const pageStyles = {
@@ -217,6 +220,7 @@ type DataProps = {
 const IndexPage: React.FC<PageProps> = () => {
   return (
     <main>
+      
       <link rel="stylesheet" href="https://use.typekit.net/som5rdn.css"></link>
       <>
           <Navbar/>
@@ -267,7 +271,10 @@ export default IndexPage
 // export const Head: HeadFC = () => <title>Home Page</title>
 export function Head(props: HeadProps<DataProps>) {
   return (
+    <>
     <title>{props.data.site.siteMetadata.title}</title>
+    <SEO />
+    </>
   )
 }
 
