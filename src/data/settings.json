@@ -1,7 +1,7 @@
 [
     {
-        "setting_key": "adnd2e",
-        "setting_name": "Advanced Dungeons &amp; Dragons 2nd Edition",
+        "setting_key": "add2_01",
+        "setting_name": "Advanced Dungeons & Dragons 2nd Edition",
         "source_books": [
             "2101",
             "2140",
@@ -29,7 +29,7 @@
         "updatedAt": "2022-10-29T22:10:09.440Z"
     },
     {
-        "setting_key": "alqadim",
+        "setting_key": "aq",
         "setting_name": "Al-Qadim (Forgotten Realms)",
         "source_books": [
             "2146",
@@ -42,7 +42,7 @@
         "updatedAt": "2022-10-29T22:10:09.440Z"
     },
     {
-        "setting_key": "alternity",
+        "setting_key": "al",
         "setting_name": "Alternity",
         "source_books": [
             "2800",
@@ -52,7 +52,7 @@
         "updatedAt": "2022-10-29T22:10:09.440Z"
     },
     {
-        "setting_key": "birthright",
+        "setting_key": "br",
         "setting_name": "Birthright",
         "source_books": [
             "3117",
@@ -64,7 +64,7 @@
         "updatedAt": "2022-10-29T22:10:09.440Z"
     },
     {
-        "setting_key": "dark_sun",
+        "setting_key": "ds",
         "setting_name": "Dark Sun",
         "source_books": [
             "2433",
@@ -88,7 +88,7 @@
         "updatedAt": "2022-10-29T22:10:09.440Z"
     },
     {
-        "setting_key": "dragon_magazine",
+        "setting_key": "dr",
         "setting_name": "Dragon Magazine",
         "source_books": [
             "DragonMagazineAnnual1998",
@@ -140,7 +140,7 @@
         "updatedAt": "2022-10-29T22:10:09.440Z"
     },
     {
-        "setting_key": "dragonlance",
+        "setting_key": "dl",
         "setting_name": "Dragonlance",
         "source_books": [
             "2105",
@@ -154,7 +154,7 @@
         "updatedAt": "2022-10-29T22:10:09.440Z"
     },
     {
-        "setting_key": "dungeon_magazine",
+        "setting_key": "du",
         "setting_name": "Dungeon Magazine",
         "source_books": [
             "Dungeon23",
@@ -178,7 +178,7 @@
         "updatedAt": "2022-10-29T22:10:09.440Z"
     },
     {
-        "setting_key": "fiends_folio",
+        "setting_key": "ff",
         "setting_name": "Fiends Folio",
         "source_books": [
             "2132"
@@ -187,7 +187,7 @@
         "updatedAt": "2022-10-29T22:10:09.440Z"
     },
     {
-        "setting_key": "forgotten_realms",
+        "setting_key": "fr",
         "setting_name": "Forgotten Realms",
         "source_books": [
             "2125",
@@ -219,7 +219,7 @@
         "updatedAt": "2022-10-29T22:10:09.440Z"
     },
     {
-        "setting_key": "greyhawk",
+        "setting_key": "gh",
         "setting_name": "Greyhawk",
         "source_books": [
             "1064",
@@ -236,7 +236,7 @@
         "updatedAt": "2022-10-29T22:10:09.440Z"
     },
     {
-        "setting_key": "kara-tur",
+        "setting_key": "kt",
         "setting_name": "Kara-Tur (Forgotten Realms)",
         "source_books": [
             "2116",
@@ -247,7 +247,7 @@
         "updatedAt": "2022-10-29T22:10:09.440Z"
     },
     {
-        "setting_key": "lankhmar",
+        "setting_key": "lm",
         "setting_name": "Lankhmar",
         "source_books": [
             "2137",
@@ -257,7 +257,7 @@
         "updatedAt": "2022-10-29T22:10:09.440Z"
     },
     {
-        "setting_key": "masque_of_the_red_death",
+        "setting_key": "rd",
         "setting_name": "Masque of the Red Death (Ravenloft)",
         "source_books": [
             "9529"
@@ -266,7 +266,7 @@
         "updatedAt": "2022-10-29T22:10:09.440Z"
     },
     {
-        "setting_key": "maztica",
+        "setting_key": "mz",
         "setting_name": "Maztica (Forgotten Realms)",
         "source_books": [
             "9333",
@@ -278,7 +278,7 @@
         "updatedAt": "2022-10-29T22:10:09.440Z"
     },
     {
-        "setting_key": "mystara",
+        "setting_key": "ms",
         "setting_name": "Mystara",
         "source_books": [
             "2501",
@@ -289,7 +289,7 @@
         "updatedAt": "2022-10-29T22:10:09.440Z"
     },
     {
-        "setting_key": "planescape",
+        "setting_key": "ps",
         "setting_name": "Planescape",
         "source_books": [
             "2118",
@@ -320,7 +320,7 @@
         "updatedAt": "2022-10-29T22:10:09.440Z"
     },
     {
-        "setting_key": "ravenloft",
+        "setting_key": "rv",
         "setting_name": "Ravenloft",
         "source_books": [
             "1088",
@@ -347,7 +347,7 @@
         "updatedAt": "2022-10-29T22:10:09.440Z"
     },
     {
-        "setting_key": "red_steel",
+        "setting_key": "rs",
         "setting_name": "Red Steel (Mystara)",
         "source_books": [
             "2524"
@@ -356,7 +356,7 @@
         "updatedAt": "2022-10-29T22:10:09.440Z"
     },
     {
-        "setting_key": "spelljammer",
+        "setting_key": "sj",
         "setting_name": "Spelljammer",
         "source_books": [
             "2109",
@@ -368,7 +368,7 @@
         "updatedAt": "2022-10-29T22:10:09.440Z"
     },
     {
-        "setting_key": "the_horde",
+        "setting_key": "th",
         "setting_name": "The Horde (Forgotten Realms)",
         "source_books": [
             "1055"

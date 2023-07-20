@@ -10,7 +10,7 @@ const BOOKS = require('@data/sortedtsr.json')
 const bookListStyle = {
     display: "flex",
     flexWrap: 'wrap',
-    justifyContent: "space-evenly"
+    justifyContent: "space-evenly",
 }
 
 

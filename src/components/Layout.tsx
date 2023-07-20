@@ -27,7 +27,7 @@ const Layout = (props: PropsWithChildren<LayoutProps>) => {
     // const url = typeof window !== 'undefined' ? window.location.pathname : '';
     // split path
     const relative_locs = props.url.split("/")
-    console.log("Layout props",props, relative_locs)
+    // console.log("Layout props",props, relative_locs)
     if(relative_locs.length < 3){
       relative_locs.shift();
       
@@ -35,7 +35,7 @@ const Layout = (props: PropsWithChildren<LayoutProps>) => {
       // relative_locs.pop();
       relative_locs.shift();
     }
-    console.log(relative_locs)
+    // console.log(relative_locs)
     // console.log(relative_locs)
     return (
       <div className={layoutStyle.layoutWrapper}>
