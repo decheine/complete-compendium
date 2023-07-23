@@ -143,6 +143,7 @@ const BookMonsterTemplate: React.FC<Props> = ({pageContext }) => {
   // Title style
 
   const fullBody = monster_page_data.monster_data.fullBody;
+  const interweaveMonsterBody: JSX.Element = <div className="set-html" dangerouslySetInnerHTML={{__html: fullBody}} />
 
   if(monster_key == "horax"){
     console.log("booktemplate monster, HORAX")
@@ -184,7 +185,8 @@ const BookMonsterTemplate: React.FC<Props> = ({pageContext }) => {
       {monster_image}
       </div>
 
-      <Interweave className="interweave" content={fullBody} />
+      {/* <Interweave className="interweave" content={fullBody} /> */}
+      {interweaveMonsterBody}
 
       {/* TSR Array */}
       <div className={monsterPageStyles.sourceList}>

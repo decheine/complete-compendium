@@ -1,9 +1,12 @@
 import React from "react"
+// import { useEffect, useState } from 'react'
+
 import Layout from '../components/Layout';
-import {  PageProps, Link, HeadFC  } from "gatsby";
+import {  PageProps, Link, HeadFC, HeadProps, graphql  } from "gatsby";
 
 import { CreatePagesArgs } from 'gatsby';
 import { Interweave } from "interweave";
+import Head from '@components/Head'
 
 // Formatting
 import "@styles/SettingColors.css"
@@ -13,9 +16,7 @@ import RandomMonsterButton from "@components/RandomMonsterButton";
 
 import * as monsterPageStyles from "@styles/modules/monsterpage.module.css"
 
-// export default function Container({ children }) {
-//   return <div className={containerStyles.container}>{children}</div>
-// }
+
 
 const cat_acronyms = require('@data/CatAcronyms.json')
 const sorted_tsr = require('@data/sortedtsr.json')
@@ -50,6 +51,7 @@ type MonsterPageContext = {
     title: string
     prev_key: string
     next_key: string
+    // intereweave_body: JSX.Element
 }
 
 
@@ -68,7 +70,13 @@ type MonsterDataWrapper = {
 }
 
 interface Props {
-  pageContext: MonsterDataWrapper
+  pageContext: MonsterPageContext
+  }
+
+type DataProps = {
+    sitePage: {
+      pageContext: MonsterPageContext
+    }
   }
 
 const MonsterTemplate: React.FC<Props> = ({pageContext} ) => {
@@ -84,7 +92,21 @@ const MonsterTemplate: React.FC<Props> = ({pageContext} ) => {
   const sources = monster_page_data.sources
   const previous_monster_key = monster_page_data.prev_key
   const next_monster_key = monster_page_data.next_key
-//   console.log(previous_monster_key, next_monster_key)
+
+  const fullBody = monster_page_data.monster_data.fullBody;
+  // Getting the fullbody data and putting it into React state
+  // to prevent hydration issue on refresh
+
+  // const [interweave_body, setInterweave] = useState<JSX.Element>();
+
+  // Data does't start loading
+  // until *after* Parent is mounted
+  // useEffect(() => {
+  //   setInterweave(<Interweave className="interweave" content={fullBody} />)
+  // }, []);
+
+
+  //   console.log(previous_monster_key, next_monster_key)
   // Checking Main Image
   //  If the regex pattern matches, know we NEED an image. So set the url to where it should be with monster_key
   //  and also have an onerror="javascript:this.src='images/default.jpg'" to set the image to default if it doesn't exist
@@ -120,7 +142,7 @@ const MonsterTemplate: React.FC<Props> = ({pageContext} ) => {
     
   // Change document title to monster title
   if(typeof document !== 'undefined'){
-      document.title = monster_page_data.monster_data.title + " - Complete Compendium";
+      // document.title = monster_page_data.monster_data.title + " - Complete Compendium";
   }
 
   // Handle setting and accent color.
@@ -136,17 +158,22 @@ const MonsterTemplate: React.FC<Props> = ({pageContext} ) => {
 
   // Title style
 
-  const fullBody = monster_page_data.monster_data.fullBody;
+  const interweaveMonsterBody: JSX.Element = <div className="set-html" dangerouslySetInnerHTML={{__html: fullBody}} />
 
-  if(monster_key == "horax"){
-    console.log("appendix template monster, HORAX")
-    console.log(pageContext)
-    console.log("prev", previous_monster_key)
-    console.log("next", next_monster_key)
-  }
+
+  // if(monster_key == "horax"){
+  //   console.log("appendix template monster, HORAX")
+  //   console.log(pageContext)
+  //   console.log("prev", previous_monster_key)
+  //   console.log("next", next_monster_key)
+  // }
+  const test_jsx: JSX.Element = <div>Test JSX Element</div>
 
   // const { book_data } = data
   return (
+    <>
+    
+    <Head title={monster_page_data.monster_data.title} description={`Description for ${monster_page_data.monster_data.title}`} />
     <Layout url={`/appendix/${monster_key}`}>
       <div>
         <div>
@@ -179,8 +206,11 @@ const MonsterTemplate: React.FC<Props> = ({pageContext} ) => {
       {monster_image}
       </div>
 
-      <Interweave className="interweave" content={fullBody} />
+      {/* <Interweave className="interweave" content={fullBody} /> */}
+      {interweaveMonsterBody}
 
+      {/* <Interweave content="This string contains <b>HTML</b> and will safely be rendered!" /> */}
+      {/* {test_jsx} */}
       {/* TSR Array */}
       <div className={monsterPageStyles.sourceList}>
         <div className={monsterPageStyles.tsrLabel}>
@@ -213,7 +243,62 @@ const MonsterTemplate: React.FC<Props> = ({pageContext} ) => {
 
       </div>
     </Layout>
+    </>
   )
 }
 
+// interface HeadProps {
+//   location: any,
+//   params: any,
+//   data: any,
+//   pageContext: MonsterPageContext
+// }
+
+
+
+// export function Head ({ location, params, data, pageContext }: HeadProps) => (
+//   <>
+//     <title>{pageContext.title}</title>
+//     <meta name="description" content={data.page.description} />
+//     <meta
+//       name="twitter:url"
+//       content={`https://www.foobar.tld/${location.pathname}`}
+//     />
+//   </>
+// )
+
+// export function Head(props: HeadProps<DataProps>){
+
+//   // Extract description.
+
+//   // Demo description for now.
+
+//   const monster_desc = `Description for ${props.data.sitePage.pageContext.title}`
+//   console.log("Head", props.data.sitePage.pageContext)
+
+//   return (
+//     <>
+//       <title>{props.data.sitePage.pageContext.title}</title>
+//       <meta name="description" content={monster_desc} />
+//     </>
+//   )
+// }
+
+
+
+// export const Head = () => (
+//   <>
+//     <title>Hello World</title>
+//     <meta name="description" content="Hello World" />
+//   </>
+// )
+
 export default MonsterTemplate
+
+export const query = graphql`
+  {
+    sitePage {
+      pageContext
+    }
+  }
+`

@@ -1,6 +1,9 @@
 
+
 const path = require('path')
 const data = require('./src/data/colors.json')
+
+const Interweave = require("interweave")
 
 
 
@@ -21,6 +24,8 @@ const data = require('./src/data/colors.json')
 //     })
 //   })
 // }
+
+
 
 
 /**
@@ -134,6 +139,9 @@ exports.createPages = async ({ actions }) => {
     //   console.log(tmp_monster_object)
     // }
 
+    // Generate the Interweave JSX element
+    // const interweaveMonsterBody = <Interweave className="interweave" content={fullBody} />
+
     createPage({
       path: path,
       component: monsterTemplate,
@@ -145,6 +153,7 @@ exports.createPages = async ({ actions }) => {
         title: monster_object.title,
         prev_key: prev_key,
         next_key: next_key,
+        // interweave_body: interweaveMonsterBody
       }
       
     })

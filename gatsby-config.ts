@@ -14,9 +14,11 @@ const config: GatsbyConfig = {
   // Learn more at: https://gatsby.dev/graphql-typegen
   graphqlTypegen: true,
   flags: {
-    DEV_SSR: false
+    DEV_SSR: false,
+    PARTIAL_HYDRATION: false,
   },
   plugins: [
+    'gatsby-plugin-react-helmet',
     "gatsby-plugin-image", "gatsby-plugin-sitemap", {
     resolve: 'gatsby-plugin-manifest',
     options: {

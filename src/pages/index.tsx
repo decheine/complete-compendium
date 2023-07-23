@@ -13,6 +13,10 @@ import { StatisticBlock } from "../components/Statistics";
 
 import { SEO } from "../components/SEO";
 
+// Interweave handling hydration issue
+// const jsdom = require("jsdom");
+// const { JSDOM } = jsdom;
+
 // import Layout from "../components/Layout";
 
 const pageStyles = {

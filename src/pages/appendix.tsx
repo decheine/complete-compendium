@@ -54,9 +54,9 @@ const flip = (data: { [s: string]: unknown; } | ArrayLike<unknown>) => Object.fr
 export function appendix() {
     // Set up the page variables
     // const itemCount = KEYS_TITLES.length;
-    if(typeof document !== 'undefined'){
-        document.title = "Appendix - Complete Compendium"
-    }
+    // if(typeof document !== 'undefined'){
+    //     document.title = "Appendix - Complete Compendium"
+    // }
     const [titles, setTitles] = useState(new Map<string, string>())
     
 
@@ -75,12 +75,12 @@ export function appendix() {
         <div className="AppendixDescription">Browse monster source books by setting or browse all at once.</div>
 
         {
-            keys_titles_json
-            ? <MonsterLinks monster_keys={keys_titles_json}/>
-            : 
-            <div key='loading'>
-            Loading...
-            </div>
+            // keys_titles_json
+            <MonsterLinks monster_keys={keys_titles_json}/>
+            // : 
+            // <div key='loading'>
+            // Loading...
+            // </div>
         }
         
 
