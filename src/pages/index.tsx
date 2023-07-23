@@ -221,7 +221,7 @@ const IndexPage: React.FC<PageProps> = () => {
   return (
     <main>
       
-      <link rel="stylesheet" href="https://use.typekit.net/som5rdn.css"></link>
+      {/* <link rel="stylesheet" href="https://use.typekit.net/som5rdn.css"></link> */}
       <>
           <Navbar/>
             <div className="home">
