@@ -1,5 +1,5 @@
 import * as React from "react"
-import { graphql, HeadProps, HeadFC, PageProps } from "gatsby"
+import { graphql, HeadProps, HeadFC, PageProps, Link } from "gatsby"
 
 import "./home.css";
 import "./styles.css"
@@ -253,6 +253,9 @@ const IndexPage: React.FC<PageProps> = () => {
               <div className="summary">
                 <div className="summary_banner_container">
                   <div className="summary_text">
+                    <p className="summar_par">
+                      Complete* browsable, searchable appendix of EVERY monster, sourcebook, manual, and campaign setting in Advanced Dungeons & Dragons 2nd Edition. An ongoing effort to fully catalog and index every monster from AD&D 2nd edition, there is still much work to be done. With missing images, bad unicode characters, and missing information, I have my work cut out for me. The next phase will involve scanning the source data for errors and displaying this on the <Link to="/about">About</Link> page.
+                    </p>
                     <p className="summary_par">
             
                     Welcome to the Complete Compendium! A work in progress, this compendium seeks to archive and catalogue every monster from Advanced Dungeons & Dragons, 2nd Edition. Not just monsters from the core books, not just from monstrous compendiums.  Every. Monster. Across all sources, magazines, and settings. Go to the Index for a full (and redundant) list of monster names and links to their pages, or check out the Catalogue for a more browsable experience. 
