@@ -259,7 +259,7 @@ const IndexPage: React.FC<PageProps> = () => {
               <div className="summary">
                 <div className="summary_banner_container">
                   <div className="summary_text">
-                    <p className="summar_par">
+                    <p className="summary_par">
                       Complete* browsable, searchable appendix of EVERY monster, sourcebook, manual, and campaign setting in Advanced Dungeons & Dragons 2nd Edition. An ongoing effort to fully catalog and index every monster from AD&D 2nd edition, there is still much work to be done. With missing images, bad unicode characters, and missing information, I have my work cut out for me. The next phase will involve scanning the source data for errors and displaying this on the <Link to="/about">About</Link> page.
                     </p>
                     <p className="summary_par">
