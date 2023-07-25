@@ -10,8 +10,10 @@ import Footer from "../components/Footer";
 import RandomMonsterButton from "../components/RandomMonsterButton";
 import { Cards } from "../components/Cards";
 import { StatisticBlock } from "../components/Statistics";
+import { StaticImage } from "gatsby-plugin-image"
 
 import { SEO } from "../components/SEO";
+import { GatsbyImage } from "gatsby-plugin-image";
 
 // Interweave handling hydration issue
 // const jsdom = require("jsdom");
@@ -233,6 +235,7 @@ const IndexPage: React.FC<PageProps> = () => {
               <div className='hero-container'>
                 <div className='image-container'>
                   <picture>
+                    <StaticImage src="/images/paper.webp" alt="Soft gray paper texture background." /> 
                     <img className='hero-img' src="/images/paper.webp" alt="Soft gray paper texture background." />
                     <img className='hero-img-hidden' src="/opengraph_banner.webp" alt="A menagery of monsters from across the lands of Dungeons & Dragons together on a white background." />
                   </picture>
