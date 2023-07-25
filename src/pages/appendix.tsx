@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import MonsterLink from '../components/MonsterLink';
 import Layout from '../components/Layout';
 import styled from 'styled-components';
+import { HeadProps } from 'gatsby';
 
 const keys_titles_json: Map<string,string> = require('../data/AA_KEYS_TITLES.json')
 
@@ -19,6 +20,14 @@ const MonsterLinksWrapper = styled.div`
     justify-content: space-between;
     margin-top: 1rem;
 `
+
+type DataProps = {
+    site: {
+      siteMetadata: {
+        title: string
+      }
+    }
+  }
 
 //for each monster_key in the KEYS_TITLES, display a link to the monster page
 const MonsterLinks = (props: MonsterLinksProps) => {
@@ -93,3 +102,12 @@ export function appendix() {
     );
 }
 export default appendix;
+
+export function Head(props: HeadProps<DataProps>) {
+    return (
+      <>
+      <title>Appendix - AD&D 2e Complete Compendium</title>
+      
+      </>
+    )
+  }

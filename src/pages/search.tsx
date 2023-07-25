@@ -5,7 +5,15 @@ import TableOfContents from '../components/TableOfContents';
 
 import './about.css';
 import Layout from "../components/Layout";
-import { Link } from "gatsby";
+import { HeadProps, Link } from "gatsby";
+
+type DataProps = {
+    site: {
+      siteMetadata: {
+        title: string
+      }
+    }
+  }
 
 export function searchPage() {
     if(typeof document !== 'undefined'){
@@ -36,3 +44,12 @@ export function searchPage() {
 }
 
 export default searchPage;
+
+export function Head(props: HeadProps<DataProps>) {
+    return (
+      <>
+      <title>Search - AD&D 2e Complete Compendium</title>
+      
+      </>
+    )
+  }

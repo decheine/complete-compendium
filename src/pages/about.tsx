@@ -5,6 +5,15 @@ import TableOfContents from '../components/TableOfContents';
 
 import './about.css';
 import Layout from "../components/Layout";
+import { HeadProps } from "gatsby";
+
+type DataProps = {
+    site: {
+      siteMetadata: {
+        title: string
+      }
+    }
+  }
 
 export function about() {
     // if(typeof document !== 'undefined'){
@@ -262,3 +271,12 @@ export function about() {
 }
 
 export default about;
+
+export function Head(props: HeadProps<DataProps>) {
+    return (
+      <>
+      <title>About - AD&D 2e Complete Compendium</title>
+      
+      </>
+    )
+  }

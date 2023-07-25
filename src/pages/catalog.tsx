@@ -5,6 +5,15 @@ import { CategoriesList } from '../components/CategoriesList';
 import { AllBooksList } from '../components/AllBooksList';
 
 import * as catalogStyle from '@styles/modules/catalog.module.css'
+import { HeadProps } from 'gatsby';
+
+type DataProps = {
+  site: {
+    siteMetadata: {
+      title: string
+    }
+  }
+}
 
 export function catalog() {
     if(typeof document !== 'undefined'){
@@ -31,3 +40,12 @@ export function catalog() {
     );
 }
 export default catalog;
+
+export function Head(props: HeadProps<DataProps>) {
+  return (
+    <>
+    <title>Catalog - AD&D 2e Complete Compendium</title>
+    
+    </>
+  )
+}
