@@ -123,8 +123,8 @@ exports.createPages = async ({ actions }) => {
         prev_key = monster_keys[index - 1];
         next_key = monster_keys[0];
     } else {
-        console.error("Error finding previous and next monster keys.")
-        console.error("index", monster_key, index, monster_keys.length)
+        console.error("Appendix, Error finding previous and next monster keys.")
+        console.error("Index", monster_key, index, monster_keys.length)
         prev_key = "";
         next_key = "";
     }
@@ -203,8 +203,8 @@ exports.createPages = async ({ actions }) => {
         // handle prev and next based on this books monster_keys
 
         var tmp_book_monster_object = all_monster_map[book_monster_keys[monster_key]]
-        if(tmp_book_monster_object === 'undefined'){
-          console.error("Could not find book monster index", book_monster_keys[monster_key])
+        if(tmp_book_monster_object === undefined){
+          console.error("ERROR Could not find book monster index", book_monster_keys[monster_key])
         }
         // console.log("tmpMonster", tmp_book_monster_object, book_monster_keys[monster_key])
 
@@ -222,13 +222,18 @@ exports.createPages = async ({ actions }) => {
             next_key = book_monster_keys[0];
         } else {
             console.error("Error finding previous and next monster keys.")
-            console.error("index", book_monster_keys[monster_key], index, book_monster_keys.length)
+            console.error("Index", book_monster_keys[monster_key], index, book_monster_keys.length, book_id)
             prev_key = "";
             next_key = "";
         }
         
+        // if(tmp_book_monster_object.hasOwnProperty('prev_key') && tmp_book_monster_object.hasOwnProperty('next_key')){
         tmp_book_monster_object.prev_key = prev_key
         tmp_book_monster_object.next_key = next_key
+        // } else {
+        //   console.error(book_monster_keys)
+        //   console.error("tmp_book_monster_object does not have property prev_key or next_key");
+        // }
 
         var monster_path = `/catalog/${setting_object.setting_key}/${book_id}/${book_monster_keys[monster_key]}`
         // console.log("catalog monster", monster_path)
