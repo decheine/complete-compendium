@@ -19,53 +19,62 @@ const config: GatsbyConfig = {
   },
   plugins: [
     'gatsby-plugin-react-helmet',
-    "gatsby-plugin-image", "gatsby-plugin-sitemap", {
-    resolve: 'gatsby-plugin-manifest',
-    options: {
-      icon: "src/images/icon.png",
-      name: `Advanced Dungeons and Dragons Complete Monster Compendium`,
-      short_name: `AD&D Complete Compendium`,
-      start_url: `/`,
-      background_color: `#FFFFFF`,
-      theme_color: `#1250A2`,
-      display: `standalone`,
-    }
-  }, "gatsby-plugin-mdx", "gatsby-plugin-sharp", "gatsby-transformer-sharp", {
-    resolve: 'gatsby-source-filesystem',
-    options: {
-      "name": "images",
-      "path": "./src/images/"
+    "gatsby-plugin-image", {
+      resolve: "gatsby-plugin-sitemap",
+      options: {
+        output: "/sitemaps/"
+        // excludes: [
+        //   /(\/)catalog(\/).+?(\/).+?(\/).+?/,
+        // ]
+      }
     },
-    __key: "images"
-  }, {
-    resolve: 'gatsby-source-filesystem',
-    options: {
-      "name": "pages",
-      "path": "./src/pages/"
-    },
-    __key: "pages"
-  },
-  {
-    resolve: `gatsby-plugin-alias-imports`,
-    options: {
-      alias: {
-        "@src": "src",
-        "@components": "src/components",
-        "@layouts": "src/layouts",
-        "@pages": "src/pages",
-        "@fonts": "src/fonts",
-        "@images": "src/images",
-        "@data": "src/data",
-        "@templates": "src/templates",
-        "@types": "src/types",
-        "@styles": "src/styles",
+    {
+      resolve: 'gatsby-plugin-manifest',
+      options: {
+        icon: "src/images/icon.png",
+        name: `Advanced Dungeons and Dragons Complete Monster Compendium`,
+        short_name: `AD&D Complete Compendium`,
+        start_url: `/`,
+        background_color: `#FFFFFF`,
+        theme_color: `#1250A2`,
+        display: `standalone`,
+      }
+    }, "gatsby-plugin-mdx", "gatsby-plugin-sharp", "gatsby-transformer-sharp", {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        "name": "images",
+        "path": "./src/images/"
       },
-      extensions: [
-        "js",
-      ],
+      __key: "images"
+    }, {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        "name": "pages",
+        "path": "./src/pages/"
+      },
+      __key: "pages"
+    },
+    {
+      resolve: `gatsby-plugin-alias-imports`,
+      options: {
+        alias: {
+          "@src": "src",
+          "@components": "src/components",
+          "@layouts": "src/layouts",
+          "@pages": "src/pages",
+          "@fonts": "src/fonts",
+          "@images": "src/images",
+          "@data": "src/data",
+          "@templates": "src/templates",
+          "@types": "src/types",
+          "@styles": "src/styles",
+        },
+        extensions: [
+          "js",
+        ],
+      }
     }
-  }
-]
+  ]
 };
 
 export default config;

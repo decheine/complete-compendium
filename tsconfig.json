@@ -122,5 +122,5 @@
   
     
   },
-  "include": ["./src/**/*", "gatsby-node.js", "./gatsby-config.ts", "./plugins/**/*", "monster.tsx", "scratch/test.tsx", "scratch/setting.ts", "scratch/{Catalog.book}.tsx"]
+  "include": ["./src/**/*", "gatsby-node.js", "./gatsby-config.ts", "./plugins/**/*", "monster.tsx", "scratch/setting.ts", "scratch/{Catalog.book}.tsx"]
 }

@@ -6,16 +6,16 @@ interface HeadProps {
     description: string
 }
 
-const Head = ({ title, description }: HeadProps) => {
-  return (
-    <>
-      <Helmet
-        defaultTitle="Monster Title - Complete Compendium"
-        title={title}
-        titleTemplate="%s - Complete Compendium"
-      />
-    </>
-  )
-}
+// const Head = ({ title, description }: HeadProps) => {
+//   return (
+//     <>
+//       <Helmet
+//         defaultTitle="Monster Title - Complete Compendium"
+//         title={title}
+//         titleTemplate="%s - Complete Compendium"
+//       />
+//     </>
+//   )
+// }
 
-export default Head;
+// export default Head;

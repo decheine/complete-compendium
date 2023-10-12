@@ -52,6 +52,7 @@ type MonsterPageContext = {
     next_key: string
     catelog_book: string
     catelog_setting: string
+    monster_path: string
 }
 
 
@@ -73,7 +74,7 @@ type MonsterDataWrapper = {
 }
 
 interface Props {
-  pageContext: MonsterDataWrapper
+  pageContext: MonsterPageContext
   }
 
 const BookMonsterTemplate: React.FC<Props> = ({pageContext }) => {

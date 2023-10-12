@@ -235,7 +235,7 @@ const IndexPage: React.FC<PageProps> = () => {
               <div className='hero-container'>
                 <div className='image-container'>
                   <picture>
-                    <StaticImage src="/images/paper.webp" alt="Soft gray paper texture background." /> 
+                    <StaticImage src="../images/paper.webp" alt="Soft gray paper texture background." /> 
                     <img className='hero-img' src="/images/paper.webp" alt="Soft gray paper texture background." />
                     <img className='hero-img-hidden' src="/opengraph_banner.webp" alt="A menagery of monsters from across the lands of Dungeons & Dragons together on a white background." />
                   </picture>

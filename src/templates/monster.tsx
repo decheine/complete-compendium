@@ -6,7 +6,6 @@ import {  PageProps, Link, HeadFC, HeadProps, graphql  } from "gatsby";
 
 import { CreatePagesArgs } from 'gatsby';
 import { Interweave } from "interweave";
-import Head from '@components/Head'
 
 // Formatting
 import "@styles/SettingColors.css"
@@ -16,6 +15,7 @@ import RandomMonsterButton from "@components/RandomMonsterButton";
 
 import * as monsterPageStyles from "@styles/modules/monsterpage.module.css"
 
+import getMonsterDescription from "@components/regex_description"
 
 
 const cat_acronyms = require('@data/CatAcronyms.json')
@@ -51,35 +51,16 @@ type MonsterPageContext = {
     title: string
     prev_key: string
     next_key: string
+    monster_path: string
     // intereweave_body: JSX.Element
-}
-
-
-type MonsterDataWrapper = {
-    monster_page: MonsterPageContext
-    // workaround syntax warning fix,
-    // the following aren't used in reality, only
-    // monster_page
-    monster_key: string
-    monster_data: MonsterDataType
-    sources: string[]
-    statblock_names: string[]
-    title: string
-    prev_key: string
-    next_key: string
 }
 
 interface Props {
   pageContext: MonsterPageContext
   }
 
-type DataProps = {
-    sitePage: {
-      pageContext: MonsterPageContext
-    }
-  }
 
-const MonsterTemplate: React.FC<Props> = ({pageContext} ) => {
+const MonsterTemplate: React.FC<Props> = ( {pageContext} ) => {
   const monster_page_data: MonsterPageContext = pageContext
   // console.log(monster_page_data)
   // const monster_object = pageContext.monster_object
@@ -173,7 +154,7 @@ const MonsterTemplate: React.FC<Props> = ({pageContext} ) => {
   return (
     <>
     
-    <Head title={monster_page_data.monster_data.title} description={`Description for ${monster_page_data.monster_data.title}`} />
+    {/* <Head title={monster_page_data.monster_data.title} description={`Description for ${monster_page_data.monster_data.title}`} /> */}
     <Layout url={`/appendix/${monster_key}`}>
       <div>
         <div>
@@ -292,6 +273,43 @@ const MonsterTemplate: React.FC<Props> = ({pageContext} ) => {
 //     <meta name="description" content="Hello World" />
 //   </>
 // )
+
+// Function that takes in a fullBody string and 
+// returns the monster description (first paragraph) 
+//  
+
+
+
+export const Head: React.FC<Props> = ({ pageContext }) => (
+  <>
+    <title>{pageContext.title} - AD&D Complete Compendium</title>
+    <meta property="og:site_name" content="AD&D 2nd Edition Complete Monstrous Compendium"/>
+    <meta property="og:title" content={"AD&D Complete Compendium - " + pageContext.monster_data.title }/>
+    <meta property="og:description" content={ getMonsterDescription(pageContext.monster_key ,pageContext.monster_data.fullBody) }/>
+    <meta property="og:url" content={"https://www.completecompendium.com" + pageContext.monster_path}/>
+    <meta property="og:type" content="website"/>
+    {
+      pageContext.monster_data.images[1] && pageContext.monster_data.images[1].match(new RegExp(pageContext.monster_key, "g")) ?
+      <>
+      <meta property="og:image" content={"https://www.completecompendium.com/images/monsters/img/" + pageContext.monster_key + ".gif"}/>
+      <meta name="twitter:image" content={"https://www.completecompendium.com/images/monsters/img/" + pageContext.monster_key + ".gif"}/>
+    </>
+      :
+      <></>
+    }
+    <meta property="og:image:width" content="300"/>
+    <meta property="og:image:height" content="360"/>
+    
+          
+    {/* <meta name="description" content={ getMonsterDescription(pageContext.monster_key ,pageContext.monster_data.fullBody) } /> */}
+    {/* Image: "/images/monsters/img/" + monster_page_data.monster_key + ".gif" */}
+    <meta name="twitter:card" content="summary_large_image"/>
+    <meta name="twitter:url" content={"https://www.completecompendium.com" + pageContext.monster_path} />
+    <meta name="twitter:title" content="Advanced Dungeons & Dragons 2nd Edition Complete Compendium" />
+    <meta name="twitter:description" content={ getMonsterDescription(pageContext.monster_key ,pageContext.monster_data.fullBody) } />
+        
+  </>
+)
 
 export default MonsterTemplate
 

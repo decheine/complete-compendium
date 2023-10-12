@@ -153,6 +153,7 @@ exports.createPages = async ({ actions }) => {
         title: monster_object.title,
         prev_key: prev_key,
         next_key: next_key,
+        monster_path: path
         // interweave_body: interweaveMonsterBody
       }
       
@@ -256,7 +257,8 @@ exports.createPages = async ({ actions }) => {
             prev_key: prev_key,
             next_key: next_key,
             catelog_book: book_id,
-            catelog_setting: setting_object.setting_key
+            catelog_setting: setting_object.setting_key,
+            monster_path: monster_path
           }
           
         })
