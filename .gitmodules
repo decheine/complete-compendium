@@ -1,0 +1,3 @@
+[submodule "cmm"]
+	path = cmm
+	url = https://github.com/decheine/lomion-de
