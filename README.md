@@ -1,4 +1,20 @@
-# adnd-compendium-static-frontend
+# Complete Compendium - Advanced Dungeons & Dragons 2nd Edition
+
+## Introduction
+
+
+## Roadmap
+
+
+## Contributing to the monster dataset
+
+`/src/data` is the location of the data used to generate this static site at build time.
+
+
+
+
+
+## Running localling
 
 Run development build
 
@@ -6,14 +22,11 @@ Run development build
 npm run develop
 ```
 
+## Running monster tests
 
-
-## TODO
-
-**Templates:**
-- Monster page
-- Book page
-- Setting page
+Testing:
+ - Working Appendix pages
+ - Testing each Appendix entry for an existing entry in the Catalog
 
 
 
@@ -26,18 +39,3 @@ css capitalize
 style replace brackets
 "(.+?)"
 {TEXT.$1}
-
-
-
-css root
-
-:root {
-    --arrow-head-height: 8px;
-    --arrow-thickness: 4px;
-    --card-width: 275px;
-    --img-height: 350px;
-    --card-header-height: 64px;
-    --responsive-width: 1200px;
-    --color-main-darker: #1250A2;
-
-  }
