@@ -1,6 +1,6 @@
 import React from "react"
 import Layout from '../components/Layout';
-import {  PageProps, Link, HeadFC  } from "gatsby";
+import {  PageProps, Link, HeadFC, graphql  } from "gatsby";
 
 // import MonsterList from '@components/MonsterList.tsx'
 
@@ -135,4 +135,51 @@ const BookTemplate: React.FC<Props> = ({ pageContext }) => {
   )
 }
 
+/*
+type BookPageContext = {
+    author?: string
+    monster_keys: string[]
+    publish_id: string
+    setting: string
+    title: string
+    year: string
+}
+*/
+
+export const Head: React.FC<Props> = ({ pageContext }) => (
+    <>
+      <title>{pageContext.pageContext.title} - AD&D Complete Compendium</title>
+      <meta property="og:site_name" content="AD&D 2nd Edition Complete Monstrous Compendium"/>
+      <meta property="og:title" content={pageContext.pageContext.title  + " | AD&D Complete Compendium"}/>
+      <meta property="og:description" content={ "Catalog page, for the " + pageContext.pageContext.title + "book." }/>
+      <meta property="og:url" content={"https://www.completecompendium.com" + '/Catalog/' +  pageContext.pageContext.publish_id}/>
+      <meta property="og:type" content="website"/>
+      {
+        <>
+        <meta property="og:image" content={"https://www.completecompendium.com" + '/images/Books/Hi Resolution/' +  pageContext.pageContext.publish_id + '.jpg'}/>
+        <meta name="twitter:image" content={"https://www.completecompendium.com" + '/images/Books/Hi Resolution/' +  pageContext.pageContext.publish_id + '.jpg'}/>
+      </>
+      }
+      <meta property="og:image:width" content="300"/>
+      <meta property="og:image:height" content="360"/>
+      
+            
+      {/* <meta name="description" content={ getMonsterDescription(pageContext.monster_key ,pageContext.monster_data.fullBody) } /> */}
+      {/* Image: "/images/monsters/img/" + monster_page_data.monster_key + ".gif" */}
+      <meta name="twitter:card" content="summary_large_image"/>
+      <meta name="twitter:url" content={"https://www.completecompendium.com/catalog/" + pageContext.pageContext.publish_id} />
+      <meta name="twitter:title" content="Advanced Dungeons & Dragons 2nd Edition Complete Compendium" />
+      <meta name="twitter:description" content={ "Catalog page, for the book" + pageContext.pageContext.title + "campaign settings" } />
+          
+    </>
+  )
+
 export default BookTemplate
+
+export const query = graphql`
+  {
+    sitePage {
+      pageContext
+    }
+  }
+`

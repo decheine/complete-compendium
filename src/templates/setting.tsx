@@ -92,4 +92,34 @@ const SettingTemplate: React.FC<Props> = ({ pageContext }) => {
     }
 }
 
+export const Head: React.FC<Props> = ({ pageContext }) => (
+    <>
+      <title>{AcronymToSetting[pageContext.category]} - AD&D Complete Compendium</title>
+      <meta property="og:site_name" content="AD&D 2nd Edition Complete Monstrous Compendium"/>
+      <meta property="og:title" content={AcronymToSetting[pageContext.category]  + " | AD&D Complete Compendium"}/>
+      <meta property="og:description" content={ "Catalog page, for the " + AcronymToSetting[pageContext.category] + "campaign settings" }/>
+      <meta property="og:url" content={"https://www.completecompendium.com" + '/Catalog/' +  pageContext.category}/>
+      <meta property="og:type" content="website"/>
+      {
+        <>
+        <meta property="og:image" content={"https://www.completecompendium.com" + '/images/grf/' +  pageContext.category + '.gif'}/>
+        <meta name="twitter:image" content={"https://www.completecompendium.com" + '/images/grf/' +  pageContext.category + '.gif'}/>
+      </>
+      }
+      <meta property="og:image:width" content="300"/>
+      <meta property="og:image:height" content="360"/>
+      
+            
+      {/* <meta name="description" content={ getMonsterDescription(pageContext.monster_key ,pageContext.monster_data.fullBody) } /> */}
+      {/* Image: "/images/monsters/img/" + monster_page_data.monster_key + ".gif" */}
+      <meta name="twitter:card" content="summary_large_image"/>
+      <meta name="twitter:url" content={"https://www.completecompendium.com/catalog/" + pageContext.category} />
+      <meta name="twitter:title" content="Advanced Dungeons & Dragons 2nd Edition Complete Compendium" />
+      <meta name="twitter:description" content={ "Catalog page, for the " + AcronymToSetting[pageContext.category] + "campaign settings" } />
+          
+    </>
+  )
+  
+
 export default SettingTemplate;
+

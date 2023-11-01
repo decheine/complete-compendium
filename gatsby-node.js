@@ -1,33 +1,5 @@
 
 
-const path = require('path')
-const data = require('./src/data/colors.json')
-
-const Interweave = require("interweave")
-
-
-
-
-
-
-// function createCatalogData( createPage ) {
-//   const catalog_data = require('./src/data/settings.json')
-//   console.log('gatsby-node catalog data')
-//   // console.log(catalog_data)
-//   data.forEach(color_object => {
-//     var path = color_object.name;
-//     createPage({
-//       path,
-//       component: template,
-//       context: color_object,
-//       defer: true,
-//     })
-//   })
-// }
-
-
-
-
 /**
  * @type {import('gatsby').GatsbyNode['createPages']}
  */
@@ -44,59 +16,24 @@ exports.createPages = async ({ actions }) => {
   //////////////////////
   // Testing (Colors)
   const catalog_data = require('./src/data/Full_Catalog.json')
-  const title_acronym = require('./src/data/SettingTitleToAcronym.json')
   const AcronymToSetting = require('./src/data/AcronymsSetting.json')
 
   // Template
   const bookTemplate = require.resolve('./src/templates/book.tsx')
   const settingTemplate = require.resolve('./src/templates/setting.tsx')
-  const color_template = require.resolve('./src/templates/color.tsx')
 
   const monster_data = require('./src/data/ALL_MONSTERS.json')
   const monster_titles = require('./src/data/AA_KEYS_TITLES.json')
   const monsterTemplate = require.resolve('./src/templates/monster.tsx')
   const monster_keys = Array.from(Object.keys(monster_titles)) ;  
 
-// All Monster data indexable by monster_key
+  // All Monster data indexable by monster_key
 
   console.log("Creating indexable monster data map")
   var all_monster_map = new Map()
   for(monster in monster_data){
     all_monster_map[monster_data[monster].monster_key] = monster_data[monster]
   }
-
-  // console.log("test")
-  // console.log(all_monster_map["aarakath"])
-
-
-  data.forEach(color_object => {
-    var path = color_object.name;
-    createPage({
-      path,
-      component: color_template,
-      context: color_object,
-      defer: true,
-    })
-  })
-
-  // console.log(color_template)
-
-
-  /// Catalog Monster Pages
-
-
-  // for (const [setting_acro, value] of Object.entries(AcronymToSetting)) {
-  //   var stem = "catalog/"
-  //   var path = stem + setting_acro
-  //   console.log("Acronym", setting_acro, path)
-  //   // createPage({
-  //   //   path: path,
-  //   //   component: settingTemplate,
-  //   //   context: {
-  //   //     category: setting_acro
-  //   //   }
-  //   // })
-  // }
 
 
   /////////////////////////
@@ -131,16 +68,6 @@ exports.createPages = async ({ actions }) => {
 
     // console.log(monster_key)
     var path = `/appendix/${monster_key}`
-
-    // if(monster_key == "horax"){
-    //   console.log("appendix monster, HORAX", path)
-    //   console.log("prev", tmp_monster_object.prev_key)
-    //   console.log("next", tmp_monster_object.next_key)
-    //   console.log(tmp_monster_object)
-    // }
-
-    // Generate the Interweave JSX element
-    // const interweaveMonsterBody = <Interweave className="interweave" content={fullBody} />
 
     createPage({
       path: path,
