@@ -258,6 +258,9 @@ table.ip tr.bk th{
 .monster-nav-links{
     margin-left: auto;
     margin-right: auto;
+    margin-top: 1mm;
+    margin-bottom: 1mm;
+    border-width: 1mm;
     /* max-width: 60vw; */
     width: 100%;
     height: var(--navbar-height);
@@ -265,10 +268,16 @@ table.ip tr.bk th{
     display: flex;
     justify-content: space-around;
     flex-direction: row;
-    font-family: Friz Quadrata;
+    font-family: 'Friz Quadrata';
     align-items: center;
     text-decoration: none;
 }
+
+    /* color: #4169e1;
+    text-decoration: none;
+    font-size: medium;
+    font-weight: bold;
+} */
 
 .monster-nav {
     text-align: center;
