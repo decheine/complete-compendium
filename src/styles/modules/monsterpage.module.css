@@ -79,8 +79,10 @@ div.top-header {
 .top-header h1 {
     color: #4169e1;
     margin: 12px;
+    margin-left: 0px;
     margin-bottom: 0px;
     font-family: frizquadrata_ltbold;
+    letter-spacing: 0.3px;
   }
 .top-header h2 {
     color: #4169e1;
@@ -88,32 +90,18 @@ div.top-header {
 }
 
 /* Horizontal Lines */
+
+
 .hr1 {
     color: black;
     background-color: black;
-    height: 3px;
-    margin-top: 7px;
-    margin-bottom: 7px;
+    height: 1mm;
+    margin-top: 1px;
+    /* margin-bottom: 7px; */
     /* margin: 7px; */
     clear: none;
 }
 
-.hr2 {
-    /* color: #4169e1; */
-    background-color: var(--color-main-darker);
-    /* border: none; */
-    height: 7px;
-    margin-top: 7px;
-    margin-bottom: 7px;
-}
-
-.hr3 {
-    /* color: #4169e1; */
-    background-color: var(--color-main-darker);
-    /* border: none; */
-    height: 1px;
-    margin: 9px;
-}
 
 .source-list {
     display: flex;

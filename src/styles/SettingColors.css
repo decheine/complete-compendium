@@ -28,8 +28,8 @@
 /* Default */
 hr {
     background-color: var(--color-main-darker);
-    height: 7px;
-    margin-top: 7px;
+    height: 2mm;
+    margin-top: 3mm;
     margin-bottom: 7px;
 }
 
@@ -38,16 +38,15 @@ hr.hr1 {
     color: black;
     background-color: black;
     height: 3px;
-    margin-top: 7px;
-    margin-bottom: 7px;
+    margin-top: 5px;
     clear: none;
 }
 
 hr.hr2 {
     background-color: var(--color-main-darker);
     height: 7px;
-    margin-top: 7px;
-    margin-bottom: 7px;
+    margin-top: 2px;
+    /* margin-bottom: 7px; */
 }
 
 hr.hr2-add2_01 {background-color: var(--color-add2_01);}

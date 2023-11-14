@@ -180,8 +180,8 @@ const MonsterTemplate: React.FC<Props> = ( {pageContext} ) => {
           </Link>
       </div>
       
-      <hr className ={hrClass}/>
       <hr className ={monsterPageStyles.hr1}/>
+      <hr className ={hrClass}/>
 
       <div className={monsterPageStyles.monsterImgFrame}>
       {monster_image}
