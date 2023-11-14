@@ -78,11 +78,14 @@ div.top-header {
 /* Headers */
 .top-header h1 {
     color: #4169e1;
-    margin: 12px;
+    margin-top: 12px;
+    margin-right: 0px;
     margin-left: 0px;
     margin-bottom: 0px;
+    text-align: left;
     font-family: frizquadrata_ltbold;
     letter-spacing: 0.3px;
+    width: 100%;
   }
 .top-header h2 {
     color: #4169e1;
@@ -97,6 +100,7 @@ div.top-header {
     background-color: black;
     height: 1mm;
     margin-top: 1px;
+    
     /* margin-bottom: 7px; */
     /* margin: 7px; */
     clear: none;
@@ -261,7 +265,6 @@ table.ip tr.bk th{
     margin-top: 1mm;
     margin-bottom: 1mm;
     border-width: 1mm;
-    /* max-width: 60vw; */
     width: 100%;
     height: var(--navbar-height);
     color: #fff;
@@ -326,6 +329,7 @@ h2 img {
 @media screen and (max-width: 537px) {
     .top-header h1{
         font-size: 1.5em;
+
     }
 
     img.monster-image {
@@ -346,9 +350,9 @@ h2 img {
     /* top header */
     div.top-header {
         display: flex;
-        flex-direction: column-reverse;
-        align-items: center;
-        justify-content: center;
+        flex-direction: row;
+        align-items: flex-end;
+        justify-content: flex-start;
     }
 
     table {

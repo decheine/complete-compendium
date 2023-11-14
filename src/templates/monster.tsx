@@ -163,9 +163,12 @@ const MonsterTemplate: React.FC<Props> = ( {pageContext} ) => {
                 <Link className={monsterPageStyles.monsterNavLink} to={"../" + previous_monster_key}>Previous</Link>
             </div>
             {/* Random Monster */}
-            <div className={monsterPageStyles.monsterNav}>
+            {/* <div className={monsterPageStyles.monsterNav}>
                 <RandomMonsterButton />
-            </div>
+            </div> */}
+            <div className="page_random_monster_button">
+                    <RandomMonsterButton />
+                </div>
             <div className={monsterPageStyles.monsterNav}>
                 <Link className={monsterPageStyles.monsterNavLink} to={"../" + next_monster_key}>Next</Link>
             </div>

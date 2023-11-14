@@ -1,13 +1,64 @@
 .random-button {
     /* font-family:  */
-    color: #4169e1;
+    /* color: #4169e1;
     text-decoration: none;
     font-size: medium;
-    font-weight: bold;
+    font-weight: bold; */
+    /* color: #4169e1;
+    
+    font-size: medium;
+    font-weight: bold; */
+
+    margin-block-start: unset;
+    margin-block-end: unset;
+    margin-inline-start: unset;
+    margin-inline-end: unset;
+
+    /* Monstrous Title 3 */
+    position: relative;
+    font-family: "Leksa Sans DemiBold";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    /* line-height: 104px; */
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    text-transform: capitalize;
+    /* color: #1250A2; */
+    color: white;
+
+    padding-top: 2mm;
+    padding-bottom: 2mm;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    z-index: 1;
+
 }
 
 div.RandomMonsterButton {
     
-    text-decoration: none;
+    background: #1250A2;
+    border-radius: 8px;
+    /* width: 200px; */
+    height: max-content;
+    max-width: 70vw;
+    /* margin-top: 2rem; */
+    /* margin-bottom: 10rem; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+    /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); */
+    border:rgba(0, 0, 0, 0.25) 1px solid;
+    border-radius: 4px;
+    z-index: 1;
 
 }
+
+.RandomMonsterButton > a {
+    text-decoration: none;
+}
+
