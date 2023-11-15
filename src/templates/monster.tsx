@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react"
+import React from "react"
 // import { useEffect, useState } from 'react'
 
 import Layout from '../components/Layout';
@@ -64,34 +64,34 @@ interface Props {
 
 
 const MonsterTemplate: React.FC<Props> = ( {pageContext} ) => {
-  const [screenSize, setScreenSize] = useState(getCurrentDimension());
+//   const [screenSize, setScreenSize] = useState(getCurrentDimension());
 
-  function getCurrentDimension(){
-    if(isBrowser){
+//   function getCurrentDimension(){
+//     if(isBrowser){
 
-      return {
-        width: global.window.innerWidth,
-      	height: global.window.innerHeight
-      }
-    } else {
-      return {
-        width: 0,
-        height: 0,
-      }
-    }
-}
+//       return {
+//         width: global.window.innerWidth,
+//       	height: global.window.innerHeight
+//       }
+//     } else {
+//       return {
+//         width: 0,
+//         height: 0,
+//       }
+//     }
+// }
 
-  useEffect(() => {
-    const updateDimension = () => {
-      setScreenSize(getCurrentDimension())
-    }
-    if(isBrowser)
-      global.window.addEventListener('resize', updateDimension);
+//   useEffect(() => {
+//     const updateDimension = () => {
+//       setScreenSize(getCurrentDimension())
+//     }
+//     if(isBrowser)
+//       global.window.addEventListener('resize', updateDimension);
     
-    return(() => {
-        global.window.removeEventListener('resize', updateDimension);
-    })
-  }, [screenSize])
+//     return(() => {
+//         global.window.removeEventListener('resize', updateDimension);
+//     })
+//   }, [screenSize])
 
 
   const monster_page_data: MonsterPageContext = pageContext
@@ -174,75 +174,80 @@ const MonsterTemplate: React.FC<Props> = ( {pageContext} ) => {
 
   // const interweaveMonsterBody: JSX.Element = <div className="set-html" dangerouslySetInnerHTML={{__html: fullBody}} />
 
-  let monsterNavWidgets: JSX.Element = <div>
-  <div className={monsterPageStyles.monsterNavLinks}>
-    <Link className={monsterPageStyles.monsterNavLink} to={"../" + previous_monster_key}>
-      <div className={monsterPageStyles.monsterNav}>
-          Previous
-      </div>
-    </Link>
-    {/* Random Monster */}
-    {/* <div className={monsterPageStyles.monsterNav}>
+  let monsterNavWidgets: JSX.Element =
+  <div>
+    <div className={monsterPageStyles.monsterNavLinks}>
+      <div className={monsterPageStyles.pageRandomMonsterButton}>
         <RandomMonsterButton />
-    </div> */}
-    <div className={monsterPageStyles.pageRandomMonsterButton}>
-      <RandomMonsterButton />
-    </div>
-    <Link className={monsterPageStyles.monsterNavLink} to={"../" + next_monster_key}>
-      <div className={monsterPageStyles.monsterNav}>
-        Next
       </div>
-    </Link>
+      <div className={monsterPageStyles.horizontalMonsterLinks}>
+        <Link className={monsterPageStyles.monsterNavLink} to={"../" + previous_monster_key}>
+          <div className={monsterPageStyles.monsterNav}>
+              Previous
+          </div>
+        </Link>
+        {/* Random Monster */}
+        {/* <div className={monsterPageStyles.monsterNav}>
+            <RandomMonsterButton />
+          </div> */}
+        <Link className={monsterPageStyles.monsterNavLink} to={"../" + next_monster_key}>
+          <div className={monsterPageStyles.monsterNav}>
+            Next
+          </div>
+        </Link>
+      </div>
+    </div>
   </div>
-</div>
   
-  if(screenSize.width < 420){
-    monsterNavWidgets = <div>
-                          <div className={monsterPageStyles.monsterNavLinks}>
-                            <div className={monsterPageStyles.pageRandomMonsterButton}>
-                              <RandomMonsterButton />
-                            </div>
-                            <div className={monsterPageStyles.horizontalMonsterLinks}>
-                              <Link className={monsterPageStyles.monsterNavLink} to={"../" + previous_monster_key}>
-                                <div className={monsterPageStyles.monsterNav}>
-                                    Previous
-                                </div>
-                              </Link>
-                              {/* Random Monster */}
-                              {/* <div className={monsterPageStyles.monsterNav}>
-                                  <RandomMonsterButton />
-                                </div> */}
-                              <Link className={monsterPageStyles.monsterNavLink} to={"../" + next_monster_key}>
-                                <div className={monsterPageStyles.monsterNav}>
-                                  Next
-                                </div>
-                              </Link>
-                            </div>
-                          </div>
-                        </div>
-  } else {
-    monsterNavWidgets = <div>
-                          <div className={monsterPageStyles.monsterNavLinks}>
-                            <Link className={monsterPageStyles.monsterNavLink} to={"../" + previous_monster_key}>
-                              <div className={monsterPageStyles.monsterNav}>
-                                  Previous
-                              </div>
-                            </Link>
-                            {/* Random Monster */}
-                            {/* <div className={monsterPageStyles.monsterNav}>
-                                <RandomMonsterButton />
-                            </div> */}
-                            <div className={monsterPageStyles.pageRandomMonsterButton}>
-                              <RandomMonsterButton />
-                            </div>
-                            <Link className={monsterPageStyles.monsterNavLink} to={"../" + next_monster_key}>
-                              <div className={monsterPageStyles.monsterNav}>
-                                Next
-                              </div>
-                            </Link>
-                          </div>
-                        </div>
-  }
+  // if(screenSize.width < 420){
+  //   monsterNavWidgets = <div>
+  //                         <div className={monsterPageStyles.monsterNavLinks}>
+  //                           <div className={monsterPageStyles.pageRandomMonsterButton}>
+  //                             <RandomMonsterButton />
+  //                           </div>
+  //                           <div className={monsterPageStyles.horizontalMonsterLinks}>
+  //                             <Link className={monsterPageStyles.monsterNavLink} to={"../" + previous_monster_key}>
+  //                               <div className={monsterPageStyles.monsterNav}>
+  //                                   Previous
+  //                               </div>
+  //                             </Link>
+  //                             {/* Random Monster */}
+  //                             {/* <div className={monsterPageStyles.monsterNav}>
+  //                                 <RandomMonsterButton />
+  //                               </div> */}
+  //                             <Link className={monsterPageStyles.monsterNavLink} to={"../" + next_monster_key}>
+  //                               <div className={monsterPageStyles.monsterNav}>
+  //                                 Next
+  //                               </div>
+  //                             </Link>
+  //                           </div>
+  //                         </div>
+  //                       </div>
+  // } else {
+  //   monsterNavWidgets = <div>
+  //   <div className={monsterPageStyles.monsterNavLinks}>
+  //     <div className={monsterPageStyles.pageRandomMonsterButton}>
+  //       <RandomMonsterButton />
+  //     </div>
+  //     <div className={monsterPageStyles.horizontalMonsterLinks}>
+  //       <Link className={monsterPageStyles.monsterNavLink} to={"../" + previous_monster_key}>
+  //         <div className={monsterPageStyles.monsterNav}>
+  //             Previous
+  //         </div>
+  //       </Link>
+  //       {/* Random Monster */}
+  //       {/* <div className={monsterPageStyles.monsterNav}>
+  //           <RandomMonsterButton />
+  //         </div> */}
+  //       <Link className={monsterPageStyles.monsterNavLink} to={"../" + next_monster_key}>
+  //         <div className={monsterPageStyles.monsterNav}>
+  //           Next
+  //         </div>
+  //       </Link>
+  //     </div>
+  //   </div>
+  // </div>
+  // }
 
   // if(monster_key == "horax"){
   //   console.log("appendix template monster, HORAX")
