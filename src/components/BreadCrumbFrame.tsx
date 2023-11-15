@@ -64,7 +64,8 @@ class BreadCrumb extends React.Component<MyProps, {titles: Map<string, string>, 
                         <>
                         {/* Right Arrow */}
                         <div className='arrow-box'>
-                            <FontAwesomeIcon icon="angle-right" className='right-arrow' />
+                            /
+                            {/* <FontAwesomeIcon icon="angle-right" className='right-arrow' /> */}
                         </div>
                             <BreadCrumbElement link={"/catalog/" + this.props.setting} text={Acronyms[this.props.setting]}/> 
                         </>
@@ -74,7 +75,7 @@ class BreadCrumb extends React.Component<MyProps, {titles: Map<string, string>, 
                         {this.props.book ? 
                         <>
                         <div className='arrow-box'>
-                            <FontAwesomeIcon icon="angle-right" className='right-arrow' />
+                            {/* <FontAwesomeIcon icon="angle-right" className='right-arrow' /> */}
                         </div>
                         <BreadCrumbElement link={"/catalog/" + this.props.setting + "/" + this.props.book} text={global.data_provider.getLocalBookTitles().get(this.props.book!)!}/> 
                         </>: null} 
@@ -84,7 +85,8 @@ class BreadCrumb extends React.Component<MyProps, {titles: Map<string, string>, 
                         this.props.monster_key ? 
                         <>
                         <div className='arrow-box'>
-                            <FontAwesomeIcon icon="angle-right" className='right-arrow' />
+                            /
+                            {/* <FontAwesomeIcon icon="angle-right" className='right-arrow' /> */}
                         </div>
                         <BreadCrumbElement link={"/catalog/" + this.props.setting + "/" + this.props.book + "/" + this.props.monster_key} text={this.props.monster_key}/> 
                         </>: null
@@ -110,7 +112,8 @@ class BreadCrumb extends React.Component<MyProps, {titles: Map<string, string>, 
                         <>
                             {/* Right Arrow */}
                             <div className='arrow-box'>
-                                <FontAwesomeIcon icon="angle-right" className='right-arrow' />
+                                /
+                                {/* <FontAwesomeIcon icon="angle-right" className='right-arrow' /> */}
                             </div>
                             <BreadCrumbElement link={"/appendix/" + this.props.setting} text={setting_text}/>
                         </>
@@ -134,7 +137,8 @@ class BreadCrumb extends React.Component<MyProps, {titles: Map<string, string>, 
                         <>
                             {/* Right Arrow */}
                             <div className='arrow-box'>
-                                <FontAwesomeIcon icon="angle-right" className='right-arrow' />
+                                /
+                                {/* <FontAwesomeIcon icon="angle-right" className='right-arrow' /> */}
                             </div>
                             <BreadCrumbElement link={"/appendix/" + this.props.setting} text={setting_text}/>
                         </>

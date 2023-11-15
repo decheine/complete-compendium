@@ -70,7 +70,7 @@ const BreadCrumb = ( props: MyProps) => {
                         text = KeyToTitles[node]
                         break;
                     default:
-                        text = "Appendix"
+                        text = "APendix"
                 }
                 break;
             case "catalog":
@@ -109,7 +109,8 @@ const BreadCrumb = ( props: MyProps) => {
         if(path_count != 0){
             builtBC.push(
                 <div className={breadcrumbStyle.arrowBox} key={`arrow-${node}`}>
-                    <FontAwesomeIcon icon={faAngleRight} className={breadcrumbStyle.rightArrow} />
+                    /
+                    {/* <FontAwesomeIcon icon={faAngleRight} className={breadcrumbStyle.rightArrow} /> */}
                 </div>
             )
         }
@@ -131,7 +132,7 @@ const BreadCrumb = ( props: MyProps) => {
     return (
         <div className={breadcrumbStyle.bcFrame}>
             {/* {props.path} */}
-            <div className={breadcrumbStyle.startCap}/>
+            {/* <div className={breadcrumbStyle.startCap}/> */}
             {builtBC}
             <div className={breadcrumbStyle.bcBg}/>
         </div>

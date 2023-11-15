@@ -21,7 +21,7 @@
     margin-bottom: auto;
     /* variable named responsive-width */
     max-width: var(--responsive-width);
-    padding-left: calc(100vw - 100%);
+    /* padding-left: calc(100vw - 100%); */
     
 }
 

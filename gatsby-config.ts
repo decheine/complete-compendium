@@ -18,7 +18,6 @@ const config: GatsbyConfig = {
     PARTIAL_HYDRATION: false,
   },
   plugins: [
-    'gatsby-plugin-react-helmet',
     "gatsby-plugin-image", {
       resolve: "gatsby-plugin-sitemap",
       options: {

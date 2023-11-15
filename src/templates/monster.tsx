@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useEffect, useState } from "react"
 // import { useEffect, useState } from 'react'
 
 import Layout from '../components/Layout';
@@ -60,7 +60,30 @@ interface Props {
   }
 
 
+
+
 const MonsterTemplate: React.FC<Props> = ( {pageContext} ) => {
+  const [screenSize, setScreenSize] = useState(getCurrentDimension());
+
+  function getCurrentDimension(){
+    return {
+      	width: window.innerWidth,
+      	height: window.innerHeight
+    }
+}
+
+  useEffect(() => {
+    const updateDimension = () => {
+      setScreenSize(getCurrentDimension())
+    }
+    window.addEventListener('resize', updateDimension);
+    
+    return(() => {
+        window.removeEventListener('resize', updateDimension);
+    })
+  }, [screenSize])
+
+
   const monster_page_data: MonsterPageContext = pageContext
   // console.log(monster_page_data)
   // const monster_object = pageContext.monster_object
@@ -139,8 +162,56 @@ const MonsterTemplate: React.FC<Props> = ( {pageContext} ) => {
 
   // Title style
 
-  const interweaveMonsterBody: JSX.Element = <div className="set-html" dangerouslySetInnerHTML={{__html: fullBody}} />
+  // const interweaveMonsterBody: JSX.Element = <div className="set-html" dangerouslySetInnerHTML={{__html: fullBody}} />
 
+  let monsterNavWidgets: JSX.Element = <></>
+  if(screenSize.width < 420){
+    monsterNavWidgets = <div>
+                          <div className={monsterPageStyles.monsterNavLinks}>
+                            <div className={monsterPageStyles.pageRandomMonsterButton}>
+                              <RandomMonsterButton />
+                            </div>
+                            <div className={monsterPageStyles.horizontalMonsterLinks}>
+                              <Link className={monsterPageStyles.monsterNavLink} to={"../" + previous_monster_key}>
+                                <div className={monsterPageStyles.monsterNav}>
+                                    Previous
+                                </div>
+                              </Link>
+                              {/* Random Monster */}
+                              {/* <div className={monsterPageStyles.monsterNav}>
+                                  <RandomMonsterButton />
+                                </div> */}
+                              <Link className={monsterPageStyles.monsterNavLink} to={"../" + next_monster_key}>
+                                <div className={monsterPageStyles.monsterNav}>
+                                  Next
+                                </div>
+                              </Link>
+                            </div>
+                          </div>
+                        </div>
+  } else {
+    monsterNavWidgets = <div>
+                          <div className={monsterPageStyles.monsterNavLinks}>
+                            <Link className={monsterPageStyles.monsterNavLink} to={"../" + previous_monster_key}>
+                              <div className={monsterPageStyles.monsterNav}>
+                                  Previous
+                              </div>
+                            </Link>
+                            {/* Random Monster */}
+                            {/* <div className={monsterPageStyles.monsterNav}>
+                                <RandomMonsterButton />
+                            </div> */}
+                            <div className={monsterPageStyles.pageRandomMonsterButton}>
+                              <RandomMonsterButton />
+                            </div>
+                            <Link className={monsterPageStyles.monsterNavLink} to={"../" + next_monster_key}>
+                              <div className={monsterPageStyles.monsterNav}>
+                                Next
+                              </div>
+                            </Link>
+                          </div>
+                        </div>
+  }
 
   // if(monster_key == "horax"){
   //   console.log("appendix template monster, HORAX")
@@ -150,6 +221,7 @@ const MonsterTemplate: React.FC<Props> = ( {pageContext} ) => {
   // }
   const test_jsx: JSX.Element = <div>Test JSX Element</div>
 
+
   // const { book_data } = data
   return (
     <>
@@ -157,23 +229,25 @@ const MonsterTemplate: React.FC<Props> = ( {pageContext} ) => {
     {/* <Head title={monster_page_data.monster_data.title} description={`Description for ${monster_page_data.monster_data.title}`} /> */}
     <Layout url={`/appendix/${monster_key}`}>
       <div>
-        <div>
+        {/* <div>
           <div className={monsterPageStyles.monsterNavLinks}>
-            <div className={monsterPageStyles.monsterNav}>
-                <Link className={monsterPageStyles.monsterNavLink} to={"../" + previous_monster_key}>Previous</Link>
-            </div>
-            {/* Random Monster */}
-            {/* <div className={monsterPageStyles.monsterNav}>
-                <RandomMonsterButton />
-            </div> */}
+            <Link className={monsterPageStyles.monsterNavLink} to={"../" + previous_monster_key}>
+              <div className={monsterPageStyles.monsterNav}>
+                  Previous
+              </div>
+            </Link>
             <div className="page_random_monster_button">
-                    <RandomMonsterButton />
-                </div>
-            <div className={monsterPageStyles.monsterNav}>
-                <Link className={monsterPageStyles.monsterNavLink} to={"../" + next_monster_key}>Next</Link>
+              <RandomMonsterButton />
             </div>
+            <Link className={monsterPageStyles.monsterNavLink} to={"../" + next_monster_key}>
+              <div className={monsterPageStyles.monsterNav}>
+                Next
+              </div>
+            </Link>
           </div>
-        </div>
+        </div> */}
+        {monsterNavWidgets}
+
 
       {/* TITLE */}
       <div className={monsterPageStyles.topHeader}>
@@ -190,8 +264,8 @@ const MonsterTemplate: React.FC<Props> = ( {pageContext} ) => {
       {monster_image}
       </div>
 
-      {/* <Interweave className="interweave" content={fullBody} /> */}
-      {interweaveMonsterBody}
+      <Interweave className="interweave" content={fullBody} />
+      {/* {interweaveMonsterBody} */}
 
       {/* <Interweave content="This string contains <b>HTML</b> and will safely be rendered!" /> */}
       {/* {test_jsx} */}

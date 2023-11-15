@@ -264,14 +264,15 @@ table.ip tr.bk th{
     margin-right: auto;
     margin-top: 1mm;
     margin-bottom: 1mm;
-    border-width: 1mm;
+    
     width: 100%;
     height: var(--navbar-height);
     color: #fff;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     flex-direction: row;
-    font-family: 'Friz Quadrata';
+    /* font-family: 'Friz Quadrata'; */
+    font-family: 'Leksa Sans';
     align-items: center;
     text-decoration: none;
 }
@@ -284,7 +285,19 @@ table.ip tr.bk th{
 
 .monster-nav {
     text-align: center;
+    font-weight: 400;
+    font-size: 18px;
     flex: auto;
+    border-radius: 8px;
+    border-bottom: #4169e1 solid 1mm;
+    
+    padding-top: 2mm;
+    padding-bottom: 2mm;
+    padding-left: 2mm;
+    padding-right: 2mm;
+    min-width: 65px;
+    margin-left: 2mm;
+    margin-right: 2mm;
 }
 
 .monster-nav-link{
@@ -295,6 +308,11 @@ table.ip tr.bk th{
     text-align: center;
 }
 
+.horizontal-monster-links{
+    display: flex;
+    flex-direction: row;
+}
+
 /* Random */
 div.RandomMonsterButton a {
     color: #4169e1;
@@ -302,6 +320,26 @@ div.RandomMonsterButton a {
     font-size: medium;
     font-weight: bold;
 }
+
+.page-random-monster-button {
+    /* Rectangle 8 */
+    background: #1250A2;
+    border-radius: 8px;
+    /* width: 200px; */
+    height: max-content;
+    max-width: 70vw;
+    /* margin-bottom: 10rem; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+    border:rgba(0, 0, 0, 0.25) 1px solid;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 4px;
+    transition-duration: 100ms;
+    z-index: 1;
+  }
 
 /* Loading */
 
@@ -325,6 +363,12 @@ h2 img {
 }
 
 /* SIZING FOR MOBILE */
+
+@media screen and (max-width: 420px) {
+    .monster-nav-links {
+        flex-direction: column;
+    }
+}
 
 @media screen and (max-width: 537px) {
     .top-header h1{
@@ -350,8 +394,8 @@ h2 img {
     /* top header */
     div.top-header {
         display: flex;
-        flex-direction: row;
-        align-items: flex-end;
+        flex-direction: column-reverse;
+        align-items: center;
         justify-content: flex-start;
     }
 

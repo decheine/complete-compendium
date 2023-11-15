@@ -9,12 +9,19 @@
     padding-left: 8px;
     padding-bottom: 0px;
     flex-wrap: wrap;
+    background: rgb(230, 230, 230);
 
-    margin-top: 1em;
-    margin-bottom:1em;
+    /* border-radius: 8px */
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    /* border-bottom: rgb(248, 248, 248) solid 1mm; */
+
+    margin-top: 0mm;
+    margin-bottom: 1mm;
     /* margin-left: 4em; */
     /* margin-right: 4em; */
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    /* color: gray; */
+    /* filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)); */
         text-decoration: none;
     z-index: 1;
 
@@ -24,25 +31,26 @@
 .right-arrow{
     width: 2em;
     height: 2em;
-    color: #D3D8DE;
 }
 
 .arrow-box{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 36px;
-    height: 48px;
+    width: 24px;
+    /* height: 48px; */
+    padding-bottom: 4px;
+    line-height: 24px;
 }
 
 .bc-element {
     /* text-align: left; */
     font-family: 'Leksa Sans Bold', sans-serif;
-    font-size: 14pt;
+    font-size: 12pt;
     text-decoration: none;
     color: black;
     text-transform: uppercase;
-    line-height: 48px;
+    line-height: 32px;
     text-align: left;
     padding-left: 0px;
     
@@ -79,7 +87,7 @@
     left: 0%;
     right: 0%;
     top: 0%;
-    bottom: 0%;
+    /* bottom: 0%; */
 
     background: #FFFFFF;
     border-radius: 4px;

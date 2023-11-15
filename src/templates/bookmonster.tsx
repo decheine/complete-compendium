@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useEffect, useState } from "react"
 import Layout from '../components/Layout';
 import {  PageProps, Link, graphql, HeadFC  } from "gatsby";
 
@@ -78,6 +78,25 @@ interface Props {
   }
 
 const BookMonsterTemplate: React.FC<Props> = ({pageContext }) => {
+  const [screenSize, setScreenSize] = useState(getCurrentDimension());
+
+  function getCurrentDimension(){
+    return {
+      	width: window.innerWidth,
+      	height: window.innerHeight
+    }
+}
+
+  useEffect(() => {
+    const updateDimension = () => {
+      setScreenSize(getCurrentDimension())
+    }
+    window.addEventListener('resize', updateDimension);
+    
+    return(() => {
+        window.removeEventListener('resize', updateDimension);
+    })
+  }, [screenSize])
   const monster_page_data: MonsterPageContext = pageContext
   // const monster_object = pageContext.monster_object
 //   console.log("monster page")
@@ -141,6 +160,57 @@ const BookMonsterTemplate: React.FC<Props> = ({pageContext }) => {
       titleStyle = {color: COLORS.get(setting_acr)}
   }
 
+  
+  let monsterNavWidgets: JSX.Element = <></>
+  if(screenSize.width < 420){
+    monsterNavWidgets = <div>
+                          <div className={monsterPageStyles.monsterNavLinks}>
+                            <div className={monsterPageStyles.pageRandomMonsterButton}>
+                              <RandomMonsterButton />
+                            </div>
+                            <div className={monsterPageStyles.horizontalMonsterLinks}>
+                              <Link className={monsterPageStyles.monsterNavLink} to={"../" + previous_monster_key}>
+                                <div className={monsterPageStyles.monsterNav}>
+                                    Previous
+                                </div>
+                              </Link>
+                              {/* Random Monster */}
+                              {/* <div className={monsterPageStyles.monsterNav}>
+                                  <RandomMonsterButton />
+                                </div> */}
+                              <Link className={monsterPageStyles.monsterNavLink} to={"../" + next_monster_key}>
+                                <div className={monsterPageStyles.monsterNav}>
+                                  Next
+                                </div>
+                              </Link>
+                            </div>
+                          </div>
+                        </div>
+  } else {
+    monsterNavWidgets = <div>
+                          <div className={monsterPageStyles.monsterNavLinks}>
+                            <Link className={monsterPageStyles.monsterNavLink} to={"../" + previous_monster_key}>
+                              <div className={monsterPageStyles.monsterNav}>
+                                  Previous
+                              </div>
+                            </Link>
+                            {/* Random Monster */}
+                            {/* <div className={monsterPageStyles.monsterNav}>
+                                <RandomMonsterButton />
+                            </div> */}
+                            <div className={monsterPageStyles.pageRandomMonsterButton}>
+                              <RandomMonsterButton />
+                            </div>
+                            <Link className={monsterPageStyles.monsterNavLink} to={"../" + next_monster_key}>
+                              <div className={monsterPageStyles.monsterNav}>
+                                Next
+                              </div>
+                            </Link>
+                          </div>
+                        </div>
+  }
+
+
   // Title style
 
   const fullBody = monster_page_data.monster_data.fullBody;
@@ -156,20 +226,7 @@ const BookMonsterTemplate: React.FC<Props> = ({pageContext }) => {
   return (
     <Layout url={`/catalog/${catelog_setting}/${catelog_book}/${monster_key}`}>
       <div>
-        <div>
-          <div className={monsterPageStyles.monsterNavLinks}>
-            <div className={monsterPageStyles.monsterNav}>
-                <Link className={monsterPageStyles.monsterNavLink} to={"../" + previous_monster_key}>Previous</Link>
-            </div>
-            {/* Random Monster */}
-            <div className={monsterPageStyles.monsterNav}>
-                <RandomMonsterButton />
-            </div>
-            <div className={monsterPageStyles.monsterNav}>
-                <Link className={monsterPageStyles.monsterNavLink} to={"../" + next_monster_key}>Next</Link>
-            </div>
-          </div>
-        </div>
+        {monsterNavWidgets}
 
       {/* TITLE */}
       <div className={monsterPageStyles.topHeader}>
