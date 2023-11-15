@@ -67,8 +67,8 @@ const MonsterTemplate: React.FC<Props> = ( {pageContext} ) => {
 
   function getCurrentDimension(){
     return {
-      	width: window.innerWidth,
-      	height: window.innerHeight
+      	width: global.window.innerWidth,
+      	height: global.window.innerHeight
     }
 }
 
