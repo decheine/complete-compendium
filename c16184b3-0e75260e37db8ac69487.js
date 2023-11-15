@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunkadnd_compendium_static_frontend=self.webpackChunkadnd_compendium_static_frontend||[]).push([[976],{9417:function(n,c,e){e.d(c,{yOZ:function(){return t}});var t={prefix:"fas",iconName:"angle-right",icon:[320,512,[8250],"f105","M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"]}}}]);
-//# sourceMappingURL=c16184b3-0e75260e37db8ac69487.js.map
