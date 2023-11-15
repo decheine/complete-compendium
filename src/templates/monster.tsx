@@ -17,6 +17,7 @@ import * as monsterPageStyles from "@styles/modules/monsterpage.module.css"
 
 import getMonsterDescription from "@components/regex_description"
 
+const isBrowser = typeof window !== "undefined"
 
 const cat_acronyms = require('@data/CatAcronyms.json')
 const sorted_tsr = require('@data/sortedtsr.json')
@@ -66,9 +67,17 @@ const MonsterTemplate: React.FC<Props> = ( {pageContext} ) => {
   const [screenSize, setScreenSize] = useState(getCurrentDimension());
 
   function getCurrentDimension(){
-    return {
-      	width: global.window.innerWidth,
+    if(isBrowser){
+
+      return {
+        width: global.window.innerWidth,
       	height: global.window.innerHeight
+      }
+    } else {
+      return {
+        width: 0,
+        height: 0,
+      }
     }
 }
 
@@ -76,10 +85,11 @@ const MonsterTemplate: React.FC<Props> = ( {pageContext} ) => {
     const updateDimension = () => {
       setScreenSize(getCurrentDimension())
     }
-    window.addEventListener('resize', updateDimension);
+    if(isBrowser)
+      global.window.addEventListener('resize', updateDimension);
     
     return(() => {
-        window.removeEventListener('resize', updateDimension);
+        global.window.removeEventListener('resize', updateDimension);
     })
   }, [screenSize])
 
@@ -164,7 +174,28 @@ const MonsterTemplate: React.FC<Props> = ( {pageContext} ) => {
 
   // const interweaveMonsterBody: JSX.Element = <div className="set-html" dangerouslySetInnerHTML={{__html: fullBody}} />
 
-  let monsterNavWidgets: JSX.Element = <></>
+  let monsterNavWidgets: JSX.Element = <div>
+  <div className={monsterPageStyles.monsterNavLinks}>
+    <Link className={monsterPageStyles.monsterNavLink} to={"../" + previous_monster_key}>
+      <div className={monsterPageStyles.monsterNav}>
+          Previous
+      </div>
+    </Link>
+    {/* Random Monster */}
+    {/* <div className={monsterPageStyles.monsterNav}>
+        <RandomMonsterButton />
+    </div> */}
+    <div className={monsterPageStyles.pageRandomMonsterButton}>
+      <RandomMonsterButton />
+    </div>
+    <Link className={monsterPageStyles.monsterNavLink} to={"../" + next_monster_key}>
+      <div className={monsterPageStyles.monsterNav}>
+        Next
+      </div>
+    </Link>
+  </div>
+</div>
+  
   if(screenSize.width < 420){
     monsterNavWidgets = <div>
                           <div className={monsterPageStyles.monsterNavLinks}>

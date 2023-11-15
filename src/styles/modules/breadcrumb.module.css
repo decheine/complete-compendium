@@ -9,12 +9,14 @@
     padding-left: 8px;
     padding-bottom: 0px;
     flex-wrap: wrap;
-    background: rgb(230, 230, 230);
+    /* background: rgb(230, 230, 230); */
+    background: white;
 
     /* border-radius: 8px */
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
-    /* border-bottom: rgb(248, 248, 248) solid 1mm; */
+    border: rgb(230, 230, 230) solid 1mm;
+    border-top: white solid 1mm;
 
     margin-top: 0mm;
     margin-bottom: 1mm;
