@@ -39,7 +39,7 @@
 
 @media screen and (max-width: 700px) {
     .layout {
-        max-width: 82vw;
+        max-width: 90vw;
         /* padding-left: 1rem; */
         /* padding-right: 1rem; */
     }

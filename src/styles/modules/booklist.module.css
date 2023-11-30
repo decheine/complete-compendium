@@ -1,0 +1,225 @@
+/* variables */
+/* :root {
+    --arrow-head-height: 8px;
+    --arrow-thickness: 4px;
+    --card-width: 275px;
+    --img-height: 350px;
+    --card-header-height: 64px;
+  } */
+  
+  .book-list {
+    display: flex;
+    height: auto;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    border-top: 1px solid #d0d0d0;
+  
+    --card-padding: 8pt;
+  }
+
+  .book-info {
+    display: flex;
+    flex-direction: column;
+    padding-left: 1rem;
+    width: 100%;
+  }
+
+  .book-info p {
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+  }
+
+  .book-info .book-title {
+    font-size: 16pt;
+    font-family: "frizquadrata_ltbold"
+    
+  }
+
+  .book-info .book-author {
+    font-size: medium;
+    margin-block-start: 0.25em;
+    margin-block-end: 0.25em;
+    font-family: "Leksa Sans";
+  }
+
+  .book-info .book-year {
+    font-size: medium;
+    margin-block-start: 0.25em;
+    margin-block-end: 0.25em;
+    font-family: "Leksa Sans";
+  }
+
+  .book-info .book-monstercount {
+    font-size: medium;
+    margin-block-start: 0.25em;
+    margin-block-end: 0.25em;
+    font-family: "Leksa Sans";
+  }
+
+/* Image Link */
+.book-link {
+  display: flex;
+  text-decoration: none;
+  color: black;
+};
+
+
+
+  /* card footer */
+  .group-1-2 {
+    max-width: --card-width;
+  }
+  .book-list-footer-rectangle {
+    /* border-top: 1px solid #d0d0d0; */
+    /* padding-top: 16px; */
+    /* margin-top: 16px; */
+    width: 100%;
+  }
+  .book-list-description-text {
+    text-align: right;
+    vertical-align: top;
+    font-size: small;
+    /* font-family: Palatino Linotype; */
+    color: #000000;
+    padding: 10px;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+  }
+  .book_img-2 {
+    height: 180px;
+    width: 140px;
+    /* width: var(--card-width); */
+    /* object-fit: cover; */
+    transition: transform 100ms;
+    vertical-align: bottom;
+  }
+
+
+  .book-list-header-rectangle {
+    border-radius: 12px 12px 0px 0px;
+    height: var(--card-header-height);
+    background-color: var(--color-main-darker);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .book-list-header {
+    font-family: 'Leksa Sans', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 22px;
+    text-align: center;
+    padding-left: 6pt;
+    padding-right: 6pt;
+    color: #ffffff;
+  }
+  
+  /* Arrow stuff */
+  
+  .book_arrow {
+    position: absolute;
+    top: calc(var(--card-header-height) - var(--arrow-head-height));
+    /* top: calc(-var(--arrow-head-height) / 2); */
+    width: var(--card-width);
+    z-index: 2;
+  }
+  
+  .book_line {
+    position: absolute;
+    margin-top: calc(var(--arrow-head-height) - calc(var(--arrow-thickness) / 2));
+    width: inherit;
+    background: var(--color-main-darker);
+    height: var(--arrow-thickness);
+    float: none;
+  }
+  
+  .book_point-left {
+    width: 0;
+    height: 0;
+    border-top: var(--arrow-head-height) solid transparent;
+    border-bottom: var(--arrow-head-height) solid transparent;
+    border-left: calc(var(--arrow-head-height) * 2) solid var(--color-main-darker);
+    float: left;
+  }
+  
+  .book_point-right {
+    width: 0;
+    height: 0;
+    border-top: var(--arrow-head-height) solid transparent;
+    border-bottom: var(--arrow-head-height) solid transparent;
+    border-right: calc(var(--arrow-head-height) * 2) solid
+      var(--color-main-darker);
+    float: right;
+  }
+  
+
+  .hover01 figure img {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: 100ms ease-in-out;
+    transition: 100ms ease-in-out;
+  }
+  .hover01 figure:hover img {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+
+
+  /* Shine thing. Too much */
+figure {
+  margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    background: #fff;
+	overflow: hidden;
+}
+
+  .hover14 figure {
+    position: relative;
+  }
+  .hover14 figure::before {
+    position: absolute;
+    top: 0;
+    left: -100%;
+    z-index: 3;
+    display: block;
+    content: '';
+    width: 50%;
+    height: 100%;
+    background: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
+    background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
+    -webkit-transform: skewX(-25deg);
+    transform: skewX(-25deg);
+  }
+  .hover14 figure:hover::before {
+    -webkit-animation: shine .75s;
+    animation: shine .75s;
+  }
+  @-webkit-keyframes shine {
+    100% {
+      left: 125%;
+    }
+  }
+  @keyframes shine {
+    100% {
+      left: 125%;
+    }
+  }
+
+    
+  @media screen and (max-width: 400px) {
+    .book_img-2 {
+        height: auto;
+        max-width: 120px;
+        /* width: var(--card-width); */
+        /* object-fit: cover; */
+        transition: transform 100ms;
+        vertical-align: bottom;
+      }
+  }

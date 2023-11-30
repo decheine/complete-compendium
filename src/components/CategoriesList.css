@@ -26,8 +26,9 @@
   .CategoryList .category {
     /* display: block; */
     display: flex;
-    padding: 8pt;
+    /* padding: 2px; */
     text-decoration: none;
+    height: 100%;
 
   }
   
@@ -44,13 +45,15 @@
     flex-direction: column;
     justify-content: space-between;
     /* center items horizontally */
-    /* align-items: center; */
+    align-items: center;
     /* height: 42pt; */
-    width: 260px;
+    /* width: 260px; */
+    min-width: 180px;
     /* object-fit: contain; */
-    /* padding-left: 1em; */
+    padding-top: 0.25em;
+    padding-bottom: 0.5em;
     /* padding-right: 1em; */
-    }
+  }
   
   /* .CategoryList .setting-image {
     width: 100px;
@@ -73,8 +76,11 @@
     /* padding: 12pt; */
     /* margin: 1em; */
     /* height: inherit; */
-    padding-bottom: 12pt;
-    height: 60px;
+    /* padding-bottom: 12pt; */
+    max-width: 130px;
+    max-height: 50px;
+    min-height: 40px;
+    /* height: 60px; */
     /* flex-shrink: 1; */
     /* height:  */
     /* width: inherit; */
@@ -92,11 +98,12 @@
   }
 
   .setting-title {
-    font-size: 1em;
+    font-size: 12pt;
     font-weight: 600;
     text-decoration: none;
     color: black;
     font-family: Helvetica, sans-serif;
+    max-width: 180px;
     /* margin-top: 1em; */
     /* margin-bottom: 1em; */
   }
@@ -105,4 +112,5 @@
     color: black;
     font-family: Helvetica, sans-serif;
     font-style: italic;
+    font-size: 10pt;
   }

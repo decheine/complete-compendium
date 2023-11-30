@@ -69,7 +69,7 @@ export function CategoriesList(){
                             
                             <div className="setting-subtitle">
                                 <div className="setting-title">{value}</div>
-                                <div className="setting-world">{WORLDS[key]}</div>
+                                <div className="setting-world">{WORLDS[settings_list[key]]}</div>
                             </div>
                         </div>
                     </Link>

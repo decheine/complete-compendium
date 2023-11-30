@@ -25,12 +25,12 @@ export function catalog() {
       <Layout url='/catalog'>
       {/* <NavBar/> */}
         <div className='backgroundCatalog'>
+          <CategoriesList/>
+          {/* All Books */}
           <h2 className='catalogTitle' id='settings'>All Campaign Settings</h2>
           <div className={catalogStyle.CatalogDescription}>
               Browse monster books by setting or browse all at once.
           </div>
-          <CategoriesList/>
-          {/* All Books */}
           <h2 className={catalogStyle.catalogTitle} id='books'>All Books</h2>
           <AllBooksList/>
         </div>
