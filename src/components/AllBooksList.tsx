@@ -1,12 +1,13 @@
 import React from 'react'
 import BookCard from './BookCard'
+import CSS from 'csstype';
 
 // import './BookList.css'
 const BOOKS = require('../data/sortedtsr.json')
 const Categories = require('../data/Categories.json')
 const CatAcronyms = require('../data/CatAcronyms.json')
 
-const bookListStyle = {
+const bookListStyle: CSS.Properties = {
     display: "flex",
     flexWrap: "wrap",
     justifyContent: "space-evenly"

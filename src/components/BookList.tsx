@@ -47,7 +47,7 @@ export function BookList(props: any) {
             return obj.publish_id === publish_id
           })
         // console.log(index)
-        list_items.push(<BookListView key={publish_id} id={publish_id} category={props.category} title={BOOKS[publish_id]} author={book_object.author} book_object={book_object}/> )
+        list_items.push(<BookListView key={publish_id} id={publish_id} category={props.category} title={BOOKS[publish_id]} author={book_object?.author} book_object={book_object}/> )
     }
 
     
