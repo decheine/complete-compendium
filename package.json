@@ -1,8 +1,8 @@
 {
-  "name": "adnd-compendium-static-frontend",
+  "name": "complete-compendium",
   "version": "1.0.0",
   "private": true,
-  "description": "adnd-compendium-static-frontend",
+  "description": "complete-compendium",
   "author": "decheine",
   "keywords": [
     "gatsby"
@@ -15,7 +15,7 @@
     "clean": "gatsby clean",
     "typecheck": "tsc --noEmit",
     "deploy": "gatsby build --prefix-paths && gh-pages -d public",
-    "deploy:ci": "gatsby build --prefix-paths && gh-pages -d public -r https://$GH_TOKEN@github.com/decheine/adnd-compendium-static-frontend.git"
+    "deploy:ci": "gatsby build --prefix-paths && gh-pages -d public -r https://$GH_TOKEN@github.com/decheine/complete-compendium.git"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.4.0",
