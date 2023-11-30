@@ -13,6 +13,9 @@ import RandomMonsterButton from "@components/RandomMonsterButton";
 
 import * as monsterPageStyles from "@styles/modules/monsterpage.module.css"
 
+import { polyfill } from 'interweave-ssr';
+
+polyfill();
 // export default function Container({ children }) {
 //   return <div className={containerStyles.container}>{children}</div>
 // }
@@ -155,9 +158,9 @@ const BookMonsterTemplate: React.FC<Props> = ({pageContext }) => {
   } 
     
   // Change document title to monster title
-  if(typeof document !== 'undefined'){
-      document.title = monster_page_data.monster_data.title + " - Complete Compendium";
-  }
+  // if(typeof document !== 'undefined'){
+  //     document.title = monster_page_data.monster_data.title + " - Complete Compendium";
+  // }
 
   // Handle setting and accent color.
   const setting_name = monster_page_data.monster_data.setting;
@@ -197,14 +200,14 @@ const BookMonsterTemplate: React.FC<Props> = ({pageContext }) => {
 
   // Title style
 
-  const fullBody = monster_page_data.monster_data.fullBody;
-  const interweaveMonsterBody: JSX.Element = <div className="set-html" dangerouslySetInnerHTML={{__html: fullBody}} />
-
+  
   if(monster_key == "horax"){
     console.log("booktemplate monster, HORAX")
     console.log("prev", previous_monster_key)
     console.log("next", next_monster_key)
   }
+  const fullBody = monster_page_data.monster_data.fullBody;
+  const interweaveMonsterBody: JSX.Element = <div className="set-html" dangerouslySetInnerHTML={{__html: fullBody}} />
 
   // const { book_data } = data
   return (
@@ -264,5 +267,35 @@ const BookMonsterTemplate: React.FC<Props> = ({pageContext }) => {
     </Layout>
   )
 }
+
+export const Head: React.FC<Props> = ({ pageContext }) => (
+  <>
+    <title>{pageContext.title + " - AD&D Complete Compendium"}</title>
+    <meta property="og:site_name" content="AD&D 2nd Edition Complete Monstrous Compendium"/>
+    <meta property="og:title" content={pageContext.monster_data.title  + " | AD&D Complete Compendium"}/>
+    <meta property="og:url" content={"https://www.completecompendium.com" + pageContext.monster_path}/>
+    <meta property="og:type" content="website"/>
+    {
+      pageContext.monster_data.images[1] && pageContext.monster_data.images[1].match(new RegExp(pageContext.monster_key, "g")) ?
+      <>
+      <meta property="og:image" content={"https://www.completecompendium.com/images/monsters/img/" + pageContext.monster_key + ".gif"}/>
+      <meta name="twitter:image" content={"https://www.completecompendium.com/images/monsters/img/" + pageContext.monster_key + ".gif"}/>
+    </>
+      :
+      <></>
+    }
+    <meta property="og:image:width" content="300"/>
+    <meta property="og:image:height" content="360"/>
+    
+          
+    {/* <meta name="description" content={ getMonsterDescription(pageContext.monster_key ,pageContext.monster_data.fullBody) } /> */}
+    {/* Image: "/images/monsters/img/" + monster_page_data.monster_key + ".gif" */}
+    <meta name="twitter:card" content="summary_large_image"/>
+    <meta name="twitter:url" content={"https://www.completecompendium.com" + pageContext.monster_path} />
+    <meta name="twitter:title" content="Advanced Dungeons & Dragons 2nd Edition Complete Compendium" />
+        
+  </>
+)
+
 
 export default BookMonsterTemplate

@@ -14,7 +14,7 @@ const config: GatsbyConfig = {
   // Learn more at: https://gatsby.dev/graphql-typegen
   graphqlTypegen: true,
   flags: {
-    DEV_SSR: false,
+    DEV_SSR: true,
     PARTIAL_HYDRATION: false,
   },
   plugins: [

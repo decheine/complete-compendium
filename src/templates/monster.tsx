@@ -16,7 +16,9 @@ import RandomMonsterButton from "@components/RandomMonsterButton";
 import * as monsterPageStyles from "@styles/modules/monsterpage.module.css"
 
 import getMonsterDescription from "@components/regex_description"
+import { polyfill } from 'interweave-ssr';
 
+polyfill();
 // const isBrowser = typeof window !== "undefined"
 
 const cat_acronyms = require('@data/CatAcronyms.json')
@@ -155,9 +157,9 @@ const MonsterTemplate: React.FC<Props> = ( {pageContext} ) => {
   } 
     
   // Change document title to monster title
-  if(typeof document !== 'undefined'){
-      // document.title = monster_page_data.monster_data.title + " - Complete Compendium";
-  }
+  // if(typeof document !== 'undefined'){
+  //     // document.title = monster_page_data.monster_data.title + " - Complete Compendium";
+  // }
 
   // Handle setting and accent color.
   const setting_name = monster_page_data.monster_data.setting;
@@ -322,7 +324,7 @@ const MonsterTemplate: React.FC<Props> = ( {pageContext} ) => {
 
 export const Head: React.FC<Props> = ({ pageContext }) => (
   <>
-    <title>{pageContext.title} - AD&D Complete Compendium</title>
+    <title>{pageContext.title + " - AD&D Complete Compendium"}</title>
     <meta property="og:site_name" content="AD&D 2nd Edition Complete Monstrous Compendium"/>
     <meta property="og:title" content={pageContext.monster_data.title  + " | AD&D Complete Compendium"}/>
     <meta property="og:description" content={ getMonsterDescription(pageContext.monster_key ,pageContext.monster_data.fullBody) }/>
