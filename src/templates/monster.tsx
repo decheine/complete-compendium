@@ -17,7 +17,7 @@ import * as monsterPageStyles from "@styles/modules/monsterpage.module.css"
 
 import getMonsterDescription from "@components/regex_description"
 
-const isBrowser = typeof window !== "undefined"
+// const isBrowser = typeof window !== "undefined"
 
 const cat_acronyms = require('@data/CatAcronyms.json')
 const sorted_tsr = require('@data/sortedtsr.json')
@@ -198,63 +198,7 @@ const MonsterTemplate: React.FC<Props> = ( {pageContext} ) => {
       </div>
     </div>
   </div>
-  
-  // if(screenSize.width < 420){
-  //   monsterNavWidgets = <div>
-  //                         <div className={monsterPageStyles.monsterNavLinks}>
-  //                           <div className={monsterPageStyles.pageRandomMonsterButton}>
-  //                             <RandomMonsterButton />
-  //                           </div>
-  //                           <div className={monsterPageStyles.horizontalMonsterLinks}>
-  //                             <Link className={monsterPageStyles.monsterNavLink} to={"../" + previous_monster_key}>
-  //                               <div className={monsterPageStyles.monsterNav}>
-  //                                   Previous
-  //                               </div>
-  //                             </Link>
-  //                             {/* Random Monster */}
-  //                             {/* <div className={monsterPageStyles.monsterNav}>
-  //                                 <RandomMonsterButton />
-  //                               </div> */}
-  //                             <Link className={monsterPageStyles.monsterNavLink} to={"../" + next_monster_key}>
-  //                               <div className={monsterPageStyles.monsterNav}>
-  //                                 Next
-  //                               </div>
-  //                             </Link>
-  //                           </div>
-  //                         </div>
-  //                       </div>
-  // } else {
-  //   monsterNavWidgets = <div>
-  //   <div className={monsterPageStyles.monsterNavLinks}>
-  //     <div className={monsterPageStyles.pageRandomMonsterButton}>
-  //       <RandomMonsterButton />
-  //     </div>
-  //     <div className={monsterPageStyles.horizontalMonsterLinks}>
-  //       <Link className={monsterPageStyles.monsterNavLink} to={"../" + previous_monster_key}>
-  //         <div className={monsterPageStyles.monsterNav}>
-  //             Previous
-  //         </div>
-  //       </Link>
-  //       {/* Random Monster */}
-  //       {/* <div className={monsterPageStyles.monsterNav}>
-  //           <RandomMonsterButton />
-  //         </div> */}
-  //       <Link className={monsterPageStyles.monsterNavLink} to={"../" + next_monster_key}>
-  //         <div className={monsterPageStyles.monsterNav}>
-  //           Next
-  //         </div>
-  //       </Link>
-  //     </div>
-  //   </div>
-  // </div>
-  // }
 
-  // if(monster_key == "horax"){
-  //   console.log("appendix template monster, HORAX")
-  //   console.log(pageContext)
-  //   console.log("prev", previous_monster_key)
-  //   console.log("next", next_monster_key)
-  // }
   const test_jsx: JSX.Element = <div>Test JSX Element</div>
 
 
@@ -265,23 +209,6 @@ const MonsterTemplate: React.FC<Props> = ( {pageContext} ) => {
     {/* <Head title={monster_page_data.monster_data.title} description={`Description for ${monster_page_data.monster_data.title}`} /> */}
     <Layout url={`/appendix/${monster_key}`}>
       <div>
-        {/* <div>
-          <div className={monsterPageStyles.monsterNavLinks}>
-            <Link className={monsterPageStyles.monsterNavLink} to={"../" + previous_monster_key}>
-              <div className={monsterPageStyles.monsterNav}>
-                  Previous
-              </div>
-            </Link>
-            <div className="page_random_monster_button">
-              <RandomMonsterButton />
-            </div>
-            <Link className={monsterPageStyles.monsterNavLink} to={"../" + next_monster_key}>
-              <div className={monsterPageStyles.monsterNav}>
-                Next
-              </div>
-            </Link>
-          </div>
-        </div> */}
         {monsterNavWidgets}
 
 

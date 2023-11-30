@@ -194,54 +194,6 @@ const BookMonsterTemplate: React.FC<Props> = ({pageContext }) => {
     </div>
   </div>
 </div>
-  // if(screenSize.width < 420){
-  //   monsterNavWidgets = <div>
-  //                         <div className={monsterPageStyles.monsterNavLinks}>
-  //                           <div className={monsterPageStyles.pageRandomMonsterButton}>
-  //                             <RandomMonsterButton />
-  //                           </div>
-  //                           <div className={monsterPageStyles.horizontalMonsterLinks}>
-  //                             <Link className={monsterPageStyles.monsterNavLink} to={"../" + previous_monster_key}>
-  //                               <div className={monsterPageStyles.monsterNav}>
-  //                                   Previous
-  //                               </div>
-  //                             </Link>
-  //                             {/* Random Monster */}
-  //                             {/* <div className={monsterPageStyles.monsterNav}>
-  //                                 <RandomMonsterButton />
-  //                               </div> */}
-  //                             <Link className={monsterPageStyles.monsterNavLink} to={"../" + next_monster_key}>
-  //                               <div className={monsterPageStyles.monsterNav}>
-  //                                 Next
-  //                               </div>
-  //                             </Link>
-  //                           </div>
-  //                         </div>
-  //                       </div>
-  // } else {
-  //   monsterNavWidgets = <div>
-  //                         <div className={monsterPageStyles.monsterNavLinks}>
-  //                           <Link className={monsterPageStyles.monsterNavLink} to={"../" + previous_monster_key}>
-  //                             <div className={monsterPageStyles.monsterNav}>
-  //                                 Previous
-  //                             </div>
-  //                           </Link>
-  //                           {/* Random Monster */}
-  //                           {/* <div className={monsterPageStyles.monsterNav}>
-  //                               <RandomMonsterButton />
-  //                           </div> */}
-  //                           <div className={monsterPageStyles.pageRandomMonsterButton}>
-  //                             <RandomMonsterButton />
-  //                           </div>
-  //                           <Link className={monsterPageStyles.monsterNavLink} to={"../" + next_monster_key}>
-  //                             <div className={monsterPageStyles.monsterNav}>
-  //                               Next
-  //                             </div>
-  //                           </Link>
-  //                         </div>
-  //                       </div>
-  // }
-
 
   // Title style
 
@@ -275,8 +227,8 @@ const BookMonsterTemplate: React.FC<Props> = ({pageContext }) => {
       {monster_image}
       </div>
 
-      {/* <Interweave className="interweave" content={fullBody} /> */}
-      {interweaveMonsterBody}
+      <Interweave className="interweave" content={fullBody} />
+      {/* {interweaveMonsterBody} */}
 
       {/* TSR Array */}
       <div className={monsterPageStyles.sourceList}>
