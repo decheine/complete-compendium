@@ -62,8 +62,8 @@ Testing:
 ## Markdown Templating
 
 <details>
- <summary>Obsidian Friendly</summary>
+ <summary>Summary Text</summary>
 
-This adaption of the D&D 5E SRD contains optional content designed specifically for PKM applications like Obsidian. [Obsidian.md](https://obsidian.md) is a powerful knowledge base on top of a local folder of plain text Markdown files. That definition sounds simple; however, Obsidian is much, much more. Visit [Josh Plunket's YouTube Channel](https://www.youtube.com/c/JoshPlunkett/videos) to learn more about using Obsidian for your roleplaying game campaign management.
+The text here
 
 </details>

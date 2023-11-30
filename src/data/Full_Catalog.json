@@ -777,6 +777,14 @@
       "year" : "1992"
    },
    {
+      "author" : "Jeff Grubb, Ed Greenwood, Julia Martin",
+      "monster_keys" : [ "aballin", "tressym" ],
+      "publish_id" : "1085",
+      "setting" : "Fiends Folio",
+      "title" : "Forgotten Realms Campaign Setting, Revised Edition",
+      "year" : "1993"
+   },
+   {
       "author" : "",
       "monster_keys" : [ "abhir" ],
       "publish_id" : "Dungeon23",
@@ -3893,14 +3901,6 @@
       "setting" : "Dungeon Magazine",
       "title" : null,
       "year" : "1997"
-   },
-   {
-      "author" : "Jeff Grubb, Ed Greenwood, Julia Martin",
-      "monster_keys" : [ "tressym" ],
-      "publish_id" : "1085",
-      "setting" : "Forgotten Realms",
-      "title" : "Forgotten Realms Campaign Setting, Revised Edition",
-      "year" : "1993"
    },
    {
       "author" : "",
