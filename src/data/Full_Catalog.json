@@ -778,7 +778,24 @@
    },
    {
       "author" : "Jeff Grubb, Ed Greenwood, Julia Martin",
-      "monster_keys" : [ "aballin", "tressym" ],
+      "monster_keys" : 
+      [
+         "aballin",
+         "baneguar",
+         "batbone",
+         "deepspaw",
+         "dracolic",
+         "gambado",
+         "gibberli",
+         "gibbmout",
+         "helmhorr",
+         "locklurk",
+         "nagadark",
+         "nishruu",
+         "quaggoth",
+         "skum",
+         "tressym"
+      ],
       "publish_id" : "1085",
       "setting" : "Fiends Folio",
       "title" : "Forgotten Realms Campaign Setting, Revised Edition",
