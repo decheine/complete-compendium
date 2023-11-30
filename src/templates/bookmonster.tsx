@@ -16,7 +16,7 @@ import * as monsterPageStyles from "@styles/modules/monsterpage.module.css"
 // export default function Container({ children }) {
 //   return <div className={containerStyles.container}>{children}</div>
 // }
-const isBrowser = typeof window !== "undefined"
+// const isBrowser = typeof window !== "undefined"
 
 const cat_acronyms = require('@data/CatAcronyms.json')
 const sorted_tsr = require('@data/sortedtsr.json')
