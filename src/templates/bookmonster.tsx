@@ -178,7 +178,7 @@ const BookMonsterTemplate: React.FC<Props> = ({pageContext }) => {
   let monsterNavWidgets: JSX.Element = <div>
   <div className={monsterPageStyles.monsterNavLinks}>
     <div className={monsterPageStyles.pageRandomMonsterButton}>
-      <RandomMonsterButton />
+      <RandomMonsterButton home={false} />
     </div>
     <div className={monsterPageStyles.horizontalMonsterLinks}>
       <Link className={monsterPageStyles.monsterNavLink} to={"../" + previous_monster_key}>

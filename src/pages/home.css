@@ -8,6 +8,19 @@
   --color-main-darker: #1250A2;
 
 }
+
+html, 
+body
+#___gatsby {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+}
   
 .hero-img {
   object-fit: cover;
