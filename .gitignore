@@ -19,6 +19,7 @@ yarn.lock
 public/*
 /public/~partytown/*
 /public/icons
+/output/
 
 # misc
 .DS_Store

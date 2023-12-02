@@ -71,14 +71,55 @@ Place missing primary monster images in `/static/images/monsters/img/<monster_ke
 
 
 
-### Running locally
+## Running locally
 
-Run development build
+Run web app development build
 
 ```
 npm run develop
 ```
 
+
+## Running Monster Harvester in Docker
+
+Most straightforward method with the least hassle. cd to the `harvester/` directory for this.
+ 
+To run the data extraction process,
+
+1. Build the docker image
+
+```bash
+docker build -t monster-harvester .
+```
+
+2. Create the container
+
+```
+docker create --name harvester-container monster-harvester
+```
+
+3. Get the container ID with
+
+```
+docker ps -a
+```
+
+3. Copy Output from container
+
+```
+docker cp <container_id>:/usr/local/harvester/build/bin/json_files ../output
+```
+
+Copies the json files created by the harvester to the folder `./output/json_files/`
+
+
+## Docker commands
+
+
+* "Enter" the docker container interactively
+```
+docker run -it --entrypoint /bin/bash monster-harvester
+```
 
 
 ## Markdown Templating
