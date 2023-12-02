@@ -1,0 +1,37 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "MonsterPage",
+    "description": "An instance of a monster page which may contain more or many more monsters",
+    "type": "object",
+     
+    "properties": {
+     
+       "id": {
+          "description": "The unique identifier for a monster page and the name used in html files. ex: animdoa2",
+          "type": "string"
+       },
+         
+       "title": {
+          "description": "Monster page title (in words)",
+          "type": "string"
+       },
+       "TSR": {
+          "description": "Publishing numbers of monsters source book",
+          "type": "array",
+          "items": {
+              "type": "integer",
+              "uniqueItems": true,
+              "minItems": 1
+          }
+       },
+       "images" : {
+           "description": "List of image paths for this page",
+           "type": "array",
+           "items": {
+               "type":"string"
+           }
+       }
+    },
+     
+    "required": ["id", "name", "price"]
+ }
