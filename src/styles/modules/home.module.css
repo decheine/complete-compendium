@@ -255,9 +255,6 @@
     }
     
     @media screen and (max-width: 700px) {
-      .hero-container > h1 {
-        /* font-size: 32pt; */
-      }
   
       .hero-container > h2 {
         font-size: 56px;
@@ -265,9 +262,6 @@
     }
   
     @media screen and (max-width: 500px) {
-      .hero-container > h1 {
-        /* font-size: 32pt; */
-      }
   
       .hero-container > h2 {
         font-size: 48px;
@@ -275,9 +269,6 @@
     }
   
     @media screen and (max-width: 400px) {
-      .hero-container > h1 {
-        /* font-size: 32pt; */
-      }
   
       .hero-container > h2 {
         font-size: 40px;
@@ -288,9 +279,6 @@
     }
   
     @media screen and (max-width: 300px) {
-      .hero-container > h1 {
-        /* font-size: 32pt; */
-      }
   
       .hero-container > h2 {
         font-size: 32px;
@@ -298,9 +286,6 @@
     }
   
     @media screen and (max-width: 200px) {
-      .hero-container > h1 {
-        /* font-size: 32pt; */
-      }
   
       .hero-container > h2 {
         font-size: 24px;

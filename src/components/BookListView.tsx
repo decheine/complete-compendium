@@ -37,15 +37,11 @@ type BookListProps = {
 function BookListView(props: BookListProps){
     return (
         
-
-
-
-        
         <div className={bookListStyle.bookList}>
             {/* <div className={bookListStyle.bookListHeaderRectangle}>
                 <p className={bookListStyle.bookListHeader}>{props.title}</p>
             </div> */}
-            <Link to={`/catalog/${props.category}/${props.id}`}  className={bookListStyle.bookLink}>
+            <Link to={`/catalog/${props.category}/${props.id}`}  className={bookListStyle.bookImg}>
                 <div className={bookListStyle.hover01}>
                     <figure>
                         <img    src={'/images/Books/Hi Resolution/' +  props.id + '.jpg'} 

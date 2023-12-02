@@ -1,5 +1,4 @@
 import React from 'react'
-import { useEffect, useState } from "react";
 
 import MonsterLink from '../components/MonsterLink';
 import Layout from '../components/Layout';
@@ -70,39 +69,15 @@ const flip = (data: { [s: string]: unknown; } | ArrayLike<unknown>) => Object.fr
 );
 
 export function appendix() {
-    // Set up the page variables
-    // const itemCount = KEYS_TITLES.length;
-    // if(typeof document !== 'undefined'){
-    //     document.title = "Appendix - Complete Compendium"
-    // }
-    const [titles, setTitles] = useState(new Map<string, string>())
-
-
-    // const flipped_titles: Map<string, string> = flip(keys_titles_json)
-    // console.log(flipped_titles)
-
-
     return (
-        // upper page with category links
         <>
             <Layout url='/appendix'>
-
                 <div className='background-appendix'>
-
-                    {/* <CategoriesList/> */}
                     <div className="AppendixDescription">Browse monster source books by setting or browse all at once.</div>
-
                     <MonsterLinks monster_keys={keys_titles_json} />
-
-                    
-
-
-
                 </div>
             </Layout>
         </>
-
-        // lower page with all book list
     );
 }
 export default appendix;
@@ -111,7 +86,6 @@ export function Head(props: HeadProps<DataProps>) {
     return (
         <>
             <title>Appendix - AD&D 2e Complete Compendium</title>
-
         </>
     )
 }
