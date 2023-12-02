@@ -1,4 +1,64 @@
 /* class for MonsterLink */
+.MonsterLinkWrapper{
+    /* padding: 4; */
+    font-size: 1rem;
+    flex: 1 1 160px;
+    flex-basis: 30%;
+}
+
 .MonsterLink {
     flex: 1 1 160px;
+}
+
+.MonsterLinksWrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+.monster-link{
+    display: inline-block;
+    /* line-height: 28px; */
+    /* height: 20px; */
+    padding: 1mm;
+}
+
+@media only screen and (max-width: 700px){
+    .MonsterLinksWrapper {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-top: 1rem;
+    }
+
+    .MonsterLinkWrapper{
+        /* padding: 4; */
+        font-size: 1rem;
+        flex: 1 1 160px;
+        flex-basis: 50%;
+    }
+}
+
+@media only screen and (max-width: 400px){
+    .MonsterLinksWrapper {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        /* margin-top: 1rem; */
+        padding-left: 2rem;
+    }
+
+    .MonsterLinkWrapper{
+        /* padding: 4; */
+        font-size: 1rem;
+        flex: 1 1 160px;
+        flex-basis: 50%;
+    }
 }

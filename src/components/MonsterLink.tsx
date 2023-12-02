@@ -1,4 +1,4 @@
-// import MonsterLink.css
+import "./MonsterLink.css"
 
 import React from "react";
 
@@ -16,21 +16,20 @@ interface MonsterLinkProps {
 
 
 const monsterLinkStyle = {
-    color: "#8A6534",
-    padding: 4,
-    backgroundColor: "#FFF4DB",
-    fontSize: "1.25rem",
+    // color: "#8A6534",
+    // padding: 4,
+    // backgroundColor: "#FFF4DB",
+    fontSize: "1rem",
+    flex: "1 1 160px",
+    flexBasis: "30%",
   }
-const MonsterLinkWrapper = styled.div`
-  flex: 1 1 160px;
-  flex-basis: 30%;
-`
 
 const MonsterLink = ( {monster_key, monster_title }: MonsterLinkProps) => {
     return (
-        <MonsterLinkWrapper>
+        // <div style={monsterLinkStyle}>
+        <div className="MonsterLinkWrapper">
             <Link to={`/appendix/${monster_key}`} className="monster-link" >{monster_title}</Link>
-        </MonsterLinkWrapper>
+        </div>
     )
 }
 

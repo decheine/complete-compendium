@@ -5,8 +5,9 @@ import MonsterLink from '../components/MonsterLink';
 import Layout from '../components/Layout';
 import styled from 'styled-components';
 import { HeadProps } from 'gatsby';
+import CSS from 'csstype';
 
-const keys_titles_json: Map<string,string> = require('../data/AA_KEYS_TITLES.json')
+const keys_titles_json: Map<string, string> = require('../data/AA_KEYS_TITLES.json')
 
 type MonsterLinksProps = {
     monster_keys: Map<string, string>,
@@ -21,13 +22,22 @@ const MonsterLinksWrapper = styled.div`
     margin-top: 1rem;
 `
 
+const MonsterLinksWrapperStyle: CSS.Properties = {
+    alignItems: "center",
+    display: "flex",
+    flexDirection: "row",
+    flexWrap: "wrap",
+    justifyContent: "space-between",
+    marginTop: "1rem",
+}
+
 type DataProps = {
     site: {
-      siteMetadata: {
-        title: string
-      }
+        siteMetadata: {
+            title: string
+        }
     }
-  }
+}
 
 //for each monster_key in the KEYS_TITLES, display a link to the monster page
 const MonsterLinks = (props: MonsterLinksProps) => {
@@ -37,7 +47,7 @@ const MonsterLinks = (props: MonsterLinksProps) => {
     // console.log("monster keys:", props.monster_keys)
     const monster_map = props.monster_keys
     const monster_keys = Array.from(Object.keys(props.monster_keys)).sort((a, b) => a.localeCompare(b))
-    
+
     const monster_links = monster_keys.map(monster_key => {
         // console.log()
         return (
@@ -46,19 +56,18 @@ const MonsterLinks = (props: MonsterLinksProps) => {
     }
     )
     return (
-        <>
-        <MonsterLinksWrapper>
-            {monster_links}
-        </MonsterLinksWrapper>
-        </>
+            // <div style={MonsterLinksWrapperStyle}>
+            <div className='MonsterLinksWrapper'>
+                {monster_links}
+            </div>
     )
 }
 
 const flip = (data: { [s: string]: unknown; } | ArrayLike<unknown>) => Object.fromEntries(
     Object
-      .entries(data)
-      .map(([key, value]) => [value, key])
-    );
+        .entries(data)
+        .map(([key, value]) => [value, key])
+);
 
 export function appendix() {
     // Set up the page variables
@@ -67,35 +76,30 @@ export function appendix() {
     //     document.title = "Appendix - Complete Compendium"
     // }
     const [titles, setTitles] = useState(new Map<string, string>())
-    
+
 
     // const flipped_titles: Map<string, string> = flip(keys_titles_json)
     // console.log(flipped_titles)
-    
+
 
     return (
         // upper page with category links
         <>
-        <Layout url='/appendix'>
-            
-        <div className='background-appendix'>
+            <Layout url='/appendix'>
 
-        {/* <CategoriesList/> */}
-        <div className="AppendixDescription">Browse monster source books by setting or browse all at once.</div>
+                <div className='background-appendix'>
 
-        {
-            // keys_titles_json
-            <MonsterLinks monster_keys={keys_titles_json}/>
-            // : 
-            // <div key='loading'>
-            // Loading...
-            // </div>
-        }
-        
+                    {/* <CategoriesList/> */}
+                    <div className="AppendixDescription">Browse monster source books by setting or browse all at once.</div>
+
+                    <MonsterLinks monster_keys={keys_titles_json} />
+
+                    
 
 
-        </div>
-        </Layout>
+
+                </div>
+            </Layout>
         </>
 
         // lower page with all book list
@@ -105,9 +109,9 @@ export default appendix;
 
 export function Head(props: HeadProps<DataProps>) {
     return (
-      <>
-      <title>Appendix - AD&D 2e Complete Compendium</title>
-      
-      </>
+        <>
+            <title>Appendix - AD&D 2e Complete Compendium</title>
+
+        </>
     )
-  }
+}

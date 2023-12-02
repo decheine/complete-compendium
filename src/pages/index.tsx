@@ -5,7 +5,6 @@ import * as homeStyle from '@styles/modules/home.module.css'
 import CSS from 'csstype';
 
 import "./home.css";
-// import "./styles.css"
 import "../styles/global.css"
 
 import Navbar from "../components/Navbar"
