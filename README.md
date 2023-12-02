@@ -28,6 +28,10 @@ I chose to keep these as HTML files so that these files are functional on their 
 
 </details>
 
+### Catalog
+
+This effort involves cataloguing all of the second edition books and sources that contain monster pages.
+
 
 
 ## Cataloguing Effort Tracking
@@ -42,20 +46,38 @@ There are a few undertakings that need to be done to complete the compendium. I 
 ###
 
 
+## Contributing and making additions 
 
-## Running localling
+There are a few needed procedures for completing the compendium. 
+
+### Update a book's monsters
+
+A straightforward task done during Book Verification, this involves checking the sourcebook manually for existing monsters, usually checking a PDF or real book if possible. For each monster in the book, check if the monster exists
+
+### Adding a missing image
+
+Place missing primary monster images in `/static/images/monsters/img/<monster_key>.gif`. They have to be in a `.gif` format.
+
+
+### Adding a book
+
+
+
+### Adding a monster
+
+
+
+
+
+
+
+### Running locally
 
 Run development build
 
 ```
 npm run develop
 ```
-
-## Running monster tests
-
-Testing:
- - Working Appendix pages
- - Testing each Appendix entry for an existing entry in the Catalog
 
 
 
