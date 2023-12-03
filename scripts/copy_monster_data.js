@@ -5,5 +5,10 @@ const fs = require('fs');
 // output\json_files\AA_ALL_MONSTERS.json
 fs.copyFile('output/json_files/AA_ALL_MONSTERS.json', 'src/data/ALL_MONSTERS.json', (err) => {
   if (err) throw err;
-  console.log('File was copied to destination');
+  console.log('Monster data copied to destination');
+});
+
+fs.copyFile('output/json_files/AA_Full_Catalog.json', 'src/data/Full_Catalog.json', (err) => {
+  if (err) throw err;
+  console.log('Catalog data was copied to destination');
 });

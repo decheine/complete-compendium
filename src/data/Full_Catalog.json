@@ -805,7 +805,7 @@
       "author" : "",
       "monster_keys" : [ "abhir" ],
       "publish_id" : "Dungeon23",
-      "setting" : "Dungeon Magazine",
+      "setting" : "Planescape",
       "title" : null,
       "year" : "1990"
    },
@@ -1022,7 +1022,7 @@
          "xaver"
       ],
       "publish_id" : "2145",
-      "setting" : "Advanced Dungeons & Dragons 2nd Edition",
+      "setting" : "Planescape",
       "title" : "Monstrous Compendium, 1994 Annual, Volume 1",
       "year" : "1995"
    },
@@ -1218,7 +1218,7 @@
       "monster_keys" : [ "agrutha", "croclima", "geckonid", "varanid" ],
       "publish_id" : "Dragon268",
       "setting" : "Dragon Magazine",
-      "title" : null,
+      "title" : "Dragon #268",
       "year" : "2000"
    },
    {
@@ -1446,6 +1446,7 @@
          "hagbheur",
          "hamadrya",
          "hounilom",
+         "humaceri",
          "hybsil",
          "ibrandli",
          "impchaos",
@@ -1474,6 +1475,7 @@
          "saurial",
          "scalamag",
          "sharn",
+         "snakmess",
          "spirfout",
          "spirfowm",
          "spiricor",
@@ -1494,7 +1496,7 @@
          "zhenspir"
       ],
       "publish_id" : "2166",
-      "setting" : "Advanced Dungeons & Dragons 2nd Edition",
+      "setting" : "Forgotten Realms",
       "title" : "Monstrous Compendium, 1996 Annual, Volume 3",
       "year" : "1995"
    },
@@ -1654,7 +1656,7 @@
       "monster_keys" : [ "amphpois" ],
       "publish_id" : "Dragon237",
       "setting" : "Dragon Magazine",
-      "title" : null,
+      "title" : "Dragon #237",
       "year" : "1996"
    },
    {
@@ -1662,7 +1664,7 @@
       "monster_keys" : [ "andeloid", "infernit" ],
       "publish_id" : "Dragon159",
       "setting" : "Dragon Magazine",
-      "title" : null,
+      "title" : "Dragon #159",
       "year" : "1990"
    },
    {
@@ -1815,7 +1817,7 @@
          "zombmud"
       ],
       "publish_id" : "2173",
-      "setting" : "Advanced Dungeons & Dragons 2nd Edition",
+      "setting" : "Dragonlance",
       "title" : "Monstrous Compendium, 1997 Annual, Volume 4",
       "year" : "1995"
    },
@@ -1824,7 +1826,7 @@
       "monster_keys" : [ "anglfish", "deatminn", "gulper", "hide" ],
       "publish_id" : "Dragon235",
       "setting" : "Dragon Magazine",
-      "title" : null,
+      "title" : "Dragon #235",
       "year" : "1996"
    },
    {
@@ -1832,7 +1834,7 @@
       "monster_keys" : [ "angreden", "ghougoop", "kamummy", "vartha", "wighking", "wraiking" ],
       "publish_id" : "Dragon198",
       "setting" : "Dragon Magazine",
-      "title" : null,
+      "title" : "Dragon #198",
       "year" : "1993"
    },
    {
@@ -1859,7 +1861,7 @@
       ],
       "publish_id" : "Dragon167",
       "setting" : "Dragon Magazine",
-      "title" : null,
+      "title" : "Dragon #167",
       "year" : "1991"
    },
    {
@@ -2038,7 +2040,7 @@
       "monster_keys" : [ "ankou", "skotos" ],
       "publish_id" : "Dragon162",
       "setting" : "Dragon Magazine",
-      "title" : null,
+      "title" : "Dragon #162",
       "year" : "1990"
    },
    {
@@ -2133,7 +2135,7 @@
       "monster_keys" : [ "antpiran", "pigeacid", "ratburgl" ],
       "publish_id" : "DragonMagazineAnnual1998",
       "setting" : "Dragon Magazine",
-      "title" : "Dragon Mag Annual 1999",
+      "title" : "Dragon Magazine Annual 1998",
       "year" : "1998"
    },
    {
@@ -2285,7 +2287,7 @@
       "monster_keys" : [ "arcfisgi", "damfisgi" ],
       "publish_id" : "Dragon165",
       "setting" : "Dragon Magazine",
-      "title" : null,
+      "title" : "Dragon #165",
       "year" : "1991"
    },
    {
@@ -2293,7 +2295,7 @@
       "monster_keys" : [ "armaphan", "catmoat", "duckbunn", "horsspid", "turtdrfl" ],
       "publish_id" : "Dragon243",
       "setting" : "Advanced Dungeons & Dragons 2nd Edition",
-      "title" : null,
+      "title" : "Dragon #243",
       "year" : "1998"
    },
    {
@@ -2442,7 +2444,7 @@
       "monster_keys" : [ "averx", "biclops", "fungcush" ],
       "publish_id" : "Dragon172",
       "setting" : "Dragon Magazine",
-      "title" : null,
+      "title" : "Dragon #172",
       "year" : "1991"
    },
    {
@@ -2705,7 +2707,7 @@
       "monster_keys" : [ "beescagi", "elemdark", "fireweed", "glouras", "octoblri" ],
       "publish_id" : "Dragon227",
       "setting" : "Dragon Magazine",
-      "title" : null,
+      "title" : "Dragon #227",
       "year" : "1996"
    },
    {
@@ -2843,7 +2845,7 @@
       "monster_keys" : [ "blarooma", "dirtwrai", "kyushoun", "murdakus" ],
       "publish_id" : "Dragon270",
       "setting" : "Greyhawk",
-      "title" : null,
+      "title" : "Dragon #270",
       "year" : "2000"
    },
    {
@@ -2859,7 +2861,7 @@
       "monster_keys" : [ "blizzard" ],
       "publish_id" : "Dragon223",
       "setting" : "Dragon Magazine",
-      "title" : null,
+      "title" : "Dragon #223",
       "year" : "1995"
    },
    {
@@ -2891,7 +2893,7 @@
       "monster_keys" : [ "boggart", "cluricha", "leprwick", "leshy" ],
       "publish_id" : "Dragon239",
       "setting" : "Dragon Magazine",
-      "title" : null,
+      "title" : "Dragon #239",
       "year" : "1997"
    },
    {
@@ -2972,7 +2974,7 @@
       "monster_keys" : [ "braktwan", "byut", "craighe", "guttar" ],
       "publish_id" : "Dragon269",
       "setting" : "Dragon Magazine",
-      "title" : null,
+      "title" : "Dragon #269",
       "year" : "2000"
    },
    {
@@ -2996,7 +2998,7 @@
       "monster_keys" : [ "cariysbr", "watroach" ],
       "publish_id" : "Dragon185",
       "setting" : "Dragon Magazine",
-      "title" : null,
+      "title" : "Dragon #185",
       "year" : "1992"
    },
    {
@@ -3020,7 +3022,7 @@
       "monster_keys" : [ "catfstal", "tunmoudw" ],
       "publish_id" : "Dragon267",
       "setting" : "Dragon Magazine",
-      "title" : null,
+      "title" : "Dragon #267",
       "year" : "2000"
    },
    {
@@ -3076,7 +3078,7 @@
       "monster_keys" : [ "charunte" ],
       "publish_id" : "Dragon210",
       "setting" : "Dragon Magazine",
-      "title" : "Dragon #210",
+      "title" : null,
       "year" : "1994"
    },
    {
@@ -3161,7 +3163,7 @@
       ],
       "publish_id" : "Dragon156",
       "setting" : "Dragon Magazine",
-      "title" : null,
+      "title" : "Dragon #156",
       "year" : "1990"
    },
    {
@@ -3272,7 +3274,7 @@
       "monster_keys" : [ "dragdzal" ],
       "publish_id" : "Dragon163",
       "setting" : "Dragon Magazine",
-      "title" : null,
+      "title" : "Dragon #163",
       "year" : "1990"
    },
    {
@@ -3296,7 +3298,7 @@
       ],
       "publish_id" : "Dragon170",
       "setting" : "Dragon Magazine",
-      "title" : null,
+      "title" : "Dragon #170",
       "year" : "1991"
    },
    {
@@ -3304,7 +3306,7 @@
       "monster_keys" : [ "dragorso", "dragpuen", "dragyesa" ],
       "publish_id" : "Dragon248",
       "setting" : "Dragon Magazine",
-      "title" : null,
+      "title" : "Dragon #248",
       "year" : "1998"
    },
    {
@@ -3360,7 +3362,7 @@
       "monster_keys" : [ "dvati", "viscerai" ],
       "publish_id" : "Dragon271",
       "setting" : "Dragon Magazine",
-      "title" : null,
+      "title" : "Dragon #271",
       "year" : "2000"
    },
    {
@@ -3404,12 +3406,12 @@
       "year" : "1993"
    },
    {
-      "author" : "",
+      "author" : null,
       "monster_keys" : [ "elghonn" ],
-      "publish_id" : "DragonMagazinAnnual1996",
+      "publish_id" : "DragonMagazineAnnual1996",
       "setting" : "Dragon Magazine",
-      "title" : "Dragon Mag Annual 1996",
-      "year" : "1996"
+      "title" : null,
+      "year" : null
    },
    {
       "author" : "David \"Zeb\" Cook",
@@ -3424,7 +3426,7 @@
       "monster_keys" : [ "faerphiz" ],
       "publish_id" : "Dragon191",
       "setting" : "Dragon Magazine",
-      "title" : null,
+      "title" : "Dragon #191",
       "year" : "1993"
    },
    {
@@ -3432,7 +3434,7 @@
       "monster_keys" : [ "fainil", "monginfi", "tasemyst" ],
       "publish_id" : "Dragon242",
       "setting" : "Dragon Magazine",
-      "title" : null,
+      "title" : "Dragon #242",
       "year" : "1997"
    },
    {
@@ -3448,7 +3450,7 @@
       "monster_keys" : [ "fienknig" ],
       "publish_id" : "Dragon206",
       "setting" : "Greyhawk",
-      "title" : null,
+      "title" : "Dragon #206",
       "year" : "1994"
    },
    {
@@ -3488,7 +3490,7 @@
       "monster_keys" : [ "frogarch", "frogghou", "toadleec", "toadspin" ],
       "publish_id" : "Dragon247",
       "setting" : "Dragon Magazine",
-      "title" : null,
+      "title" : "Dragon #247",
       "year" : "1998"
    },
    {
@@ -3512,7 +3514,7 @@
       "monster_keys" : [ "glomus" ],
       "publish_id" : "Dragon174",
       "setting" : "Dragon Magazine",
-      "title" : null,
+      "title" : "Dragon #174",
       "year" : "1991"
    },
    {
@@ -3540,7 +3542,7 @@
       "monster_keys" : [ "golechia", "golechoc", "goleplus" ],
       "publish_id" : "Dragon228",
       "setting" : "Dragon Magazine",
-      "title" : null,
+      "title" : "Dragon #228",
       "year" : "1996"
    },
    {
@@ -3593,19 +3595,11 @@
    },
    {
       "author" : "",
-      "monster_keys" : [ "growler", "lizatund" ],
+      "monster_keys" : [ "growler", "lizatund", "skelcrys" ],
       "publish_id" : "DragonMagazineAnnual1997",
       "setting" : "Dragon Magazine",
-      "title" : "Dragon Mag Annual 1997",
+      "title" : "Dragon Magazine Annual 1997",
       "year" : "1997"
-   },
-   {
-      "author" : "Kirk Botula",
-      "monster_keys" : [ "humaceri", "snakmess" ],
-      "publish_id" : "2144",
-      "setting" : "Birthright",
-      "title" : "DMRG6 Complete Book of Villains",
-      "year" : "1993"
    },
    {
       "author" : "L. Richard Baker III",
@@ -3660,7 +3654,7 @@
       "monster_keys" : [ "kruel", "pardal" ],
       "publish_id" : "Dragon187",
       "setting" : "Dragon Magazine",
-      "title" : null,
+      "title" : "Dragon #187",
       "year" : "1992"
    },
    {
@@ -3676,7 +3670,7 @@
       "monster_keys" : [ "lindworm" ],
       "publish_id" : "Dragon182",
       "setting" : "Dragon Magazine",
-      "title" : null,
+      "title" : "Dragon #182",
       "year" : "1992"
    },
    {
@@ -3708,7 +3702,7 @@
       "monster_keys" : [ "masgai" ],
       "publish_id" : "Dragon244",
       "setting" : "Dragon Magazine",
-      "title" : null,
+      "title" : "Dragon #244",
       "year" : "1998"
    },
    {
@@ -3716,7 +3710,7 @@
       "monster_keys" : [ "mememori", "tymhhaid" ],
       "publish_id" : "Dragon186",
       "setting" : "Dragon Magazine",
-      "title" : null,
+      "title" : "Dragon #186",
       "year" : "1992"
    },
    {
@@ -3731,7 +3725,7 @@
       "author" : "",
       "monster_keys" : [ "minisetl" ],
       "publish_id" : "Dungeon31",
-      "setting" : "Dungeon Magazine",
+      "setting" : "Planescape",
       "title" : null,
       "year" : "1991"
    },
@@ -3796,7 +3790,7 @@
       "monster_keys" : [ "quakdanc", "rambatte" ],
       "publish_id" : "Dragon180",
       "setting" : "Dragon Magazine",
-      "title" : null,
+      "title" : "Dragon #180",
       "year" : "1992"
    },
    {
@@ -3859,7 +3853,7 @@
       "author" : "",
       "monster_keys" : [ "siragle" ],
       "publish_id" : "Dungeon28",
-      "setting" : "Dungeon Magazine",
+      "setting" : "Planescape",
       "title" : null,
       "year" : "1991"
    },
@@ -3870,14 +3864,6 @@
       "setting" : "Dark Sun",
       "title" : "DSQ3 Asticlian Gambit",
       "year" : "1992"
-   },
-   {
-      "author" : "",
-      "monster_keys" : [ "skelcrys" ],
-      "publish_id" : "DragonMagazinAnnual1997",
-      "setting" : "Dragon Magazine",
-      "title" : "Dragon Mag Annual 1997",
-      "year" : "1997"
    },
    {
       "author" : "Anne Brown, Anthony Pryor",
@@ -3940,7 +3926,7 @@
       "monster_keys" : [ "trolfire", "trolgray", "trolhoun", "trolphaz", "trolston" ],
       "publish_id" : "Dragon199",
       "setting" : "Dragon Magazine",
-      "title" : null,
+      "title" : "Dragon #199",
       "year" : "1993"
    },
    {
@@ -3994,7 +3980,7 @@
       ],
       "publish_id" : "Dragon190",
       "setting" : "Dragon Magazine",
-      "title" : null,
+      "title" : "Dragon #190",
       "year" : "1993"
    },
    {
