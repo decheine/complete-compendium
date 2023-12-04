@@ -6,7 +6,8 @@ import CSS from 'csstype';
 // import './BookList.css'
 const Categories = require('@data/Categories.json')
 const Acronyms = require('@data/AcronymsSetting.json')
-const BOOKS = require('@data/sortedtsr.json')
+// const BOOKS = require('@data/sortedtsr.json')
+const BOOKS = require('../../data/all_tsr.json')
 
 const catalog_data = require('@data/Full_Catalog.json')
 
@@ -60,7 +61,7 @@ export function BookList(props: any) {
     books.sort()
     for (const [index, value] of books.entries()) {
         // console.log(index)
-        card_items.push(<BookCard key={value} id={value} category={props.category} title={BOOKS[value]} />)
+        card_items.push(<BookCard key={value} id={value} category={props.category} title={BOOKS[value].title} />)
     }
 
     console.log(setting_books)
@@ -71,7 +72,7 @@ export function BookList(props: any) {
             return obj.publish_id === publish_id
         })
         // console.log(index)
-        list_items.push(<BookListView key={publish_id} id={publish_id} category={props.category} title={BOOKS[publish_id]} author={book_object?.author} book_object={book_object} />)
+        list_items.push(<BookListView key={publish_id} id={publish_id} category={props.category} title={BOOKS[publish_id].title} author={book_object?.author} book_object={book_object} />)
     }
 
 

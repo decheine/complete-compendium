@@ -10,6 +10,7 @@
 #include <filesystem>
 #include <typeinfo>
 #include <set>
+#include <chrono>
 
 #include <json/value.h>
 #include "ThreadsafeData.h"
@@ -44,7 +45,8 @@ public:
     std::string ReadFileIntoString2(const std::string &path);
     void PrintMap();
     std::map<std::string, std::string> getMonsterStrings();
-
+    std::string getMonsterString(std::string monster_key);
+    bool hasMonsterString(std::string monster_key);
     // void AddMonsterData(Json::Value monster);
     void LaunchThread(std::set<std::string> monsterNames);
 

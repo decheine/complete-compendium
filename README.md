@@ -82,25 +82,25 @@ npm run develop
 
 ## Running Monster Harvester in Docker
 
-Most straightforward method with the least hassle. cd to the `harvester/` directory for this.
+Most straightforward method with the least hassle. Run all these in the project directory.
  
 To run the data extraction process,
 
 1. Build the docker image
 
 ```bash
-docker build -t monster-harvester .
+docker build -t monster-harvester -f harvester/Dockerfile .
 ```
 
 2. Create the container
 
-```
+```bash
 docker create --name harvester-container monster-harvester
 ```
 
 3. Get the container ID with
 
-```
+```bash
 docker ps -a
 ```
 

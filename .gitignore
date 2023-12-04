@@ -21,6 +21,9 @@ public/*
 /public/icons
 /output/
 
+# harvester
+/harvester/build
+
 # misc
 .DS_Store
 .env.local

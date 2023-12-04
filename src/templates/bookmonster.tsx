@@ -22,7 +22,8 @@ polyfill();
 // const isBrowser = typeof window !== "undefined"
 
 const cat_acronyms = require('@data/CatAcronyms.json')
-const sorted_tsr = require('@data/sortedtsr.json')
+// const sorted_tsr = require('@data/sortedtsr.json')
+const all_tsr = require('../../data/all_tsr.json')
 const publishId_to_acronym = require('@data/publishId_to_acronym.json')
 ///////////
 // Styles
@@ -245,7 +246,7 @@ const BookMonsterTemplate: React.FC<Props> = ({pageContext }) => {
                     monster_page_data.monster_data["TSR"].map((tsr: string) => {
                         return (
                             <div key={tsr}>
-                                <Link to={"/catalog/" + publishId_to_acronym[tsr] + "/" + tsr}>{sorted_tsr[tsr]} ({tsr})</Link>
+                                <Link to={"/catalog/" + publishId_to_acronym[tsr] + "/" + tsr}>{all_tsr[tsr]?.title} ({tsr})</Link>
                                 <br/>
                             </div>
                         )

@@ -4,7 +4,8 @@
 #include <iostream>
 #include <fstream>
 #include <string>
-#include <experimental/regex>
+// #include <experimental/regex>
+#include <regex>
 #include <filesystem>
 #include <typeinfo>
 #include <set>
@@ -131,32 +132,32 @@ void Harvester::TestMonsterParser(std::string monsterName)
 
     auto Statblock_start = std::chrono::high_resolution_clock::now();
 
-    std::chrono::_V2::system_clock::time_point ParseGeneral_start;
-    std::chrono::_V2::system_clock::time_point ParseGeneral_end;
+    // std::chrono::_V2::system_clock::time_point ParseGeneral_start;
+    // std::chrono::_V2::system_clock::time_point ParseGeneral_end;
 
-    std::chrono::_V2::system_clock::time_point GetStatsTable_start;
-    std::chrono::_V2::system_clock::time_point Psionics_start;
-    std::chrono::_V2::system_clock::time_point H2_start;
-    std::chrono::_V2::system_clock::time_point GetBody_start;
-    std::chrono::_V2::system_clock::time_point GetStatsTable_end;
-    std::chrono::_V2::system_clock::time_point Psionics_end;
-    std::chrono::_V2::system_clock::time_point H2_end;
-    std::chrono::_V2::system_clock::time_point GetBody_end;
+    // std::chrono::_V2::system_clock::time_point GetStatsTable_start;
+    // std::chrono::_V2::system_clock::time_point Psionics_start;
+    // std::chrono::_V2::system_clock::time_point H2_start;
+    // std::chrono::_V2::system_clock::time_point GetBody_start;
+    // std::chrono::_V2::system_clock::time_point GetStatsTable_end;
+    // std::chrono::_V2::system_clock::time_point Psionics_end;
+    // std::chrono::_V2::system_clock::time_point H2_end;
+    // std::chrono::_V2::system_clock::time_point GetBody_end;
 
     // General Information ID
     if (IdentifyGeneralInfo(monsterString))
     {
         // std::cout << "parsing general\n";
-        ParseGeneral_start = std::chrono::high_resolution_clock::now();
+        // ParseGeneral_start = std::chrono::high_resolution_clock::now();
         Json::Value generalJson = ParseGeneral(monsterString);
-        ParseGeneral_end = std::chrono::high_resolution_clock::now();
+        // ParseGeneral_end = std::chrono::high_resolution_clock::now();
         monsterJson["general"] = generalJson;
     }
     else
     {
-        GetStatsTable_start = std::chrono::high_resolution_clock::now();
+        // GetStatsTable_start = std::chrono::high_resolution_clock::now();
         Json::Value statblock = GetStatsTable(monsterString);
-        GetStatsTable_end = std::chrono::high_resolution_clock::now();
+        // GetStatsTable_end = std::chrono::high_resolution_clock::now();
         // std::cout << "statblock: \n";
         // std::cout << statblock.toStyledString() << "\n";
 
@@ -164,7 +165,7 @@ void Harvester::TestMonsterParser(std::string monsterName)
 
         Json::Value psionics;
         Json::Value psionicTable;
-        Psionics_start = std::chrono::high_resolution_clock::now();
+        // Psionics_start = std::chrono::high_resolution_clock::now();
         // if (HasPsionics(monsterString))
         // {
         //     if (debug)
@@ -184,7 +185,7 @@ void Harvester::TestMonsterParser(std::string monsterName)
         //     if (debug)
         //         std::cout << "pruned psionics\n";
         // }
-        Psionics_end = std::chrono::high_resolution_clock::now();
+        // Psionics_end = std::chrono::high_resolution_clock::now();
 
         // Check how many types there are
         int numTypes;
@@ -193,15 +194,15 @@ void Harvester::TestMonsterParser(std::string monsterName)
         // parse h2 headers for multimonsters
         if (debug)
             std::cout << "Parsing h2's of " << numTypes << " types\n";
-        H2_start = std::chrono::high_resolution_clock::now();
+        // H2_start = std::chrono::high_resolution_clock::now();
         Json::Value multitypeHeaderData = ExtractH2s(monsterString);
-        H2_end = std::chrono::high_resolution_clock::now();
+        // H2_end = std::chrono::high_resolution_clock::now();
 
         std::vector<std::string> memberNames = multitypeHeaderData.getMemberNames();
         if (debug)
             std::cout << "membernames size " << memberNames.size() << "\n";
         // if there are h2's
-        GetBody_start = std::chrono::high_resolution_clock::now();
+        // GetBody_start = std::chrono::high_resolution_clock::now();
         if (memberNames.size() > 0)
         {
             // std::cout << "H2 member\n";
@@ -219,7 +220,7 @@ void Harvester::TestMonsterParser(std::string monsterName)
             if (debug)
                 std::cout << "body: " << monsterJson["body"] << "\n";
         }
-        GetBody_end = std::chrono::high_resolution_clock::now();
+        // GetBody_end = std::chrono::high_resolution_clock::now();
     }
 
     auto Statblock_end = std::chrono::high_resolution_clock::now();
@@ -232,33 +233,33 @@ void Harvester::TestMonsterParser(std::string monsterName)
     // monsterData[monsterName] = monsterJson;
 
     // Save json file
-    auto Savejson_start = std::chrono::high_resolution_clock::now();
+    // auto Savejson_start = std::chrono::high_resolution_clock::now();
     // SaveMonsterJson(monsterName, monsterDataJson);
-    auto Savejson_end = std::chrono::high_resolution_clock::now();
+    // auto Savejson_end = std::chrono::high_resolution_clock::now();
 
-    auto stop = std::chrono::high_resolution_clock::now();
-    auto totalDuration = std::chrono::duration_cast<std::chrono::microseconds>(stop - startTime);
+    // auto stop = std::chrono::high_resolution_clock::now();
+    // auto totalDuration = std::chrono::duration_cast<std::chrono::microseconds>(stop - startTime);
 
-    std::cout << "Tabulating times...\n";
+    // std::cout << "Tabulating times...\n";
 
     // auto duration = std::chrono::duration_cast<std::chrono::milliseconds>(stop - start);
     // std::cout << duration.count() << std::endl;
 
-    std::cout << "Total duration:\t " << std::chrono::duration_cast<std::chrono::microseconds>(stop - startTime).count() << "\n";
+    // std::cout << "Total duration:\t " << std::chrono::duration_cast<std::chrono::microseconds>(stop - startTime).count() << "\n";
 
-    std::cout << "GetTitle \t " << std::chrono::duration_cast<std::chrono::microseconds>(GetTitle_end - GetTitle_start).count() << "\n";
-    std::cout << "Statblock \t " << std::chrono::duration_cast<std::chrono::microseconds>(Statblock_end - Statblock_start).count() << "\n";
+    // std::cout << "GetTitle \t " << std::chrono::duration_cast<std::chrono::microseconds>(GetTitle_end - GetTitle_start).count() << "\n";
+    // std::cout << "Statblock \t " << std::chrono::duration_cast<std::chrono::microseconds>(Statblock_end - Statblock_start).count() << "\n";
 
     if (IdentifyGeneralInfo(monsterString))
     {
-        std::cout << "ParseGeneral\t" << std::chrono::duration_cast<std::chrono::microseconds>(ParseGeneral_end - ParseGeneral_start).count() << "\n";
+        // std::cout << "ParseGeneral\t" << std::chrono::duration_cast<std::chrono::microseconds>(ParseGeneral_end - ParseGeneral_start).count() << "\n";
     }
     else
     {
-        std::cout << "\tGetStatsTable\t" << std::chrono::duration_cast<std::chrono::microseconds>(GetStatsTable_end - GetStatsTable_start).count() << "\n";
-        std::cout << "\tPsionics\t" << std::chrono::duration_cast<std::chrono::microseconds>(Psionics_end - Psionics_start).count() << "\n";
-        std::cout << "\tH2\t\t" << std::chrono::duration_cast<std::chrono::microseconds>(H2_end - H2_start).count() << "\n";
-        std::cout << "\tGetBody\t\t" << std::chrono::duration_cast<std::chrono::microseconds>(GetBody_end - GetBody_start).count() << "\n";
+        // std::cout << "\tGetStatsTable\t" << std::chrono::duration_cast<std::chrono::microseconds>(GetStatsTable_end - GetStatsTable_start).count() << "\n";
+        // std::cout << "\tPsionics\t" << std::chrono::duration_cast<std::chrono::microseconds>(Psionics_end - Psionics_start).count() << "\n";
+        // std::cout << "\tH2\t\t" << std::chrono::duration_cast<std::chrono::microseconds>(H2_end - H2_start).count() << "\n";
+        // std::cout << "\tGetBody\t\t" << std::chrono::duration_cast<std::chrono::microseconds>(GetBody_end - GetBody_start).count() << "\n";
     }
 
     // GetTitle
@@ -278,6 +279,19 @@ std::map<std::string, std::string> Harvester::getMonsterStrings()
 {
     return monsterStringContentsMap;
 }
+
+std::string Harvester::getMonsterString(std::string monster_key){
+    return monsterStringContentsMap[monster_key];
+}
+
+bool Harvester::hasMonsterString(std::string monster_key){
+    if(monsterStringContentsMap.count(monster_key) == 1) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
 
 /// SINGLE MONSTER TARGETS
 
@@ -887,10 +901,10 @@ void Harvester::ExportAPIJson(Json::Value monster_json){
     Json::Value all_sources_settings; //?
 
     // Read in /data/sortedtsr.json
-    printf("Reading in sortedtsr.json\n");
-    std::ifstream sortedtsr_file("../data/sortedtsr.json");
-    Json::Value publish_id_to_title;
-    sortedtsr_file >> publish_id_to_title;
+    // printf("Reading in sortedtsr.json\n");
+    // std::ifstream sortedtsr_file("../data/sortedtsr.json");
+    // Json::Value publish_id_to_title;
+    // sortedtsr_file >> publish_id_to_title;
 
     printf("Reading in all_tsr.json\n");
     std::ifstream alltsr_file("../data/all_tsr.json");
@@ -954,7 +968,14 @@ void Harvester::ExportAPIJson(Json::Value monster_json){
                 // printf("New source: %s\n", source_sanitized.c_str());
                 tmp_book = Json::Value();
                 tmp_book["publish_id"] = source_sanitized;
-                tmp_book["title"] = publish_id_to_title[source_sanitized];
+                // tmp_book["title"] = publish_id_to_title[source_sanitized];
+
+                Json::Value book_object = all_tsr[source_sanitized];
+                if(book_object.isNull()){
+                    printf("book object was null with tsr: %s\n", source_sanitized.c_str());
+                } else {
+                    tmp_book["title"] = all_tsr[source_sanitized]["title"];
+                }
                 // printf("all_tsr[source] %s \n", all_tsr.toStyledString().c_str());
                 // printf("attempting\n");
                 // std::cout << "all_tsr " << all_tsr.toStyledString() << std::endl;
@@ -1255,7 +1276,14 @@ int Harvester::RunMonster(std::string monsterName)
 
     // basically "for" loop entry for monsterName.
     printf("Processing monster: %s\n", monsterName.c_str());
-    std::string monsterString = getMonsterStrings()[monsterName + ".html"];
+    std::string monsterString;
+    std::string monster_filename = monsterName + ".html";
+    if(hasMonsterString(monster_filename)){
+        monsterString = getMonsterString(monster_filename);
+    } else {
+        std::cerr << "Monster string not found for monster key: " << monsterName << "\n";
+        exit(1);
+    }
     // std::cout << "file string: " << monsterString << "\n   ";
     int return_code = 0;
 
@@ -1426,8 +1454,8 @@ int Harvester::RunMonster(std::string monsterName)
         // std::cout << "numtypes: " << numTypes << "\n";
 
         // parse h2 headers for multimonsters
-        if(debug)
-            printf("[%s] - GenStart \t%zu [ms]\n", monsterName.c_str(), time_diff);
+        // if(debug)
+        //     printf("[%s] - GenStart \t%zu [ms]\n", monsterName.c_str(), time_diff);
 
         
        // Begin removing nonessential code now that the full body can be rendered
@@ -1539,7 +1567,7 @@ int Harvester::RunMonster(std::string monsterName)
     // SaveMonsterJson(monsterName, monsterJson);
 
     // printf("Processed monster: %s\n", monsterName.c_str());
-
+    // printf("\tEnding monster\n");
 
     return return_code;
 }

@@ -2,20 +2,23 @@ cmake_minimum_required(VERSION 3.16)
 
 project(LomionReader VERSION 1.1)
 
-set(CMAKE_THREAD_LIBS_INIT "-lpthread")
-set(CMAKE_HAVE_THREADS_LIBRARY 1)
-set(CMAKE_USE_WIN32_THREADS_INIT 0)
-set(CMAKE_USE_PTHREADS_INIT 1)
-set(THREADS_PREFER_PTHREAD_FLAG ON)
-
+if(MSVC)
+    set(CMAKE_USE_WIN32_THREADS_INIT 1)
+else()
+    set(CMAKE_THREAD_LIBS_INIT "-lpthread")
+    set(CMAKE_HAVE_THREADS_LIBRARY 1)
+    set(CMAKE_USE_WIN32_THREADS_INIT 0)
+    set(CMAKE_USE_PTHREADS_INIT 1)
+    set(THREADS_PREFER_PTHREAD_FLAG ON)
+    add_compile_options("-std=c++17")
+    add_compile_options(-pthread)
+endif()
 # set(CMAKE_CXX_STANDARD 17)
 # set(CMAKE_CXX_STANDARD_REQUIRED ON)
 # set(CMAKE_C_STANDARD 17)
 # set(CMAKE_C_STANDARD_REQUIRED ON)
 # set(CMAKE_CXX_EXTENSIONS ON)
 
-add_compile_options("-std=c++17")
-add_compile_options(-pthread)
 # set_property(TARGET tgt PROPERTY CXX_STANDARD 17)
 
 
@@ -36,6 +39,7 @@ FetchContent_Declare(jsoncpp
 #     
 # endif ()
 FetchContent_MakeAvailable(jsoncpp)
+
 # find_package(Boost REQUIRED COMPONENTS system filesystem)
 
 

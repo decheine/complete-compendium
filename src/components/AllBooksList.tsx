@@ -6,7 +6,8 @@ import BookListView from '../components/BookListView';
 
 
 
-const BOOKS = require('@data/sortedtsr.json')
+// const BOOKS = require('@data/sortedtsr.json')
+const BOOKS = require('../../data/all_tsr.json')
 const Categories = require('@data/Categories.json')
 const CatAcronyms = require('@data/CatAcronyms.json')
 const Full_Catalog = require('@data/Full_Catalog.json')
@@ -56,7 +57,7 @@ export function AllBooksList() {
 
     for (const [index] of Object.entries(BOOKS)) {
         // console.log(index, value)
-        items.push(<BookCard key={index} id={index} category={books_setting[index]} title={BOOKS[index as string]} />)
+        items.push(<BookCard key={index} id={index} category={books_setting[index]} title={BOOKS[index as string].title} />)
     }
 
     const list_items = []

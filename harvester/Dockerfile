@@ -27,12 +27,13 @@ RUN git config --global http.sslCAinfo /etc/ssl/certs/ca-certificates.crt
 # RUN apt-get -y install cmake=3.16.3-1ubuntu1 
 
 # Copy the folders /cmm, /harvester, /include, /src into the container
-ADD cmm /usr/local/harvester/cmm
-ADD harvester /usr/local/harvester/harvester
-ADD include /usr/local/harvester/include
-ADD src /usr/local/harvester/src
-ADD data /usr/local/harvester/data
-ADD CMakeLists.txt /usr/local/harvester/CMakeLists.txt
+ADD harvester/cmm /usr/local/harvester/cmm
+ADD harvester/harvester /usr/local/harvester/harvester
+ADD harvester/include /usr/local/harvester/include
+ADD harvester/src /usr/local/harvester/src
+ADD /data /usr/local/harvester/data
+# ADD data /usr/local/harvester/data
+ADD harvester/CMakeLists.txt /usr/local/harvester/CMakeLists.txt
 
 # Build the harvester
 WORKDIR /usr/local/harvester
