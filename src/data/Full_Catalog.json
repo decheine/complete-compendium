@@ -643,7 +643,7 @@
       ],
       "publish_id" : "2602",
       "setting" : "Planescape",
-      "title" : "Planescape I",
+      "title" : "MC Planescape I",
       "year" : "1991"
    },
    {
@@ -806,7 +806,7 @@
       "monster_keys" : [ "abhir" ],
       "publish_id" : "Dungeon23",
       "setting" : "Planescape",
-      "title" : null,
+      "title" : "Dungeon #23",
       "year" : "1990"
    },
    {
@@ -1218,7 +1218,7 @@
       "monster_keys" : [ "agrutha", "croclima", "geckonid", "varanid" ],
       "publish_id" : "Dragon268",
       "setting" : "Dragon Magazine",
-      "title" : "Dragon #268",
+      "title" : "Dragon268",
       "year" : "2000"
    },
    {
@@ -1656,7 +1656,7 @@
       "monster_keys" : [ "amphpois" ],
       "publish_id" : "Dragon237",
       "setting" : "Dragon Magazine",
-      "title" : "Dragon #237",
+      "title" : "Dragon237",
       "year" : "1996"
    },
    {
@@ -1664,7 +1664,7 @@
       "monster_keys" : [ "andeloid", "infernit" ],
       "publish_id" : "Dragon159",
       "setting" : "Dragon Magazine",
-      "title" : "Dragon #159",
+      "title" : "Dragon159",
       "year" : "1990"
    },
    {
@@ -1826,7 +1826,7 @@
       "monster_keys" : [ "anglfish", "deatminn", "gulper", "hide" ],
       "publish_id" : "Dragon235",
       "setting" : "Dragon Magazine",
-      "title" : "Dragon #235",
+      "title" : "Dragon235",
       "year" : "1996"
    },
    {
@@ -1834,7 +1834,7 @@
       "monster_keys" : [ "angreden", "ghougoop", "kamummy", "vartha", "wighking", "wraiking" ],
       "publish_id" : "Dragon198",
       "setting" : "Dragon Magazine",
-      "title" : "Dragon #198",
+      "title" : "Dragon198",
       "year" : "1993"
    },
    {
@@ -1861,7 +1861,7 @@
       ],
       "publish_id" : "Dragon167",
       "setting" : "Dragon Magazine",
-      "title" : "Dragon #167",
+      "title" : "Dragon167",
       "year" : "1991"
    },
    {
@@ -2040,7 +2040,7 @@
       "monster_keys" : [ "ankou", "skotos" ],
       "publish_id" : "Dragon162",
       "setting" : "Dragon Magazine",
-      "title" : "Dragon #162",
+      "title" : "Dragon162",
       "year" : "1990"
    },
    {
@@ -2287,7 +2287,7 @@
       "monster_keys" : [ "arcfisgi", "damfisgi" ],
       "publish_id" : "Dragon165",
       "setting" : "Dragon Magazine",
-      "title" : "Dragon #165",
+      "title" : "Dragon165",
       "year" : "1991"
    },
    {
@@ -2295,7 +2295,7 @@
       "monster_keys" : [ "armaphan", "catmoat", "duckbunn", "horsspid", "turtdrfl" ],
       "publish_id" : "Dragon243",
       "setting" : "Advanced Dungeons & Dragons 2nd Edition",
-      "title" : "Dragon #243",
+      "title" : "Dragon243",
       "year" : "1998"
    },
    {
@@ -2444,7 +2444,7 @@
       "monster_keys" : [ "averx", "biclops", "fungcush" ],
       "publish_id" : "Dragon172",
       "setting" : "Dragon Magazine",
-      "title" : "Dragon #172",
+      "title" : "Dragon172",
       "year" : "1991"
    },
    {
@@ -2460,7 +2460,7 @@
       "monster_keys" : [ "azoul" ],
       "publish_id" : "TerrorsFromAbove",
       "setting" : "Ravenloft",
-      "title" : null,
+      "title" : "",
       "year" : ""
    },
    {
@@ -2707,7 +2707,7 @@
       "monster_keys" : [ "beescagi", "elemdark", "fireweed", "glouras", "octoblri" ],
       "publish_id" : "Dragon227",
       "setting" : "Dragon Magazine",
-      "title" : "Dragon #227",
+      "title" : "Dragon227",
       "year" : "1996"
    },
    {
@@ -2799,7 +2799,7 @@
       ],
       "publish_id" : "BookofSorrows",
       "setting" : "Masque of the Red Death (Ravenloft)",
-      "title" : null,
+      "title" : "",
       "year" : ""
    },
    {
@@ -2837,7 +2837,7 @@
       ],
       "publish_id" : "TheLonesomeRoad",
       "setting" : "Ravenloft",
-      "title" : null,
+      "title" : "",
       "year" : ""
    },
    {
@@ -2845,7 +2845,7 @@
       "monster_keys" : [ "blarooma", "dirtwrai", "kyushoun", "murdakus" ],
       "publish_id" : "Dragon270",
       "setting" : "Greyhawk",
-      "title" : "Dragon #270",
+      "title" : "Dragon270",
       "year" : "2000"
    },
    {
@@ -2861,7 +2861,7 @@
       "monster_keys" : [ "blizzard" ],
       "publish_id" : "Dragon223",
       "setting" : "Dragon Magazine",
-      "title" : "Dragon #223",
+      "title" : "Dragon223",
       "year" : "1995"
    },
    {
@@ -2893,7 +2893,7 @@
       "monster_keys" : [ "boggart", "cluricha", "leprwick", "leshy" ],
       "publish_id" : "Dragon239",
       "setting" : "Dragon Magazine",
-      "title" : "Dragon #239",
+      "title" : "Dragon239",
       "year" : "1997"
    },
    {
@@ -2974,7 +2974,7 @@
       "monster_keys" : [ "braktwan", "byut", "craighe", "guttar" ],
       "publish_id" : "Dragon269",
       "setting" : "Dragon Magazine",
-      "title" : "Dragon #269",
+      "title" : "Dragon269",
       "year" : "2000"
    },
    {
@@ -2982,7 +2982,7 @@
       "monster_keys" : [ "bulemuta", "whitboar" ],
       "publish_id" : "Dungeon37",
       "setting" : "Dungeon Magazine",
-      "title" : null,
+      "title" : "Dungeon #37",
       "year" : "1992"
    },
    {
@@ -2998,7 +2998,7 @@
       "monster_keys" : [ "cariysbr", "watroach" ],
       "publish_id" : "Dragon185",
       "setting" : "Dragon Magazine",
-      "title" : "Dragon #185",
+      "title" : "Dragon185",
       "year" : "1992"
    },
    {
@@ -3022,7 +3022,7 @@
       "monster_keys" : [ "catfstal", "tunmoudw" ],
       "publish_id" : "Dragon267",
       "setting" : "Dragon Magazine",
-      "title" : "Dragon #267",
+      "title" : "Dragon267",
       "year" : "2000"
    },
    {
@@ -3046,7 +3046,7 @@
       "monster_keys" : [ "catwater", "crocalbi", "lichsblo", "mothplag", "mummyice" ],
       "publish_id" : "Dragon238",
       "setting" : "Dragon Magazine",
-      "title" : "Dragon #238",
+      "title" : "Dragon238",
       "year" : "1997"
    },
    {
@@ -3078,7 +3078,7 @@
       "monster_keys" : [ "charunte" ],
       "publish_id" : "Dragon210",
       "setting" : "Dragon Magazine",
-      "title" : null,
+      "title" : "Dragon210",
       "year" : "1994"
    },
    {
@@ -3094,7 +3094,7 @@
       "monster_keys" : [ "chraal", "dealinsh", "livihair", "sawflyde" ],
       "publish_id" : "Dungeon76",
       "setting" : "Dungeon Magazine",
-      "title" : null,
+      "title" : "Dungeon #76",
       "year" : "1999"
    },
    {
@@ -3135,7 +3135,7 @@
       "monster_keys" : [ "darklord" ],
       "publish_id" : "Array",
       "setting" : "Dragon Magazine",
-      "title" : null,
+      "title" : "",
       "year" : ""
    },
    {
@@ -3163,7 +3163,7 @@
       ],
       "publish_id" : "Dragon156",
       "setting" : "Dragon Magazine",
-      "title" : "Dragon #156",
+      "title" : "Dragon156",
       "year" : "1990"
    },
    {
@@ -3221,7 +3221,7 @@
       "monster_keys" : [ "doomlocu", "maskdoga", "wraitwar", "zombvood" ],
       "publish_id" : "BookofSouls",
       "setting" : "Ravenloft",
-      "title" : null,
+      "title" : "",
       "year" : ""
    },
    {
@@ -3274,7 +3274,7 @@
       "monster_keys" : [ "dragdzal" ],
       "publish_id" : "Dragon163",
       "setting" : "Dragon Magazine",
-      "title" : "Dragon #163",
+      "title" : "Dragon163",
       "year" : "1990"
    },
    {
@@ -3298,7 +3298,7 @@
       ],
       "publish_id" : "Dragon170",
       "setting" : "Dragon Magazine",
-      "title" : "Dragon #170",
+      "title" : "Dragon170",
       "year" : "1991"
    },
    {
@@ -3306,7 +3306,7 @@
       "monster_keys" : [ "dragorso", "dragpuen", "dragyesa" ],
       "publish_id" : "Dragon248",
       "setting" : "Dragon Magazine",
-      "title" : "Dragon #248",
+      "title" : "Dragon248",
       "year" : "1998"
    },
    {
@@ -3322,7 +3322,7 @@
       "monster_keys" : [ "draknor" ],
       "publish_id" : "Dungeon24",
       "setting" : "Dungeon Magazine",
-      "title" : null,
+      "title" : "Dungeon #24",
       "year" : "1990"
    },
    {
@@ -3338,7 +3338,7 @@
       "monster_keys" : [ "drnecndr", "drnegedr", "drnemodr", "drnepadr" ],
       "publish_id" : "Dragon272",
       "setting" : "Dragon Magazine",
-      "title" : null,
+      "title" : "Dragon272",
       "year" : "2000"
    },
    {
@@ -3362,7 +3362,7 @@
       "monster_keys" : [ "dvati", "viscerai" ],
       "publish_id" : "Dragon271",
       "setting" : "Dragon Magazine",
-      "title" : "Dragon #271",
+      "title" : "Dragon271",
       "year" : "2000"
    },
    {
@@ -3378,7 +3378,7 @@
       "monster_keys" : [ "dwarutuc" ],
       "publish_id" : "Dungeon56",
       "setting" : "Dungeon Magazine",
-      "title" : null,
+      "title" : "Dungeon #56",
       "year" : "1995"
    },
    {
@@ -3386,7 +3386,7 @@
       "monster_keys" : [ "echo", "fanggen", "haemgobl", "sadhuin", "willblee" ],
       "publish_id" : "BookofSecrets",
       "setting" : "Ravenloft",
-      "title" : null,
+      "title" : "",
       "year" : ""
    },
    {
@@ -3410,7 +3410,6 @@
       "monster_keys" : [ "elghonn" ],
       "publish_id" : "DragonMagazineAnnual1996",
       "setting" : "Dragon Magazine",
-      "title" : null,
       "year" : null
    },
    {
@@ -3426,7 +3425,7 @@
       "monster_keys" : [ "faerphiz" ],
       "publish_id" : "Dragon191",
       "setting" : "Dragon Magazine",
-      "title" : "Dragon #191",
+      "title" : "Dragon191",
       "year" : "1993"
    },
    {
@@ -3434,7 +3433,7 @@
       "monster_keys" : [ "fainil", "monginfi", "tasemyst" ],
       "publish_id" : "Dragon242",
       "setting" : "Dragon Magazine",
-      "title" : "Dragon #242",
+      "title" : "Dragon242",
       "year" : "1997"
    },
    {
@@ -3450,7 +3449,7 @@
       "monster_keys" : [ "fienknig" ],
       "publish_id" : "Dragon206",
       "setting" : "Greyhawk",
-      "title" : "Dragon #206",
+      "title" : "Dragon206",
       "year" : "1994"
    },
    {
@@ -3490,7 +3489,7 @@
       "monster_keys" : [ "frogarch", "frogghou", "toadleec", "toadspin" ],
       "publish_id" : "Dragon247",
       "setting" : "Dragon Magazine",
-      "title" : "Dragon #247",
+      "title" : "Dragon247",
       "year" : "1998"
    },
    {
@@ -3514,7 +3513,7 @@
       "monster_keys" : [ "glomus" ],
       "publish_id" : "Dragon174",
       "setting" : "Dragon Magazine",
-      "title" : "Dragon #174",
+      "title" : "Dragon174",
       "year" : "1991"
    },
    {
@@ -3542,7 +3541,7 @@
       "monster_keys" : [ "golechia", "golechoc", "goleplus" ],
       "publish_id" : "Dragon228",
       "setting" : "Dragon Magazine",
-      "title" : "Dragon #228",
+      "title" : "Dragon228",
       "year" : "1996"
    },
    {
@@ -3550,7 +3549,7 @@
       "monster_keys" : [ "golegarb", "mistsylp", "wangchi" ],
       "publish_id" : "BookofShadows",
       "setting" : "Ravenloft",
-      "title" : null,
+      "title" : "",
       "year" : ""
    },
    {
@@ -3582,7 +3581,7 @@
       "monster_keys" : [ "griffshad" ],
       "publish_id" : "TerrorsfromAbove",
       "setting" : "Ravenloft",
-      "title" : null,
+      "title" : "",
       "year" : ""
    },
    {
@@ -3630,7 +3629,7 @@
       "monster_keys" : [ "kada" ],
       "publish_id" : "Dungeon57",
       "setting" : "Al-Qadim (Forgotten Realms)",
-      "title" : null,
+      "title" : "Dungeon #57",
       "year" : "1996"
    },
    {
@@ -3638,7 +3637,7 @@
       "monster_keys" : [ "kitskasu" ],
       "publish_id" : "Dungeon33",
       "setting" : "Kara-Tur (Forgotten Realms)",
-      "title" : null,
+      "title" : "Dungeon #33",
       "year" : "1992"
    },
    {
@@ -3654,7 +3653,7 @@
       "monster_keys" : [ "kruel", "pardal" ],
       "publish_id" : "Dragon187",
       "setting" : "Dragon Magazine",
-      "title" : "Dragon #187",
+      "title" : "Dragon187",
       "year" : "1992"
    },
    {
@@ -3670,7 +3669,7 @@
       "monster_keys" : [ "lindworm" ],
       "publish_id" : "Dragon182",
       "setting" : "Dragon Magazine",
-      "title" : "Dragon #182",
+      "title" : "Dragon182",
       "year" : "1992"
    },
    {
@@ -3694,7 +3693,7 @@
       "monster_keys" : [ "lycawrlo" ],
       "publish_id" : "Dungeon62",
       "setting" : "Dungeon Magazine",
-      "title" : null,
+      "title" : "Dungeon #62",
       "year" : "1997"
    },
    {
@@ -3702,7 +3701,7 @@
       "monster_keys" : [ "masgai" ],
       "publish_id" : "Dragon244",
       "setting" : "Dragon Magazine",
-      "title" : "Dragon #244",
+      "title" : "Dragon244",
       "year" : "1998"
    },
    {
@@ -3710,7 +3709,7 @@
       "monster_keys" : [ "mememori", "tymhhaid" ],
       "publish_id" : "Dragon186",
       "setting" : "Dragon Magazine",
-      "title" : "Dragon #186",
+      "title" : "Dragon186",
       "year" : "1992"
    },
    {
@@ -3726,7 +3725,7 @@
       "monster_keys" : [ "minisetl" ],
       "publish_id" : "Dungeon31",
       "setting" : "Planescape",
-      "title" : null,
+      "title" : "Dungeon #31",
       "year" : "1991"
    },
    {
@@ -3734,7 +3733,7 @@
       "monster_keys" : [ "moldling" ],
       "publish_id" : "ShawnMulder",
       "setting" : "Ravenloft",
-      "title" : null,
+      "title" : "",
       "year" : ""
    },
    {
@@ -3790,7 +3789,7 @@
       "monster_keys" : [ "quakdanc", "rambatte" ],
       "publish_id" : "Dragon180",
       "setting" : "Dragon Magazine",
-      "title" : "Dragon #180",
+      "title" : "Dragon180",
       "year" : "1992"
    },
    {
@@ -3806,7 +3805,7 @@
       "monster_keys" : [ "reviler" ],
       "publish_id" : "Dungeon71",
       "setting" : "Dungeon Magazine",
-      "title" : null,
+      "title" : "Dungeon #71",
       "year" : "1998"
    },
    {
@@ -3822,7 +3821,7 @@
       "monster_keys" : [ "shadethe" ],
       "publish_id" : "Dungeon35",
       "setting" : "Dungeon Magazine",
-      "title" : null,
+      "title" : "Dungeon #35",
       "year" : "1992"
    },
    {
@@ -3846,7 +3845,7 @@
       "monster_keys" : [ "shatbret", "vampilli" ],
       "publish_id" : "9364",
       "setting" : "Ravenloft",
-      "title" : "RQ2 Thoughts of Darkness",
+      "title" : "RQ2: Thoughts of Darkness",
       "year" : "1992"
    },
    {
@@ -3854,7 +3853,7 @@
       "monster_keys" : [ "siragle" ],
       "publish_id" : "Dungeon28",
       "setting" : "Planescape",
-      "title" : null,
+      "title" : "Dungeon #28",
       "year" : "1991"
    },
    {
@@ -3902,7 +3901,7 @@
       "monster_keys" : [ "treagrea" ],
       "publish_id" : "Dungeon61",
       "setting" : "Dungeon Magazine",
-      "title" : null,
+      "title" : "Dungeon #61",
       "year" : "1997"
    },
    {
@@ -3910,7 +3909,7 @@
       "monster_keys" : [ "tribgath" ],
       "publish_id" : "Dungeon64",
       "setting" : "Dungeon Magazine",
-      "title" : null,
+      "title" : "Dungeon #64",
       "year" : "1997"
    },
    {
@@ -3918,7 +3917,6 @@
       "monster_keys" : [ "tripheg", "turtle", "vulture", "wildhunt", "wospmisk", "yyllethy" ],
       "publish_id" : "404",
       "setting" : "",
-      "title" : null,
       "year" : null
    },
    {
@@ -3926,7 +3924,7 @@
       "monster_keys" : [ "trolfire", "trolgray", "trolhoun", "trolphaz", "trolston" ],
       "publish_id" : "Dragon199",
       "setting" : "Dragon Magazine",
-      "title" : "Dragon #199",
+      "title" : "Dragon199",
       "year" : "1993"
    },
    {
@@ -3934,7 +3932,6 @@
       "monster_keys" : [ "twill" ],
       "publish_id" : "Dungeon26",
       "setting" : "Dungeon Magazine",
-      "title" : null,
       "year" : null
    },
    {
@@ -3980,7 +3977,7 @@
       ],
       "publish_id" : "Dragon190",
       "setting" : "Dragon Magazine",
-      "title" : "Dragon #190",
+      "title" : "Dragon190",
       "year" : "1993"
    },
    {
@@ -3988,7 +3985,7 @@
       "monster_keys" : [ "upirlich" ],
       "publish_id" : "BookofSacrifices",
       "setting" : "Ravenloft",
-      "title" : null,
+      "title" : "",
       "year" : ""
    },
    {
@@ -3996,7 +3993,7 @@
       "monster_keys" : [ "utahrapt" ],
       "publish_id" : "Dungeon54",
       "setting" : "Dungeon Magazine",
-      "title" : null,
+      "title" : "Dungeon #54",
       "year" : "1995"
    },
    {
