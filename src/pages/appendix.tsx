@@ -8,8 +8,14 @@ import CSS from 'csstype';
 
 const keys_titles_json: Map<string, string> = require('../data/AA_KEYS_TITLES.json')
 
+const titles_keys_json: Map<string, string> = require('../../data/Titles_Keys.json')
+
 type MonsterLinksProps = {
     monster_keys: Map<string, string>,
+}
+
+type AllMonsterLinksProps = {
+    titles_keys: Map<string, string>,
 }
 
 const MonsterLinksWrapper = styled.div`
@@ -62,6 +68,38 @@ const MonsterLinks = (props: MonsterLinksProps) => {
     )
 }
 
+const AllMonsterLinks = (props: AllMonsterLinksProps) => {
+
+    // let arr = Array.from(props.monster_keys.keys())
+    // console.log(arr)
+    // console.log("monster keys:", props.monster_keys)
+    const titles_keys: Map<string, string> = props.titles_keys
+    // const monster_titles = Array.from(Object.keys(props.titles_keys)).sort((a, b) => a.localeCompare(b))
+    let monster_links: JSX.Element[] = []
+
+    // const monster_links = titles_keys.map(([monster_title, monster_key]) => {
+    //     // console.log()
+    //     return (
+    //         <MonsterLink key={monster_title} monster_key={monster_key} monster_title={monster_title} />
+    //     )
+    // }
+    
+    Object.keys(titles_keys).forEach((monster_title: string)=>{
+        // const key: (keyof typeof titles_keys) = monster_title;
+        // log out each entry
+        monster_links.push(
+            <MonsterLink key={monster_title} monster_key={titles_keys[monster_title as keyof typeof titles_keys] as string} monster_title={monster_title} />
+        )
+      })
+    
+    return (
+            // <div style={MonsterLinksWrapperStyle}>
+            <div className='MonsterLinksWrapper'>
+                {monster_links}
+            </div>
+    )
+}
+
 const flip = (data: { [s: string]: unknown; } | ArrayLike<unknown>) => Object.fromEntries(
     Object
         .entries(data)
@@ -74,7 +112,7 @@ export function appendix() {
             <Layout url='/appendix'>
                 <div className='background-appendix'>
                     <div className="AppendixDescription">Browse monster source books by setting or browse all at once.</div>
-                    <MonsterLinks monster_keys={keys_titles_json} />
+                    <AllMonsterLinks titles_keys={titles_keys_json} />
                 </div>
             </Layout>
         </>
