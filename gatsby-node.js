@@ -94,7 +94,7 @@ exports.createPages = async ({ actions }) => {
 
 
   // For Each Setting from settings.json
-  const settings_json = require("./src/data/settings.json")
+  const settings_json = require("./data/settings.json")
   settings_json.forEach(setting_object => {
     setting_object.source_books.forEach(book_id => {
       // search catalog_data for a matching book publish_id

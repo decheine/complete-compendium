@@ -911,6 +911,11 @@ void Harvester::ExportAPIJson(Json::Value monster_json){
     Json::Value all_tsr;
     alltsr_file >> all_tsr;
 
+    // printf("Reading in settings.json\n");
+    // std::ifstream settingsjson_file("../data/settings.json");
+    // Json::Value settings_json;
+    // alltsr_file >> settings_json;
+
     Json::Value tmp_book;
     Json::Value catalog_new;
     Json::Value tmp_catalog;
@@ -982,7 +987,8 @@ void Harvester::ExportAPIJson(Json::Value monster_json){
                 tmp_book["author"] = all_tsr[source_sanitized]["author"];
                 tmp_book["year"] = all_tsr[source_sanitized]["year"];
                 tmp_book["monster_keys"].append(entry);
-                tmp_book["setting"] = monster_json[entry]["setting"];
+                // tmp_book["setting"] = monster_json[entry]["setting"];
+                tmp_book["setting"] = all_tsr[source_sanitized]["setting"];
                 catalog_books.append(tmp_book);
             }
         }

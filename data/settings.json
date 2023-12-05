@@ -3,11 +3,13 @@
         "setting_key": "add2_01",
         "setting_name": "Advanced Dungeons & Dragons 2nd Edition",
         "source_books": [
+            "1090",
             "2101",
             "2140",
             "2158",
             "9539",
             "2103",
+            "2144",
             "2145",
             "2166",
             "2173",
@@ -23,7 +25,10 @@
             "9570",
             "2125",
             "2146",
-            "11383"
+            "11383",
+            "11444",
+            "Array",
+            "404"
         ],
         "createdAt": "2022-09-14T02:07:27.753Z",
         "updatedAt": "2022-10-29T22:10:09.440Z"
@@ -80,6 +85,7 @@
             "2444",
             "2406",
             "2413",
+            "2434",
             "2437",
             "2403",
             "2412"
@@ -158,6 +164,7 @@
         "source_books": [
             "Dungeon23",
             "Dungeon24",
+            "Dungeon26",
             "Dungeon28",
             "Dungeon31",
             "Dungeon33",
@@ -339,7 +346,16 @@
             "9364",
             "9321",
             "9541",
-            "9526"
+            "9526",
+            "BookofSacrifices",
+            "BookofSecrets",
+            "BookofShadows",
+            "BookofSorrows",
+            "BookofSouls",
+            "TerrorsfromAbove",
+            "TerrorsFromAbove",
+            "TheLonesomeRoad",
+            "ShawnMulder"
         ],
         "createdAt": "2022-09-14T02:07:27.753Z",
         "updatedAt": "2022-10-29T22:10:09.440Z"

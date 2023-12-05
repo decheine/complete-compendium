@@ -93,7 +93,7 @@
       "author" : "David \"Zeb\" Cook et al",
       "monster_keys" : [ "aarakocr" ],
       "publish_id" : "2101",
-      "setting" : "ADnD",
+      "setting" : "Advanced Dungeons & Dragons 2nd Edition",
       "title" : "Player's Handbook",
       "year" : "1998"
    },
@@ -405,7 +405,7 @@
          "zombie"
       ],
       "publish_id" : "2140",
-      "setting" : "ADnD",
+      "setting" : "Advanced Dungeons & Dragons 2nd Edition",
       "title" : "Monstrous Manual",
       "year" : "1995"
    },
@@ -471,7 +471,7 @@
          "zodar"
       ],
       "publish_id" : "2109",
-      "setting" : "Spelljammer",
+      "setting" : "Advanced Dungeons & Dragons 2nd Edition",
       "title" : "MC7 Spelljammer Appendix I",
       "year" : "1990"
    },
@@ -797,7 +797,7 @@
          "tressym"
       ],
       "publish_id" : "1085",
-      "setting" : "Fiends Folio",
+      "setting" : "Forgotten Realms",
       "title" : "Forgotten Realms Campaign Setting, Revised Edition",
       "year" : "1993"
    },
@@ -805,7 +805,7 @@
       "author" : "",
       "monster_keys" : [ "abhir" ],
       "publish_id" : "Dungeon23",
-      "setting" : "Planescape",
+      "setting" : "Dungeon Magazine",
       "title" : "Dungeon #23",
       "year" : "1990"
    },
@@ -1022,7 +1022,7 @@
          "xaver"
       ],
       "publish_id" : "2145",
-      "setting" : "Planescape",
+      "setting" : "Advanced Dungeons & Dragons 2nd Edition",
       "title" : "Monstrous Compendium, 1994 Annual, Volume 1",
       "year" : "1995"
    },
@@ -1044,7 +1044,7 @@
          "parai"
       ],
       "publish_id" : "2607",
-      "setting" : "Fiends Folio",
+      "setting" : "Planescape",
       "title" : "Planes of Law",
       "year" : "1995"
    },
@@ -1389,7 +1389,7 @@
          "tren"
       ],
       "publish_id" : "2125",
-      "setting" : "Forgotten Realms",
+      "setting" : "Advanced Dungeons & Dragons 2nd Edition",
       "title" : "MC11 Forgotten Realms Appendix II",
       "year" : "1991"
    },
@@ -1496,7 +1496,7 @@
          "zhenspir"
       ],
       "publish_id" : "2166",
-      "setting" : "Forgotten Realms",
+      "setting" : "Advanced Dungeons & Dragons 2nd Edition",
       "title" : "Monstrous Compendium, 1996 Annual, Volume 3",
       "year" : "1995"
    },
@@ -1557,7 +1557,7 @@
          "zurchin"
       ],
       "publish_id" : "2119",
-      "setting" : "Spelljammer",
+      "setting" : "Planescape",
       "title" : "MC9 Spelljammer Appendix II",
       "year" : "1991"
    },
@@ -1817,7 +1817,7 @@
          "zombmud"
       ],
       "publish_id" : "2173",
-      "setting" : "Dragonlance",
+      "setting" : "Advanced Dungeons & Dragons 2nd Edition",
       "title" : "Monstrous Compendium, 1997 Annual, Volume 4",
       "year" : "1995"
    },
@@ -2246,7 +2246,7 @@
          "zombred"
       ],
       "publish_id" : "2524",
-      "setting" : "Red Steel (Mystara)",
+      "setting" : "Mystara",
       "title" : "Monstrous Compendium Savage Coast Appendix (Online Exclusive)",
       "year" : "1995"
    },
@@ -2294,7 +2294,7 @@
       "author" : "",
       "monster_keys" : [ "armaphan", "catmoat", "duckbunn", "horsspid", "turtdrfl" ],
       "publish_id" : "Dragon243",
-      "setting" : "Advanced Dungeons & Dragons 2nd Edition",
+      "setting" : "Dragon Magazine",
       "title" : "Dragon243",
       "year" : "1998"
    },
@@ -2347,7 +2347,7 @@
          "zygom"
       ],
       "publish_id" : "2107",
-      "setting" : "Greyhawk",
+      "setting" : "Advanced Dungeons & Dragons 2nd Edition",
       "title" : "MC5 Greyhawk Appendix",
       "year" : "1989"
    },
@@ -2604,7 +2604,7 @@
          "zomblord"
       ],
       "publish_id" : "2122",
-      "setting" : "Ravenloft",
+      "setting" : "Planescape",
       "title" : "MC10 Ravenloft Appendix I",
       "year" : "1989"
    },
@@ -2798,7 +2798,7 @@
          "viruunde"
       ],
       "publish_id" : "BookofSorrows",
-      "setting" : "Masque of the Red Death (Ravenloft)",
+      "setting" : "Ravenloft",
       "title" : "",
       "year" : ""
    },
@@ -2844,7 +2844,7 @@
       "author" : "",
       "monster_keys" : [ "blarooma", "dirtwrai", "kyushoun", "murdakus" ],
       "publish_id" : "Dragon270",
-      "setting" : "Greyhawk",
+      "setting" : "Dragon Magazine",
       "title" : "Dragon270",
       "year" : "2000"
    },
@@ -3134,7 +3134,7 @@
       "author" : "",
       "monster_keys" : [ "darklord" ],
       "publish_id" : "Array",
-      "setting" : "Dragon Magazine",
+      "setting" : "Advanced Dungeons & Dragons 2nd Edition",
       "title" : "",
       "year" : ""
    },
@@ -3239,7 +3239,7 @@
          "wyvedrak"
       ],
       "publish_id" : "9547",
-      "setting" : "Forgotten Realms",
+      "setting" : "Advanced Dungeons & Dragons 2nd Edition",
       "title" : "FOR11 Cult of the Dragon",
       "year" : "1990"
    },
@@ -3406,11 +3406,12 @@
       "year" : "1993"
    },
    {
-      "author" : null,
+      "author" : "",
       "monster_keys" : [ "elghonn" ],
       "publish_id" : "DragonMagazineAnnual1996",
       "setting" : "Dragon Magazine",
-      "year" : null
+      "title" : "Dragon Magazine Annual 1996",
+      "year" : "1996"
    },
    {
       "author" : "David \"Zeb\" Cook",
@@ -3448,7 +3449,7 @@
       "author" : "",
       "monster_keys" : [ "fienknig" ],
       "publish_id" : "Dragon206",
-      "setting" : "Greyhawk",
+      "setting" : "Dragon Magazine",
       "title" : "Dragon206",
       "year" : "1994"
    },
@@ -3456,7 +3457,7 @@
       "author" : "Rich Borg",
       "monster_keys" : [ "firemini" ],
       "publish_id" : "1090",
-      "setting" : "Dragonlance",
+      "setting" : "Advanced Dungeons & Dragons 2nd Edition",
       "title" : "Cardmaster Adventure Design Deck",
       "year" : "1993"
    },
@@ -3628,7 +3629,7 @@
       "author" : "",
       "monster_keys" : [ "kada" ],
       "publish_id" : "Dungeon57",
-      "setting" : "Al-Qadim (Forgotten Realms)",
+      "setting" : "Dungeon Magazine",
       "title" : "Dungeon #57",
       "year" : "1996"
    },
@@ -3636,7 +3637,7 @@
       "author" : "",
       "monster_keys" : [ "kitskasu" ],
       "publish_id" : "Dungeon33",
-      "setting" : "Kara-Tur (Forgotten Realms)",
+      "setting" : "Dungeon Magazine",
       "title" : "Dungeon #33",
       "year" : "1992"
    },
@@ -3724,16 +3725,16 @@
       "author" : "",
       "monster_keys" : [ "minisetl" ],
       "publish_id" : "Dungeon31",
-      "setting" : "Planescape",
+      "setting" : "Dungeon Magazine",
       "title" : "Dungeon #31",
       "year" : "1991"
    },
    {
-      "author" : "Unknown",
+      "author" : "Shawn Mulder",
       "monster_keys" : [ "moldling" ],
       "publish_id" : "ShawnMulder",
       "setting" : "Ravenloft",
-      "title" : "",
+      "title" : "Homebrew",
       "year" : ""
    },
    {
@@ -3780,7 +3781,7 @@
       "author" : "Christopher Perkins",
       "monster_keys" : [ "protpomo" ],
       "publish_id" : "11444",
-      "setting" : "Forgotten Realms",
+      "setting" : "Advanced Dungeons & Dragons 2nd Edition",
       "title" : "Dungeons of Despair",
       "year" : "1999"
    },
@@ -3852,7 +3853,7 @@
       "author" : "",
       "monster_keys" : [ "siragle" ],
       "publish_id" : "Dungeon28",
-      "setting" : "Planescape",
+      "setting" : "Dungeon Magazine",
       "title" : "Dungeon #28",
       "year" : "1991"
    },
@@ -3913,11 +3914,12 @@
       "year" : "1997"
    },
    {
-      "author" : null,
+      "author" : "",
       "monster_keys" : [ "tripheg", "turtle", "vulture", "wildhunt", "wospmisk", "yyllethy" ],
       "publish_id" : "404",
-      "setting" : "",
-      "year" : null
+      "setting" : "Advanced Dungeons & Dragons 2nd Edition",
+      "title" : "404",
+      "year" : ""
    },
    {
       "author" : "",
@@ -3928,11 +3930,12 @@
       "year" : "1993"
    },
    {
-      "author" : null,
+      "author" : "",
       "monster_keys" : [ "twill" ],
       "publish_id" : "Dungeon26",
       "setting" : "Dungeon Magazine",
-      "year" : null
+      "title" : "Dungeon #26",
+      "year" : "1990"
    },
    {
       "author" : "Steve Kurtz",
