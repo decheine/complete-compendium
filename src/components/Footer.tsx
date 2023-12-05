@@ -10,7 +10,7 @@ function Footer() {
             <div className="footer-container">
                 <div className="paragraph">
                     <p>
-                    All content herein was harvested from the Wayback Machine’s archive of the website lomion.de/. Any and all intellectual property mentioned is property of TSR inc. (Wizards of the Coast). This site is for historical and encyclopedic purposes only. This site has no revenue of any sort and I seek to take no profit from the intellectual property of the original authors. 
+                    All content herein was harvested from the Wayback Machine's archive of the website lomion.de/. Any and all intellectual property mentioned is property of TSR inc. (Wizards of the Coast). This site is for historical and encyclopedic purposes only. This site has no revenue of any sort and I seek to take no profit from the intellectual property of the original authors. 
                     </p>
                 </div>
                 <div className="footer-links">
@@ -29,7 +29,7 @@ function Footer() {
             <div className="bottom-banner">
                 <hr className="footer-hr" />
                 <div className="bottom-banner-text">
-                    <p>All Rights of intellectual property to TSR inc. (Wizards of the Coast). All Rites Reversed.</p>
+                    <p>All Rights of intellectual property to TSR inc. (Wizards of the Coast).</p>
                 </div>
             </div>
         </div>
