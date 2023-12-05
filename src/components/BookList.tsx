@@ -11,7 +11,7 @@ const BOOKS = require('../../data/all_tsr.json')
 
 const catalog_data = require('@data/Full_Catalog.json')
 
-const settings_json = require('@data/settings.json')
+const settings_json = require('../../data/settings.json')
 
 
 // List View Buttons

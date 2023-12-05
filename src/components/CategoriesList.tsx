@@ -12,7 +12,7 @@ const WORLDS = require('../data/CatWorlds.json')
 
 // import { SettingPage } from "./SettingPage";
 
-const data_settings = require('../data/settings.json')
+const data_settings = require('../../data/settings.json')
 const settings_list = require('@data/AcronymsSetting.json')
 
 type SettingType = {

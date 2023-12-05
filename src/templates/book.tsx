@@ -38,7 +38,7 @@ return (
   <div className="list-container">
       <div className="list-flexbox">
           <>
-              {props.monster_keys.sort().map((monster_key: string) => {
+              {props.monster_keys?.sort().map((monster_key: string) => {
                   // console.log("monster_key: ", monster_key)
                   return (
                           <Link to={props.url_suffix + monster_key} className={bookStyles.listLink} key={monster_key}>
@@ -118,7 +118,7 @@ const BookTemplate: React.FC<Props> = ({ pageContext }) => {
                                         <strong>Year:</strong> {year}
                                     </li>
                                     <li>
-                                        <strong>Monster Count:</strong> {monster_keys.length}
+                                        <strong>Monster Count:</strong> {monster_keys?.length}
                                     </li>
                                 </ul>
                             </div>
