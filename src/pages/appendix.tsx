@@ -56,7 +56,7 @@ const MonsterLinks = (props: MonsterLinksProps) => {
     const monster_links = monster_keys.map(monster_key => {
         // console.log()
         return (
-            <MonsterLink key={monster_key} monster_key={monster_key} monster_title={monster_map[monster_key] ? props.monster_keys[monster_key]! : ""} />
+            <MonsterLink key={monster_key} monster_key={monster_key} monster_title={monster_map[monster_key as keyof typeof monster_map] ? props.monster_keys[monster_key as keyof typeof monster_map] as string : ""} />
         )
     }
     )
