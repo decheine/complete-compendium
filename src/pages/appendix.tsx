@@ -36,6 +36,30 @@ const MonsterLinksWrapperStyle: CSS.Properties = {
     marginTop: "1rem",
 }
 
+const AlphSectionWrapperStyle: CSS.Properties = {
+    alignItems: "flex-start",
+    display: "flex",
+    flexDirection: "column",
+    flexWrap: "wrap",
+    marginTop: "1rem",
+}
+
+const AlphHeaderStyle: CSS.Properties = {
+    fontFamily: "frizquadrata_ltbold",
+    paddingLeft: "0.5em",
+    fontSize: "x-large",
+    marginBlockStart: "0em",
+    marginBlockEnd: "0em",
+    marginInlineStart: "0px",
+    marginInlineEnd: "0px",
+}
+
+const alphHrStyle: CSS.Properties = {
+    width: "-webkit-fill-available",
+    backgroundColor: "#1250A2",
+    height: "2px"
+}
+
 type DataProps = {
     site: {
         siteMetadata: {
@@ -46,15 +70,10 @@ type DataProps = {
 
 //for each monster_key in the KEYS_TITLES, display a link to the monster page
 const MonsterLinks = (props: MonsterLinksProps) => {
-
-    // let arr = Array.from(props.monster_keys.keys())
-    // console.log(arr)
-    // console.log("monster keys:", props.monster_keys)
     const monster_map = props.monster_keys
     const monster_keys = Array.from(Object.keys(props.monster_keys)).sort((a, b) => a.localeCompare(b))
 
     const monster_links = monster_keys.map(monster_key => {
-        // console.log()
         return (
             <MonsterLink key={monster_key} monster_key={monster_key} monster_title={monster_map[monster_key as keyof typeof monster_map] ? props.monster_keys[monster_key as keyof typeof monster_map] as string : ""} />
         )
@@ -69,21 +88,9 @@ const MonsterLinks = (props: MonsterLinksProps) => {
 }
 
 const AllMonsterLinks = (props: AllMonsterLinksProps) => {
-
-    // let arr = Array.from(props.monster_keys.keys())
-    // console.log(arr)
-    // console.log("monster keys:", props.monster_keys)
     const titles_keys: Map<string, string> = props.titles_keys
     // const monster_titles = Array.from(Object.keys(props.titles_keys)).sort((a, b) => a.localeCompare(b))
     let monster_links: JSX.Element[] = []
-
-    // const monster_links = titles_keys.map(([monster_title, monster_key]) => {
-    //     // console.log()
-    //     return (
-    //         <MonsterLink key={monster_title} monster_key={monster_key} monster_title={monster_title} />
-    //     )
-    // }
-    
     Object.keys(titles_keys).forEach((monster_title: string)=>{
         // const key: (keyof typeof titles_keys) = monster_title;
         // log out each entry
@@ -93,9 +100,107 @@ const AllMonsterLinks = (props: AllMonsterLinksProps) => {
       })
     
     return (
-            // <div style={MonsterLinksWrapperStyle}>
             <div className='MonsterLinksWrapper'>
                 {monster_links}
+            </div>
+    )
+}
+
+const AlphAllMonsterLinks = (props: MonsterLinksProps) => {
+
+    // let arr = Array.from(props.monster_keys.keys())
+    // console.log(arr)
+    // console.log("monster keys:", props.monster_keys)
+    // const titles_keys: Map<string, string> = props.titles_keys
+    // const monster_titles = Array.from(Object.keys(props.titles_keys)).sort((a, b) => a.localeCompare(b))
+    // let monster_links: JSX.Element[] = []
+
+    // const monster_links = titles_keys.map(([monster_title, monster_key]) => {
+    //     // console.log()
+    //     return (
+    //         <MonsterLink key={monster_title} monster_key={monster_key} monster_title={monster_title} />
+    //     )
+    // }
+    let alphabet_groups: JSX.Element[] = []
+    
+    const monster_map = props.monster_keys
+    // console.log("monster_map", monster_map)
+    // console.log("monster_TITLES", Object.values(props.monster_keys))
+    const monster_keys = Array.from(Object.keys(props.monster_keys)).sort((a, b) => a.localeCompare(b))
+    const monster_titles: Array<string> = Object.values(props.monster_keys).sort((a, b) => a.localeCompare(b))
+
+    // Reverse it
+    const monster_title_keys = new Map(Array.from(monster_map, entry => [entry[1], entry[0]]));
+    // const monster_titles: Array<string> = Array.from(Object.keys(monster_title_keys))
+
+    // Split into groups based on first character, sorted alphabetically
+    const groupIt = (array: Array<string>) => {
+        let resultObj: Map<string, Array<string>> = new Map<string, Array<string>>();
+        
+        for (let i =0; i < array.length; i++) {
+          let currentWord: string = array[i];
+          let firstChar: string = currentWord[0].toLowerCase();
+          let innerArr: Array<string> = [];
+          if (resultObj[firstChar] === undefined) {
+             innerArr.push(currentWord);
+            resultObj[firstChar] = innerArr
+          }else {
+            resultObj[firstChar].push(currentWord)
+          }
+        }
+        return resultObj
+    }
+
+    // console.log("monster_titles", monster_titles)
+    const grouped_alph_monsterkeys: Map<string, Array<string>> = groupIt(monster_titles)
+    // console.log(grouped_alph_monsterkeys)
+    // console.log("keys", Object.keys(grouped_alph_monsterkeys))
+    // console.log("entries", Object.entries(grouped_alph_monsterkeys))
+
+    // grouped_alph_monsterkeys.forEach((monster_titles: string[], key: string, map: Map<string, string[]>) => {
+    //     console.log("letter", key)
+    // })
+
+    
+    Object.keys(grouped_alph_monsterkeys).forEach((letter: string, index: number, monster_titles: string[]) => {
+        // console.log( letter, monster_titles, grouped_alph_monsterkeys[letter])
+        // console.log("")
+        const alph_monster_links = grouped_alph_monsterkeys[letter].map(monster_title => {
+            // console.log()
+            return (
+                // <div key={monster_title}>
+                    
+                <MonsterLink key={monster_title} monster_key={monster_title_keys[monster_title]} monster_title={monster_title} />
+                // </div>
+            )
+        })
+        alphabet_groups.push(
+            // Letter as a header
+            <div key={letter} style={AlphSectionWrapperStyle}>
+                <h2 style={AlphHeaderStyle}>{letter.toLocaleUpperCase()}</h2>
+                <hr style={alphHrStyle}/>
+                <div key={letter} className="MonsterLinksWrapper">
+                    {alph_monster_links}
+                </div>
+            </div>
+        )
+    });
+    // console.log("alph groups")
+    // console.log(alphabet_groups)
+    
+    const monster_links = monster_keys.map(monster_key => {
+        // console.log()
+        return (
+            <MonsterLink key={monster_key} monster_key={monster_key} monster_title={monster_map[monster_key as keyof typeof monster_map] ? props.monster_keys[monster_key as keyof typeof monster_map] as string : ""} />
+        )
+    }
+    )
+    // console.log(alphabet_groups)
+    return (
+            // <div style={MonsterLinksWrapperStyle}>
+            // <div className='MonsterLinksWrapper'>
+            <div>
+                {alphabet_groups}
             </div>
     )
 }
@@ -112,7 +217,8 @@ export function appendix() {
             <Layout url='/appendix'>
                 <div className='background-appendix'>
                     <div className="AppendixDescription">Browse monster source books by setting or browse all at once.</div>
-                    <AllMonsterLinks titles_keys={titles_keys_json} />
+                    {/* <AllMonsterLinks titles_keys={titles_keys_json} /> */}
+                    <AlphAllMonsterLinks monster_keys={keys_titles_json} />
                 </div>
             </Layout>
         </>

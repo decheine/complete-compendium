@@ -30,7 +30,8 @@ export function about() {
 
             
             <h2 id="summary"> Summary</h2>
-            What is Advanced Dungeons &amp; Dragons:  Advanced Dungeons &amp; Dragons (AD&amp;D) 2nd Edition is a table top roleplaying game published by TSR inc. Over the decades of its life, hundreds of products were published for AD&amp;D 2nd Edition, and with them, thousands of monsters. This website is a compendium of all of the monsters across all of the books published for AD&amp;D 2nd Edition.
+            This is a project to create a comprehensive compendium of all the monsters accross the entire Advanced Dungeons and Dragons 2nd Edition collection.
+            Advanced Dungeons &amp; Dragons (AD&amp;D) 2nd Edition (AD&D 2e) is a table top roleplaying game created by TSR inc. Thousands of monsters were written over the decades and this website seeks to be a convenient, fair-use way to browse monsters from out of print sourcebooks. 
 
             <h3 id="motivation"> Motivation </h3>
             <p>
@@ -50,22 +51,24 @@ export function about() {
                     created a website with a similar goal. Unfortunately, the website is no longer online. It went offline around 2018, but that motivated me to build this.
                 </p>
             </div>
-            <h2 id="architecture"> Architecture</h2>
-            <p>Started with downloading the entire directory of lomion.de from the Wayback Machine through some command line operations.</p>
-            <p>Then with all the mosnter file html documents, I build a harvester program in C++ to collect all the data so that it may be uploaded to a database. The harvester also collected the publicaiton ID numbers of its sourcebook(s), so I can organize the monsters by book. Then the theming of the pages indicates the campaign setting the monster is most prominent, so I can organize the monsters by setting/world. </p>
-            <p>I wanted to turn this project into a fully deployed application available for the public. So the next steps were to set up a database to store the monster data; naturally an API is required to publish to and retrieve data form the database. </p>
+            <details>
+                <summary>Architecture</summary>
+                <p>I started with downloading the entire directory of lomion.de from the Wayback Machine through some command line operations.</p>
+                <p>Then with all the mosnter file html documents, I build a harvester program in C++ to collect all the data so that it may be uploaded to a database. The harvester also collected the publicaiton ID numbers of its sourcebook(s), so I can organize the monsters by book. Then the theming of the pages indicates the campaign setting the monster is most prominent, so I can organize the monsters by setting/world. </p>
+                <p>I wanted to turn this project into a fully deployed application available for the public. So the next steps were to set up a database to store the monster data; naturally an API is required to publish to and retrieve data form the database. </p>
 
-            import React from "react"            <input type="checkbox" id="ZoomImage" className="zoomcheck"/>
-            <label htmlFor="ZoomImage">
-                <ZoomImage src="/images/full_architecture.png" alt="A flowchart of the entire website"/>
-            </label>
+                <p>
+                    This was previously an overengineered mess of cloud compute EC2 instances to run an API and database, and while cool, that isn't what I needed and cost $30/month if I wanted to do it securely.
+                    Because of the nature of this data: a load of html files and a campaign setting - book catalog structure, which can be achieved with simple JSON. With publish id's from the monster pages
+                    to identify the books, a list of all of the book's titles, authors, and publication years, the catalog can be created. New books can be added to the JSON files easily. New monsters require writing
+                    the new monster from an html template and running the harvester program to update the JSON files. I use Gatsby Typescript framework to build statically and host with GitHub pages, so it's free to host 
+                    except for the domain, which is still cheap.
+                </p>
+                <p>
 
-            <p>I chose PostgreSQL over other database platforms due to its rich toolset, but mainly support for Arrays and built in indexing and lookup system so searches can be done natively by the database.</p>
-            <p>For the API I wanted something simple but scalable if I wanted. So I chose NodeJS with Express as the web framework and Sequelize to communicate with the Database. I figured these two services could be hosted on AWS EC2 instances, I do not anticipate sustained high traffic but the workload isn't heavy so even the smallest EC2 could support a few users making requests at once.</p>
-            <p>Now for the Continuous Deployment and Integration. I wanted the cheapest, most streamlined way to harvest monster data when more data is collected. I chose to use GitHub Actions to run a Docker container running the harvester. GitHub Actions then publishes the latest data via the API. Authentication is done by requesting AWS permissions for the IP of the GitHub Actions runner and then requesting to remove them after publication is finished. </p>
-            <p>For the frontend application I chose React for its statefulness, hooks, and option for whatever complexity I would want in the future. This React application is hosted on GitHub pages, which is a low price if the repo is private and free if it is public. I want to keep this public, in order to do so I'll need to find a way of obfuscating the API endpoint IP.</p>
-            <p>For CI/CD for the API, the EC2 instance running it is set at a remote for the repository, so when new tags are published, the changes get pushed to the remote server and the server is updated automatically. </p>
-            <p>Thus the entire pipeline should be online continuously and I am free to upgrade each of the pieces, </p>
+                </p>
+            </details>
+            
 
             <h2 className="atx" id="features">Features</h2>
             <h3 className="atx" id="appendix">Appendix</h3>
