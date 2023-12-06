@@ -26,12 +26,12 @@
 /* Horizontal Lines */
 
 /* Default */
-/* hr {
+hr {
     background-color: var(--color-main-darker);
     height: 2mm;
     margin-top: 3mm;
     margin-bottom: 7px;
-} */
+}
 
 /* Horizontal Lines */
 hr.hr1 {
