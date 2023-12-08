@@ -112,6 +112,7 @@ const BookMonsterTemplate: React.FC<Props> = ({pageContext }) => {
 //         global.window.removeEventListener('resize', updateDimension);
 //     })
 //   }, [screenSize])
+
   const monster_page_data: MonsterPageContext = pageContext
   // const monster_object = pageContext.monster_object
 //   console.log("monster page")

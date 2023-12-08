@@ -39,13 +39,27 @@ int main(int argc, char *argv[])
     // problem monsters (there are more):
     // tripheg 
 
-    std::cout << "harvesting nicknames...\n";
-    harvester.HarvestNickNames();
+    // std::cout << "harvesting nicknames...\n";
+    // harvester.HarvestNickNames();
 
     // harvester.TestRunSel("fishtori");
     // harvester.RunMonster("yakman");
-    // harvester.RunMonster("yelmuscr");
+    // harvester.RunMonster("genizkda");
     // harvester.RunMonster("yeshom");
+
+    // std::cout << "dao\n";
+    // harvester.RunMonster("genizkda");
+    // std::cout << "djinni\n";
+    // harvester.RunMonster("genizkdj");
+    // std::cout << "efreeti\n";
+    // harvester.RunMonster("genizkef");
+    // std::cout << "janni\n";
+    // harvester.RunMonster("genizkjn");
+    // std::cout << "marid\n";
+    // harvester.RunMonster("genizkma");
+
+    // printf("Done testing\n");
+
     harvester.HarvestAll(true);
     // harvester.RunMonster("human");
     // harvester.RunMonster("zombie");

@@ -1202,6 +1202,9 @@ std::string Harvester::GetFullBody(std::string in, std::string monster_key){
         // return "";
     }
 
+    if(debug)
+        printf("\n\n");
+
     
 
     std::string trimmedString = std::regex_replace(splitTestResult, r, "");
@@ -1210,7 +1213,8 @@ std::string Harvester::GetFullBody(std::string in, std::string monster_key){
     // Now try splitting by newline. now we have a vector. and we can remove the last x elements
     std::vector<std::string> splitByNewline = split(splitTestResult, "\n");
     // printf("splitByNewline.size(): %zu\n", splitByNewline.size());
-    
+    if (debug)
+        printf("splitResult size: %zu", splitByNewline.size());
     // remove the last 3 elements
     splitByNewline.erase(splitByNewline.end() - 4, splitByNewline.end());
     // printf("splitByNewline.size(): %zu\n", splitByNewline.size());
@@ -1310,7 +1314,7 @@ int Harvester::RunMonster(std::string monsterName)
         printf("sanitized links\n");
     
     if(debug)
-        std::cout << "getting full body\n" << sanitizedString << "\n";
+        std::cout << "getting full body\n";// << sanitizedString << "\n";
 
     monsterJson["fullBody"] = GetFullBody(sanitizedString, monsterName);
     if(debug)

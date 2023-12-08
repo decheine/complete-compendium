@@ -35,7 +35,7 @@ const Layout = (props: PropsWithChildren<LayoutProps>) => {
       // relative_locs.pop();
       relative_locs.shift();
     }
-    // console.log(relative_locs)
+    console.log(relative_locs)
     // console.log(relative_locs)
     return (
       <div className={layoutStyle.layoutWrapper}>

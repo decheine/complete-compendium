@@ -12,7 +12,9 @@ import * as breadcrumbStyle from "@styles/modules/breadcrumb.module.css"
 // import { title } from 'process';
 const Acronyms = require('@data/AcronymsSetting.json')
 const KeyToTitles = require('@data/AA_KEYS_TITLES.json')
-const BooksIDToTitles = require('@data/sortedtsr.json')
+// const BooksIDToTitles = require('@data/sortedtsr.json')
+const BOOKS = require('../../data/all_tsr.json')
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { library, dom } from '@fortawesome/fontawesome-svg-core'
 import {
@@ -82,7 +84,7 @@ const BreadCrumb = ( props: MyProps) => {
                         text = Acronyms[node]
                         break;
                     case 2: // Book
-                        text = BooksIDToTitles[node]
+                        text = BOOKS[node].title
                         break;
                     case 3: // Monster
                         text = KeyToTitles[node]

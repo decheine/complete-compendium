@@ -12,3 +12,8 @@ fs.copyFile('output/json_files/AA_Full_Catalog.json', 'src/data/Full_Catalog.jso
   if (err) throw err;
   console.log('Catalog data was copied to destination');
 });
+
+fs.copyFile('output/json_files/AA_KEY_TITLES.json', 'src/data/AA_KEYS_TITLES.json', (err) => {
+  if (err) throw err;
+  console.log('Keys to Titles data was copied to destination');
+});
