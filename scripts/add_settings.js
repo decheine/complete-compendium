@@ -35,8 +35,8 @@ for(const [index, tsr] of Object.entries(all_tsr)) {
 }
 
 var fs = require('fs');
-fs.writeFile("./data/all_tsr_settings.json", JSON.stringify(all_tsr_new), function(err) {
-    if (err) {
-        console.log(err);
-    }
-});
+// fs.writeFile("./data/all_tsr_settings.json", JSON.stringify(all_tsr_new), function(err) {
+//     if (err) {
+//         console.log(err);
+//     }
+// });
