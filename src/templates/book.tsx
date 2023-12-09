@@ -10,6 +10,7 @@ import * as bookStyles from '@styles/modules/book.module.css'
 
 const KeyToTitles = require('@data/AA_KEYS_TITLES.json')
 const CatAcronyms = require('@data/CatAcronyms.json')
+const publish_id_to_acronym = require('@data/publishId_to_acronym.json')
 
 
 /* Example
@@ -152,7 +153,7 @@ export const Head: React.FC<Props> = ({ pageContext }) => (
       <meta property="og:site_name" content="AD&D 2nd Edition Complete Monstrous Compendium"/>
       <meta property="og:title" content={pageContext.pageContext.title  + " | AD&D Complete Compendium"}/>
       <meta property="og:description" content={ "Catalog page, for the " + pageContext.pageContext.title + "book." }/>
-      <meta property="og:url" content={"https://www.completecompendium.com" + '/Catalog/' +  pageContext.pageContext.publish_id}/>
+      <meta property="og:url" content={"https://www.completecompendium.com" + '/catalog/' + publish_id_to_acronym[pageContext.pageContext.publish_id] + '/' + pageContext.pageContext.publish_id}/>
       <meta property="og:type" content="website"/>
       {
         <>
