@@ -115,6 +115,7 @@
          "behir",
          "beholde1",
          "beholde2",
+         "bird",
          "braimole",
          "brokenon",
          "brownie",
@@ -195,6 +196,7 @@
          "ettercap",
          "eyewing",
          "feyr",
+         "fish",
          "frog",
          "fungus",
          "galeduhr",
@@ -1573,6 +1575,7 @@
          "dabus",
          "magman",
          "minioset",
+         "modron",
          "nicepona",
          "spirotai",
          "vortex",
@@ -2992,6 +2995,14 @@
       "setting" : "Dark Sun",
       "title" : "Windriders of the Jagged Cliffs",
       "year" : "1995"
+   },
+   {
+      "author" : "Lynn Abbey",
+      "monster_keys" : [ "calldark" ],
+      "publish_id" : "2434",
+      "setting" : "Dark Sun",
+      "title" : "The Chronicles of Athas 1, The Brazen Gambit",
+      "year" : "1997"
    },
    {
       "author" : "",

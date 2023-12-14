@@ -767,11 +767,11 @@ void Harvester::HarvestAll(bool threaded)
 
 
     std::set<std::string> skip = {
-        "modron",
-        "calldark",
+        // "modron",
+        // "calldark",
         // "human",
-        "bird",
-        "fish",
+        // "bird",
+        // "fish",
         "index"};
 
     std::set<std::string> searchingMonsterNames;
@@ -1422,7 +1422,7 @@ int Harvester::RunMonster(std::string monsterName)
         if(debug)
             std::cout << "Getting Stats Table\n";
 
-        if(monsterName == "human"){
+        if(monsterName == "human" || monsterName == "modron"){
 
         } else {
             Json::Value statblock = GetStatsTable(monsterString);
