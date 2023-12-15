@@ -67,7 +67,7 @@ let statistics = {
   "unique_count": unique_count
 }
 
-fs.writeFile("./src/data/statistics.json", JSON.stringify(publishId_to_acronym), function(err) {
+fs.writeFile("./src/data/statistics.json", JSON.stringify(statistics), function(err) {
   if (err) {
       console.log(err);
   }
