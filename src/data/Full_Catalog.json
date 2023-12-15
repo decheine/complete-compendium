@@ -1003,7 +1003,6 @@
          "snakston",
          "specwiza",
          "spelweav",
-         "spidbrai",
          "suwyze",
          "tatalla",
          "tickhear",
@@ -2265,6 +2264,28 @@
       "year" : "1993"
    },
    {
+      "author" : "Jeff Grub",
+      "monster_keys" : 
+      [
+         "arcane",
+         "beholde1",
+         "beholde2",
+         "dracon",
+         "dragradi",
+         "elmarin",
+         "ephemera",
+         "giff",
+         "kindori",
+         "krajen",
+         "neogi",
+         "scavver"
+      ],
+      "publish_id" : "1049",
+      "setting" : "Spelljammer",
+      "title" : "AD&D Adventures In Space",
+      "year" : "1989"
+   },
+   {
       "author" : "Shane Lacy Hensley",
       "monster_keys" : 
       [
@@ -2478,6 +2499,26 @@
       "publish_id" : "3117",
       "setting" : "Birthright",
       "title" : "Book of Magecraft",
+      "year" : "1994"
+   },
+   {
+      "author" : "Ed Greenwood",
+      "monster_keys" : 
+      [
+         "autoscal",
+         "behodeki",
+         "behoelor",
+         "darktent",
+         "ibrandli",
+         "sharn",
+         "slitmorp",
+         "snakflyi",
+         "steeshad",
+         "watcghos"
+      ],
+      "publish_id" : "1060",
+      "setting" : "Forgotten Realms",
+      "title" : "Ruins of Undermountain I",
       "year" : "1994"
    },
    {
@@ -2778,25 +2819,6 @@
       "publish_id" : "2432",
       "setting" : "Dark Sun",
       "title" : "City by the Silt Sea",
-      "year" : "1994"
-   },
-   {
-      "author" : "Ed Greenwood",
-      "monster_keys" : 
-      [
-         "behodeki",
-         "behoelor",
-         "darktent",
-         "ibrandli",
-         "sharn",
-         "slitmorp",
-         "snakflyi",
-         "steeshad",
-         "watcghos"
-      ],
-      "publish_id" : "1060",
-      "setting" : "Forgotten Realms",
-      "title" : "Ruins of Undermountain I",
       "year" : "1994"
    },
    {
@@ -3249,7 +3271,18 @@
    },
    {
       "author" : "David Cook",
-      "monster_keys" : [ "disir", "horax", "skrit", "yaggol" ],
+      "monster_keys" : 
+      [
+         "disir",
+         "dractraa",
+         "dragkrot",
+         "firemini",
+         "gurichaa",
+         "horax",
+         "saqualmi",
+         "skrit",
+         "yaggol"
+      ],
       "publish_id" : "1050",
       "setting" : "Dragonlance",
       "title" : "Time of the Dragon",
@@ -3299,24 +3332,6 @@
       "setting" : "Advanced Dungeons & Dragons 2nd Edition",
       "title" : "FOR11 Cult of the Dragon",
       "year" : "1990"
-   },
-   {
-      "author" : "Jeff Grub",
-      "monster_keys" : 
-      [
-         "dracon",
-         "dragradi",
-         "elmarin",
-         "ephemera",
-         "giff",
-         "kindori",
-         "krajen",
-         "scavver"
-      ],
-      "publish_id" : "1049",
-      "setting" : "Spelljammer",
-      "title" : "AD&D Adventures In Space",
-      "year" : "1989"
    },
    {
       "author" : "Deborah Christian",
@@ -3391,6 +3406,13 @@
       "year" : "1996"
    },
    {
+      "author" : null,
+      "monster_keys" : [ "drgkin" ],
+      "publish_id" : "spidbrai",
+      "setting" : null,
+      "year" : null
+   },
+   {
       "author" : "",
       "monster_keys" : [ "drnecndr", "drnegedr", "drnemodr", "drnepadr" ],
       "publish_id" : "Dragon272",
@@ -3455,6 +3477,29 @@
       "year" : "1993"
    },
    {
+      "author" : "Colin McComb, Paul Arden Lidberg",
+      "monster_keys" : 
+      [
+         "elekeewe",
+         "gnasher",
+         "gnaswing",
+         "kobodrmo",
+         "livistee",
+         "noran",
+         "ophidian",
+         "rautym",
+         "squeaker",
+         "stonsnak",
+         "suwyze",
+         "tanagwas",
+         "undedwar"
+      ],
+      "publish_id" : "1089",
+      "setting" : "Advanced Dungeons & Dragons 2nd Edition",
+      "title" : "Dragon Mountain",
+      "year" : "1993"
+   },
+   {
       "author" : "",
       "monster_keys" : [ "elghonn" ],
       "publish_id" : "DragonMagazineAnnual1996",
@@ -3503,14 +3548,6 @@
       "year" : "1994"
    },
    {
-      "author" : "Rich Borg",
-      "monster_keys" : [ "firemini" ],
-      "publish_id" : "1090",
-      "setting" : "Advanced Dungeons & Dragons 2nd Edition",
-      "title" : "Cardmaster Adventure Design Deck",
-      "year" : "1993"
-   },
-   {
       "author" : "Richard and Anne Brown",
       "monster_keys" : [ "fishtori", "meenlock" ],
       "publish_id" : "9302",
@@ -3544,7 +3581,16 @@
    },
    {
       "author" : "Bruce Nesmith and Andria Hayday",
-      "monster_keys" : [ "geist", "lycaloga", "odem", "straskel", "strazomb", "vampnosf" ],
+      "monster_keys" : 
+      [
+         "geist",
+         "gremishk",
+         "lycaloga",
+         "odem",
+         "straskel",
+         "strazomb",
+         "vampnosf"
+      ],
       "publish_id" : "1053",
       "setting" : "Ravenloft",
       "title" : "Ravenloft Campaign Setting, 1st Ed. (\"Realm of Terror\")",
@@ -3584,26 +3630,6 @@
       "setting" : "Dragon Magazine",
       "title" : "Dragon174",
       "year" : "1991"
-   },
-   {
-      "author" : "Colin McComb, Paul Arden Lidberg",
-      "monster_keys" : 
-      [
-         "gnasher",
-         "gnaswing",
-         "kobodrmo",
-         "noran",
-         "ophidian",
-         "rautym",
-         "squeaker",
-         "stonsnak",
-         "suwyze",
-         "tanagwas"
-      ],
-      "publish_id" : "1089",
-      "setting" : "Advanced Dungeons & Dragons 2nd Edition",
-      "title" : "Dragon Mountain",
-      "year" : "1993"
    },
    {
       "author" : "",
@@ -3940,6 +3966,13 @@
       "setting" : "Birthright",
       "title" : "The Rjurik Highlands",
       "year" : "1996"
+   },
+   {
+      "author" : null,
+      "monster_keys" : [ "spidbrai" ],
+      "publish_id" : "2145.1089",
+      "setting" : null,
+      "year" : null
    },
    {
       "author" : "Anne Brown, Mike Breault",
