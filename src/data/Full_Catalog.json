@@ -2072,7 +2072,6 @@
          "elekwwwe",
          "firestar",
          "firetail",
-         "fishasca",
          "fishgian",
          "frog",
          "gorgon",
@@ -2306,6 +2305,50 @@
       "year" : "1998"
    },
    {
+      "author" : "William Connors, David Martin, Rick Swan, Gary Thomas",
+      "monster_keys" : 
+      [
+         "asperii",
+         "belabra",
+         "berbalan",
+         "bhaergal",
+         "bichir",
+         "bunyip",
+         "burbur",
+         "cloaker",
+         "crawclaw",
+         "darkbeas",
+         "dracolic",
+         "dragocar",
+         "dragocel",
+         "dragocoi",
+         "dragoear",
+         "dragori",
+         "dragoriv",
+         "dragosea",
+         "dragospi",
+         "dragotyp",
+         "drnefadr",
+         "firenewt",
+         "firestar",
+         "fishasca",
+         "fishvurg",
+         "meazel",
+         "medumaed",
+         "mistcrde",
+         "revenant",
+         "rhaumbus",
+         "strigian",
+         "thesmons",
+         "weblivin",
+         "wemic"
+      ],
+      "publish_id" : "2104",
+      "setting" : "Forgotten Realms",
+      "title" : "MC3 Volume III Forgotten Realms Appendix I",
+      "year" : "1989"
+   },
+   {
       "author" : "Grant Boucher, William W. Connors, Steve Gilbert, Bruce Nesmith, Chris Mortika, Skip Williams",
       "monster_keys" : 
       [
@@ -2409,7 +2452,6 @@
          "simorgya",
          "snowserp",
          "thunchil",
-         "weblivin",
          "whale",
          "wraispid",
          "zombsea"
@@ -2764,31 +2806,6 @@
       "setting" : "Spelljammer",
       "title" : "Legend of the Spelljammer",
       "year" : "1991"
-   },
-   {
-      "author" : "William Connors, David Martin, Rick Swan, Gary Thomas",
-      "monster_keys" : 
-      [
-         "belabra",
-         "berbalan",
-         "bhaergal",
-         "bichir",
-         "darkbeas",
-         "dragocar",
-         "dragocel",
-         "dragocoi",
-         "dragoear",
-         "dragoriv",
-         "dragosea",
-         "dragospi",
-         "dragotyp",
-         "rhaumbus",
-         "thesmons"
-      ],
-      "publish_id" : "2104",
-      "setting" : "Forgotten Realms",
-      "title" : "MC3 Forgotten Realms Appendix I",
-      "year" : "1989"
    },
    {
       "author" : "Unknown",
@@ -3146,6 +3163,31 @@
       "year" : "1993"
    },
    {
+      "author" : "Ed Greenwood, Elain Cunningham",
+      "monster_keys" : 
+      [
+         "curst",
+         "doppgrea",
+         "duhlarki",
+         "gulghydr",
+         "hakeasha",
+         "leucrgre",
+         "lycawesh",
+         "nyth",
+         "oosljegh",
+         "palimpse",
+         "peltast",
+         "raggamof",
+         "shadwrat",
+         "snaksewe",
+         "watcspid"
+      ],
+      "publish_id" : "1109",
+      "setting" : "Forgotten Realms",
+      "title" : "City of Splendors",
+      "year" : "1994"
+   },
+   {
       "author" : "",
       "monster_keys" : [ "darklord" ],
       "publish_id" : "Array",
@@ -3355,14 +3397,6 @@
       "setting" : "Dragon Magazine",
       "title" : "Dragon272",
       "year" : "2000"
-   },
-   {
-      "author" : "Ed Greenwood, Elain Cunningham",
-      "monster_keys" : [ "duhlarki", "snaksewe", "watcspid" ],
-      "publish_id" : "1109",
-      "setting" : "Forgotten Realms",
-      "title" : "City of Splendors",
-      "year" : "1994"
    },
    {
       "author" : "Rick Swan",

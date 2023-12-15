@@ -34,3 +34,43 @@ fs.writeFile("./src/data/publishId_to_acronym.json", JSON.stringify(publishId_to
       console.log(err);
   }
 });
+
+
+// Generate statistics
+
+// settings count from
+const settings_json = require('../data/settings.json')
+const AA_KEYS_TITLES = require('../src/data/AA_KEYS_TITLES.json')
+const ALL_MONSTERS = require('../src/data/ALL_MONSTERS.json')
+
+let settings_count = settings_json.length
+let books_count = Object.entries(all_tsr).length 
+let pages_count = Object.entries(AA_KEYS_TITLES).length
+
+let unique_count = 0
+// Unique count is trickier
+
+// Iterate through ALL_MONSTERS
+for (const monster_entry of ALL_MONSTERS) { 
+  // console.log(monster_entry)
+  if(monster_entry["monster_data"] && monster_entry["monster_data"]["statblock"]){
+    // console.log(Object.keys(monster_entry["monster_data"]["statblock"]))
+    unique_count += Object.keys(monster_entry["monster_data"]["statblock"]).length
+  }
+}
+
+
+let statistics = {
+  "settings_count": settings_count,
+  "books_count": books_count,
+  "pages_count": pages_count,
+  "unique_count": unique_count
+}
+
+fs.writeFile("./src/data/statistics.json", JSON.stringify(publishId_to_acronym), function(err) {
+  if (err) {
+      console.log(err);
+  }
+});
+
+console.log(statistics)
