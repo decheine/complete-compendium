@@ -9,8 +9,9 @@ function Footer() {
         <div className="footer">
             <div className="footer-container">
                 <div className="paragraph">
+                    <p>Advanced Dungeons and Dragons 2nd Edition Complete Compendium.</p>
                     <p>
-                    All content herein was harvested from the Wayback Machine's archive of the website lomion.de/. Any and all intellectual property mentioned is property of TSR inc. (Wizards of the Coast). This site is for historical and encyclopedic purposes only. This site has no revenue of any sort and I seek to take no profit from the intellectual property of the original authors. 
+                    All intellectual property mentioned is property of TSR inc. (Wizards of the Coast). This site is for archival and encyclopedic purposes only. This site has no revenue of any sort and tracks no user data of any sort. 
                     </p>
                 </div>
                 <div className="footer-links">
