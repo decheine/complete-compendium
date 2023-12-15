@@ -90,14 +90,6 @@
       "year" : "1991"
    },
    {
-      "author" : "David \"Zeb\" Cook et al",
-      "monster_keys" : [ "aarakocr" ],
-      "publish_id" : "2101",
-      "setting" : "Advanced Dungeons & Dragons 2nd Edition",
-      "title" : "Player's Handbook",
-      "year" : "1998"
-   },
-   {
       "author" : "Tim Beach",
       "monster_keys" : 
       [
@@ -2147,6 +2139,7 @@
       "author" : "William W. Connors, John D. Rateliff, Cindi Rice",
       "monster_keys" : 
       [
+         "arak",
          "arakalve",
          "arakbrag",
          "arakfir",
@@ -2291,6 +2284,7 @@
       [
          "arcanehe",
          "dreaweav",
+         "drspawn",
          "drspgren",
          "drsplemo",
          "ghosdanc",
@@ -2630,6 +2624,7 @@
          "burnbone",
          "elemnatu",
          "gargguar",
+         "golemagi",
          "golevagu",
          "hybsil",
          "magedoom",
@@ -2638,6 +2633,7 @@
          "ratzhese",
          "render",
          "sacaanti",
+         "snakmess",
          "zhenspir"
       ],
       "publish_id" : "1120",
@@ -3096,6 +3092,30 @@
       "year" : "1993"
    },
    {
+      "author" : "Anthony Pryor",
+      "monster_keys" : 
+      [
+         "catgsnti",
+         "chosenon",
+         "dreawarr",
+         "golegems",
+         "hagbheur",
+         "orcneoor",
+         "spirfout",
+         "spirfowm",
+         "spiricor",
+         "spirroth",
+         "sprisefa",
+         "spriunfa",
+         "unicblac",
+         "vampcere"
+      ],
+      "publish_id" : "1121",
+      "setting" : "Forgotten Realms",
+      "title" : "Spellbound: Thay, Rasheman, & Aglarond",
+      "year" : "1995"
+   },
+   {
       "author" : "",
       "monster_keys" : [ "catwater", "crocalbi", "lichsblo", "mothplag", "mummyice" ],
       "publish_id" : "Dragon238",
@@ -3406,11 +3426,28 @@
       "year" : "1996"
    },
    {
-      "author" : null,
-      "monster_keys" : [ "drgkin" ],
-      "publish_id" : "spidbrai",
-      "setting" : null,
-      "year" : null
+      "author" : "Colin McComb, Paul Arden Lidberg",
+      "monster_keys" : 
+      [
+         "drgkin",
+         "elekeewe",
+         "gnasher",
+         "gnaswing",
+         "kobodrmo",
+         "livistee",
+         "noran",
+         "ophidian",
+         "rautym",
+         "squeaker",
+         "stonsnak",
+         "suwyze",
+         "tanagwas",
+         "undedwar"
+      ],
+      "publish_id" : "1089",
+      "setting" : "Advanced Dungeons & Dragons 2nd Edition",
+      "title" : "Dragon Mountain",
+      "year" : "1993"
    },
    {
       "author" : "",
@@ -3474,29 +3511,6 @@
       "publish_id" : "9433",
       "setting" : "Al-Qadim (Forgotten Realms)",
       "title" : "ALQ4 Secrets of the Lamp",
-      "year" : "1993"
-   },
-   {
-      "author" : "Colin McComb, Paul Arden Lidberg",
-      "monster_keys" : 
-      [
-         "elekeewe",
-         "gnasher",
-         "gnaswing",
-         "kobodrmo",
-         "livistee",
-         "noran",
-         "ophidian",
-         "rautym",
-         "squeaker",
-         "stonsnak",
-         "suwyze",
-         "tanagwas",
-         "undedwar"
-      ],
-      "publish_id" : "1089",
-      "setting" : "Advanced Dungeons & Dragons 2nd Edition",
-      "title" : "Dragon Mountain",
       "year" : "1993"
    },
    {
@@ -3648,14 +3662,6 @@
       "year" : ""
    },
    {
-      "author" : "Anthony Pryor",
-      "monster_keys" : [ "golegems", "vampcere" ],
-      "publish_id" : "1121",
-      "setting" : "Forgotten Realms",
-      "title" : "Spellbound: Thay, Rasheman, & Aglarond",
-      "year" : "1995"
-   },
-   {
       "author" : "Lisa Smedman, Doug Stewart",
       "monster_keys" : [ "golervfl" ],
       "publish_id" : "9439",
@@ -3758,6 +3764,14 @@
       "setting" : "Forgotten Realms",
       "title" : "Nightmare Keep",
       "year" : "1991"
+   },
+   {
+      "author" : "William W. Connors, Eric W. Haddock, Skip Williams, David Wise, David Wu",
+      "monster_keys" : [ "lichpsio", "resident" ],
+      "publish_id" : "11507",
+      "setting" : "Ravenloft",
+      "title" : "Van Richten's Monster Hunter's Compendium, Volume Two",
+      "year" : "1999"
    },
    {
       "author" : "",
@@ -3886,14 +3900,6 @@
       "setting" : "Dragon Magazine",
       "title" : "Dragon180",
       "year" : "1992"
-   },
-   {
-      "author" : "William W. Connors, Eric W. Haddock, Skip Williams, David Wise, David Wu",
-      "monster_keys" : [ "resident" ],
-      "publish_id" : "11507",
-      "setting" : "Ravenloft",
-      "title" : "Van Richten's Monster Hunter's Compendium, Volume Two",
-      "year" : "1999"
    },
    {
       "author" : "",
@@ -4115,14 +4121,6 @@
       "setting" : "Forgotten Realms",
       "title" : "Volo's Guide to All Things Magical",
       "year" : "1996"
-   },
-   {
-      "author" : "Unknown",
-      "monster_keys" : [ "yugonyca" ],
-      "publish_id" : "1602",
-      "setting" : "Planescape",
-      "title" : "Companion Books: The Madness of Seasons",
-      "year" : "1998"
    },
    {
       "author" : "Lisa Smedman, Steven Brown, Steven Miller",
