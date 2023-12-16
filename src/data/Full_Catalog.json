@@ -13,6 +13,7 @@
          "crodlu",
          "dagorran",
          "dhaot",
+         "drakales",
          "drakalma",
          "drakalra",
          "drakalsi",
@@ -1003,6 +1004,7 @@
          "tressym",
          "trolsnow",
          "tuyewera",
+         "ulithari",
          "undedwar",
          "undelamo",
          "whipstin",
@@ -1970,6 +1972,10 @@
          "cistfien",
          "clamgian",
          "cloudray",
+         "drakaair",
+         "drakaear",
+         "drakafir",
+         "drakawat",
          "dunerunn",
          "dunetrap",
          "eleagrai",
@@ -2002,6 +2008,7 @@
          "rasclinn",
          "razowing",
          "rocathas",
+         "sandbrid",
          "sandcact",
          "sandvort",
          "scrab",
@@ -3402,14 +3409,6 @@
       "year" : "1998"
    },
    {
-      "author" : "David Cook",
-      "monster_keys" : [ "drakaair", "drakaear", "drakafir", "drakawat" ],
-      "publish_id" : "2406",
-      "setting" : "Dark Sun",
-      "title" : "DSQ1 Road to Urik",
-      "year" : "1993"
-   },
-   {
       "author" : "",
       "monster_keys" : [ "draknor" ],
       "publish_id" : "Dungeon24",
@@ -3910,14 +3909,6 @@
       "year" : "1998"
    },
    {
-      "author" : "Troy Denning",
-      "monster_keys" : [ "sandbrid" ],
-      "publish_id" : "2403",
-      "setting" : "Dark Sun",
-      "title" : "The Prism Pentad 2, The Crimson Legion",
-      "year" : "1996"
-   },
-   {
       "author" : "",
       "monster_keys" : [ "shadethe" ],
       "publish_id" : "Dungeon35",
@@ -3932,14 +3923,6 @@
       "setting" : "Forgotten Realms",
       "title" : "FOR13 Secrets of the Magister",
       "year" : "1990"
-   },
-   {
-      "author" : "Ed Greenwood",
-      "monster_keys" : [ "shadwrat" ],
-      "publish_id" : "1084",
-      "setting" : "Forgotten Realms",
-      "title" : "The Ruins of Myth Drannor",
-      "year" : "1993"
    },
    {
       "author" : "David Wise",
@@ -4043,14 +4026,6 @@
       "setting" : "Dungeon Magazine",
       "title" : "Dungeon #26",
       "year" : "1990"
-   },
-   {
-      "author" : "Steve Kurtz",
-      "monster_keys" : [ "ulithari" ],
-      "publish_id" : "2146",
-      "setting" : "Advanced Dungeons & Dragons 2nd Edition",
-      "title" : "CGR3 The Complete Sha'ir's Handbook",
-      "year" : "1993"
    },
    {
       "author" : "Kevin Melka and Steve Miller",
