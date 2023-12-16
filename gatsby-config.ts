@@ -21,10 +21,11 @@ const config: GatsbyConfig = {
     "gatsby-plugin-image", {
       resolve: "gatsby-plugin-sitemap",
       options: {
-        output: "/sitemaps/"
-        // excludes: [
-        //   /(\/)catalog(\/).+?(\/).+?(\/).+?/,
-        // ]
+        output: "/sitemaps/",
+        excludes: [
+          '/catalog/**',
+          '/catalog'
+        ]
       }
     },
     {
