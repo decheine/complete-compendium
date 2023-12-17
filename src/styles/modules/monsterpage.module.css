@@ -139,8 +139,9 @@ table {
     border-collapse: collapse;
     border-spacing: 0;
     padding: 0px;
+    
     /* table-layout: fixed; */
-    /* overflow-x: auto; */
+    overflow-x: auto;
     
 }
 

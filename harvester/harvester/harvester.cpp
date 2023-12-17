@@ -1252,8 +1252,19 @@ std::string Harvester::GetFullBody(std::string in, std::string monster_key){
     // <hr> 's
     updatedString = std::regex_replace(combinedString, std::regex("<hr.*?>"), "");
 
+    // If needs image
+    // img/cloaker.gif
+    std::string needs_img_regex_str = "img/" + monster_key + ".gif"; 
+    // std::regex(needs_img_regex_str);
+    // 
+    // if()
+    if(in.find(needs_img_regex_str) != std::string::npos){
+        updatedString = std::regex_replace(updatedString, std::regex("<img.*?>"), "", std::regex_constants::format_first_only);
+    } else {
+        // doesn't need to replace the first image
+    }
+
     // First img
-    updatedString = std::regex_replace(updatedString, std::regex("<img.*?>"), "", std::regex_constants::format_first_only);
     // printf("updatedString: \n[%s]\n", updatedString.c_str());
     
     // Replace \r\n and such
