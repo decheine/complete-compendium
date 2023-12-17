@@ -126,9 +126,9 @@ void Harvester::TestMonsterParser(std::string monsterName)
     // Prune images
     if (debug)
         std::cout << "pruning images\n";
-    auto PruneImages_start = std::chrono::high_resolution_clock::now();
-    monsterString = PruneImages(monsterString);
-    auto PruneImages_end = std::chrono::high_resolution_clock::now();
+    // auto PruneImages_start = std::chrono::high_resolution_clock::now();
+    // monsterString = PruneImages(monsterString);
+    // auto PruneImages_end = std::chrono::high_resolution_clock::now();
 
     auto Statblock_start = std::chrono::high_resolution_clock::now();
 
@@ -261,6 +261,8 @@ void Harvester::TestMonsterParser(std::string monsterName)
         // std::cout << "\tH2\t\t" << std::chrono::duration_cast<std::chrono::microseconds>(H2_end - H2_start).count() << "\n";
         // std::cout << "\tGetBody\t\t" << std::chrono::duration_cast<std::chrono::microseconds>(GetBody_end - GetBody_start).count() << "\n";
     }
+
+
 
     // GetTitle
     // TSR
@@ -671,13 +673,13 @@ bool Harvester::IdentifyGeneralInfo(std::string in)
     return std::regex_search(in, pattern);
 }
 
-std::string Harvester::PruneImages(std::string &in)
-{
-    std::regex imggex("<img.+?>", std::regex::optimize);
-    std::string returnstr = std::regex_replace(in, imggex, "");
+// std::string Harvester::PruneImages(std::string &in)
+// {
+//     std::regex imggex("<img.+?>", std::regex::optimize);
+//     std::string returnstr = std::regex_replace(in, imggex, "");
 
-    return returnstr;
-}
+//     return returnstr;
+// }
 
 bool Harvester::HasList(std::string in)
 {
@@ -1402,7 +1404,7 @@ int Harvester::RunMonster(std::string monsterName)
         std::cout << "pruning images\n";
     // begin = std::chrono::steady_clock::now();
 
-    monsterString = PruneImages(monsterString);
+    // monsterString = PruneImages(monsterString);
     // end = std::chrono::steady_clock::now();
     // time_diff = std::chrono::duration_cast<std::chrono::milliseconds>(end - begin).count();
     // printf("[%s] - pruneimg \t%zu [ms]\n", monsterName.c_str(), time_diff);

@@ -134,7 +134,8 @@ const MonsterTemplate: React.FC<Props> = ( {pageContext} ) => {
   let needs_image = true;
   let image_url = "";
   // if(monster_page_data.monster_data.images[1]) regex contains monster_key
-  if(monster_page_data.monster_data.images[1] && monster_page_data.monster_data.images[1].match(new RegExp(monster_page_data.monster_key, "g"))){
+  let main_img_pattern = "img/" + monster_page_data.monster_key
+  if(monster_page_data.monster_data.images[1] && monster_page_data.monster_data.images[1].match(new RegExp(main_img_pattern, "g"))){
       // console.log("Should have image")
       needs_image = true;
   } else {
