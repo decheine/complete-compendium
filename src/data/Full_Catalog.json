@@ -996,6 +996,7 @@
          "snakston",
          "specwiza",
          "spelweav",
+         "spidbrai",
          "suwyze",
          "tatalla",
          "tickhear",
@@ -3437,6 +3438,7 @@
          "noran",
          "ophidian",
          "rautym",
+         "spidbrai",
          "squeaker",
          "stonsnak",
          "suwyze",
@@ -3955,13 +3957,6 @@
       "setting" : "Birthright",
       "title" : "The Rjurik Highlands",
       "year" : "1996"
-   },
-   {
-      "author" : null,
-      "monster_keys" : [ "spidbrai" ],
-      "publish_id" : "2145.1089",
-      "setting" : null,
-      "year" : null
    },
    {
       "author" : "Anne Brown, Mike Breault",
