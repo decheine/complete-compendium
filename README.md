@@ -7,6 +7,10 @@ Live at [completecompendium.com](https://completecompendium.com)
 
 # Complete Compendium - Advanced Dungeons & Dragons 2nd Edition
 
+Quick Links
+
+- [Book validation checklist](https://github.com/decheine/complete-compendium/issues/2)
+
 ## What is the Complete Compendium?
 
 This is a project to compile and catalog all monsters from the Advanced Dungeons & Dragons 2nd Edition tabletop roleplaying game. There are currently 23 campaign settings, over 200 books, and over 2000 unique monster pages, with still more to be catalogued.
