@@ -145,6 +145,8 @@ table {
     
 }
 
+
+
 th {
     text-align: left;
     font-weight: bolder;
@@ -156,6 +158,12 @@ th {
     padding-right: 0.5em;
     vertical-align: top;
   }
+
+  tr > td:first-child{
+    white-space:nowrap;
+    max-width:50%;
+    word-break:break-all;
+ }
 
 .Statblock-Image {
     flex-direction: column;
