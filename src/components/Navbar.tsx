@@ -210,15 +210,6 @@ function Navbar() {
                             About
                           </Link>
                         </li>
-                        <li className='nav-item'>
-                          <Link to='/search'
-                            className='nav-links'
-                            onClick={handleClick}
-                          >
-                            Search &nbsp;  
-                            {/* <FontAwesomeIcon icon="search" /> */}
-                          </Link>
-                        </li>
                       </ul>
                     </nav>
                   </label>
@@ -254,15 +245,6 @@ function Navbar() {
                       About
                     </Link>
                   </li>
-                  <li className='nav-item'>
-                    <Link to='/search'
-                      className='nav-links'
-                      // onClick={closeMobileMenu}
-                    >
-                      Search &nbsp;  
-                    </Link>
-                  </li>
-      
                 </ul> 
               </div>
             </div>
