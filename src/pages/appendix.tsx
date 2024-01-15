@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 import MonsterLink from '../components/MonsterLink';
 import Layout from '../components/Layout';
@@ -15,6 +15,7 @@ type MonsterLinksProps = {
 }
 
 type AllMonsterLinksProps = {
+    titles: string[],
     titles_keys: Map<string, string>,
 }
 
@@ -202,20 +203,86 @@ const AlphAllMonsterLinks = (props: AllMonsterLinksProps) => {
     )
 }
 
+const FilterableMonsterLinks = (props: AllMonsterLinksProps) => {
+    let alphabet_groups: JSX.Element[] = []
+
+    const monster_map = props.titles_keys
+    // const monster_titles: Array<string> = Object.keys(props.titles_keys).sort((a, b) => a.localeCompare(b))
+    const monster_titles: string[] = props.titles
+
+    // Reverse it
+    const monster_title_keys = new Map(Array.from(monster_map, entry => [entry[1], entry[0]]));
+    // const monster_titles: Array<string> = Array.from(Object.keys(monster_title_keys))
+
+    const grouped_alph_monsterkeys: Map<string, Array<string>> = groupIt(monster_titles)
+    // console.log(grouped_alph_monsterkeys)
+    
+    Object.keys(grouped_alph_monsterkeys).forEach((letter: string, index: number, monster_titles: string[]) => {
+        const alph_monster_links = grouped_alph_monsterkeys[letter].map(monster_title => {
+            return (
+                // <div key={monster_title}>
+                <MonsterLink key={monster_title} monster_key={monster_map[monster_title]} monster_title={monster_title} />
+                // </div>
+            )
+        })
+        alphabet_groups.push(
+            // Letter as a header
+            <div key={letter} style={AlphSectionWrapperStyle}>
+                <h2 style={AlphHeaderStyle}>{letter.toLocaleUpperCase()}</h2>
+                <hr style={alphHrStyle}/>
+                <div key={letter} className="MonsterLinksWrapper">
+                    {alph_monster_links}
+                </div>
+            </div>
+        )
+    });
+
+    return (
+        <div>
+            {alphabet_groups}
+        </div>
+    )
+}
+
+
 const flip = (data: { [s: string]: unknown; } | ArrayLike<unknown>) => Object.fromEntries(
     Object
         .entries(data)
         .map(([key, value]) => [value, key])
 );
 
+
+function FilterMonsters() {
+    const [filter, setFilter] = useState('');
+    const filtered_titles = Object.keys(titles_keys_json).filter(f => f.toLowerCase().includes(filter.toLocaleLowerCase()) || filter === '')
+    
+    return (
+      <div className="App">
+        <p>
+          <input id="filter"
+            name="filter"
+            type="text"
+            value={filter}
+            onChange={event => setFilter(event.target.value)}
+          />
+        </p>
+        <FilterableMonsterLinks titles={filtered_titles} titles_keys={titles_keys_json} />
+      </div>
+    );
+  }
+
+
 export function appendix() {
     return (
         <>
             <Layout url='/appendix'>
                 <div className='background-appendix'>
-                    <div className="AppendixDescription">Browse monster source books by setting or browse all at once.</div>
+                    <div className="AppendixDescription">
+                        All monsters, alphabetically grouped by their monster titles. This list is exhaustive and redundant, for good purpose. Monsters go by many names, and exploring the monsters is much better with many different names for the same monster. Type in the field below to filter this list.</div>
                     {/* <AllMonsterLinks titles_keys={titles_keys_json} /> */}
-                    <AlphAllMonsterLinks titles_keys={titles_keys_json} />
+                    {/* <AlphAllMonsterLinks titles={Object.keys(titles_keys_json)} titles_keys={titles_keys_json} /> */}
+                    {/* <FilterableMonsterLinks titles={Object.keys(titles_keys_json)} titles_keys={titles_keys_json} /> */}
+                    <FilterMonsters/>
                 </div>
             </Layout>
         </>
