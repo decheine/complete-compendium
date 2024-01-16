@@ -93,11 +93,9 @@
         "setting_key": "dr",
         "setting_name": "Dragon Magazine",
         "source_books": [
-            "DragonMagazineAnnual1998",
-            "Dragon238",
-            "Dragon210",
             "DragonMagazineAnnual1996",
             "DragonMagazineAnnual1997",
+            "DragonMagazineAnnual1998",
             "Dragon156",
             "Dragon159",
             "Dragon162",
