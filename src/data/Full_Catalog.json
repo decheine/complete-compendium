@@ -226,6 +226,7 @@
          "githzera",
          "gloowing",
          "gnoll",
+         "gnome",
          "gnomspri",
          "goblin",
          "golem",
@@ -2468,7 +2469,6 @@
          "ghoukles",
          "ghoulank",
          "gladliza",
-         "gnome",
          "horag",
          "howler",
          "icegnome",
@@ -3162,7 +3162,7 @@
    },
    {
       "author" : "",
-      "monster_keys" : [ "charunte" ],
+      "monster_keys" : [ "charunte", "darklord" ],
       "publish_id" : "Dragon210",
       "setting" : "Dragon Magazine",
       "title" : "Dragon210",
@@ -3241,14 +3241,6 @@
       "setting" : "Forgotten Realms",
       "title" : "City of Splendors",
       "year" : "1994"
-   },
-   {
-      "author" : "",
-      "monster_keys" : [ "darklord" ],
-      "publish_id" : "Array",
-      "setting" : "Advanced Dungeons & Dragons 2nd Edition",
-      "title" : "",
-      "year" : ""
    },
    {
       "author" : "Colin Mccomb",

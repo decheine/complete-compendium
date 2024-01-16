@@ -137,6 +137,12 @@ Run Harvester all in one command,
 docker build -t monster-harvester -f harvester/Dockerfile .; docker create --name harvester-container monster-harvester | Foreach-Object { docker cp "$($_):/usr/local/harvester/build/bin/json_files" output }
 ```
 
+4. Run copy script to copy the harvested data into the repository.
+
+```
+node .\scripts\copy_monster_data.js
+```
+
 ## Docker commands
 
 
