@@ -1180,7 +1180,7 @@
    },
    {
       "author" : "Nicky Rea",
-      "monster_keys" : [ "addazahr", "amiqraso", "firethor", "ghulkin", "seawyrm" ],
+      "monster_keys" : [ "addazahr", "amiqraso", "firethor", "ghulkin", "seawyrm", "viziturb" ],
       "publish_id" : "9449",
       "setting" : "Al-Qadim (Forgotten Realms)",
       "title" : "Corsairs of the Great Sea",
@@ -1385,8 +1385,10 @@
          "dragdeep",
          "fachanto",
          "fael",
+         "firetail",
          "frost",
          "gaund",
+         "gloowing",
          "goldammo",
          "goleligh",
          "hamadrya",
@@ -1402,6 +1404,7 @@
          "manscorp",
          "mara",
          "morin",
+         "nagadark",
          "orpsu",
          "plancabw",
          "plancato",
@@ -1551,6 +1554,8 @@
          "fal",
          "feesu",
          "firebat",
+         "firebird",
+         "firelich",
          "flowfien",
          "gadabout",
          "gammaroi",
@@ -1945,8 +1950,6 @@
          "elekfsal",
          "entrope",
          "facet",
-         "firebird",
-         "firelich",
          "frossala",
          "fundame1",
          "fundame2",
@@ -2016,6 +2019,9 @@
          "eleagrea",
          "eleagrfi",
          "eleagrwa",
+         "elealeae",
+         "elealefw",
+         "eleathas",
          "erdland",
          "espeweed",
          "flailer",
@@ -2256,6 +2262,7 @@
          "ommwa",
          "omshirim",
          "parasaco",
+         "phanaton",
          "plansaco",
          "puddverm",
          "rakasta",
@@ -2581,7 +2588,19 @@
    },
    {
       "author" : "Chris Pramas",
-      "monster_keys" : [ "baatmezz" ],
+      "monster_keys" : 
+      [
+         "baatamni",
+         "baatbarb",
+         "baatcorn",
+         "baatgelu",
+         "baathama",
+         "baatkocr",
+         "baatmezz",
+         "baatnupp",
+         "baatosyl",
+         "baatspin"
+      ],
       "publish_id" : "11431",
       "setting" : "Planescape",
       "title" : "Guide to Hell",
@@ -2955,7 +2974,7 @@
    },
    {
       "author" : "Bruce Cordell",
-      "monster_keys" : [ "bloosipp", "nehthalg", "trolmuta", "wyste" ],
+      "monster_keys" : [ "bloosipp", "dharculu", "nehthalg", "trolmuta", "wyste" ],
       "publish_id" : "9533",
       "setting" : "Advanced Dungeons & Dragons 2nd Edition",
       "title" : "The Gates of Firestorm Peak",
@@ -3245,7 +3264,17 @@
    },
    {
       "author" : "Scott Bennie",
-      "monster_keys" : [ "coloston", "hakeasha", "minidivi", "skriaxit", "wraidese" ],
+      "monster_keys" : 
+      [
+         "coloston",
+         "dragbrow",
+         "hakeasha",
+         "lycawecr",
+         "minidivi",
+         "skriaxit",
+         "sphidrac",
+         "wraidese"
+      ],
       "publish_id" : "9274",
       "setting" : "Forgotten Realms",
       "title" : "FR10 Old Empires",
@@ -3539,6 +3568,14 @@
       "year" : "1991"
    },
    {
+      "author" : "Richard and Anne Brown",
+      "monster_keys" : [ "dwarderr", "fishtori", "hookhorr", "meenlock" ],
+      "publish_id" : "9302",
+      "setting" : "Greyhawk",
+      "title" : "WGA3 Flames of the Falcon",
+      "year" : "1990"
+   },
+   {
       "author" : "",
       "monster_keys" : [ "dwarutuc" ],
       "publish_id" : "Dungeon56",
@@ -3556,7 +3593,17 @@
    },
    {
       "author" : "Wolfgang Baur",
-      "monster_keys" : [ "elegchag", "elegharg", "elegildr", "elegvarr" ],
+      "monster_keys" : 
+      [
+         "elegchag",
+         "elegharg",
+         "elegildr",
+         "elegvarr",
+         "elekechr",
+         "elekfaze",
+         "gentmess",
+         "gentmine"
+      ],
       "publish_id" : "9433",
       "setting" : "Al-Qadim (Forgotten Realms)",
       "title" : "ALQ4 Secrets of the Lamp",
@@ -3601,14 +3648,6 @@
       "setting" : "Dragon Magazine",
       "title" : "Dragon206",
       "year" : "1994"
-   },
-   {
-      "author" : "Richard and Anne Brown",
-      "monster_keys" : [ "fishtori", "meenlock" ],
-      "publish_id" : "9302",
-      "setting" : "Greyhawk",
-      "title" : "WGA3 Flames of the Falcon",
-      "year" : "1990"
    },
    {
       "author" : "Lisa Smedman, Doug Stewart",
@@ -3712,7 +3751,7 @@
    },
    {
       "author" : "Dale Donovan",
-      "monster_keys" : [ "grazzt" ],
+      "monster_keys" : [ "grazzt", "lillend", "vipetree" ],
       "publish_id" : "9574",
       "setting" : "Forgotten Realms",
       "title" : "For Duty & Deity",
