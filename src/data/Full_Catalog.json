@@ -593,13 +593,21 @@
          "baatpitf",
          "baatspin",
          "baku",
+         "bariaur",
          "bebilith",
          "bodak",
          "einheria",
+         "elegchag",
+         "elegharg",
+         "elegildr",
+         "elegvarr",
          "foocreat",
          "gehrelet",
+         "githyank",
+         "githzera",
          "hordling",
          "hounyeth",
+         "imp",
          "incarnat",
          "larva",
          "maelepha",
@@ -734,12 +742,14 @@
       "monster_keys" : 
       [
          "aballin",
+         "achaiera",
          "adherer",
          "algoid",
          "almiraj",
          "appariti",
          "caterwau",
          "coffcorp",
+         "crabman",
          "darkcree",
          "darkstal",
          "darter",
@@ -752,7 +762,10 @@
          "fyrefly",
          "gambado",
          "garbug",
+         "gianfhoi",
+         "gibberli",
          "gorbel",
+         "grimlock",
          "hellcat",
          "icelizar",
          "ironcobr",
@@ -771,6 +784,7 @@
          "sussurus",
          "symbjell",
          "terithra",
+         "thunchil",
          "trollice",
          "tween",
          "umpleby",
@@ -1839,7 +1853,7 @@
    },
    {
       "author" : "",
-      "monster_keys" : [ "anglfish", "deatminn", "gulper", "hide" ],
+      "monster_keys" : [ "anglfish", "deatminn", "fishdeoc", "gulper", "hide", "octojell" ],
       "publish_id" : "Dragon235",
       "setting" : "Dragon Magazine",
       "title" : "Dragon235",
@@ -2277,7 +2291,7 @@
    },
    {
       "author" : "L Richard Baker III, Thomas M Reid",
-      "monster_keys" : [ "arayashk" ],
+      "monster_keys" : [ "arayashk", "lycalodn" ],
       "publish_id" : "9419",
       "setting" : "Ravenloft",
       "title" : "RM5 Dark of the Moon",
@@ -3045,6 +3059,22 @@
       "year" : "2000"
    },
    {
+      "author" : "Bruce R Cordel",
+      "monster_keys" : [ "bulegohl", "eldebrai", "neotheli", "urophion" ],
+      "publish_id" : "9569",
+      "setting" : "Advanced Dungeons & Dragons 2nd Edition",
+      "title" : "The Illithiad",
+      "year" : "1998"
+   },
+   {
+      "author" : "",
+      "monster_keys" : [ "bulegohl", "elghonn", "moldchro", "varkha", "wormlukh" ],
+      "publish_id" : "DragonMagazineAnnual1996",
+      "setting" : "Dragon Magazine",
+      "title" : "Dragon Magazine Annual 1996",
+      "year" : "1996"
+   },
+   {
       "author" : "",
       "monster_keys" : [ "bulemuta", "whitboar" ],
       "publish_id" : "Dungeon37",
@@ -3502,7 +3532,7 @@
    },
    {
       "author" : "Rick Swan",
-      "monster_keys" : [ "dwararct", "kupuk", "tirichik" ],
+      "monster_keys" : [ "dwararct", "fishgrgl", "kupuk", "tirichik" ],
       "publish_id" : "9351",
       "setting" : "Forgotten Realms",
       "title" : "FR14 The Great Glacier",
@@ -3525,28 +3555,12 @@
       "year" : ""
    },
    {
-      "author" : "Bruce R Cordel",
-      "monster_keys" : [ "eldebrai", "neotheli", "urophion" ],
-      "publish_id" : "9569",
-      "setting" : "Advanced Dungeons & Dragons 2nd Edition",
-      "title" : "The Illithiad",
-      "year" : "1998"
-   },
-   {
       "author" : "Wolfgang Baur",
       "monster_keys" : [ "elegchag", "elegharg", "elegildr", "elegvarr" ],
       "publish_id" : "9433",
       "setting" : "Al-Qadim (Forgotten Realms)",
       "title" : "ALQ4 Secrets of the Lamp",
       "year" : "1993"
-   },
-   {
-      "author" : "",
-      "monster_keys" : [ "elghonn" ],
-      "publish_id" : "DragonMagazineAnnual1996",
-      "setting" : "Dragon Magazine",
-      "title" : "Dragon Magazine Annual 1996",
-      "year" : "1996"
    },
    {
       "author" : "David \"Zeb\" Cook",
@@ -3594,6 +3608,14 @@
       "publish_id" : "9302",
       "setting" : "Greyhawk",
       "title" : "WGA3 Flames of the Falcon",
+      "year" : "1990"
+   },
+   {
+      "author" : "Lisa Smedman, Doug Stewart",
+      "monster_keys" : [ "fleaofma", "golervfl" ],
+      "publish_id" : "9439",
+      "setting" : "Ravenloft",
+      "title" : "RE1 Adam's Wrath",
       "year" : "1990"
    },
    {
@@ -3687,14 +3709,6 @@
       "setting" : "Ravenloft",
       "title" : "",
       "year" : ""
-   },
-   {
-      "author" : "Lisa Smedman, Doug Stewart",
-      "monster_keys" : [ "golervfl" ],
-      "publish_id" : "9439",
-      "setting" : "Ravenloft",
-      "title" : "RE1 Adam's Wrath",
-      "year" : "1990"
    },
    {
       "author" : "Dale Donovan",
@@ -3911,6 +3925,13 @@
       "setting" : "Advanced Dungeons & Dragons 2nd Edition",
       "title" : "Dungeons of Despair",
       "year" : "1999"
+   },
+   {
+      "author" : null,
+      "monster_keys" : [ "quaggoth" ],
+      "publish_id" : "2133",
+      "setting" : null,
+      "year" : null
    },
    {
       "author" : "",
