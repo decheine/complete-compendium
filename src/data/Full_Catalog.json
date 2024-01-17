@@ -1382,9 +1382,11 @@
          "cattoril",
          "chitine",
          "cildabri",
+         "dimewarp",
          "dragdeep",
          "fachanto",
          "fael",
+         "feyr",
          "firetail",
          "frost",
          "gaund",
@@ -2596,6 +2598,7 @@
          "baatgelu",
          "baathama",
          "baatkocr",
+         "baatlemu",
          "baatmezz",
          "baatnupp",
          "baatosyl",
@@ -2947,14 +2950,6 @@
       "setting" : "Dragon Magazine",
       "title" : "Dragon270",
       "year" : "2000"
-   },
-   {
-      "author" : "Don Turnbull",
-      "monster_keys" : [ "blinheim" ],
-      "publish_id" : "2012",
-      "setting" : "Greyhawk",
-      "title" : "Fiend Folio",
-      "year" : "1981"
    },
    {
       "author" : "",
@@ -3981,6 +3976,14 @@
       "year" : "1992"
    },
    {
+      "author" : "David Wise",
+      "monster_keys" : [ "remnaqua", "shatbret", "vampilli" ],
+      "publish_id" : "9364",
+      "setting" : "Ravenloft",
+      "title" : "RQ2: Thoughts of Darkness",
+      "year" : "1992"
+   },
+   {
       "author" : "",
       "monster_keys" : [ "reviler" ],
       "publish_id" : "Dungeon71",
@@ -4003,14 +4006,6 @@
       "setting" : "Forgotten Realms",
       "title" : "FOR13 Secrets of the Magister",
       "year" : "1990"
-   },
-   {
-      "author" : "David Wise",
-      "monster_keys" : [ "shatbret", "vampilli" ],
-      "publish_id" : "9364",
-      "setting" : "Ravenloft",
-      "title" : "RQ2: Thoughts of Darkness",
-      "year" : "1992"
    },
    {
       "author" : "",
