@@ -2862,7 +2862,9 @@
       "monster_keys" : 
       [
          "beetledr",
+         "calldark",
          "dray",
+         "dregoth",
          "dwarcude",
          "kalin",
          "krag",
@@ -3103,14 +3105,6 @@
       "setting" : "Dark Sun",
       "title" : "Windriders of the Jagged Cliffs",
       "year" : "1995"
-   },
-   {
-      "author" : "Lynn Abbey",
-      "monster_keys" : [ "calldark" ],
-      "publish_id" : "2434",
-      "setting" : "Dark Sun",
-      "title" : "The Chronicles of Athas 1, The Brazen Gambit",
-      "year" : "1997"
    },
    {
       "author" : "",
