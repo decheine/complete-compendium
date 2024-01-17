@@ -4,6 +4,8 @@
       "monster_keys" : 
       [
          "aarakath",
+         "animdoa2",
+         "aviarag",
          "baazrag",
          "baazragb",
          "bloogras",
@@ -27,6 +29,7 @@
          "elebfire",
          "elebwate",
          "elfathas",
+         "fael",
          "feylaar",
          "fordorra",
          "gianhalf",
@@ -452,6 +455,7 @@
          "plasman",
          "plsmdegl",
          "plsmdeln",
+         "plsmoid",
          "plsmonta",
          "puffer",
          "qnidar",
@@ -503,12 +507,12 @@
          "baatpitf",
          "baatspin",
          "balaena",
+         "bariaur",
          "bebilith",
          "bodak",
          "dogmoon",
          "dragadam",
          "einheria",
-         "gaki",
          "gehrelet",
          "githyank",
          "githzera",
@@ -520,9 +524,11 @@
          "mediator",
          "mortai",
          "nighthag",
+         "nightmar",
          "noctral",
          "per",
          "phoenix",
+         "slaad",
          "tanagbab",
          "tanagcha",
          "tanagnab",
@@ -715,7 +721,8 @@
          "vorr",
          "wastrel",
          "wraiworm",
-         "yugocano"
+         "yugocano",
+         "zoveri"
       ],
       "publish_id" : "2613",
       "setting" : "Planescape",
@@ -1077,6 +1084,8 @@
          "drakmyst",
          "drgnfly",
          "dusanu",
+         "elemchae",
+         "elemchfw",
          "elemlaae",
          "elemlafw",
          "famimyst",
@@ -1193,13 +1202,16 @@
       [
          "afanc",
          "aljahar",
+         "birdtalk",
          "catwinge",
          "crypserv",
          "elevermi",
+         "genthase",
          "ogrezakh",
          "opinicus",
          "parasite",
          "pasarini",
+         "sirine",
          "tatalla",
          "treesing"
       ],
@@ -2440,6 +2452,8 @@
          "bacchae",
          "chaobeas",
          "fensir",
+         "grazzt",
+         "howler",
          "impchaos",
          "lillend",
          "murska",
@@ -2544,14 +2558,6 @@
       "year" : "1991"
    },
    {
-      "author" : "Shane Lacy Hensley",
-      "monster_keys" : [ "aviarag" ],
-      "publish_id" : "2422",
-      "setting" : "Dark Sun",
-      "title" : "DSS2 Earth, Air, Fire, and Water",
-      "year" : "1993"
-   },
-   {
       "author" : "Unknown",
       "monster_keys" : [ "azoul", "griffshad" ],
       "publish_id" : "TerrorsFromAbove",
@@ -2591,6 +2597,8 @@
          "duruchil",
          "flamspir",
          "foocreat",
+         "gaki",
+         "gargantu",
          "goblirat",
          "hainu",
          "hannya",
@@ -2618,8 +2626,10 @@
          "spirfolk",
          "spirnatu",
          "spirston",
+         "tako",
          "tengu",
          "wanglian",
+         "yuanhist",
          "yukionna"
       ],
       "publish_id" : "2116",
@@ -2660,6 +2670,7 @@
          "bastellu",
          "batrv",
          "bowlyn",
+         "brokenon",
          "bussgeis",
          "darkling",
          "doomguar",
@@ -2672,6 +2683,7 @@
          "golem4",
          "golervmz",
          "grimreap",
+         "humaabno",
          "humarave",
          "impassas",
          "imperson",
@@ -3407,6 +3419,23 @@
       "year" : "1998"
    },
    {
+      "author" : "L. Richard Baker III",
+      "monster_keys" : 
+      [
+         "drakalsi",
+         "goleamag",
+         "humadrax",
+         "humakaar",
+         "jhakar",
+         "kaisharg",
+         "sihoblac"
+      ],
+      "publish_id" : "2413",
+      "setting" : "Dark Sun",
+      "title" : "DSR4 Valley of Dust and Fire",
+      "year" : "1992"
+   },
+   {
       "author" : "",
       "monster_keys" : [ "draknor" ],
       "publish_id" : "Dungeon24",
@@ -3692,14 +3721,6 @@
       "year" : "1997"
    },
    {
-      "author" : "L. Richard Baker III",
-      "monster_keys" : [ "humadrax", "humakaar", "jhakar", "kaisharg" ],
-      "publish_id" : "2413",
-      "setting" : "Dark Sun",
-      "title" : "DSR4 Valley of Dust and Fire",
-      "year" : "1992"
-   },
-   {
       "author" : "Bruce R Cordel",
       "monster_keys" : [ "illithoc", "voorlarv" ],
       "publish_id" : "9572",
@@ -3781,7 +3802,7 @@
    },
    {
       "author" : "Nigel findley",
-      "monster_keys" : [ "lycawebd" ],
+      "monster_keys" : [ "lycawebd", "lycawejr" ],
       "publish_id" : "9416",
       "setting" : "Ravenloft",
       "title" : "RR7 Van Richten's Guide to Werebeasts",
@@ -3789,7 +3810,7 @@
    },
    {
       "author" : "Colin McComb and Scott Bennie",
-      "monster_keys" : [ "lycawesr", "marikith", "zombsea" ],
+      "monster_keys" : [ "lycawesr", "marikith", "mistfema", "zombsea" ],
       "publish_id" : "9348",
       "setting" : "Ravenloft",
       "title" : "RR4 Islands of Terror",
