@@ -76,21 +76,23 @@ export function about() {
             <h3 className="atx" id="catalog">Catalog</h3>
             <p>Here you can browse through all of the books and sources that contain monsters. You can also browse by campaign settting/world. </p>
             <h3 className="atx" id="search">Search</h3>
-            <p>Implemented a simple lookup of the database for monsters based on lexemes in each of the monsters multiple titles. Of course, CTRL + F  on the Appendix page works just fine as well. </p>
+            <p>
+                Implemented basic text filtering in the appendix page, now searchable!
+            </p>
+            
             <h2 className="atx" id="future">Future</h2>
             <h3 className="atx" id="planned-features">Planned Features</h3>
             <h4 className="atx" id="priority">Priority</h4>
             <p>List of features that I intend to implement and add to the site.</p>
             <ul>
-            <li>Format this About page better</li>
-            <li>Add the "How to Use this Book" / "The Monsters" page. Have each <code>MonsterPage</code> link to this page too.</li>
-            <li>Implement more robust and streamlined caching of resources fetched with API. </li>
-            <li>Appendix Title Redudancy mode. Switch that toggles on/off Redudancy mode, which displays all aliases of all monsters. Take caution when doing this since there are over 7000 titles and this page will not perform well on lower-spec devices. Warning will be placed next to it. Maybe React detects if device can support it and will hide the option entirely if it detects a lower spec device. </li>
+            <li><s>Pivot "database" to static site generation with json files and host for free</s></li>
             <li>Add a table of contents to the Appendix</li>
-            <li>Automate the missing data reporting process. Store missing data reports in the database, create some simple format for me to enter a new "report". Probably just a csv file with fields like "monster_key", "report description", "known source"</li>
+            <li>Add the "How to Use this Book" / "The Monsters" page. Have each <code>MonsterPage</code> link to this page too.</li>
+            <li><s>Automate the missing data reporting process.</s> Now organized through GitHub issues.</li>
             </ul>
             <h4 className="atx" id="stretch-goals">Stretch Goals</h4>
             <ul>
+            <li>Appendix Title Redudancy mode. Switch that toggles on/off Redudancy mode, which displays all aliases of all monsters. Take caution when doing this since there are over 7000 titles and this page will not perform well on lower-spec devices. Warning will be placed next to it. Maybe React detects if device can support it and will hide the option entirely if it detects a lower spec device. </li>
             <li>Lore:<ul>
             <li>Baatezu Promotion and Demotion</li>
             <li>The Comlete Golem Table</li>
@@ -103,161 +105,6 @@ export function about() {
             </li>
             <li>Glossary for terms</li>
             <li>Complete Spell Description list so you can hover over spells and see what they do.</li>
-            </ul>
-            <h3 className="atx" id="changelog">Changelog</h3>
-            <ul>
-            <li>Start with Version v1.0. Look into changelog format</li>
-            </ul>
-            <h2 className="atx" id="monster-data-to-do">Monster Data To-Do</h2>
-            <p>Running list of bugs, errors, missing data, and other tasks that need to be done to complete the Compendium.</p>
-            <h3 className="atx" id="need-to-be-added">Need to be added</h3>
-            <table>
-            <thead>
-            <tr>
-            <th>Monster</th>
-            <th>Filename</th>
-            <th>Source #</th>
-            </tr>
-            </thead>
-            <tbody><tr>
-            <td>The Queen of Chaos</td>
-            <td>queofcha.php</td>
-            <td>1145 pg 204</td>
-            </tr>
-            <tr>
-            <td>Triphegs</td>
-            <td>triphegs.php</td>
-            <td></td>
-            </tr>
-            <tr>
-            <td>Wild Hunt</td>
-            <td>wildhunt.php</td>
-            <td>birthrite 3140?</td>
-            </tr>
-            <tr>
-            <td>Miska the Wolf-spider</td>
-            <td>wospmisk.php</td>
-            <td>planescape</td>
-            </tr>
-            <tr>
-            <td>Elven horse</td>
-            <td>yyllethy.php</td>
-            <td>dragon magazine 269</td>
-            </tr>
-            <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            </tr>
-            <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            </tr>
-            <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            </tr>
-            <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            </tr>
-            </tbody></table>
-            <h3 className="atx" id="missing-information">Missing Information</h3>
-            <table>
-            <thead>
-            <tr>
-            <th>Monster</th>
-            <th>Filename</th>
-            <th>Missing</th>
-            <th>Source</th>
-            </tr>
-            </thead>
-            <tbody><tr>
-            <td>Aboleth</td>
-            <td>aboleth.html</td>
-            <td>Ecology Section</td>
-            <td>2140 pg 6</td>
-            </tr>
-            <tr>
-            <td>Angler Fish</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            </tr>
-            <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            </tr>
-            <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            </tr>
-            </tbody></table>
-            <h3 className="atx" id="broken-pages">Broken Pages</h3>
-            <table>
-            <thead>
-            <tr>
-            <th>Monster</th>
-            <th>Filename</th>
-            <th>Missing</th>
-            <th>Source</th>
-            </tr>
-            </thead>
-            <tbody><tr>
-            <td>Mammal, Minimal</td>
-            <td>mammmini</td>
-            <td></td>
-            <td>2103</td>
-            </tr>
-            <tr>
-            <td>Chaos elemental fire/water</td>
-            <td></td>
-            <td>needs better image</td>
-            <td></td>
-            </tr>
-            <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            </tr>
-            </tbody></table>
-            <h3 className="atx" id="strange-monsters">Strange Monsters</h3>
-            <table>
-            <thead>
-            <tr>
-            <th>Monster</th>
-            <th>Filename</th>
-            <th>Note</th>
-            </tr>
-            </thead>
-            <tbody><tr>
-            <td>Moldling</td>
-            <td>moldling</td>
-            <td>Source listed as "The Lonesome Road, Shawn Mulder". Must find true origin. Could be Die Vecna Die</td>
-            </tr>
-            <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            </tr>
-            <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            </tr>
-            </tbody></table>
-            <h3 className="atx" id="missing-books">Missing Books</h3>
-            <ul>
-            <li>I, Tyrant</li>
-            <li>Alternity?</li>
             </ul>
 
 
