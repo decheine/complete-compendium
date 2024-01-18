@@ -27,7 +27,8 @@ export function about() {
         <main>
             <h1>About</h1>
             
-
+            Although called the <i>complete</i> compendium, it is far from complete. Help out on the <a href="https://github.com/decheine/complete-compendium" target="_blank" rel="noopener noreferrer">GitHub</a>. 
+            
             
             <h2 id="summary"> Summary</h2>
             This is a project to create a comprehensive compendium of all the monsters accross the entire Advanced Dungeons and Dragons 2nd Edition collection.
@@ -35,7 +36,7 @@ export function about() {
 
             <h3 id="motivation"> Motivation </h3>
             <p>
-            My friends and I played 2nd edition religiously in high school. I stumbled across a site called lomion.de where someone had created a complete appendix of all ad&d 2nd edition monsters. *All* of them. We love to use it and explore the vast collection, but the site was quite archaic and barebones in terms of functionality. Unfortunately, the site went down around 2014. However, it was indexed many times by the Wayback machine. So I sought to resurrect the site and bring the complete monstrous compendium of 2nd Edition to life with lots of navigational and explorational features. 
+            My friends and I played 2nd edition religiously in high school. I stumbled across a site called lomion.de where someone had created a nearly complete appendix of all ad&d 2nd edition monsters. *All* of them, or so we assumed, that's what it felt like. We loved to use it and explore the vast collection, but the site was quite archaic and barebones in terms of functionality. Unfortunately, the site went down around 2014. However, it was indexed many times by the Wayback machine. So I sought to resurrect the site and bring the complete monstrous compendium of 2nd Edition to life with lots of navigational and explorational features. 
             </p>
             <p>The scope of AD&amp;D content dwarfs all other editions of Dungeons &amp; Dragons. All these monsters serve well as inspriation and starting points, valuable to Game Masters of all fantasy table top roleplaying games. </p>
 
