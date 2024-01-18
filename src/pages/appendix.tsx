@@ -56,7 +56,7 @@ const AlphHeaderStyle: CSS.Properties = {
 }
 
 const alphHrStyle: CSS.Properties = {
-    width: "-webkit-fill-available",
+    width: "100%",
     backgroundColor: "#1250A2",
     height: "2px"
 }
