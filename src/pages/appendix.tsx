@@ -58,7 +58,8 @@ const AlphHeaderStyle: CSS.Properties = {
 const alphHrStyle: CSS.Properties = {
     width: "100%",
     backgroundColor: "#1250A2",
-    height: "2px"
+    height: "2px",
+
 }
 
 type DataProps = {
