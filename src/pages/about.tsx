@@ -5,7 +5,7 @@ import TableOfContents from '../components/TableOfContents';
 
 import './about.css';
 import Layout from "../components/Layout";
-import { HeadProps } from "gatsby";
+import { HeadProps, Link } from "gatsby";
 
 type DataProps = {
     site: {
@@ -26,10 +26,13 @@ export function about() {
         <div className="about-wrapper">
         <main>
             <h1>About</h1>
-            
             Although called the <i>complete</i> compendium, it is far from complete. Help out on the <a href="https://github.com/decheine/complete-compendium" target="_blank" rel="noopener noreferrer">GitHub</a>. 
             
-            
+            <h2 id="quick-links">About Pages</h2>
+            <ul>
+                <li><Link to="/about/the-monsters">How To Use This "Book"</Link></li>
+            </ul>
+
             <h2 id="summary"> Summary</h2>
             This is a project to create a comprehensive compendium of all the monsters accross the entire Advanced Dungeons and Dragons 2nd Edition collection.
             Advanced Dungeons &amp; Dragons (AD&amp;D) 2nd Edition (AD&D 2e) is a table top roleplaying game created by TSR inc. Thousands of monsters were written over the decades and this website seeks to be a convenient, fair-use way to browse monsters from out of print sourcebooks. 

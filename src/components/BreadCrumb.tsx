@@ -99,6 +99,13 @@ const BreadCrumb = ( props: MyProps) => {
                     case 0:
                         text = node
                         break;
+                    case 1:
+                        if(node == "the-monsters"){
+                            text = "The Monsters"
+                        } else{
+                            text = node
+                        }
+                        break;
                     default:
                         text = "About"
                 }
