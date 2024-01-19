@@ -85,7 +85,7 @@ A brand new monster requires a new HTML file to be created for it at `/harvester
 2.  Fill in the statblock and paragraph text content, like Comabt, Habitat, Ecology.
 3.  Add an image of the monster to the directory `/static/images/monsters/img/` named `<monster_key>.gif`
 4.  Make sure to copy the new monster to the `/harvester/cmm/` directory.
-5.  Run the harvester. See the following section for running the harvester with Docker. 
+5.  Run the harvester. See the following section for running the harvester with Docker. Make sure to run the `node .\scripts\copy_monster_data.js` to copy the output of the harvester once it's done. 
 6.  If everything runs successfully, run the gatsby web app with `gatsby develop` and see if the monster shows up correctly.
 
 
