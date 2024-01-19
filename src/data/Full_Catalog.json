@@ -166,6 +166,7 @@
          "dragmgol",
          "dragmist",
          "dragmsil",
+         "dragon",
          "dragshad",
          "dragstee",
          "dragyell",
@@ -1687,6 +1688,27 @@
       "setting" : "Al-Qadim (Forgotten Realms)",
       "title" : "MC13 Al-Qadim Appendix",
       "year" : "1992"
+   },
+   {
+      "author" : "Gregory W. Detwiler, Terry Dykstra",
+      "monster_keys" : 
+      [
+         "amphiter",
+         "cetusles",
+         "dragonet",
+         "dragorso",
+         "dragpuen",
+         "dragyesa",
+         "gargouil",
+         "hairiyo",
+         "peluda",
+         "sirrush",
+         "voreleki"
+      ],
+      "publish_id" : "Dragon248",
+      "setting" : "Dragon Magazine",
+      "title" : "Dragon248",
+      "year" : "1998"
    },
    {
       "author" : "",
@@ -3457,14 +3479,6 @@
       "setting" : "Dragon Magazine",
       "title" : "Dragon170",
       "year" : "1991"
-   },
-   {
-      "author" : "",
-      "monster_keys" : [ "dragorso", "dragpuen", "dragyesa" ],
-      "publish_id" : "Dragon248",
-      "setting" : "Dragon Magazine",
-      "title" : "Dragon248",
-      "year" : "1998"
    },
    {
       "author" : "L. Richard Baker III",
