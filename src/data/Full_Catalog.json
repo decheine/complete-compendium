@@ -3747,6 +3747,14 @@
       "year" : "1998"
    },
    {
+      "author" : "Chris Avellone",
+      "monster_keys" : [ "grillig", "gronk", "sohmien", "trelon" ],
+      "publish_id" : "Dragon262",
+      "setting" : "Dragon Magazine",
+      "title" : "Dragon262",
+      "year" : "1999"
+   },
+   {
       "author" : "Jean Rabe",
       "monster_keys" : [ "grist", "grivelin", "jakar", "jalebird" ],
       "publish_id" : "9270",
