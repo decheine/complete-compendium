@@ -55,7 +55,7 @@ export function themonsters() {
         <hr style={hr2Style}/>
             
             <p>The thoughtful creativity of the authors allows for these monsters to be readily adapted to many other TTRPGs that have a similar dice system to D&D.</p>
-            <p><b>Adapting to D&D 5th Edition</b>Many 5th edition monsters can trace their origins to the monsters laid out here. I've found using the detailed Habitat/Society and Ecology sections to be invaluable supplemental material to the modern iterations. Combat can also provide tactics in detail.
+            <p><b>Adapting to D&D 5th Edition</b> Many 5th edition monsters can trace their origins to the monsters laid out here. I've found using the detailed Habitat/Society and Ecology sections to be invaluable supplemental material to the modern iterations. Combat can also provide tactics in detail.
             
             The most apparent combat elements that differ between 2nd Edition and 5th edition are only THAC0 and Armor Class, which are very easy to convert to 5th edition. 2nd Edition AC counts down from 10, 5th counts up from 10. 2nd Edition THAC0 counts down from 20. So to get the 5th edition AC, subtract the 2e AC from 10, and to get the 5th Edition to hit bonus, subtract the THAC0 from 20. For example, the <Link to="/appendix/aboleth">aboleth</Link> has THAC0 of 13 and an AC of 4. Therefore a 5th edition conversion would give it an AC of 16 and +7 to hit. The real 5e aboleth has an AC of 17 and +9 to hit.
             
