@@ -546,8 +546,8 @@ label.overlay{
 #hamburger-menu {
     position: relative;
     top: 25%;
-    right: calc((100vw - 20px) * -1);
-    left: -webkit-calc(100% - 50px);
+    /* right: calc((100vw - 20px) * -1); */
+    left: calc(100% - 50px);
     width: 30px;
     height: 30px;
     display: none;
