@@ -4089,7 +4089,7 @@
    },
    {
       "author" : "",
-      "monster_keys" : [ "tripheg", "turtle", "vulture", "wildhunt", "wospmisk", "yyllethy" ],
+      "monster_keys" : [ "tripheg", "vulture", "wildhunt", "wospmisk", "yyllethy" ],
       "publish_id" : "404",
       "setting" : "Advanced Dungeons & Dragons 2nd Edition",
       "title" : "404",

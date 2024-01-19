@@ -19,6 +19,35 @@ fs.copyFile('output/json_files/AA_KEY_TITLES.json', 'src/data/AA_KEYS_TITLES.jso
   console.log('Keys to Titles data was copied to destination');
 });
 
+// Check for titles
+const Titles_Keys = require('../data/Titles_Keys.json')
+let Title_Keys_mod = require('../data/Titles_Keys.json')
+const KEYS_TITLES = require('../src/data/AA_KEYS_TITLES.json')
+
+const TITLES = Object.keys(Titles_Keys)
+
+// Check all KEYS_TITLES to make sure there is an entry in Titles_Keys
+
+Object.entries(KEYS_TITLES).map(key_title => {
+  if(TITLES.includes(key_title[1])){
+
+  } else {
+    console.log("Title not found", key_title)
+    Title_Keys_mod[key_title[1]] = key_title[0]
+    // KEYS_TITLES[key_title[0]] = key_title[1]
+  }
+  // console.log(key_title)
+
+})
+fs.writeFile("./data/Titles_Keys.json", JSON.stringify(Title_Keys_mod), function(err) {
+  if (err) {
+      console.log(err);
+  }
+});
+// console.log(TITLES)
+
+
+
 // Create publish_id to setting_acr
 // read in all_tsr
 const all_tsr = require('../data/all_tsr.json')
