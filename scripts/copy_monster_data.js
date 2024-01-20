@@ -39,7 +39,7 @@ Object.entries(KEYS_TITLES).map(key_title => {
   // console.log(key_title)
 
 })
-fs.writeFile("./data/Titles_Keys.json", JSON.stringify(Title_Keys_mod), function(err) {
+fs.writeFile("./data/Titles_Keys_combined.json", JSON.stringify(Title_Keys_mod), function(err) {
   if (err) {
       console.log(err);
   }
