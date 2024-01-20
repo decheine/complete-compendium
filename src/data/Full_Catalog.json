@@ -4089,14 +4089,6 @@
    },
    {
       "author" : "",
-      "monster_keys" : [ "tripheg", "vulture", "wildhunt", "wospmisk", "yyllethy" ],
-      "publish_id" : "404",
-      "setting" : "Advanced Dungeons & Dragons 2nd Edition",
-      "title" : "404",
-      "year" : ""
-   },
-   {
-      "author" : "",
       "monster_keys" : [ "trolfire", "trolgray", "trolhoun", "trolphaz", "trolston" ],
       "publish_id" : "Dragon199",
       "setting" : "Dragon Magazine",
@@ -4180,6 +4172,14 @@
       "setting" : "Forgotten Realms",
       "title" : "Volo's Guide to All Things Magical",
       "year" : "1996"
+   },
+   {
+      "author" : "",
+      "monster_keys" : [ "wospmisk" ],
+      "publish_id" : "404",
+      "setting" : "Advanced Dungeons & Dragons 2nd Edition",
+      "title" : "404",
+      "year" : ""
    },
    {
       "author" : "Lisa Smedman, Steven Brown, Steven Miller",
