@@ -3977,13 +3977,6 @@
       "year" : "1999"
    },
    {
-      "author" : null,
-      "monster_keys" : [ "quaggoth" ],
-      "publish_id" : "2133",
-      "setting" : null,
-      "year" : null
-   },
-   {
       "author" : "",
       "monster_keys" : [ "quakdanc", "rambatte" ],
       "publish_id" : "Dragon180",
