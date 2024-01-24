@@ -9,4 +9,101 @@ WGS Mordenkaincn's Fantastic Adventure, #9112
 Ran a search and found new books and monsters
 
 2106 Forgotten Realms Adventures (Paladin)
-2162 Ravenloft Appendices I and II !! (never mind )
+2407 Dune Trader (Single monster, Crodlu, with more data than current)
+1104 Ruins of Undermountain II (existing and NEW monster)
+1125 Night Below (existing monsters)
+11347 Axe of the Dwarvish Lords (NEW monsters)
+1147 Netheril Empire (existing monsters)
+2117 The Complete Psionicist's Handbook (Int. Devourer Larva needs unique + more detailed page)
+2428 Black Spine (all existing straight from monster manual (2140))
+9244 (existing)
+9245 (existing)
+9244 (existing)
+9247 (NEW monster, Netherbird?)
+9248 (existing monster Quelzarn, but has more info)
+9249 (NEW monster)
+9281 (NEW monsters)
+9290 (NEW monster and monsters from 9281)
+9292 (existing monsters)
+9294 (NEW monsters)
+9297 Draconomicon (existing monsters but more detail)
+9298 (existing)
+9301 (existing, weredragon missing info)
+9304 (NEW monster)
+9315 (NEW monster)
+9316 (NEW monster)
+9320 (existing monsters)
+9331 (existing monsters)
+9334 (NEW monsters)
+9336 (existing monsters)
+9337 (NEW monster, wolf (greyhawk))
+9344 (Existing book, NEW monster)
+9354 (existing monsters)
+9366 (NEW monsters)
+9369 (existing monsters)
+9382 (NEW monster)
+9390 (NEW monster)
+9408 (maybe.. partial monster Scylla and Charybdis)
+9413 (existing monster)
+9414 (existing monster)
+9431 (existing monsters)
+9440 (NEW monster and existing)
+9459 (New info for monster Ghul, and existing)
+9484 (existing monster)
+9485 (existing monsters)
+9488 (existing monster)
+9507 Shaman (NEW monsters, many)
+9544 (NEW monster)
+9552 (NEW monsters, and existing)
+
+
+
+[
+2106,
+2407,
+1104,
+1125,
+1134,
+1147,
+2117,
+2428,
+9244,
+9245,
+9244,
+9247,
+9248,
+9249,
+9281,
+9290,
+9292,
+9294,
+9297,
+9298,
+9301,
+9304,
+9315,
+9316,
+9320,
+9331,
+9334,
+9336,
+9337,
+9344,
+9354,
+9366,
+9369,
+9382,
+9390,
+9408,
+9413,
+9414,
+9431,
+9440,
+9459,
+9484,
+9485,
+9488,
+9507,
+9544,
+9552,
+]
