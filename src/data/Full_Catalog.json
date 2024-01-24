@@ -3097,6 +3097,14 @@
       "year" : "2000"
    },
    {
+      "author" : "",
+      "monster_keys" : [ "browdobi", "faerfafi", "faerpebr", "fienknig" ],
+      "publish_id" : "Dragon206",
+      "setting" : "Dragon Magazine",
+      "title" : "Dragon206",
+      "year" : "1994"
+   },
+   {
       "author" : "Bruce R Cordel",
       "monster_keys" : [ "bulegohl", "eldebrai", "neotheli", "urophion" ],
       "publish_id" : "9569",
@@ -3450,7 +3458,7 @@
    },
    {
       "author" : "",
-      "monster_keys" : [ "dragdzal" ],
+      "monster_keys" : [ "dragdzal", "manni", "morin", "sandcat", "spelweav" ],
       "publish_id" : "Dragon163",
       "setting" : "Dragon Magazine",
       "title" : "Dragon163",
@@ -3479,6 +3487,13 @@
       "setting" : "Dragon Magazine",
       "title" : "Dragon170",
       "year" : "1991"
+   },
+   {
+      "author" : null,
+      "monster_keys" : [ "draglcot", "draglfla", "draglgra", "draglmid", "draglrai" ],
+      "publish_id" : "Dragon183",
+      "setting" : null,
+      "year" : null
    },
    {
       "author" : "L. Richard Baker III",
@@ -3622,6 +3637,14 @@
    },
    {
       "author" : "",
+      "monster_keys" : [ "faerpego", "quakdanc", "rambatte" ],
+      "publish_id" : "Dragon180",
+      "setting" : "Dragon Magazine",
+      "title" : "Dragon180",
+      "year" : "1992"
+   },
+   {
+      "author" : "",
       "monster_keys" : [ "faerphiz" ],
       "publish_id" : "Dragon191",
       "setting" : "Dragon Magazine",
@@ -3642,14 +3665,6 @@
       "publish_id" : "11405",
       "setting" : "Forgotten Realms",
       "title" : "The Wyrmskull Throne",
-      "year" : "1994"
-   },
-   {
-      "author" : "",
-      "monster_keys" : [ "fienknig" ],
-      "publish_id" : "Dragon206",
-      "setting" : "Dragon Magazine",
-      "title" : "Dragon206",
       "year" : "1994"
    },
    {
@@ -3807,6 +3822,13 @@
       "setting" : "Dungeon Magazine",
       "title" : "Dungeon #57",
       "year" : "1996"
+   },
+   {
+      "author" : null,
+      "monster_keys" : [ "kercpa", "owlbear2" ],
+      "publish_id" : "Dragon214",
+      "setting" : null,
+      "year" : null
    },
    {
       "author" : "",
@@ -3977,14 +3999,6 @@
       "year" : "1999"
    },
    {
-      "author" : "",
-      "monster_keys" : [ "quakdanc", "rambatte" ],
-      "publish_id" : "Dragon180",
-      "setting" : "Dragon Magazine",
-      "title" : "Dragon180",
-      "year" : "1992"
-   },
-   {
       "author" : "David Wise",
       "monster_keys" : [ "remnaqua", "shatbret", "vampilli" ],
       "publish_id" : "9364",
@@ -4113,6 +4127,13 @@
       "year" : "1998"
    },
    {
+      "author" : null,
+      "monster_keys" : [ "undedrsl" ],
+      "publish_id" : "Dragon205",
+      "setting" : null,
+      "year" : null
+   },
+   {
       "author" : "",
       "monster_keys" : 
       [
@@ -4149,6 +4170,13 @@
       "setting" : "Dungeon Magazine",
       "title" : "Dungeon #54",
       "year" : "1995"
+   },
+   {
+      "author" : null,
+      "monster_keys" : [ "vaati" ],
+      "publish_id" : "Dragon224",
+      "setting" : null,
+      "year" : null
    },
    {
       "author" : "Monte Cook",
