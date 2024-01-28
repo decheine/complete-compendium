@@ -1268,7 +1268,6 @@
          "animatgr",
          "animatmi",
          "animator",
-         "arak",
          "bakhnara",
          "baobhans",
          "beetlesc",
@@ -1283,6 +1282,7 @@
          "cloashad",
          "cloaunde",
          "corpcand",
+         "deaheatr",
          "dopprave",
          "famipseu",
          "famiunde",
@@ -1293,6 +1293,7 @@
          "figuivor",
          "figuobsi",
          "figuporc",
+         "figurine",
          "fleaofma",
          "furies",
          "geist",
@@ -2790,6 +2791,7 @@
          "carrcraw",
          "catgreat",
          "catoblep",
+         "dragon",
          "drgnfish",
          "elekaase",
          "elekesan",
@@ -2861,6 +2863,25 @@
       "publish_id" : "2102",
       "setting" : "Advanced Dungeons & Dragons 2nd Edition",
       "title" : "MC1 Volume I (w/binder #1)",
+      "year" : "1991"
+   },
+   {
+      "author" : "Ed Greenwood",
+      "monster_keys" : 
+      [
+         "batdeep",
+         "dragdeep",
+         "myrlocha",
+         "pedipalp",
+         "rothe",
+         "solifugi",
+         "spidesub",
+         "spitcraw",
+         "yochlolu"
+      ],
+      "publish_id" : "9326",
+      "setting" : "Forgotten Realms",
+      "title" : "The Drow of the Underdark",
       "year" : "1991"
    },
    {
