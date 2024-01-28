@@ -3876,6 +3876,14 @@
       "year" : "1992"
    },
    {
+      "author" : "Spike Y. Jones",
+      "monster_keys" : [ "lamisair" ],
+      "publish_id" : "Dragon192",
+      "setting" : "Dragon Magazine",
+      "title" : "Dragon192",
+      "year" : "1993"
+   },
+   {
       "author" : "Tom Prusa",
       "monster_keys" : [ "laraken", "treedark" ],
       "publish_id" : "9388",
