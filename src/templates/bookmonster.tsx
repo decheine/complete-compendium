@@ -7,7 +7,6 @@ import { Interweave } from "interweave";
 
 // Formatting
 import "@styles/SettingColors.css"
-// import "../styles/MonsterPage.css"
 import COLORS from '@styles/SettingColors'
 import RandomMonsterButton from "@components/RandomMonsterButton";
 
@@ -131,7 +130,7 @@ const BookMonsterTemplate: React.FC<Props> = ({pageContext }) => {
   //  If the regex pattern matches, know we NEED an image. So set the url to where it should be with monster_key
   //  and also have an onerror="javascript:this.src='images/default.jpg'" to set the image to default if it doesn't exist
   //  If doesn't need image, set the bool flag and no image will be rendered
-  let monster_image = null;
+  let monster_image = <></>;
   let needs_image = true;
   let image_url = "";
   // if(monster_page_data.monster_data.images[1]) regex contains monster_key

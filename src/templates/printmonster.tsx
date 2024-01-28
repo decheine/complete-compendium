@@ -10,14 +10,13 @@ import { Interweave } from "interweave";
 // Formatting
 import "@styles/SettingColors.css"
 import COLORS from '@styles/SettingColors'
-import RandomMonsterButton from "@components/RandomMonsterButton";
+// import RandomMonsterButton from "@components/RandomMonsterButton";
 
-import * as monsterPageStyles from "@styles/modules/monsterpage.module.css"
-import "@styles/modules/monsterpage.module.css"
+import * as monsterPageStyles from "@styles/modules/monsterprintpage.module.css"
+import "@styles/modules/monsterprintpage.module.css"
 
 import getMonsterDescription from "@components/regex_description"
 import { polyfill } from 'interweave-ssr';
-
 
 polyfill();
 // const isBrowser = typeof window !== "undefined"
@@ -69,78 +68,24 @@ interface Props {
 
 
 
-const MonsterTemplate: React.FC<Props> = ( {pageContext} ) => {
-//   const [screenSize, setScreenSize] = useState(getCurrentDimension());
-
-//   function getCurrentDimension(){
-//     if(isBrowser){
-
-//       return {
-//         width: global.window.innerWidth,
-//       	height: global.window.innerHeight
-//       }
-//     } else {
-//       return {
-//         width: 0,
-//         height: 0,
-//       }
-//     }
-// }
-
-//   useEffect(() => {
-//     const updateDimension = () => {
-//       setScreenSize(getCurrentDimension())
-//     }
-//     if(isBrowser)
-//       global.window.addEventListener('resize', updateDimension);
-    
-//     return(() => {
-//         global.window.removeEventListener('resize', updateDimension);
-//     })
-//   }, [screenSize])
-
+const PrintMonsterTemplate: React.FC<Props> = ( {pageContext} ) => {
 
   const monster_page_data: MonsterPageContext = pageContext
-  // console.log(monster_page_data)
-  // const monster_object = pageContext.monster_object
-//   console.log("monster page")
-//   console.log(monster_page_data)
-  // console.log("monster template")
-  // console.log(monster_object)
   const monster_key = monster_page_data.monster_key
   const title = monster_page_data.title
   const sources = monster_page_data.sources
   const previous_monster_key = monster_page_data.prev_key
   const next_monster_key = monster_page_data.next_key
-
   const fullBody = monster_page_data.monster_data.fullBody;
-  // Getting the fullbody data and putting it into React state
-  // to prevent hydration issue on refresh
 
-  // const [interweave_body, setInterweave] = useState<JSX.Element>();
-
-  // Data does't start loading
-  // until *after* Parent is mounted
-  // useEffect(() => {
-  //   setInterweave(<Interweave className="interweave" content={fullBody} />)
-  // }, []);
-
-
-  //   console.log(previous_monster_key, next_monster_key)
-  // Checking Main Image
-  //  If the regex pattern matches, know we NEED an image. So set the url to where it should be with monster_key
-  //  and also have an onerror="javascript:this.src='images/default.jpg'" to set the image to default if it doesn't exist
-  //  If doesn't need image, set the bool flag and no image will be rendered
   let monster_image = <></>;
   let needs_image = true;
   let image_url = "";
   // if(monster_page_data.monster_data.images[1]) regex contains monster_key
   let main_img_pattern = "img/" + monster_page_data.monster_key
   if(monster_page_data.monster_data.images[1] && monster_page_data.monster_data.images[1].match(new RegExp(main_img_pattern, "g"))){
-      // console.log("Should have image")
       needs_image = true;
   } else {
-      // console.log("Does not have image")
       needs_image = false;
   }
 
@@ -161,11 +106,6 @@ const MonsterTemplate: React.FC<Props> = ( {pageContext} ) => {
 
   } 
     
-  // Change document title to monster title
-  // if(typeof document !== 'undefined'){
-  //     // document.title = monster_page_data.monster_data.title + " - Complete Compendium";
-  // }
-
   // Handle setting and accent color.
   const setting_name = monster_page_data.monster_data.setting;
   const setting_acr = cat_acronyms[setting_name]
@@ -177,49 +117,11 @@ const MonsterTemplate: React.FC<Props> = ( {pageContext} ) => {
       titleStyle = {color: COLORS.get(setting_acr)}
   }
 
-  // Title style
-
-  // const interweaveMonsterBody: JSX.Element = <div className="set-html" dangerouslySetInnerHTML={{__html: fullBody}} />
-
-  let monsterNavWidgets: JSX.Element =
-  <div>
-    <div className={monsterPageStyles.monsterNavLinks}>
-      <div className={monsterPageStyles.pageRandomMonsterButton}>
-        <RandomMonsterButton home={false} />
-      </div>
-      <div className={monsterPageStyles.horizontalMonsterLinks}>
-        <Link className={monsterPageStyles.monsterNavLink} to={"../" + previous_monster_key}>
-          <div className={monsterPageStyles.monsterNav}>
-              Previous
-          </div>
-        </Link>
-        {/* Random Monster */}
-        {/* <div className={monsterPageStyles.monsterNav}>
-            <RandomMonsterButton />
-          </div> */}
-        <Link className={monsterPageStyles.monsterNavLink} to={"../" + next_monster_key}>
-          <div className={monsterPageStyles.monsterNav}>
-            Next
-          </div>
-        </Link>
-      </div>
-    </div>
-  </div>
-
-  const test_jsx: JSX.Element = <div>Test JSX Element</div>
-
-
-  // const { book_data } = data
   return (
     <>
-    
-    {/* <Head title={monster_page_data.monster_data.title} description={`Description for ${monster_page_data.monster_data.title}`} /> */}
-    <Layout url={`/appendix/${monster_key}`}>
-      <div>
-        {monsterNavWidgets}
-
-
+      <div className="print" >
       {/* TITLE */}
+      <article>
       <div className={monsterPageStyles.topHeader}>
           <h1 style={titleStyle}>{monster_page_data.monster_data.title}</h1>
           <Link to={"/catalog/" + cat_acronyms[monster_page_data.monster_data.setting]}>
@@ -230,11 +132,14 @@ const MonsterTemplate: React.FC<Props> = ( {pageContext} ) => {
       <hr className ={monsterPageStyles.hr1}/>
       <hr className ={hrClass}/>
 
-      <div className={monsterPageStyles.monsterImgFrame}>
+    <div className={monsterPageStyles.columnWrapper}>
+      <div className={monsterPageStyles.monsterImgFrame}>      
       {monster_image}
+      {/* IMAGE IMAGE IMAGE IMAGE IMAGE IMAGE IMAGE IMAGE IMAGE IMAGE IMAGE IMAGE IMAGE IMAGE IMAGE IMAGE IMAGE IMAGE IMAGE IMAGE IMAGE IMAGE IMAGE IMAGE IMAGE IMAGE IMAGE IMAGE IMAGE IMAGE IMAGE IMAGE IMAGE IMAGE IMAGE IMAGE IMAGE IMAGE IMAGE IMAGE IMAGE IMAGE  */}
       </div>
-
       <Interweave className="interweave" content={fullBody} />
+      </div>
+    </article>
       {/* {interweaveMonsterBody} */}
 
       {/* <Interweave content="This string contains <b>HTML</b> and will safely be rendered!" /> */}
@@ -242,15 +147,14 @@ const MonsterTemplate: React.FC<Props> = ( {pageContext} ) => {
       {/* TSR Array */}
       <div className={monsterPageStyles.sourceList}>
         <div className={monsterPageStyles.tsrLabel}>
-            Sourcebooks:
         </div>
         <div className={monsterPageStyles.tsr}>
             {
                 (monster_page_data.monster_data.hasOwnProperty("TSR") && monster_page_data.monster_data["TSR"] != null) ?
                     monster_page_data.monster_data["TSR"].map((tsr: string) => {
                         return (
-                            <div key={tsr}>
-                                <Link to={"/catalog/" + publishId_to_acronym[tsr] + "/" + tsr}>{all_tsr[tsr]?.title} ({tsr})</Link>
+                            <div key={tsr} className={monsterPageStyles.source}>
+                                {all_tsr[tsr]?.title} ({tsr})
                                 <br/>
                             </div>
                         )
@@ -265,15 +169,11 @@ const MonsterTemplate: React.FC<Props> = ( {pageContext} ) => {
     {/* <div className="last-modified">
         Last Modified: {monster_page_data.updatedAt}
     </div> */}
-    <div className={monsterPageStyles.printLink}>
-      <Link to={`/appendix/${monster_key}/print`}>Print-friendly page</Link> (Experimental)
-    </div>
 
 
 
 
       </div>
-    </Layout>
     </>
   )
 }
@@ -331,37 +231,11 @@ const MonsterTemplate: React.FC<Props> = ( {pageContext} ) => {
 
 
 export const Head: React.FC<Props> = ({ pageContext }) => (
-  <>
-    <title>{pageContext.title + " - AD&D Complete Compendium"}</title>
-    <meta property="og:site_name" content="AD&D 2nd Edition Complete Monstrous Compendium"/>
-    <meta property="og:title" content={pageContext.monster_data.title  + " | AD&D Complete Compendium"}/>
-    <meta property="og:description" content={ getMonsterDescription(pageContext.monster_key ,pageContext.monster_data.fullBody) }/>
-    <meta property="og:url" content={"https://www.completecompendium.com" + pageContext.monster_path}/>
-    <meta property="og:type" content="website"/>
-    {
-      pageContext.monster_data.images[1] && pageContext.monster_data.images[1].match(new RegExp(pageContext.monster_key, "g")) ?
-      <>
-      <meta property="og:image" content={"https://www.completecompendium.com/images/monsters/img/" + pageContext.monster_key + ".gif"}/>
-      <meta name="twitter:image" content={"https://www.completecompendium.com/images/monsters/img/" + pageContext.monster_key + ".gif"}/>
-    </>
-      :
-      <></>
-    }
-    <meta property="og:image:width" content="300"/>
-    <meta property="og:image:height" content="360"/>
-    
-          
-    {/* <meta name="description" content={ getMonsterDescription(pageContext.monster_key ,pageContext.monster_data.fullBody) } /> */}
-    {/* Image: "/images/monsters/img/" + monster_page_data.monster_key + ".gif" */}
-    <meta name="twitter:card" content="summary_large_image"/>
-    <meta name="twitter:url" content={"https://www.completecompendium.com" + pageContext.monster_path} />
-    <meta name="twitter:title" content="Advanced Dungeons & Dragons 2nd Edition Complete Compendium" />
-    <meta name="twitter:description" content={ getMonsterDescription(pageContext.monster_key ,pageContext.monster_data.fullBody) } />
-        
+  <> 
   </>
 )
 
-export default MonsterTemplate
+export default PrintMonsterTemplate
 
 export const query = graphql`
   {

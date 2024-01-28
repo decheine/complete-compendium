@@ -1,4 +1,123 @@
 
+article > div > span.interweave > p.f {
+  padding-top: 2mm;
+  text-indent: 0mm;
+}
+
+article > div > span.interweave {
+  display: block;
+  position: relative;
+  /* top: -180px; */
+}
+
+
+
+
+article > div > span.interweave > p {
+  margin: 0;
+  /* margin-top: 2px; */
+  /* margin-bottom: 2px; */
+  text-indent: 2em;
+  text-align: justify;
+  font-family: 'Zapf Calligraphic 801';
+  font-size: 8.5pt;
+}
+
+article > div > span.interweave > h2 {
+  margin: 0;
+  /* margin-top: 2px; */
+  /* margin-bottom: 2px; */
+  text-indent: 0em;
+  text-align: justify;
+  font-family: 'Zapf Calligraphic 801';
+  font-size: 8.5pt;
+  font-weight: bold;
+  padding-top: 2mm;
+    /* margin-top: 2mm; */
+    margin-bottom: -4mm;
+}
+
+article > div > span.interweave > table > caption {
+  font-family: 'Zapf Calligraphic 801';
+  font-size: 8.5pt;
+  font-weight: bold;
+  padding-top: 2mm;
+}
+
+article > div > span.interweave > table:has(tr.cn){
+  column-span: all;
+}
+
+/* article > div > span.interweave > table.ip{
+  column-span: all;
+} */
+
+article > div > span.interweave > table.ip:has(tr.cn){
+  /* column-span: all; */
+  column-span: none;
+}
+
+article > div > span.interweave > table > tbody > tr > th {
+  font-family: 'Zapf Calligraphic 801';
+  font-weight: bold;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  letter-spacing: 0.5px;
+  font-size: 8.5pt;
+}
+article > div > span.interweave > table > tbody > tr > td {
+  font-family: 'Zapf Calligraphic 801';
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 3mm;
+  font-size: 8.5pt;
+}
+
+article > div > span.interweave > table {
+  position: relative;
+  /* column-span: all; */
+  /* top: -180px; */
+}
+
+article > div > span.interweave > table.ip {
+  column-span: none;
+}
+
+
+
+/* Printing Settings */
+
+@page {
+  margin: 2cm;
+}
+
+
+
+/* article > div.print {
+  margin: 2mm;
+} */
+
+@font-face {
+  font-family: "Zapf Calligraphic 801";
+  src: url("../fonts/Zapf\ Calligraphic\ 801\ BT.ttf")
+}
+@font-face {
+  font-family: "Zapf Calligraphic 801 Bold";
+  src: url("../fonts/Zapf\ Calligraphic\ 801\ Bold\ BT.ttf");
+  font-weight: bold;
+}
+@font-face {
+  font-family: "Zapf Calligraphic 801";
+  src: url("../fonts/Zapf\ Calligraphic\ 801\ Italic\ BT.ttf");
+  font-style: italic;
+}
+@font-face {
+  font-family: "DejaVu Sans";
+  src: url("../fonts/Zapf\ Calligraphic\ 801\ Bold\ Italic\ BT.ttf");
+  font-weight: bold;
+  font-style: italic;
+}
+
 
 @font-face {
     font-family: "frizquadrata_ltbold";

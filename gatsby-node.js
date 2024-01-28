@@ -27,6 +27,8 @@ exports.createPages = async ({ actions }) => {
   const monsterTemplate = require.resolve('./src/templates/monster.tsx')
   const monster_keys = Array.from(Object.keys(monster_titles)) ;  
 
+  const printTemplate = require.resolve('./src/templates/printmonster.tsx')
+
   // All Monster data indexable by monster_key
 
   console.log("Creating indexable monster data map")
@@ -72,6 +74,24 @@ exports.createPages = async ({ actions }) => {
     createPage({
       path: path,
       component: monsterTemplate,
+      context: {
+        monster_key: monster_key,
+        monster_data: monster_object.monster_data,
+        sources: monster_object.sources,
+        statblock_names: monster_object.statblock_names,
+        title: monster_object.title,
+        prev_key: prev_key,
+        next_key: next_key,
+        monster_path: path
+        // interweave_body: interweaveMonsterBody
+      }
+      
+    })
+
+    // Create Print Page
+    createPage({
+      path: path + "/print",
+      component: printTemplate,
       context: {
         monster_key: monster_key,
         monster_data: monster_object.monster_data,
