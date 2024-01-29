@@ -262,7 +262,9 @@ const BookMonsterTemplate: React.FC<Props> = ({pageContext }) => {
     {/* <div className="last-modified">
         Last Modified: {monster_page_data.updatedAt}
     </div> */}
-
+    <div className={monsterPageStyles.printLink}>
+      <Link to={`/appendix/${monster_key}/print`}>Print-friendly page</Link> (Experimental)
+    </div>
 
 
 
