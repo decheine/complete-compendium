@@ -3510,6 +3510,14 @@
       "year" : "1991"
    },
    {
+      "author" : "Rick Swan",
+      "monster_keys" : [ "dragkodr", "eyewing", "kanidoll" ],
+      "publish_id" : "9244",
+      "setting" : "Dragonlance",
+      "title" : "DLE2 - Dragon Magic",
+      "year" : "1990"
+   },
+   {
       "author" : null,
       "monster_keys" : [ "draglcot", "draglfla", "draglgra", "draglmid", "draglrai" ],
       "publish_id" : "Dragon183",
