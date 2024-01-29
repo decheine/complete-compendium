@@ -3182,6 +3182,14 @@
       "year" : "1989"
    },
    {
+      "author" : "Bruce Nesmith, Dori Jean Watry, Dave Simons",
+      "monster_keys" : [ "carrione" ],
+      "publish_id" : "9414",
+      "setting" : "Ravenloft",
+      "title" : "RM2 The Created",
+      "year" : "1992"
+   },
+   {
       "author" : "Lisa Smedman, Richard Pike-Brown ",
       "monster_keys" : [ "catcrypt", "catplain", "elemsmok" ],
       "publish_id" : "9452",
@@ -3439,6 +3447,24 @@
       "setting" : "Dragonlance",
       "title" : "Time of the Dragon",
       "year" : "1989"
+   },
+   {
+      "author" : "Wolfgang Baur, Michele Carter, Anne Brown, Karl Waller",
+      "monster_keys" : 
+      [
+         "dogsaluq",
+         "elemsama",
+         "elemwiwa",
+         "gentdece",
+         "gentoabi",
+         "gibbmout",
+         "ironcobr",
+         "marrashi"
+      ],
+      "publish_id" : "9431",
+      "setting" : "Al-Qadim (Forgotten Realms)",
+      "title" : "ALQ2 Assassin Mountain",
+      "year" : "1993"
    },
    {
       "author" : "Matt Forbeck",
