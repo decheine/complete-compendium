@@ -3568,6 +3568,14 @@
       "year" : "1990"
    },
    {
+      "author" : "Rick Swan",
+      "monster_keys" : [ "dragkodr", "eyewing" ],
+      "publish_id" : "9245",
+      "setting" : "Dragonlance",
+      "title" : "DLE3 - Dragon Keep",
+      "year" : "1989"
+   },
+   {
       "author" : null,
       "monster_keys" : [ "draglcot", "draglfla", "draglgra", "draglmid", "draglrai" ],
       "publish_id" : "Dragon183",
