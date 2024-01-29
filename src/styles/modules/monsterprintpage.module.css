@@ -31,8 +31,8 @@ table, img, svg {
 @page {
     margin: 0cm;
     margin-left: 1cm;
-    margin-right: 1cm;
-    margin-bottom: 1cm;
+    margin-right: 5mm;
+    margin-bottom: 5mm;
     margin-top: 1cm;
   }
 
@@ -85,7 +85,7 @@ img.monster-image {
     float: right;  
     clear: both;
     margin-left: calc(100%);
-    margin-bottom: 5mm;
+    margin-bottom: 0mm;
     width: 90mm;
 }
 
