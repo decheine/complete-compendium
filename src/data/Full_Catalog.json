@@ -2641,6 +2641,14 @@
       "year" : "1999"
    },
    {
+      "author" : "William W. Connors, Arnie Swekel",
+      "monster_keys" : [ "baatbarb", "baatcorn", "baatpitf" ],
+      "publish_id" : "9369",
+      "setting" : "Forgotten Realms",
+      "title" : "FRQ2 Hordes of Dragonspear",
+      "year" : "1992"
+   },
+   {
       "author" : "Jeff Grub and Tim Beach",
       "monster_keys" : [ "bacar", "hcalos" ],
       "publish_id" : "9340",
