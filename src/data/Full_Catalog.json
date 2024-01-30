@@ -3715,6 +3715,14 @@
       "year" : "1993"
    },
    {
+      "author" : "Andria Hayday, William W. Connors, Bruce Nesmith, James Lowder, Mike Breault, Stephen Fabian",
+      "monster_keys" : [ "ermorden", "golem3", "liviwall" ],
+      "publish_id" : "9331",
+      "setting" : "Ravenloft",
+      "title" : "RR1 Darklords",
+      "year" : "1990"
+   },
+   {
       "author" : "David \"Zeb\" Cook",
       "monster_keys" : [ "eye", "hand" ],
       "publish_id" : "9309",
@@ -3845,6 +3853,14 @@
       "setting" : "Dragon Magazine",
       "title" : "Dragon174",
       "year" : "1991"
+   },
+   {
+      "author" : "Blake Mobley, William W. Connors, Stephen Fabian, Clyde Caldwell",
+      "monster_keys" : [ "goblyn", "quicwood", "wolfwerg" ],
+      "publish_id" : "9298",
+      "setting" : "Ravenloft",
+      "title" : "RA1 Feast of Goblyns",
+      "year" : "1990"
    },
    {
       "author" : "",
