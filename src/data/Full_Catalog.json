@@ -3681,6 +3681,14 @@
       "year" : "1990"
    },
    {
+      "author" : "Blake Mobley and Timothy B. Brown, Grant Boucher, William W. Connors, Steve Gilbert, Bruce Nesmith, Chris Mortika, Skip Williams",
+      "monster_keys" : [ "dwarderr", "dwarduer", "gianmoun", "ogrehalf", "ooslje00", "troll" ],
+      "publish_id" : "9292",
+      "setting" : "Greyhawk",
+      "title" : "WGR1 Greyhawk Ruins",
+      "year" : "1990"
+   },
+   {
       "author" : "",
       "monster_keys" : [ "dwarutuc" ],
       "publish_id" : "Dungeon56",
@@ -3720,6 +3728,14 @@
       "publish_id" : "9331",
       "setting" : "Ravenloft",
       "title" : "RR1 Darklords",
+      "year" : "1990"
+   },
+   {
+      "author" : "Dale Slade Henson, J. Robert King, Anne Brows, Jean Rabe, Laura and Kelly Freas, Stephen Fabian",
+      "monster_keys" : [ "ermorden", "golem3", "liviwall" ],
+      "publish_id" : "9336",
+      "setting" : "Ravenloft",
+      "title" : "RR2 Book of Crypts",
       "year" : "1990"
    },
    {
