@@ -929,6 +929,14 @@
       "year" : "1995"
    },
    {
+      "author" : "Carl Sargent, John D. Rateliff, Miranda Horner, Arnie Swekel, Glen Michael Angus",
+      "monster_keys" : [ "aboleths", "eelgimor", "elfrocse", "goleshab", "ixitixza" ],
+      "publish_id" : "1125",
+      "setting" : "Ravenloft",
+      "title" : "Night Below",
+      "year" : "1995"
+   },
+   {
       "author" : "David Wise",
       "monster_keys" : 
       [
