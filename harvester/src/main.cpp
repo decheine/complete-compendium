@@ -61,7 +61,8 @@ int main(int argc, char *argv[])
     // printf("Done testing\n");
 
     harvester.HarvestAll(true);
-    // harvester.RunMonster("human");
+
+    // harvester.RunMonster("theseadr");
     // harvester.RunMonster("zombie");
     // harvester.RunMonster("yugoultr");
     

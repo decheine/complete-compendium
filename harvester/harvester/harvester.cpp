@@ -1162,18 +1162,26 @@ std::vector<std::string> split(std::string str, std::string token)
 
 
 std::string Harvester::GetFullBody(std::string in, std::string monster_key){
+    if(debug)
+        printf("Getting Full Body\n");
     // make a copy of in
     std::string monsterString = in;
 
     monsterString = std::regex_replace(monsterString, std::regex("</body>"), "<body>");
     
 
+    if(debug)
+        printf("splitting\n");
     Json::Value::Members splitTestResultMembers = split(monsterString, "<body>");
     std::string splitTestResult;
     if(splitTestResultMembers.size() > 1){
+        if(debug)
+            printf("Getting split results\n");
         splitTestResult = splitTestResultMembers[1];
         if(debug)
-            std::cout << "SplitTestResult " <<  splitTestResult << "\n";
+            printf("done\n");
+        // if(debug)
+        //     std::cout << "SplitTestResult " <<  splitTestResult << "]\n";
 
     } else {
         std::cerr << "Invalid Json split. for " << monster_key << "\n" << monsterString << "\n";
@@ -1181,6 +1189,8 @@ std::string Harvester::GetFullBody(std::string in, std::string monster_key){
     // Works, matches the two line breaks until the end.
     std::regex r("\r\n\r\n.+", std::regex::extended);
     std::smatch m;
+    if(debug)
+        printf("Split Searching\n");
     std::regex_search(splitTestResult, m, r);
     
     
@@ -1205,7 +1215,7 @@ std::string Harvester::GetFullBody(std::string in, std::string monster_key){
     }
 
     if(debug)
-        printf("\n\n");
+        printf("After split\n\n");
 
     
 

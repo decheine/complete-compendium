@@ -3570,6 +3570,24 @@
       "year" : "1985"
    },
    {
+      "author" : "L. Richard Baker III, Colin McComb, Walter Velez, Tony Szczudlo, William O'Connor, Eric Hotz, Carrie Bebris, Roger E. Moore, Sue Weinlein, Peggy Cooper",
+      "monster_keys" : 
+      [
+         "dragceri",
+         "gianceri",
+         "goblceri",
+         "orogceri",
+         "rhuomans",
+         "thegorg",
+         "theseadr",
+         "thespide"
+      ],
+      "publish_id" : "3100",
+      "setting" : "Birthright",
+      "title" : "Birthright Campaign Setting Box Set",
+      "year" : "1995"
+   },
+   {
       "author" : "",
       "monster_keys" : [ "dragdzal", "manni", "morin", "sandcat", "spelweav" ],
       "publish_id" : "Dragon163",
