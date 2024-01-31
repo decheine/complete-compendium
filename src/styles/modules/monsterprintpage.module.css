@@ -24,9 +24,6 @@ table, img, svg {
   
 
   /* target all pages */
-@page :first {
-    margin-top: 1mm;
-}
 
 @page {
     margin: 0cm;
