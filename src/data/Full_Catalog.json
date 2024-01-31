@@ -3897,6 +3897,14 @@
       "year" : "1995"
    },
    {
+      "author" : "Sean Reynolds, Kij Johnson, Chris McKitterick, Lisa Stevens, Erik Mona, Roger Moore, Steve Wilson, Sam Wood, Dawn Murin",
+      "monster_keys" : [ "gibbmogr", "onco", "ravenous", "sumonste", "thotooth", "tlokasaz" ],
+      "publish_id" : "11374",
+      "setting" : "Greyhawk",
+      "title" : "The Scarlet Brotherhood",
+      "year" : "1999"
+   },
+   {
       "author" : "",
       "monster_keys" : [ "glomus" ],
       "publish_id" : "Dragon174",
