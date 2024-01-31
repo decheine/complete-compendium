@@ -2106,6 +2106,40 @@
       "year" : "1992"
    },
    {
+      "author" : "Walter Baas, Dustin Browder, Tom Prusa, Jonathan Tweet, Ann Goetz, Steve Maggi, Tom Baxa",
+      "monster_keys" : 
+      [
+         "ankheg",
+         "basilisk",
+         "beetlegi",
+         "behir",
+         "beholde1",
+         "cavefish",
+         "chimera",
+         "cockatri",
+         "dispbeas",
+         "githyank",
+         "githzera",
+         "hellhoun",
+         "imp",
+         "intedevo",
+         "invistal",
+         "kenku",
+         "kobold",
+         "lizard",
+         "mindflay",
+         "owlbear",
+         "scorpion",
+         "skeleton",
+         "slaad",
+         "spider"
+      ],
+      "publish_id" : "2428",
+      "setting" : "Dark Sun",
+      "title" : "Black Spine",
+      "year" : "1994"
+   },
+   {
       "author" : "",
       "monster_keys" : [ "ankou", "skotos" ],
       "publish_id" : "Dragon162",
@@ -4132,6 +4166,14 @@
       "setting" : "Maztica (Forgotten Realms)",
       "title" : "FMQ1 City of Gold",
       "year" : "1991"
+   },
+   {
+      "author" : "slade with Jim Butler",
+      "monster_keys" : [ "phaerimm", "sharn", "tombtapp" ],
+      "publish_id" : "1147",
+      "setting" : "Forgotten Realms",
+      "title" : "Netheril: Empire of Magic",
+      "year" : "1996"
    },
    {
       "author" : "Bruce R Cordel",
