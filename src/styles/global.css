@@ -1,6 +1,6 @@
 
 article > div > span.interweave > p.f {
-  padding-top: 2mm;
+  padding-top: 4mm;
   text-indent: 0mm;
 }
 
@@ -8,6 +8,7 @@ article > div > span.interweave {
   display: block;
   position: relative;
   /* top: -180px; */
+  line-height: 13px;
 }
 
 
@@ -17,10 +18,13 @@ article > div > span.interweave > p {
   margin: 0;
   /* margin-top: 2px; */
   /* margin-bottom: 2px; */
-  text-indent: 2em;
+  text-indent: 3mm;
   text-align: justify;
   font-family: 'Zapf Calligraphic 801';
-  font-size: 9pt;
+  font-size: 11px;
+  hyphens: auto;
+  letter-spacing: 0.35px;
+  /* word-spacing: 2px; */
 }
 
 article > div > span.interweave > h2 {
@@ -30,7 +34,7 @@ article > div > span.interweave > h2 {
   text-indent: 0em;
   text-align: justify;
   font-family: 'Zapf Calligraphic 801';
-  font-size: 9pt;
+  font-size: 11px;
   font-weight: bold;
   padding-top: 2mm;
     /* margin-top: 2mm; */
@@ -39,7 +43,7 @@ article > div > span.interweave > h2 {
 
 article > div > span.interweave > table > caption {
   font-family: 'Zapf Calligraphic 801';
-  font-size: 9pt;
+  font-size: 11px;
   font-weight: bold;
   padding-top: 2mm;
 }
@@ -63,14 +67,14 @@ article > div > span.interweave > table > tbody > tr > th {
   padding-top: 0px;
   padding-bottom: 0px;
   letter-spacing: 0.5px;
-  font-size: 9pt;
+  font-size: 11px;
 }
 article > div > span.interweave > table > tbody > tr > td {
   font-family: 'Zapf Calligraphic 801';
   padding-top: 0px;
   padding-bottom: 0px;
   padding-left: 3mm;
-  font-size: 9pt;
+  font-size: 11px;
 }
 
 article > div > span.interweave > table {
@@ -85,11 +89,16 @@ article > div > span.interweave > table.ip {
 
 
 
+
+
+
 /* Printing Settings */
 
 @page {
   margin: 2cm;
+  /* margin-top: 508px; */
 }
+
 
 
 

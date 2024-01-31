@@ -121,16 +121,19 @@ const PrintMonsterTemplate: React.FC<Props> = ( {pageContext} ) => {
     <>
       <div className="print" >
       {/* TITLE */}
-      <article>
       <div className={monsterPageStyles.topHeader}>
+          <div className={monsterPageStyles.topHeaderInner}>
           <h1 style={titleStyle}>{monster_page_data.monster_data.title}</h1>
           <Link to={"/catalog/" + cat_acronyms[monster_page_data.monster_data.setting]}>
               <img className={monsterPageStyles.settingImage} src={`/img_settings/${cat_acronyms[monster_page_data.monster_data.setting]}.gif`}  alt={monster_page_data.monster_data.setting + "Campaign Setting Logo"} title={monster_page_data.monster_data.setting}/>
           </Link>
+          </div>
+          <hr className ={monsterPageStyles.hr1}/>
+          <hr className ={hrClass}/>
+
       </div>
+      <article>
       
-      <hr className ={monsterPageStyles.hr1}/>
-      <hr className ={hrClass}/>
 
     <div className={monsterPageStyles.columnWrapper}>
       <div className={monsterPageStyles.monsterImgFrame}>      
@@ -138,8 +141,6 @@ const PrintMonsterTemplate: React.FC<Props> = ( {pageContext} ) => {
       {/* IMAGE IMAGE IMAGE IMAGE IMAGE IMAGE IMAGE IMAGE IMAGE IMAGE IMAGE IMAGE IMAGE IMAGE IMAGE IMAGE IMAGE IMAGE IMAGE IMAGE IMAGE IMAGE IMAGE IMAGE IMAGE IMAGE IMAGE IMAGE IMAGE IMAGE IMAGE IMAGE IMAGE IMAGE IMAGE IMAGE IMAGE IMAGE IMAGE IMAGE IMAGE IMAGE  */}
       </div>
       <Interweave className="interweave" content={fullBody} />
-      </div>
-    </article>
       {/* {interweaveMonsterBody} */}
 
       {/* <Interweave content="This string contains <b>HTML</b> and will safely be rendered!" /> */}
@@ -150,21 +151,23 @@ const PrintMonsterTemplate: React.FC<Props> = ( {pageContext} ) => {
         </div>
         <div className={monsterPageStyles.tsr}>
             {
-                (monster_page_data.monster_data.hasOwnProperty("TSR") && monster_page_data.monster_data["TSR"] != null) ?
-                    monster_page_data.monster_data["TSR"].map((tsr: string) => {
-                        return (
-                            <div key={tsr} className={monsterPageStyles.source}>
+              (monster_page_data.monster_data.hasOwnProperty("TSR") && monster_page_data.monster_data["TSR"] != null) ?
+              monster_page_data.monster_data["TSR"].map((tsr: string) => {
+                return (
+                  <div key={tsr} className={monsterPageStyles.source}>
                                 {all_tsr[tsr]?.title} ({tsr})
                                 <br/>
                             </div>
                         )
+                      }
+                      )
+                      : "No TSR"
                     }
-                )
-                : "No TSR"
-            }
         </div>
     </div>
 
+                    </div>
+                  </article>
     {/* LAST MODIFIED */}
     {/* <div className="last-modified">
         Last Modified: {monster_page_data.updatedAt}

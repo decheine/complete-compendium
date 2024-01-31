@@ -3,10 +3,6 @@
     --color-main-darker: #1250A2
 } */
 
-/* article > .print {
-    margin: 2;
-} */
-
 /* 
 .printframe {
     width: 
@@ -15,7 +11,8 @@
 /* Column wrapper */
 .column-wrapper {
     columns: 2;
-    column-gap: 5mm;
+    column-gap: 7mm;
+    /* column-fill: auto; */
 }
 
 /* Printing Settings */
@@ -23,9 +20,12 @@ table, img, svg {
     break-inside: avoid;
   }
 
+
+  
+
   /* target all pages */
 @page :first {
-    margin-top: 0px;
+    margin-top: 1mm;
 }
 
 @page {
@@ -33,10 +33,54 @@ table, img, svg {
     margin-left: 1cm;
     margin-right: 5mm;
     margin-bottom: 5mm;
-    margin-top: 1cm;
+    /* margin-top: 1cm; */
+    /* margin-top: 108px; */
+    /* padding-top: 108px; */
+
+    
   }
 
-  
+  @page content {
+    /* margin-top: 108px; */
+  }
+
+  /* article ::before {
+    content: ' ';
+    width: 100%;
+    margin-bottom: 108px;
+    column-span: all;
+} */
+
+  @media print {
+    div.top-header {
+        /* position: fixed;
+        top: 0; */
+        /* margin-bottom: 108px; */
+    }
+
+    @page { 
+        margin-top: 1.5cm; 
+    } 
+
+    @page :left {
+        margin-top: 8mm;
+        margin-right: 10mm;
+        margin-left: 20mm;
+    }
+    
+    @page :right {
+        margin-top: 8mm;
+        margin-left: 10mm;
+        margin-right: 20mm;
+    }
+
+    
+
+
+
+    
+}
+
   
 
   /* Responding statblock table resizing/rearranging */
@@ -108,12 +152,29 @@ img.monster-image {
 /* Top Header */
 div.top-header {
     display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    /* height: 75px; */
+    /* position: fixed; */
+        /* top: 0; */
+
+    width: 100%;
+    z-index: 1;
+}
+
+div.top-header-inner {
+    display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-end;
     /* height: 75px; */
 
+    width: 100%;
+
 }
+
+
 
 .top-header > a {
     height: 75px;
@@ -154,6 +215,7 @@ div.top-header {
     /* margin-bottom: 7px; */
     /* margin: 7px; */
     clear: none;
+    width: 100%;
 }
 
 
