@@ -23,7 +23,7 @@ article > div > span.interweave > p {
   font-family: 'Zapf Calligraphic 801';
   font-size: 9pt;
   hyphens: auto;
-  letter-spacing: 0.2px;
+  /* letter-spacing: 0.2px; */
   /* word-spacing: 1px; */
 }
 
