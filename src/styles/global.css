@@ -96,7 +96,7 @@ article > div > span.interweave > table.ip {
 /* Printing Settings */
 
 @page {
-  margin: 2cm;
+  /* margin: 2cm; */
   /* margin-top: 508px; */
 }
 

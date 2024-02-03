@@ -60,14 +60,14 @@ table, img, svg {
     } 
 
     @page :left {
-        margin-top: 8mm;
-        margin-right: 10mm;
+        margin-top: 7mm;
+        margin-right: 9mm;
         margin-left: 20mm;
     }
     
     @page :right {
-        margin-top: 8mm;
-        margin-left: 10mm;
+        margin-top: 7mm;
+        margin-left: 9mm;
         margin-right: 20mm;
     }
 
@@ -126,7 +126,7 @@ img.monster-image {
     float: right;  
     clear: both;
     margin-left: calc(100%);
-    margin-bottom: 0mm;
+    margin-bottom: 3mm;
     width: 90mm;
 }
 
