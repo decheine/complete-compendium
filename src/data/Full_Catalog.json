@@ -2807,6 +2807,14 @@
       "year" : "1995"
    },
    {
+      "author" : "Ed Greenwood, Ned Dameron",
+      "monster_keys" : [ "baneguar", "crawclaw", "curst", "hakeasha", "nethbird" ],
+      "publish_id" : "9247",
+      "setting" : "Forgotten Realms",
+      "title" : "FRE1 Shadowdale",
+      "year" : "1989"
+   },
+   {
       "author" : "William W. Connors",
       "monster_keys" : 
       [
@@ -4169,6 +4177,14 @@
       "publish_id" : "Dungeon62",
       "setting" : "Dungeon Magazine",
       "title" : "Dungeon #62",
+      "year" : "1997"
+   },
+   {
+      "author" : "Doug Stewart, Carrie A. Bebris, Dawn Murin, Paul Hanchette",
+      "monster_keys" : [ "marble" ],
+      "publish_id" : "9544",
+      "setting" : "Forgotten Realms",
+      "title" : "Castle Spulzeer",
       "year" : "1997"
    },
    {
