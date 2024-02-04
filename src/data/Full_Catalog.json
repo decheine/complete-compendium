@@ -3526,6 +3526,14 @@
       "year" : "1990"
    },
    {
+      "author" : "Ed Greenwood, Allen Varney, Kim Mohan, Allen Nunis",
+      "monster_keys" : [ "denizen", "nighride" ],
+      "publish_id" : "9249",
+      "setting" : "Forgotten Realms",
+      "title" : "FRE3 Waterdeep",
+      "year" : "1989"
+   },
+   {
       "author" : "Nicky Rea",
       "monster_keys" : [ "dhampir" ],
       "publish_id" : "9529",
