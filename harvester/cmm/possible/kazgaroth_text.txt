@@ -1,0 +1,233 @@
+CLIMATE/TERRAIN: Any (Moonshaes)
+FREQUENCY: Unique
+ORGANIZATION: Solitary
+ACTIVITY CYCLE: Any
+DIET: Carnivore
+INTELLIGENCE: High
+TREASURE: See below
+ALIGNMENT: Chaotic evil
+NO. APPEARING: 1
+ARMOR CLASS: 0
+MOVEMENT: 15
+HIT DICE: 16 (120 hp)
+THAC0: 5
+NO. OF ATTACKS: 4
+DAMAGE/ATTACKS: 1d12(×2)/3d10/ld8
+SPECIAL ATTACKS: See below
+SPECIAL DEFENSES: See below
+MAGIC RESISTANCE: 60%
+SIZE: G (18 tall, 50 long)
+MORALE: Fearless (19)
+XP VALUE: 19,000
+
+In its true form, Kazgaroth resembles a huge tyrannosaur
+with forelimbs that, while still short, match
+the rest of its body and allow the Beast to run on all
+fours if it wishes. When traveling in this manner,
+consider Kazgaroths movement rate to be 18.
+The Beast possesses a broad, powerful, scaly body
+and tail with a maw that drips mildly acidic saliva
+(the acid is taken into account in the bites damage).
+Its massive hindlegs end in heavy, clawed feet. In
+this form (and in other forms if the Beast loses selfcontrol),
+Kazgaroths beady eyes glow a fierce red.
+
+
+Combat: While the Beast prefers to engage its
+foes through trickery, deceit, and the use of mortal
+pawns, Kazgaroth revels in the bloodlust of combat
+when it arises. In this form, the Beast attacks with its
+two clawed forelimbs and its vicious bite. Further,
+the Beast uses its tail to attack anyone it finds itself
+in melee with; damage from the tailslap is 1d8. Any
+being struck by the tail must make a Dexterity check
+with a -5 penalty or be knocked off his feet. The
+prone figure can regain his footing in the following
+or subsequent rounds, but can take no other actions
+during that round.
+
+Kazgaroth can be struck in combat only by magical
+weapons of +2 enchantment or better. The
+Beasts Magic Resistance applies to all wizard and
+priest spells, except those cast by neutral clerics
+whose powers concern maintaining the balance of
+nature. For example, spells cast by druids or priests of
+Chauntea would affect Kazgaroth normally.
+
+The Beast can shapechange at will. Kazgaroth has
+been known to assume forms such as a bull, a snake,
+and a gargoylelike creature. Kazgaroth also can assume
+the form of specific, well-known individuals,
+such as it did with the Northmen king Thelgaar
+Ironhand, after the Beast consumes the original
+being. Kazgaroth cannot assume the form of any
+creature larger than itself-but then, it really doesnt
+need to.
+
+Kazgaroth also possesses several special abilities,
+the first of which is the ability to constantly detect
+magic and detect invisibility within 100 yards of itself,
+limited by vision. The second ability is to cause lycanthropy
+with its bite. The breed of lycanthrope
+matches the ethical element of the victims alignment
+(lawful, neutral, or chaotic), but is always evil.
+Therefore, lawful (good, neutral, or evil) victims
+could become wererats, neutral (good, true neutral,
+or evil) might become werebats, and chaotic (good,
+neutral, or evil) individuals may become werewolves
+(or werefoxes if the victim is female and has elf
+blood). Kazgaroth can cast a permanent charm on one
+victim within 10 of itself. A side effect of this charm
+is that once per week, the charmed being must
+successfully save vs. spell or permanently lose a point
+of Charisma (to a minimum score of 3), due to the
+effects of the Beasts vile magic on the being. Once
+per week, the Beast also can cast a death spell.
+
+Kazgaroths final offensive power is perhaps its
+most insidious. A corrupted form of the mass charm
+spell, this ability transforms a troop (up to 500 persons)
+of living beings into the undead minions of
+Bhaal known as the Blood Warriors. See their entry
+in this section for more details on their most recent
+incarnation, the Blood Riders.
+
+Kazgaroth is an integral component of the Moonshae
+Isles (see Ecology below) and if slain, returns
+in 3d6 years. Only the now-lost sword of Cymrych
+Hugh could permanently kill the Beast.
+
+
+Habitat/Society: Kazgaroth is unique to the
+Moonshae Isles. With his shapechange ability, the
+Beast can assume forms that allow him to travel anywhere
+in the Isles quickly and unobtrusively.
+
+Kazgaroth is venerated by the firbolg giants of the
+Isles. These variants of traditional firbolgs use the
+normal statistics for their race, but they are chaotic
+neutral in alignment and are misshapen and unrelentingly
+ugly. Under the Beasts leadership, these
+powerful creatures did much evil to the good Ffolk of
+the Moonshae Isles (see History below).
+
+
+Ecology: As a supernatural creature, Kazgaroth
+draws power from the death, decay, and corruption it
+causes. In its most recent appearance, this power was
+mainly derived from a Bhaal-corrupted Moonwell,
+one of the sites sacred to the Earthmother and her
+druids. It is from this same Darkwell that Bhaals
+avatar later entered the Realms, only to be defeated
+by Tristan Kendrick, Newt the faerie dragon, and the
+other heroes of the Moonshae Isles. Beyond this link
+to the mortal world of the Realms, the Beast plays
+no role in the life of the Moonshaes beyond being a
+tool with which to upset the Balance of the Earthmother
+s domain.
+
+History: The origin of Kazgaroth the Beast lurks
+in the long-lost past of the Moonshaes, nearly as distant as that of the Earthmother herself. Over the
+centuries, Kazgaroth has arisen many times to upset
+the Balance and wreak havoc across the Isles.
+In 1345 DR, the Beast made his last recorded appearance.
+Born again into the Realms from the
+Bhaal-corrupted Moonwell (now called the Darkwell),
+Kazgaroth set his plans into motion. Calling
+upon the firbolgs to begin depredations of their own,
+Kazgaroth became wise in the ways of the Ffolk,
+using his shape-shifting ability to pass unnoticed
+amongst them.
+Making his way to Myrloch Vale, the Beast corrupted
+the druid Trahern of Oakvale, making the
+hapless mortal a minion of Bhaal. Through the
+druid, Kazgaroth was able to learn the druids plan to
+counteract the Beasts own plans to destroy the Balance.
+The Beast first killed and took the form of a
+woman named Meredith, then used this attractive
+shape to seduce and infect the guardsman Erian with
+lycanthropy. The werewolf that Erian would now become
+also would serve Kazgaroth and Bhaal.
+Next, the Beast viciously killed and began impersonating
+Thelgaar Ironhand, the mightiest king of
+the Northmen that lived on the Isles. Now in the
+role of this leader, Kazgaroth revoked Ironhands
+previous peace-loving policies and built the assembled
+Northmen into a conquering army bent on ravaging
+the island of Gywnneth, home of the Kendrick
+line of kings. Kazgaroth also used its corrupting mass
+charm ability to transform the Northmens only cavalry
+unit, the Blood Riders, into his pawns. Meanwhile,
+the Beasts firbolgs fed tons of coal into the
+Darkwell, further polluting it. The giants also captured
+Kamerynn, one of the Earthmothers Children.
+Kazgaroth, as Ironhand, sailed forth with its
+Northman army in specially modified longships.
+Each vessel now carried a heavy, piercing ram on its
+bow, for the Beast knew another of the Earthmother
+s Children, the Leviathan, would sense its
+presence and seek to end the blight Kazgaroths presence
+brought. Indeed, the great aquatic mammal
+sunk a full third of Kazgaroths duped Northmen
+fleet, but eventually succumbed to the rams and a
+huge harpoon hurled by Ironhand/the Beast itself.
+Power flowed into Kazgaroth from the destruction of
+the Leviathan, and the Beast now fought to control
+the human form which was barely capable of holding
+such potency.
+Kazgaroth/Ironhand sailed on while part of the
+Northman fleet sailed a different route, landing on Gwynneth and looting and pillaging, driving a great
+mass of refugees before them. Part of the Beasts plan
+was for a portion of the Northman army to use
+mountain passes (guided by Trahern) to get ahead of
+the refugees and slaughter them all between the two
+Northman groups.
+
+Meanwhile, Erian the werewolf fought and defeated
+the leader of the Earthmothers Pack, a gathering
+of all the wolves of the Isles. Erian then used
+this collective Child of the Earthmother against her.
+Soon, Kazgaroth landed his fleet at Corwell, laying
+siege to both the town and Caer Corwell that overlooked
+it.
+
+Kazgaroth could sense the presence of the heroes
+within the Caer, especially Robyn, the young
+woman who was discovering her considerable
+druidic powers. The Beast attacked, but the young
+druid, a cleric named Friar Nolan, and Prince Tristan
+Kendrick forced Kazgaroth to flee. Tristan Kendricks
+moorhound, Canthus, blessed by the Earthmother,
+managed to defeat and kill Erian and he led the Pack
+on a long trek to Corwell.
+
+Now, the Northmen, the firbolgs, the Blood Riders,
+and Kazgaroth worked to bring Corwell to its
+knees. The heroes of the Moonshaes, however, stood
+firm. The heroes turned back the firbolgs at the
+Caers gatehouse and, enraged at the sight, Kazgaroth
+s control snapped. Resuming his true form,
+the Beast slew the fleeing giant-kin with a blast of
+magic, then managed to regain Thelgaar Ironhands
+form. As the Pack led by Canthus fiercely attacked
+the Northmen army, Tristan Kendrick and Kazgaroth/
+Ironhand met in battle. The Beast could not
+stand the touch of the sword of Cymrych Hugh and
+fled the field while one of the Blood Riders made off
+with the young druid, Robyn, whom he intended to
+sacrifice to his dread lord, Bhaal.
+
+The heroes pursued the Blood Riders and managed
+to prevent the sacrifice, defeating them in the
+process. Reunited, the heroes tracked the Beast
+back to the Darkwell where they engaged him in
+battle. Strengthened by the Darkwell, Kazgaroth
+killed most of the heroes before Tristan, wielding
+the sword of Cymrych Hugh, destroyed the Beast.
+
+The Earthmother returned all but one of her heroes
+to life after the battle, but the Beast too lived
+on, after a fashion. The heart of Kazgaroth, a black,
+stonelike object of potent magical powers was recovered
+by Trahern and eventually found its way into
+the hands of HOBARTH, a powerful cleric of Bhaal.

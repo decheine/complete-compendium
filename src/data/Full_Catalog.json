@@ -2781,6 +2781,26 @@
       "year" : "1990"
    },
    {
+      "author" : "Dale Donovan, Bill Olmesdahl, Todd Lockwood",
+      "monster_keys" : 
+      [
+         "balhiir",
+         "chosenon",
+         "darkbeas",
+         "dreawarr",
+         "kalmari",
+         "phaerimm",
+         "pteraman",
+         "shadevar",
+         "shadmast",
+         "tanaleyo"
+      ],
+      "publish_id" : "9552",
+      "setting" : "Forgotten Realms",
+      "title" : "Villains' Lorebook",
+      "year" : "1998"
+   },
+   {
       "author" : "John Terra and Kevin Melka",
       "monster_keys" : 
       [
