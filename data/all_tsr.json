@@ -611,6 +611,12 @@
         "author": "David \"Zeb\" Cook",
         "setting": "Greyhawk"
     },
+    "9315": {
+        "title": "LC4 Port of Ravens Bluff",
+        "year": "1991",
+        "author": "Jean Rabe and Skip Williams, David Wise, kevin Ward, Valerie Valusek",
+        "setting": "Forgotten Realms"
+    },
     "9320": {
         "title": "FR13 Anauroch",
         "year": "1991",
@@ -766,6 +772,12 @@
         "year": "1990",
         "author": "Lisa Smedman, Doug Stewart",
         "setting": "Ravenloft"
+    },
+    "9440": {
+        "title": "Fallen Kingdoms",
+        "year": "1994",
+        "author": "Steven Kurtz, Richard Pike-Brown, John D. Rateliff",
+        "setting": "Al-Qadim (Forgotten Realms)"
     },
     "9444": {
         "title": "Departure",

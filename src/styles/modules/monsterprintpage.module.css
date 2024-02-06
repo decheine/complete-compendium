@@ -56,19 +56,23 @@ table, img, svg {
     }
 
     @page { 
-        margin-top: 1.5cm; 
+        margin-top: 7mm; 
     } 
 
+    @page :first {
+        margin-top: 3mm;
+    }
+
     @page :left {
-        margin-top: 7mm;
-        margin-right: 9mm;
-        margin-left: 20mm;
+        margin-top: 17mm;
+        margin-right: 20mm;
+        margin-left: 8mm;
     }
     
     @page :right {
-        margin-top: 7mm;
-        margin-left: 9mm;
-        margin-right: 20mm;
+        margin-top: 17mm;
+        margin-right: 8mm;
+        margin-left: 20mm;
     }
 
     

@@ -3803,6 +3803,14 @@
       "year" : "2000"
    },
    {
+      "author" : "Jean Rabe and Skip Williams, David Wise, kevin Ward, Valerie Valusek",
+      "monster_keys" : [ "dwaraqua" ],
+      "publish_id" : "9315",
+      "setting" : "Forgotten Realms",
+      "title" : "LC4 Port of Ravens Bluff",
+      "year" : "1991"
+   },
+   {
       "author" : "Rick Swan",
       "monster_keys" : [ "dwararct", "fishgrgl", "kupuk", "tirichik" ],
       "publish_id" : "9351",
@@ -4326,6 +4334,14 @@
       "setting" : "Dungeon Magazine",
       "title" : "Dungeon #71",
       "year" : "1998"
+   },
+   {
+      "author" : "Steven Kurtz, Richard Pike-Brown, John D. Rateliff",
+      "monster_keys" : [ "segarran", "snakserp" ],
+      "publish_id" : "9440",
+      "setting" : "Al-Qadim (Forgotten Realms)",
+      "title" : "Fallen Kingdoms",
+      "year" : "1994"
    },
    {
       "author" : "",
