@@ -81,6 +81,10 @@ article > div > span.interweave > table > tbody > tr > td {
   font-size: 9pt;
 }
 
+article > div > span.interweave > table > tbody > tr > th.cn {
+    text-transform: unset;
+}
+
 article > div > span.interweave > table {
   position: relative;
   padding-top: 2mm;

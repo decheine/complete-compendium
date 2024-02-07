@@ -4489,6 +4489,14 @@
       "year" : "1990"
    },
    {
+      "author" : "Tim Beach",
+      "monster_keys" : [ "tyin" ],
+      "publish_id" : "9382",
+      "setting" : "Dragonlance",
+      "title" : "Flint's Axe",
+      "year" : "1992"
+   },
+   {
       "author" : "Kevin Melka and Steve Miller",
       "monster_keys" : [ "umbra", "vampgobl" ],
       "publish_id" : "9541",
