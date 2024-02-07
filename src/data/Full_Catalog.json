@@ -2989,6 +2989,23 @@
       "author" : "Ed Greenwood",
       "monster_keys" : 
       [
+         "batbone",
+         "helmhorr",
+         "nishruu",
+         "nyth",
+         "peltast",
+         "shee",
+         "weredrag"
+      ],
+      "publish_id" : "9301",
+      "setting" : "Forgotten Realms",
+      "title" : "FA1 Halls of the High King",
+      "year" : "1990"
+   },
+   {
+      "author" : "Ed Greenwood",
+      "monster_keys" : 
+      [
          "batdeep",
          "dragdeep",
          "myrlocha",
