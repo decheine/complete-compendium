@@ -2,7 +2,7 @@ import React from "react"
 // import { useEffect, useState } from 'react'
 
 import Layout from '../components/Layout';
-import {  PageProps, Link, HeadFC, HeadProps, graphql  } from "gatsby";
+import { PageProps, Link, HeadFC, HeadProps, graphql } from "gatsby";
 
 import { CreatePagesArgs } from 'gatsby';
 import { Interweave } from "interweave";
@@ -41,34 +41,34 @@ const headingStyles = {
 }
 
 type MonsterDataType = {
-    TSR: string[],
-    fullBody: string,
-    images: string[],
-    setting: string,
-    statblock: Object,
-    title: string
+  TSR: string[],
+  fullBody: string,
+  images: string[],
+  setting: string,
+  statblock: Object,
+  title: string
 }
 
 type MonsterPageContext = {
-    monster_key: string
-    monster_data: MonsterDataType
-    sources: string[]
-    statblock_names: string[]
-    title: string
-    prev_key: string
-    next_key: string
-    monster_path: string
-    // intereweave_body: JSX.Element
+  monster_key: string
+  monster_data: MonsterDataType
+  sources: string[]
+  statblock_names: string[]
+  title: string
+  prev_key: string
+  next_key: string
+  monster_path: string
+  // intereweave_body: JSX.Element
 }
 
 interface Props {
   pageContext: MonsterPageContext
-  }
+}
 
 
 
 
-const PrintMonsterTemplate: React.FC<Props> = ( {pageContext} ) => {
+const PrintMonsterTemplate: React.FC<Props> = ({ pageContext }) => {
 
   const monster_page_data: MonsterPageContext = pageContext
   const monster_key = monster_page_data.monster_key
@@ -83,93 +83,106 @@ const PrintMonsterTemplate: React.FC<Props> = ( {pageContext} ) => {
   let image_url = "";
   // if(monster_page_data.monster_data.images[1]) regex contains monster_key
   let main_img_pattern = "img/" + monster_page_data.monster_key
-  if(monster_page_data.monster_data.images[1] && monster_page_data.monster_data.images[1].match(new RegExp(main_img_pattern, "g"))){
-      needs_image = true;
+  if (monster_page_data.monster_data.images[1] && monster_page_data.monster_data.images[1].match(new RegExp(main_img_pattern, "g"))) {
+    needs_image = true;
   } else {
-      needs_image = false;
+    needs_image = false;
   }
 
-  if(needs_image){
-      // Set image url
-      image_url = "/images/monsters/img/" + monster_page_data.monster_key + ".gif"
-      let image_placeholder = "https://upload.wikimedia.org/wikipedia/commons/6/65/No-Image-Placeholder.svg"
+  if (needs_image) {
+    // Set image url
+    image_url = "/images/monsters/img/" + monster_page_data.monster_key + ".gif"
+    let image_placeholder = "https://upload.wikimedia.org/wikipedia/commons/6/65/No-Image-Placeholder.svg"
 
-      monster_image = <img className={monsterPageStyles.monsterImage}   src={image_url}
-      alt={monster_page_data.monster_data.title} 
-      title={monster_page_data.monster_data.title} 
-      onError={({currentTarget}) => {
-          currentTarget.onerror = null;
-          currentTarget.alt = "This monster is missing it's image. It will be found eventually.";
-          currentTarget.src = image_placeholder;
-          currentTarget.title = "Missing image of " + monster_page_data.monster_data.title;
-      }}/>
+    monster_image = <img className={monsterPageStyles.monsterImage} src={image_url}
+      alt={monster_page_data.monster_data.title}
+      title={monster_page_data.monster_data.title}
+      onError={({ currentTarget }) => {
+        currentTarget.onerror = null;
+        currentTarget.alt = "This monster is missing it's image. It will be found eventually.";
+        currentTarget.src = image_placeholder;
+        currentTarget.title = "Missing image of " + monster_page_data.monster_data.title;
+      }} />
 
-  } 
-    
+  }
+
   // Handle setting and accent color.
   const setting_name = monster_page_data.monster_data.setting;
   const setting_acr = cat_acronyms[setting_name]
   var hrClass = "hr2"
   var titleStyle = {}
-  if(setting_acr){
-      hrClass = "hr2-" + setting_acr
-      const colorVar = "--color-" + setting_acr
-      titleStyle = {color: COLORS.get(setting_acr)}
+  if (setting_acr) {
+    hrClass = "hr2-" + setting_acr
+    const colorVar = "--color-" + setting_acr
+    titleStyle = { color: COLORS.get(setting_acr) }
   }
 
   return (
     <>
       <div className="print" >
-      {/* TITLE */}
-      <div className={monsterPageStyles.topHeader}>
+        {/* TITLE */}
+        <div className={monsterPageStyles.topHeader}>
           <div className={monsterPageStyles.topHeaderInner}>
-          <h1 style={titleStyle}>{monster_page_data.monster_data.title}</h1>
-          <Link to={"/catalog/" + cat_acronyms[monster_page_data.monster_data.setting]}>
-              <img className={monsterPageStyles.settingImage} src={`/img_settings/${cat_acronyms[monster_page_data.monster_data.setting]}.gif`}  alt={monster_page_data.monster_data.setting + "Campaign Setting Logo"} title={monster_page_data.monster_data.setting}/>
-          </Link>
-          </div>
-          <hr className ={monsterPageStyles.hr1}/>
-          <hr className ={hrClass}/>
-
-      </div>
-      <article>
-      
-
-    <div className={monsterPageStyles.columnWrapper}>
-      <div className={monsterPageStyles.monsterImgFrame}>      
-      {monster_image}
-      {/* IMAGE IMAGE IMAGE IMAGE IMAGE IMAGE IMAGE IMAGE IMAGE IMAGE IMAGE IMAGE IMAGE IMAGE IMAGE IMAGE IMAGE IMAGE IMAGE IMAGE IMAGE IMAGE IMAGE IMAGE IMAGE IMAGE IMAGE IMAGE IMAGE IMAGE IMAGE IMAGE IMAGE IMAGE IMAGE IMAGE IMAGE IMAGE IMAGE IMAGE IMAGE IMAGE  */}
-      </div>
-      <Interweave className="interweave" content={fullBody} />
-      {/* {interweaveMonsterBody} */}
-
-      {/* <Interweave content="This string contains <b>HTML</b> and will safely be rendered!" /> */}
-      {/* {test_jsx} */}
-      {/* TSR Array */}
-      <div className={monsterPageStyles.sourceList}>
-        <div className={monsterPageStyles.tsrLabel}>
-        </div>
-        <div className={monsterPageStyles.tsr}>
-            {
-              (monster_page_data.monster_data.hasOwnProperty("TSR") && monster_page_data.monster_data["TSR"] != null) ?
-              monster_page_data.monster_data["TSR"].map((tsr: string) => {
-                return (
-                  <div key={tsr} className={monsterPageStyles.source}>
-                                {all_tsr[tsr]?.title} ({tsr})
-                                <br/>
-                            </div>
-                        )
-                      }
+            <h1 style={titleStyle}>{monster_page_data.monster_data.title}</h1>
+            <div className={monsterPageStyles.tsrPrint}>
+                {
+                  (monster_page_data.monster_data.hasOwnProperty("TSR") && monster_page_data.monster_data["TSR"] != null) ?
+                    monster_page_data.monster_data["TSR"].map((tsr: string) => {
+                      return (
+                        <div key={tsr} className={monsterPageStyles.source}>
+                          {tsr}
+                          <br />
+                        </div>
                       )
-                      : "No TSR"
                     }
-        </div>
-    </div>
+                    ) : "No TSR"
+                }
+              </div>
+            <Link to={"/catalog/" + cat_acronyms[monster_page_data.monster_data.setting]}>
+              <img className={monsterPageStyles.settingImage} src={`/img_settings/${cat_acronyms[monster_page_data.monster_data.setting]}.gif`} alt={monster_page_data.monster_data.setting + "Campaign Setting Logo"} title={monster_page_data.monster_data.setting} />
+            </Link>
+          </div>
+          <hr className={monsterPageStyles.hr1} />
+          <hr className={hrClass} />
 
-                    </div>
-                  </article>
-    {/* LAST MODIFIED */}
-    {/* <div className="last-modified">
+        </div>
+        <article>
+
+
+          <div className={monsterPageStyles.columnWrapper}>
+            <div className={monsterPageStyles.monsterImgFrame}>
+              {monster_image}
+              {/* IMAGE IMAGE IMAGE IMAGE IMAGE IMAGE IMAGE IMAGE IMAGE IMAGE IMAGE IMAGE IMAGE IMAGE IMAGE IMAGE IMAGE IMAGE IMAGE IMAGE IMAGE IMAGE IMAGE IMAGE IMAGE IMAGE IMAGE IMAGE IMAGE IMAGE IMAGE IMAGE IMAGE IMAGE IMAGE IMAGE IMAGE IMAGE IMAGE IMAGE IMAGE IMAGE  */}
+            </div>
+            <Interweave className="interweave" content={fullBody} />
+            {/* {interweaveMonsterBody} */}
+
+            {/* <Interweave content="This string contains <b>HTML</b> and will safely be rendered!" /> */}
+            {/* {test_jsx} */}
+            {/* TSR Array */}
+            <div className={monsterPageStyles.sourceList}>
+              <div className={monsterPageStyles.tsrLabel}>
+              </div>
+              <div className={monsterPageStyles.tsr}>
+                {
+                  (monster_page_data.monster_data.hasOwnProperty("TSR") && monster_page_data.monster_data["TSR"] != null) ?
+                    monster_page_data.monster_data["TSR"].map((tsr: string) => {
+                      return (
+                        <div key={tsr} className={monsterPageStyles.source}>
+                          {all_tsr[tsr]?.title} ({tsr})
+                          <br />
+                        </div>
+                      )
+                    }
+                    ) : "No TSR"
+                }
+              </div>
+            </div>
+
+          </div>
+        </article>
+        {/* LAST MODIFIED */}
+        {/* <div className="last-modified">
         Last Modified: {monster_page_data.updatedAt}
     </div> */}
 
@@ -234,7 +247,7 @@ const PrintMonsterTemplate: React.FC<Props> = ( {pageContext} ) => {
 
 
 export const Head: React.FC<Props> = ({ pageContext }) => (
-  <> 
+  <>
   </>
 )
 

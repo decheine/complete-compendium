@@ -48,6 +48,29 @@ table, img, svg {
     column-span: all;
 } */
 
+
+
+.tsr-print {
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    align-content: flex-end;
+    flex-wrap: wrap;
+    margin-right: 5mm;
+    max-height: 36px;
+    width: 100%;
+}
+
+.tsr-print .source {
+    font-family: 'Zapf Calligraphic 801';
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 3mm;
+    font-size: 10pt;
+    font-style: italic;
+    /* width: 100%; */
+  }
+
   @media print {
     div.top-header {
         /* position: fixed;
@@ -74,9 +97,16 @@ table, img, svg {
         margin-right: 8mm;
         margin-left: 20mm;
     }
-
     
 
+    .tsr {
+       display: none;
+        /* font-size: medium; */
+        text-align: right;
+        /* float: right; */
+      }
+
+    
 
 
     
@@ -196,7 +226,7 @@ div.top-header-inner {
     text-align: left;
     font-family: frizquadrata_ltbold;
     letter-spacing: 0.3px;
-    width: 100%;
+    /* width: 100%; */
     font-size: xx-large;
   }
 .top-header h2 {

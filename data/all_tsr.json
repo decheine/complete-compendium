@@ -527,6 +527,12 @@
         "author": "Ed Greenwood, Ned Dameron",
         "setting": "Forgotten Realms"
     },
+    "9248": {
+        "title": "FRE2 Tantras",
+        "year": "1989",
+        "author": "Ed Greenwood, Anne Brown, Kim Mohan, Karl Waller",
+        "setting": "Forgotten Realms"
+    },
     "9249": {
         "title": "FRE3 Waterdeep",
         "year": "1989",
@@ -604,6 +610,12 @@
         "year": "1990",
         "author": "Richard and Anne Brown",
         "setting": "Greyhawk"
+    },
+    "9304": {
+        "title": "FRA3 Blood Charge",
+        "year": "1990",
+        "author": "Troy Denning, Anne Brown, Paul Abrams",
+        "setting": "Forgotten Realms"
     },
     "9309": {
         "title": "WGA4 Vecna Lives!",
