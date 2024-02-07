@@ -3457,6 +3457,14 @@
       "year" : "1992"
    },
    {
+      "author" : "Scott Bennie",
+      "monster_keys" : [ "curotai", "dragspid", "handtakh", "icevampi", "spidhors", "weaplivi" ],
+      "publish_id" : "9334",
+      "setting" : "Forgotten Realms",
+      "title" : "Wild Evles",
+      "year" : "1991"
+   },
+   {
       "author" : "Sam Witt",
       "monster_keys" : [ "cursdead", "rackspir" ],
       "publish_id" : "2417",
