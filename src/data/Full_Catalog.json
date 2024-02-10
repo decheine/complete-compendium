@@ -3069,6 +3069,26 @@
       "year" : "1991"
    },
    {
+      "author" : "Ed Greenwood, Paul Jaquays, Anne Brown, Dell Barras, Brom, Jeff Grubb",
+      "monster_keys" : 
+      [
+         "behundea",
+         "flowbarn",
+         "licharch",
+         "neogunde",
+         "shadspun",
+         "thagar",
+         "tinkerer",
+         "watcher",
+         "wondseek",
+         "wormspac"
+      ],
+      "publish_id" : "9280",
+      "setting" : "Spelljammer",
+      "title" : "SJR1 Lost Ships",
+      "year" : "1990"
+   },
+   {
       "author" : "Unknown",
       "monster_keys" : 
       [
