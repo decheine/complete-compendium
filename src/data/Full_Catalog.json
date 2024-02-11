@@ -3127,6 +3127,22 @@
       "year" : ""
    },
    {
+      "author" : "Troy Denning, Timothy Brown, Paul Abrams",
+      "monster_keys" : [ "blacours", "dragpugr" ],
+      "publish_id" : "9281",
+      "setting" : "Forgotten Realms",
+      "title" : "FRA1 Storm Riders",
+      "year" : "1990"
+   },
+   {
+      "author" : "Troy Denning,Paul Abrams",
+      "monster_keys" : [ "blacours", "dowagu", "dragpugr" ],
+      "publish_id" : "9290",
+      "setting" : "Forgotten Realms",
+      "title" : "FRA2 Black Courser",
+      "year" : "1990"
+   },
+   {
       "author" : "Unknown",
       "monster_keys" : 
       [
@@ -3468,6 +3484,14 @@
       "setting" : "Dungeon Magazine",
       "title" : "Dungeon #76",
       "year" : "1999"
+   },
+   {
+      "author" : "Rick Swan, Mike Breault, Valerie Valusek",
+      "monster_keys" : [ "chrolily", "chulcrix", "gkloklok" ],
+      "publish_id" : "9294",
+      "setting" : "Greyhawk",
+      "title" : "DLA3 Dragon's Rest",
+      "year" : "1990"
    },
    {
       "author" : "Loren Coleman, Matt Forbeck",
