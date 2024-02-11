@@ -2789,6 +2789,25 @@
       "year" : "1990"
    },
    {
+      "author" : "Blake Mobley, Andria Hayday, Steve Winter",
+      "monster_keys" : 
+      [
+         "baku",
+         "braimole",
+         "cerepara",
+         "intdevla",
+         "intedevo",
+         "shedu",
+         "sumonste",
+         "thoueate",
+         "vagabond"
+      ],
+      "publish_id" : "2117",
+      "setting" : "Advanced Dungeons & Dragons 2nd Edition",
+      "title" : "PHBR5 The Complete Psionics Handbook",
+      "year" : "1990"
+   },
+   {
       "author" : "Dale Donovan, Bill Olmesdahl, Todd Lockwood",
       "monster_keys" : 
       [
