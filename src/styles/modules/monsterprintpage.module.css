@@ -58,7 +58,7 @@ table, img, svg {
     flex-wrap: wrap;
     margin-right: 5mm;
     max-height: 36px;
-    width: 100%;
+    width: max-content;
 }
 
 .tsr-print .source {

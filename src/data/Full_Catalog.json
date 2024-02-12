@@ -937,6 +937,14 @@
       "year" : "1995"
    },
    {
+      "author" : "Skip Williams",
+      "monster_keys" : [ "abomdiir", "dwarcrus", "hydraqle", "tombward" ],
+      "publish_id" : "11347",
+      "setting" : "Advanced Dungeons & Dragons 2nd Edition",
+      "title" : "Axe of the Dwarvish Lords",
+      "year" : "1999"
+   },
+   {
       "author" : "David Wise",
       "monster_keys" : 
       [
