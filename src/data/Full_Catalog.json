@@ -4660,6 +4660,14 @@
       "year" : "1996"
    },
    {
+      "author" : "Dale \"Slade\" Henson, Mike Breault, Ken Frank",
+      "monster_keys" : [ "wolfgh" ],
+      "publish_id" : "9337",
+      "setting" : "Greyhawk",
+      "title" : "WGS2 Howl From the North",
+      "year" : "1991"
+   },
+   {
       "author" : "",
       "monster_keys" : [ "wospmisk" ],
       "publish_id" : "404",

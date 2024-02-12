@@ -96,6 +96,14 @@ article > div > span.interweave > table.ip {
   column-span: none;
 }
 
+article > div > span.interweave > .footnotes {
+  display: none;
+}
+
+article > div > span.interweave > .footnote-list {
+  display: none;
+}
+
 
 
 
