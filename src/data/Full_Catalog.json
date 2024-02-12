@@ -2672,6 +2672,27 @@
       "year" : "1994"
    },
    {
+      "author" : "Jean Rabe, Norm Ritchie",
+      "monster_keys" : 
+      [
+         "autoscal",
+         "autotrob",
+         "binou",
+         "fishsubt",
+         "flareate",
+         "lurkshad",
+         "mimigrea",
+         "mold2",
+         "puddsubt",
+         "snaksevi",
+         "wraispid"
+      ],
+      "publish_id" : "1104",
+      "setting" : "Forgotten Realms",
+      "title" : "Ruins of Undermountain II",
+      "year" : "1994"
+   },
+   {
       "author" : "Timothy B. Brown",
       "monster_keys" : [ "avangion", "dragatha", "eleacler" ],
       "publish_id" : "2408",
