@@ -134,7 +134,7 @@ Copies the json files created by the harvester to the folder `./output/json_file
 
 Run Harvester all in one command,
 ```powershell
-docker build -t monster-harvester -f harvester/Dockerfile .; docker create --name harvester-container monster-harvester | Foreach-Object { docker cp "$($_):/usr/local/harvester/build/bin/json_files" output }
+docker build -t monster-harvester -f harvester/Dockerfile .; docker create --name harvester-container monster-harvester; Foreach-Object { docker cp "harvester-container:/usr/local/harvester/build/bin/json_files" output }
 ```
 
 4. Run copy script to copy the harvested data into the repository.

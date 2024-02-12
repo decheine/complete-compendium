@@ -1,0 +1,18 @@
+[
+   {
+      "stat_key" : "settings_count",
+      "stat_value" : 24
+   },
+   {
+      "stat_key" : "books_count",
+      "stat_value" : 243
+   },
+   {
+      "stat_key" : "pages_count",
+      "stat_value" : 2326
+   },
+   {
+      "stat_key" : "unique_count",
+      "stat_value" : 3060
+   }
+]

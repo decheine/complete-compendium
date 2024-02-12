@@ -4105,6 +4105,14 @@
       "year" : "1992"
    },
    {
+      "author" : "Jean Rabe",
+      "monster_keys" : [ "gianbosk", "gianswam" ],
+      "publish_id" : "9409",
+      "setting" : "Spelljammer",
+      "title" : "SJR7 Krynnspace",
+      "year" : "1993"
+   },
+   {
       "author" : "Wolfgang Baur",
       "monster_keys" : [ "gianfhoi", "ogrestcr" ],
       "publish_id" : "3110",
