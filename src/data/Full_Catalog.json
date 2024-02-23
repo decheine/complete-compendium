@@ -4009,7 +4009,7 @@
    },
    {
       "author" : "Unknown",
-      "monster_keys" : [ "echo", "fanggen", "haemgobl", "sadhuin", "willblee" ],
+      "monster_keys" : [ "echo", "fanggen", "sadhuin", "willblee" ],
       "publish_id" : "BookofSecrets",
       "setting" : "Ravenloft",
       "title" : "",

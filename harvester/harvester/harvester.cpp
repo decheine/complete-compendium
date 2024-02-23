@@ -1295,6 +1295,14 @@ std::string SanitizeLinks(std::string in){
     return out;
 }
 
+std::vector<std::string> statblock_skip_monsters{
+    "human",
+    "modron",
+    "mammal",
+    "mammmini",
+    "mammsmal",
+};
+
 
 /**
  * @brief Runs the harvester on one target monster file.
@@ -1444,8 +1452,7 @@ int Harvester::RunMonster(std::string monsterName)
     {
         if(debug)
             std::cout << "Getting Stats Table\n";
-
-        if(monsterName == "human" || monsterName == "modron"){
+        if (std::find(std::begin(statblock_skip_monsters), std::end(statblock_skip_monsters), monsterName) != std::end(statblock_skip_monsters)){
 
         } else {
             Json::Value statblock = GetStatsTable(monsterString);
