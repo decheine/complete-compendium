@@ -2663,17 +2663,11 @@
          "ghoukles",
          "ghoulank",
          "gladliza",
-         "horag",
-         "howler",
          "icegnome",
          "invistdo",
-         "lizard",
          "rayfinfl",
-         "scorpion",
          "simorgya",
-         "snowserp",
-         "thunchil",
-         "wraispid"
+         "snowserp"
       ],
       "publish_id" : "2137",
       "setting" : "Lankhmar",
@@ -4260,6 +4254,14 @@
       "setting" : "Dragon Magazine",
       "title" : "Dragon Magazine Annual 1997",
       "year" : "1997"
+   },
+   {
+      "author" : "Gary Gygax, Sean K Reynolds",
+      "monster_keys" : [ "horag" ],
+      "publish_id" : "11413",
+      "setting" : "Advanced Dungeons & Dragons 2nd Edition",
+      "title" : "Against the Giants: The Liberation of Geoff",
+      "year" : "1999"
    },
    {
       "author" : "Bruce R Cordel",
