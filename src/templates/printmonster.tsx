@@ -94,7 +94,10 @@ const PrintMonsterTemplate: React.FC<Props> = ({ pageContext }) => {
     image_url = "/images/monsters/img/" + monster_page_data.monster_key + ".gif"
     let image_placeholder = "https://upload.wikimedia.org/wikipedia/commons/6/65/No-Image-Placeholder.svg"
 
-    monster_image = <img className={monsterPageStyles.monsterImage} src={image_url}
+    monster_image = 
+    
+    <div className={monsterPageStyles.monsterImgFrame}>
+    <img className={monsterPageStyles.monsterImage} src={image_url}
       alt={monster_page_data.monster_data.title}
       title={monster_page_data.monster_data.title}
       onError={({ currentTarget }) => {
@@ -102,8 +105,7 @@ const PrintMonsterTemplate: React.FC<Props> = ({ pageContext }) => {
         currentTarget.alt = "This monster is missing it's image. It will be found eventually.";
         currentTarget.src = image_placeholder;
         currentTarget.title = "Missing image of " + monster_page_data.monster_data.title;
-      }} />
-
+      }} /></div>
   }
 
   // Handle setting and accent color.
@@ -150,10 +152,7 @@ const PrintMonsterTemplate: React.FC<Props> = ({ pageContext }) => {
 
 
           <div className={monsterPageStyles.columnWrapper}>
-            <div className={monsterPageStyles.monsterImgFrame}>
-              {monster_image}
-              {/* IMAGE IMAGE IMAGE IMAGE IMAGE IMAGE IMAGE IMAGE IMAGE IMAGE IMAGE IMAGE IMAGE IMAGE IMAGE IMAGE IMAGE IMAGE IMAGE IMAGE IMAGE IMAGE IMAGE IMAGE IMAGE IMAGE IMAGE IMAGE IMAGE IMAGE IMAGE IMAGE IMAGE IMAGE IMAGE IMAGE IMAGE IMAGE IMAGE IMAGE IMAGE IMAGE  */}
-            </div>
+            {monster_image}
             <Interweave className="interweave" content={fullBody} />
             {/* {interweaveMonsterBody} */}
 

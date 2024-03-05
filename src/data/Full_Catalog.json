@@ -3303,8 +3303,28 @@
       "year" : "1995"
    },
    {
-      "author" : "Carrie A. Bebris ",
-      "monster_keys" : [ "bloohoun", "changelc", "cwnannwn", "disposse" ],
+      "author" : "Carrie A. Bebris",
+      "monster_keys" : 
+      [
+         "bloohoun",
+         "changelc",
+         "cwnannwn",
+         "disposse",
+         "faerseel",
+         "faerunse",
+         "halflisw",
+         "minilost",
+         "seemer",
+         "seemwalk",
+         "shade",
+         "shadstee",
+         "shadwarr",
+         "sluagh",
+         "specawns",
+         "waff",
+         "wildhunt",
+         "willosha"
+      ],
       "publish_id" : "3140",
       "setting" : "Birthright",
       "title" : "Blood Spawn: Creatures of Light and Shadow",
