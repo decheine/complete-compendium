@@ -18,7 +18,7 @@ SPECIAL DEFENSES: See below
 MAGIC RESISTANCE: 60%
 SIZE: G (18 tall, 50 long)
 MORALE: Fearless (19)
-XP VALUE: 19,000
+XP Value: 19,000
 
 In its true form, Kazgaroth resembles a huge tyrannosaur
 with forelimbs that, while still short, match

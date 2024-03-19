@@ -26,10 +26,12 @@ console.log("Compiling Climates")
 monster_list = []
 climates = {}
 frequencies = {}
+hitdice = {}
 
 for (let monster_obj_index in ALL_MONSTERS){
     let monster_obj = {}
     let monster_title = ALL_MONSTERS[monster_obj_index]["monster_data"]["title"]
+    let monster_key = ALL_MONSTERS[monster_obj_index]["monster_key"]
     if("statblock" in ALL_MONSTERS[monster_obj_index]["monster_data"] && ALL_MONSTERS[monster_obj_index]["monster_data"]["statblock"] != null){
         let statblock_titles = Object.keys(ALL_MONSTERS[monster_obj_index]["monster_data"]["statblock"])
         
@@ -58,6 +60,7 @@ for (let monster_obj_index in ALL_MONSTERS){
             }
         }
 
+
         let frequency = monster_list[monster_list.length - 1]["statblock"]["Frequency"]
 
         if(frequency != undefined){
@@ -72,6 +75,30 @@ for (let monster_obj_index in ALL_MONSTERS){
                     }
                 } else {
                     frequencies[frequency] = 1
+                }
+            }
+        }
+
+        
+        let hd = monster_list[monster_list.length - 1]["statblock"]["Hit Dice"]
+
+        if(hd != undefined){
+            if (hd in hitdice){
+                hitdice[hd] += 1
+            } else {
+                if(hd == "N/A" || hd=="n/a"){
+                    hitdice[hd] = 1
+                } else {
+                    // console.log(monster_key, hd)
+                    // if(hd.includes("/")){
+                    //     let split_hd = hd.split("/")
+                    //     for(let split_index in split_hd){
+                    //         if (split_hd[split_index] in hitdice){ hitdice[split_hd[split_index]] += 1 }
+                    //         else { hitdice[split_hd[split_index]] = 1}
+                    //     }
+                    // } else {
+                        hitdice[hd] = 1
+                    // }
                 }
             }
         }
@@ -95,3 +122,6 @@ let sorted_climates = [...Object.entries(climates)].sort((a, b) => b[1] - a[1])
 console.log([...Object.entries(climates)].sort((a, b) => b[1] - a[1]))
 
 console.log([...Object.entries(frequencies)].sort((a, b) => b[1] - a[1]))
+
+console.log([...Object.entries(hitdice)].sort((a, b) => b[1] - a[1]))
+console.log([...Object.values(hitdice)].sort((a, b) => b[1] - a[1]))

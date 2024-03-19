@@ -1,0 +1,205 @@
+---
+title: "Monster Data Wrangling"
+output: 
+  html_document: 
+    df_print: tibble
+date: "2024-03-18"
+editor_options: 
+  chunk_output_type: inline
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+library(tidyverse)
+library(rjson)
+```
+
+Load the Monster JSON
+
+```{r}
+json_file <- "C:/Users/Nick/Development/complete-compendium/src/data/ALL_MONSTERS.json"
+json_data <- fromJSON(paste(readLines(json_file), collapse=""), simplify=TRUE) 
+  
+```
+
+```{r}
+json_data[[1]]$monster_data$statblock
+
+```
+
+```{r}
+library(rlist)
+library(purrr)
+library(tibble)
+
+# change_data_frame_to_named_list <- function(old_frame)
+# {
+#   return(list(serial         = old_frame$notes[1],
+#               direction      = old_frame$notes[2],
+#               lane           = old_frame$notes[3],
+#               install_height = old_frame$notes[5],
+#               xaxis          = old_frame$notes[6],
+#               data           = old_frame[-which(old_frame$type == 100), -6]
+#               ))
+# }
+
+
+result <- list()
+
+stat_result_df <- data.frame(
+      monster_key = character(),
+      title = character(),
+      statblock_title = character(),
+      Activity.Cycle = character(),
+      Alignment = character(),
+      Armor.Class = character(),
+      Climate.Terrain = character(),
+      Damage.Attack = character(),
+      Diet = character(),
+      Frequency = character(),
+      Hit.Dice = character(),
+      Intelligence = character(),
+      Magic.Resistance = character(),
+      Morale = character(),
+      Movement = character(),
+      No..Appearing = character(),
+      No..of.Attacks = character(),
+      Organization = character(),
+      Size = character(),
+      Special.Attacks = character(),
+      Special.Defenses = character(),
+      THAC0 = character(),
+      Treasure = character(),
+      XP.Value = character()
+    )
+
+
+for (i in seq_along(json_data))
+{
+  # result[[i]] = change_data_frame_to_named_list(json_data[[i]])
+  monster_key <- json_data[[i]]$monster_key
+  monster_title <- json_data[[i]]$title
+  
+  the_statblock <- json_data[[i]]$monster_data$statblock
+  # result <- list.append(result, json_data[[i]]$monster_data$statblock)
+  # Row
+  # Each row is a df, with monster key and statblock title
+  # c(monster_key, )
+  
+  
+  for (j in seq_along(the_statblock)){
+    # statblock_title <- json_data[[i]]$statblock_names[[j]]
+    statblock_title <- names(the_statblock)[[j]]
+    
+    statblock_row <- the_statblock[[j]]
+    statblock_row$monster_key = monster_key
+    statblock_row$title = statblock_title
+    
+    activity_cycle <- statblock_row$`Activity Cycle`
+    armor_class <- statblock_row$`Armor Class`
+    # print(statblock_title)
+    # print(ifelse(is.null(activity_cycle), NA, activity_cycle))
+    stat_df <- data.frame(
+      monster_key = list(monster_key),
+      title = list(monster_title), 
+      statblock_title = list(statblock_title),
+      Activity.Cycle = list(ifelse(is.null(activity_cycle), NA, activity_cycle)),
+      Alignment = list(ifelse(is.null(statblock_row$Alignment), NA, statblock_row$Alignment)),
+      Armor.Class = list(ifelse(is.null(statblock_row$`Armor Class`), NA, statblock_row$`Armor Class`)),
+      Climate.Terrain = list(ifelse(is.null(statblock_row$`Climate/Terrain`), NA, statblock_row$`Climate/Terrain`)),
+      Damage.Attack = list(ifelse(is.null(statblock_row$`Damage/Attack`), NA, statblock_row$`Damage/Attack`)),
+      Diet = list(ifelse(is.null(statblock_row$Diet), NA, statblock_row$Diet)),
+      Frequency = list(ifelse(is.null(statblock_row$Frequency), NA, statblock_row$Frequency)),
+      Hit.Dice = list(ifelse(is.null(statblock_row$`Hit Dice`), NA, statblock_row$`Hit Dice`)),
+      Intelligence = list(ifelse(is.null(statblock_row$Intelligence), NA, statblock_row$Intelligence)),
+      Magic.Resistance = list(ifelse(is.null(statblock_row$`Magic Resistance`), NA, statblock_row$`Magic Resistance`)),
+      Morale = list(ifelse(is.null(statblock_row$Morale), NA, statblock_row$Morale)),
+      Movement = list(ifelse(is.null(statblock_row$Movement), NA, statblock_row$Movement)),
+      No..Appearing = list(ifelse(is.null(statblock_row$`No. Appearing`), NA, statblock_row$`No. Appearing`)),
+      No..of.Attacks = list(ifelse(is.null(statblock_row$`No. of Attacks`), NA, statblock_row$`No. of Attacks`)),
+      Organization = list(ifelse(is.null(statblock_row$Organization), NA, statblock_row$Organization)),
+      Size = list(ifelse(is.null(statblock_row$Size), NA, statblock_row$Size)),
+      Special.Attacks = list(ifelse(is.null(statblock_row$`Special Attacks`), NA, statblock_row$`Special Attacks`)),
+      Special.Defenses = list(ifelse(is.null(statblock_row$`Special Defenses`), NA, statblock_row$`Special Defenses`)),
+      THAC0 = list(ifelse(is.null(statblock_row$THAC0), NA, statblock_row$THAC0)),
+      Treasure = list(ifelse(is.null(statblock_row$Treasure), NA, statblock_row$Treasure)),
+      XP.Value = list(ifelse(is.null(statblock_row$`XP Value`), NA, statblock_row$`XP Value`))
+    )
+    
+    stat_result_df[nrow(stat_result_df)+1,] <- stat_df
+    
+    # result <- list.append(result, as.data.frame(statblock_row, recursive=TRUE))
+  }
+}
+
+stat_result_df
+
+```
+
+```{r}
+library(tibble)
+options(max.print=4000)
+
+subset <- stat_result_df %>% select(monster_key, title, statblock_title, Hit.Dice) 
+ordered_subset <- subset[order(subset$Hit.Dice, decreasing = FALSE), ]
+print(ordered_subset, n = 2000)
+
+
+
+subset <- stat_result_df %>% select(monster_key, title, statblock_title, XP.Value) 
+ordered_subset <- subset[order(subset$XP.Value, decreasing = FALSE), ]
+
+ordered_subset$xp_filtered <- lapply(ordered_subset$XP.Value, function(x){as.numeric(gsub(",", "", x))})
+
+
+ordered_subset$xp_filtered = strtoi(ordered_subset$xp_filtered, 10L)
+ordered_subset <- ordered_subset[order(ordered_subset$xp_filtered, decreasing = FALSE), ]
+print(ordered_subset, n = 2000)
+
+# Subtypes, splitting by Hit Dice. 
+ordered_subset %>% filter(grepl("<br",XP.Value))
+
+
+
+
+```
+
+Regex testing
+
+```{r}
+br_df <- ordered_subset %>% filter(grepl("<br",XP.Value))
+test_string <- "10 HD: 10,000<br>11 HD: 11,000<br>12 HD: 12,000"
+str_extract_all(test_string, '([\\d|+]*) HD: ([\\d|,]*)')
+
+```
+
+```{r}
+
+
+
+monster_data1 <- json_data[[1]]$monster_data
+monster_data2 <- json_data[[2]]$monster_data
+
+# monster_data1
+# monster_data2
+
+# Get list of Monster Keys
+
+# json_data[]
+monster_keys <- lapply(json_data, function (x) x[c('monster_key')])
+
+data.frame(monster_keys = unlist(monster_keys))
+# as.data.frame(monster_data1)
+# monster_data1
+
+unnested_result <- unnest_wider(result, col="data.frame")
+
+df <- tibble(
+  monster_key = monster_keys,
+    col = unnest_wider(result_list_frame))
+
+```
+
