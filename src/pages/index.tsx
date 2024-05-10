@@ -128,6 +128,7 @@ export default IndexPage
 export function Head(props: HeadProps<DataProps>) {
   return (
     <>
+    <script src="https://kit.fontawesome.com/c6a77c0087.js" crossOrigin="anonymous"></script>
     <title>{props.data.site.siteMetadata.title}</title>
     <SEO />
     </>

@@ -110,7 +110,10 @@ const BreadCrumb = ( props: MyProps) => {
                         text = "About"
                 }
 
-                break;
+            case "table":
+                text = "Table"
+                
+                
         }
 
         path += `/${node}`

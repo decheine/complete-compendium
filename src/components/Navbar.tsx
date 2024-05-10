@@ -210,6 +210,14 @@ function Navbar() {
                             About
                           </Link>
                         </li>
+                        <li className='nav-item'>
+                          <Link to='/table'
+                            className='nav-links'
+                            onClick={handleClick}
+                          >
+                            Table
+                          </Link>
+                        </li>
                       </ul>
                     </nav>
                   </label>
@@ -243,6 +251,13 @@ function Navbar() {
                       // onClick={closeMobileMenu}
                     >
                       About
+                    </Link>
+                  </li>
+                  <li className='nav-item'>
+                    <Link to='/table'
+                      className='nav-links'
+                    >
+                      Table
                     </Link>
                   </li>
                 </ul> 
