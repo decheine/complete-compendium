@@ -24,6 +24,7 @@ function Footer() {
                             <Link to="/catalog">Catalog</Link>
                             <Link to="/about">About</Link>
                             <Link to="/about/the-monsters">How To Use This Book</Link>
+                            <Link to="/table">Table</Link>
                         </div>
                     </div>
                 </div>
