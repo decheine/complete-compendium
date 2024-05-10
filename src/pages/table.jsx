@@ -87,6 +87,7 @@ class MonsterTable extends React.Component {
     },
       {title: "title",            field: "title",             visible: true,  headerFilter: true, resizable:true, headerMenu: headerMenu},
       {title: "statblock_title",  field: "statblock_title",   visible: true,  headerFilter: true, resizable:true, headerMenu: headerMenu},
+      {title: "variant_title",    field: "variant_title",     visible: true,  headerFilter: true, resizable:true, headerMenu: headerMenu},
       {title: "Activity Cycle",   field: "Activity_Cycle",    visible: false, headerFilter: true, resizable:true, headerMenu: headerMenu},
       {title: "Alignment",        field: "Alignment",         visible: false, headerFilter: true, resizable:true, headerMenu: headerMenu},
       {title: "AC",               field: "Armor_Class",       visible: false, headerFilter: true, resizable:true, headerMenu: headerMenu},
