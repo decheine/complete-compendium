@@ -1072,6 +1072,31 @@
       "year" : "1999"
    },
    {
+      "author" : "Shane Lacy Hensley",
+      "monster_keys" : 
+      [
+         "absalom",
+         "beetledr",
+         "calldark",
+         "dray",
+         "dregoth",
+         "dwarcude",
+         "kalin",
+         "krag",
+         "kragling",
+         "pitsnatc",
+         "sharg",
+         "siltserp",
+         "siltspaw",
+         "venger",
+         "wallwalk"
+      ],
+      "publish_id" : "2432",
+      "setting" : "Dark Sun",
+      "title" : "City by the Silt Sea",
+      "year" : "1994"
+   },
+   {
       "author" : "Colin McComb, Wolfgang Baur",
       "monster_keys" : 
       [
@@ -3168,29 +3193,6 @@
       "year" : "1996"
    },
    {
-      "author" : "Shane Lacy Hensley",
-      "monster_keys" : 
-      [
-         "beetledr",
-         "calldark",
-         "dray",
-         "dregoth",
-         "dwarcude",
-         "kalin",
-         "krag",
-         "kragling",
-         "pitsnatc",
-         "siltserp",
-         "siltspaw",
-         "venger",
-         "wallwalk"
-      ],
-      "publish_id" : "2432",
-      "setting" : "Dark Sun",
-      "title" : "City by the Silt Sea",
-      "year" : "1994"
-   },
-   {
       "author" : "Jeff Grub",
       "monster_keys" : [ "behokash", "krrr", "lichmast", "shivak" ],
       "publish_id" : "1065",
@@ -3485,6 +3487,14 @@
       "publish_id" : "Dragon185",
       "setting" : "Dragon Magazine",
       "title" : "Dragon185",
+      "year" : "1992"
+   },
+   {
+      "author" : "",
+      "monster_keys" : [ "cariysbr", "mememori", "tymhhaid" ],
+      "publish_id" : "Dragon186",
+      "setting" : "Dragon Magazine",
+      "title" : "Dragon186",
       "year" : "1992"
    },
    {
@@ -4489,14 +4499,6 @@
       "setting" : "Dragon Magazine",
       "title" : "Dragon244",
       "year" : "1998"
-   },
-   {
-      "author" : "",
-      "monster_keys" : [ "mememori", "tymhhaid" ],
-      "publish_id" : "Dragon186",
-      "setting" : "Dragon Magazine",
-      "title" : "Dragon186",
-      "year" : "1992"
    },
    {
       "author" : "Bill Slavicsek",

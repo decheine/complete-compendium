@@ -14,7 +14,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ```{r}
 library(tidyverse)
-library(jsonlite)
+library(rjson)
 library(stringr)
 
 quotemeta <- function(string) {
@@ -30,7 +30,7 @@ Load the Monster JSON
 json_file <- "C:/Users/Nick/Development/complete-compendium/src/data/ALL_MONSTERS.json"
 
 # json_data <- fromJSON(paste(readLines(json_file), collapse=""), simplifyDataFrame = TRUE)
-json_data <- fromJSON(paste(readLines(json_file), simplify=TRUE))
+json_data <- rjson::fromJSON(paste(readLines(json_file), collapse=""), simplify=TRUE)
 ```
 
 
@@ -663,22 +663,30 @@ base_monsterkeys <- base_monsters$monster_key
 
 # Replace monsters with base == 0
 base0_monster_keys <- (split_monsters_df %>% filter(base == 0))$monster_key
+base0_titles <- (split_monsters_df %>% filter(base == 0))$title
 base1_monster_keys <- (split_monsters_df %>% filter(base == 1))$monster_key
 
 
-full_filtered_df <- stat_result_df %>% 
-  filter(!monster_key %in% base0_monster_keys,
-         !monster_key %in% base1_monster_keys) 
-
-stat_result_df
-full_filtered_df
+# filter base by
+# monster_key, title, and statblock_title
+# It's removing good monsters. 
 
 
-# Add monsters with base == 1
 
+# Need to pull out the rows to delete. 
+
+base_monsters %>% arrange(monster_key)
 split_monsters_df %>% arrange(monster_key)
-# base_monsterkeys
-combined_monsters <- bind_rows(split_monsters_df, full_filtered_df) 
+# stat_result_df
+# full_filtered_df
+
+
+split_anti_join <- stat_result_df %>% 
+  anti_join(split_monsters_df, by=c('monster_key', 'statblock_title'))
+  
+split_anti_join
+
+combined_monsters <- bind_rows(split_anti_join, split_monsters_df) 
 combined_monsters$base <- NULL
 combined_monsters$variant_count <- NULL
 combined_monsters$xp_filtered <- NULL
@@ -686,11 +694,14 @@ combined_monsters %>% arrange(monster_key)
 
 ```
 
+
+
 ```{r}
+library(jsonlite)
 combined_monsters %>% arrange(monster_key)
 
 
-write(toJSON(combined_monsters, pretty = TRUE, auto_unbox = TRUE), "stats_df.json")
+write(jsonlite::toJSON(combined_monsters, pretty = TRUE, auto_unbox = TRUE), "./src/data/stats_df.json")
 
 
 ```
