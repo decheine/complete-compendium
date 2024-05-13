@@ -1568,6 +1568,7 @@
          "spirroth",
          "strigian",
          "tanaggor",
+         "tanalear",
          "tembo",
          "tempglid",
          "tempstal",
@@ -3967,6 +3968,14 @@
       "publish_id" : "Dragon183",
       "setting" : null,
       "year" : null
+   },
+   {
+      "author" : "Nigel Findley et al.",
+      "monster_keys" : [ "dragsted" ],
+      "publish_id" : "9297",
+      "setting" : "Forgotten Realms",
+      "title" : "FOR1 - Draconomicon",
+      "year" : "1990"
    },
    {
       "author" : "L. Richard Baker III",
