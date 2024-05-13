@@ -3889,6 +3889,14 @@
       "year" : "1990"
    },
    {
+      "author" : "Nigel Findley et al.",
+      "monster_keys" : [ "dracohyd", "dragmerc", "dragsted", "dragyell" ],
+      "publish_id" : "9297",
+      "setting" : "Forgotten Realms",
+      "title" : "FOR1 - Draconomicon",
+      "year" : "1990"
+   },
+   {
       "author" : "Deborah Christian",
       "monster_keys" : [ "dracsesk", "hurdu" ],
       "publish_id" : "9275",
@@ -3968,14 +3976,6 @@
       "publish_id" : "Dragon183",
       "setting" : null,
       "year" : null
-   },
-   {
-      "author" : "Nigel Findley et al.",
-      "monster_keys" : [ "dragmerc", "dragsted", "dragyell" ],
-      "publish_id" : "9297",
-      "setting" : "Forgotten Realms",
-      "title" : "FOR1 - Draconomicon",
-      "year" : "1990"
    },
    {
       "author" : "L. Richard Baker III",
