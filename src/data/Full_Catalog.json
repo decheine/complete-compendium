@@ -1509,6 +1509,7 @@
          "dragnamb",
          "dreawarr",
          "dreaweav",
+         "drspawn",
          "drspgren",
          "drsplemo",
          "dwararct",
@@ -1566,6 +1567,7 @@
          "spiricor",
          "spirroth",
          "strigian",
+         "tanaggor",
          "tembo",
          "tempglid",
          "tempstal",
@@ -1577,6 +1579,7 @@
          "unicblac",
          "vaath",
          "vortspid",
+         "weblivin",
          "weredrag",
          "zhenspir"
       ],
@@ -2547,6 +2550,14 @@
       "setting" : "Dragon Magazine",
       "title" : "Dragon243",
       "year" : "1998"
+   },
+   {
+      "author" : "Anthony Pryor, Jon Pickens, Terry Dykstra",
+      "monster_keys" : [ "askhalit", "icecat" ],
+      "publish_id" : "9329",
+      "setting" : "Lankhmar",
+      "title" : "LNR2 Tales of Lankhmar",
+      "year" : "1991"
    },
    {
       "author" : "William Connors, David Martin, Rick Swan, Gary Thomas",
