@@ -3971,7 +3971,7 @@
    },
    {
       "author" : "Nigel Findley et al.",
-      "monster_keys" : [ "dragsted" ],
+      "monster_keys" : [ "dragmerc", "dragsted", "dragyell" ],
       "publish_id" : "9297",
       "setting" : "Forgotten Realms",
       "title" : "FOR1 - Draconomicon",
