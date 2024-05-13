@@ -4825,14 +4825,6 @@
       "year" : "1991"
    },
    {
-      "author" : "",
-      "monster_keys" : [ "wospmisk" ],
-      "publish_id" : "404",
-      "setting" : "Advanced Dungeons & Dragons 2nd Edition",
-      "title" : "404",
-      "year" : ""
-   },
-   {
       "author" : "Eric Haddock and David Wise",
       "monster_keys" : [ "yugoarca" ],
       "publish_id" : "9413",
