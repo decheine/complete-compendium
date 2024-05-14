@@ -4689,6 +4689,14 @@
       "year" : "1997"
    },
    {
+      "author" : "",
+      "monster_keys" : [ "slaalord" ],
+      "publish_id" : "Dragon221",
+      "setting" : "Dragon Magazine",
+      "title" : "Dragon221",
+      "year" : "1995"
+   },
+   {
       "author" : "Ed Greenwood, Mike Breault, Scott Rosema",
       "monster_keys" : [ "specharp" ],
       "publish_id" : "9390",
@@ -4726,6 +4734,14 @@
       "publish_id" : "9444",
       "setting" : "Planescape",
       "title" : "Departure",
+      "year" : "1996"
+   },
+   {
+      "author" : "Monte Cook, Adam Rex",
+      "monster_keys" : [ "tanalifr" ],
+      "publish_id" : "Dragon233",
+      "setting" : "Dragon Magazine",
+      "title" : "Dragon233",
       "year" : "1996"
    },
    {

@@ -1271,10 +1271,16 @@
         "author": "",
         "setting": "Dragon Magazine"
     },
+    "Dragon221": {
+        "title": "Dragon221",
+        "year": "1995",
+        "author": "Edward Bonny, Terry Dykstra",
+        "setting": "Dragon Magazine"
+    },
     "Dragon223": {
         "title": "Dragon223",
         "year": "1995",
-        "author": "",
+        "author": "Rob Letts, Wayne A. Haskett",
         "setting": "Dragon Magazine"
     },
     "Dragon227": {
@@ -1287,6 +1293,12 @@
         "title": "Dragon228",
         "year": "1996",
         "author": "",
+        "setting": "Dragon Magazine"
+    },
+    "Dragon233": {
+        "title": "Dragon233",
+        "year": "1996",
+        "author": "Monte Cook, Adam Rex",
         "setting": "Dragon Magazine"
     },
     "Dragon234": {
