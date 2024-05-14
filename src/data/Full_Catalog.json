@@ -3313,7 +3313,7 @@
       "year" : "2000"
    },
    {
-      "author" : "",
+      "author" : "Rob Letts, Wayne A. Haskett",
       "monster_keys" : [ "blizzard" ],
       "publish_id" : "Dragon223",
       "setting" : "Dragon Magazine",
@@ -3446,8 +3446,19 @@
       "year" : "1991"
    },
    {
-      "author" : "",
-      "monster_keys" : [ "braktwan", "byut", "craighe", "guttar" ],
+      "author" : "Jack Pitsker, David Day",
+      "monster_keys" : 
+      [
+         "braktwan",
+         "byut",
+         "crayghe",
+         "demihpet",
+         "guttar",
+         "pennig",
+         "stoght",
+         "twill",
+         "yyllethy"
+      ],
       "publish_id" : "Dragon269",
       "setting" : "Dragon Magazine",
       "title" : "Dragon269",
@@ -4689,7 +4700,7 @@
       "year" : "1997"
    },
    {
-      "author" : "",
+      "author" : "Edward Bonny, Terry Dykstra",
       "monster_keys" : [ "slaalord" ],
       "publish_id" : "Dragon221",
       "setting" : "Dragon Magazine",
@@ -4767,14 +4778,6 @@
       "setting" : "Dragon Magazine",
       "title" : "Dragon199",
       "year" : "1993"
-   },
-   {
-      "author" : "",
-      "monster_keys" : [ "twill" ],
-      "publish_id" : "Dungeon26",
-      "setting" : "Dungeon Magazine",
-      "title" : "Dungeon #26",
-      "year" : "1990"
    },
    {
       "author" : "Tim Beach",
