@@ -4333,6 +4333,14 @@
       "year" : ""
    },
    {
+      "author" : "Anne Brown, Mike Breault",
+      "monster_keys" : [ "golervsn", "lebendto", "stafisgi" ],
+      "publish_id" : "9321",
+      "setting" : "Ravenloft",
+      "title" : "RA2 Ship of Horrors",
+      "year" : "1990"
+   },
+   {
       "author" : "Dale Donovan",
       "monster_keys" : [ "grazzt", "lillend", "vipetree" ],
       "publish_id" : "9574",
@@ -4722,14 +4730,6 @@
       "setting" : "Birthright",
       "title" : "The Rjurik Highlands",
       "year" : "1996"
-   },
-   {
-      "author" : "Anne Brown, Mike Breault",
-      "monster_keys" : [ "stafisgi" ],
-      "publish_id" : "9321",
-      "setting" : "Ravenloft",
-      "title" : "RA2 Ship of Horrors",
-      "year" : "1990"
    },
    {
       "author" : "Richard W and Anne Brown",
