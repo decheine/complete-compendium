@@ -3743,6 +3743,14 @@
       "year" : "1987"
    },
    {
+      "author" : "Blake Mobley, Karen Boomgarden, Fred Fields, Ken Frank",
+      "monster_keys" : [ "corallan" ],
+      "publish_id" : "9305",
+      "setting" : "Lankhmar",
+      "title" : "LNA2 Nehwon",
+      "year" : "1990"
+   },
+   {
       "author" : "Anthony Pryor, Mike Breault, David O. Miller, Brom, Tracey Zamagne, Dave Sutherland",
       "monster_keys" : [ "crodlu" ],
       "publish_id" : "2407",

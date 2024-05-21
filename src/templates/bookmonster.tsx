@@ -121,8 +121,8 @@ const BookMonsterTemplate: React.FC<Props> = ({pageContext }) => {
   const monster_key = monster_page_data.monster_key
   const title = monster_page_data.title
   const sources = monster_page_data.sources
-  const previous_monster_key = monster_page_data.prev_key
-  const next_monster_key = monster_page_data.next_key
+  const previous_monster_key = (typeof monster_page_data.prev_key !== "undefined") ? monster_page_data.prev_key : monster_key; 
+  const next_monster_key = (typeof monster_page_data.next_key !== "undefined") ? monster_page_data.next_key : monster_key;  
   const catelog_book = monster_page_data.catelog_book
   const catelog_setting = monster_page_data.catelog_setting
 //   console.log(previous_monster_key, next_monster_key)
