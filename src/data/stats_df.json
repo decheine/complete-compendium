@@ -61254,7 +61254,7 @@
     "Alignment": "Chaotic Evil",
     "Armor_Class": "0",
     "Climate_Terrain": "Areas near cemeteries and burial grounds",
-    "Damage_Attack": "1/1 claws+ld4 bite",
+    "Damage_Attack": "1/1 claws+1d4 bite",
     "Diet": "Children",
     "Frequency": "Very rare",
     "Hit_Dice": "4",

@@ -2615,6 +2615,7 @@
       "monster_keys" : 
       [
          "asperii",
+         "beholde1",
          "belabra",
          "berbalan",
          "bhaergal",
@@ -2624,6 +2625,10 @@
          "cloaker",
          "crawclaw",
          "darkbeas",
+         "dinosau4",
+         "dinosau5",
+         "dinosau6",
+         "dinosaur",
          "dracolic",
          "dragocar",
          "dragocel",
@@ -2645,7 +2650,11 @@
          "revenant",
          "rhaumbus",
          "strigian",
+         "sull",
+         "svirfneb",
          "thesmons",
+         "thylacin",
+         "vulture",
          "weblivin",
          "wemic"
       ],
