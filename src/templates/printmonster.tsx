@@ -76,7 +76,7 @@ const PrintMonsterTemplate: React.FC<Props> = ({ pageContext }) => {
   const sources = monster_page_data.sources
   const previous_monster_key = monster_page_data.prev_key
   const next_monster_key = monster_page_data.next_key
-  const fullBody = monster_page_data.monster_data.fullBody;
+  let fullBody = monster_page_data.monster_data.fullBody;
 
   let monster_image = <></>;
   let needs_image = true;
@@ -95,7 +95,6 @@ const PrintMonsterTemplate: React.FC<Props> = ({ pageContext }) => {
     let image_placeholder = "https://upload.wikimedia.org/wikipedia/commons/6/65/No-Image-Placeholder.svg"
 
     monster_image = 
-    
     <div className={monsterPageStyles.monsterImgFrame}>
     <img className={monsterPageStyles.monsterImage} src={image_url}
       alt={monster_page_data.monster_data.title}
@@ -106,6 +105,10 @@ const PrintMonsterTemplate: React.FC<Props> = ({ pageContext }) => {
         currentTarget.src = image_placeholder;
         currentTarget.title = "Missing image of " + monster_page_data.monster_data.title;
       }} /></div>
+  } else {
+    // Handle Statblock column span if there is no image.
+    fullBody = fullBody.slice(0,9) + " style=\"column-span: all;\"" + fullBody.slice(9);
+
   }
 
   // Handle setting and accent color.
@@ -118,6 +121,8 @@ const PrintMonsterTemplate: React.FC<Props> = ({ pageContext }) => {
     const colorVar = "--color-" + setting_acr
     titleStyle = { color: COLORS.get(setting_acr) }
   }
+
+
 
   return (
     <>
