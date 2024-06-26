@@ -34,6 +34,7 @@ I chose to keep these as HTML files so that these files are functional on their 
 
 
 
+
 ## Cataloguing Effort Tracking
 
 There are a few undertakings that need to be done to complete the compendium. I will use GitHub's Issue tracking with tasks to track them all. These are:
