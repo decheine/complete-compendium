@@ -16,7 +16,7 @@ jobs:
           git config --global user.email "decheine@wisc.edu"
           git config --global user.name "decheine"
       - name: Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
       - name: Install dependencies
         run: |
           npm install
