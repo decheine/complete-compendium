@@ -104,7 +104,7 @@ gatsby develop
 
 Most straightforward method with the least hassle. Run all these in the project directory.
  
-To run the data extraction process,
+The data extraction process consists of the following commands:
 
 1. Build the docker image
 
@@ -132,6 +132,8 @@ docker cp <container_id>:/usr/local/harvester/build/bin/json_files output
 
 Copies the json files created by the harvester to the folder `./output/json_files/`
 
+
+### Run Harvester One Liner
 
 Run Harvester all in one command,
 ```powershell
