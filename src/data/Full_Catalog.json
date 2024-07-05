@@ -1907,6 +1907,25 @@
       "year" : "1996"
    },
    {
+      "author" : "Dale \"Slade\" Henson, Karen S. Boomgarden, Gary L. Thomas",
+      "monster_keys" : 
+      [
+         "anadjiin",
+         "dragair",
+         "fishchan",
+         "halfanad",
+         "helian",
+         "lavaworm",
+         "oortling",
+         "plainsja",
+         "praymang"
+      ],
+      "publish_id" : "9312",
+      "setting" : "Spelljammer",
+      "title" : "SJR2 - Realmspace",
+      "year" : "1991"
+   },
+   {
       "author" : "Kevin Hassal, Steve Miller, Karen S. Boomgarden, Roger Moore",
       "monster_keys" : 
       [
