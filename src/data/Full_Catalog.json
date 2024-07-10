@@ -2622,6 +2622,14 @@
       "year" : "1998"
    },
    {
+      "author" : "Michael Lambert, David Day, Roger Raupp, with Chris Perkins and Jesse Decker",
+      "monster_keys" : [ "ashiera", "fainil", "masgai", "telvar", "xakhun" ],
+      "publish_id" : "Dragon244",
+      "setting" : "Dragon Magazine",
+      "title" : "Dragon244",
+      "year" : "1998"
+   },
+   {
       "author" : "Anthony Pryor, Jon Pickens, Terry Dykstra",
       "monster_keys" : [ "askhalit", "icecat" ],
       "publish_id" : "9329",
@@ -4263,14 +4271,6 @@
       "year" : "1993"
    },
    {
-      "author" : "",
-      "monster_keys" : [ "fainil", "monginfi", "tasemyst" ],
-      "publish_id" : "Dragon242",
-      "setting" : "Dragon Magazine",
-      "title" : "Dragon242",
-      "year" : "1997"
-   },
-   {
       "author" : "Steven E. Schend, thomas M. Reid",
       "monster_keys" : [ "feebstar", "quelzarn", "shalarin", "slithoar" ],
       "publish_id" : "11405",
@@ -4626,14 +4626,6 @@
       "year" : "1997"
    },
    {
-      "author" : "",
-      "monster_keys" : [ "masgai" ],
-      "publish_id" : "Dragon244",
-      "setting" : "Dragon Magazine",
-      "title" : "Dragon244",
-      "year" : "1998"
-   },
-   {
       "author" : "Bill Slavicsek",
       "monster_keys" : [ "mercuria" ],
       "publish_id" : "2626",
@@ -4656,6 +4648,14 @@
       "setting" : "Ravenloft",
       "title" : "Homebrew",
       "year" : ""
+   },
+   {
+      "author" : "",
+      "monster_keys" : [ "monginfi", "tasemyst" ],
+      "publish_id" : "Dragon242",
+      "setting" : "Dragon Magazine",
+      "title" : "Dragon242",
+      "year" : "1997"
    },
    {
       "author" : "Dale \"Slade\" Henson",
