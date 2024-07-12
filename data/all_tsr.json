@@ -1434,21 +1434,27 @@
         "setting": "Dragon Magazine"
     },
     "DragonMagazineAnnual1996": {
-        "title": "Dragon Magazine Annual 1996",
+        "title": "Dragon Magazine Annual 1 - 1996",
         "year": "1996",
-        "author": "",
+        "author": "Keith Strohm, James Holloway",
         "setting": "Dragon Magazine"
     },
     "DragonMagazineAnnual1997": {
-        "title": "Dragon Magazine Annual 1997",
+        "title": "Dragon Magazine Annual 2 -1997",
         "year": "1997",
-        "author": "",
+        "author": "Belinda G. Ashley, C.H. Burnett",
         "setting": "Dragon Magazine"
     },
     "DragonMagazineAnnual1998": {
-        "title": "Dragon Magazine Annual 1998",
+        "title": "Dragon Magazine Annual 3 - 1998",
         "year": "1998",
-        "author": "",
+        "author": "Johnathan M. Richards, David Day",
+        "setting": "Dragon Magazine"
+    },
+    "DragonMagazineAnnual1999": {
+        "title": "Dragon Magazine Annual 4 - 1999",
+        "year": "1999",
+        "author": "Troy Denning, Pete Venters",
         "setting": "Dragon Magazine"
     },
     "Dungeon23": {

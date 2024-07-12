@@ -2394,11 +2394,11 @@
       "year" : "1990"
    },
    {
-      "author" : "",
+      "author" : "Johnathan M. Richards, David Day",
       "monster_keys" : [ "antpiran", "pigeacid", "ratburgl" ],
       "publish_id" : "DragonMagazineAnnual1998",
       "setting" : "Dragon Magazine",
-      "title" : "Dragon Magazine Annual 1998",
+      "title" : "Dragon Magazine Annual 3 - 1998",
       "year" : "1998"
    },
    {
@@ -3567,11 +3567,11 @@
       "year" : "1998"
    },
    {
-      "author" : "",
+      "author" : "Keith Strohm, James Holloway",
       "monster_keys" : [ "bulegohl", "elghonn", "moldchro", "varkha", "wormlukh" ],
       "publish_id" : "DragonMagazineAnnual1996",
       "setting" : "Dragon Magazine",
-      "title" : "Dragon Magazine Annual 1996",
+      "title" : "Dragon Magazine Annual 1 - 1996",
       "year" : "1996"
    },
    {
@@ -4451,11 +4451,11 @@
       "year" : "1989"
    },
    {
-      "author" : "",
-      "monster_keys" : [ "growler", "lizatund", "skelcrys" ],
+      "author" : "Belinda G. Ashley, C.H. Burnett",
+      "monster_keys" : [ "growler", "lizatund", "skelcrys", "spidsnow" ],
       "publish_id" : "DragonMagazineAnnual1997",
       "setting" : "Dragon Magazine",
-      "title" : "Dragon Magazine Annual 1997",
+      "title" : "Dragon Magazine Annual 2 -1997",
       "year" : "1997"
    },
    {
