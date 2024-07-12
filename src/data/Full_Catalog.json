@@ -4514,6 +4514,14 @@
       "year" : "1992"
    },
    {
+      "author" : "James Wyatt, Roger Raupp",
+      "monster_keys" : [ "knighter" ],
+      "publish_id" : "Dragon249",
+      "setting" : "Dragon Magazine",
+      "title" : "Dragon249",
+      "year" : "1998"
+   },
+   {
       "author" : "Ray Winninger",
       "monster_keys" : [ "krotter", "ogreicsp", "shadhoun" ],
       "publish_id" : "9487",
@@ -4972,6 +4980,14 @@
       "setting" : "Ravenloft",
       "title" : "RM1 Roots of Evil",
       "year" : "1993"
+   },
+   {
+      "author" : "Ed Stark, David O. Miller",
+      "monster_keys" : [ "zakhurlg" ],
+      "publish_id" : "Dragon230",
+      "setting" : "Dragon Magazine",
+      "title" : "Dragon230",
+      "year" : "1996"
    },
    {
       "author" : "Lisa Smedman, Steven Brown, Steven Miller",

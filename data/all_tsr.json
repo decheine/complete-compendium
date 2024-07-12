@@ -1313,6 +1313,12 @@
         "author": "",
         "setting": "Dragon Magazine"
     },
+    "Dragon230": {
+        "title": "Dragon230",
+        "year": "1996",
+        "author": "Ed Stark, David O. Miller",
+        "setting": "Dragon Magazine"
+    },
     "Dragon233": {
         "title": "Dragon233",
         "year": "1996",
@@ -1377,6 +1383,12 @@
         "title": "Dragon248",
         "year": "1998",
         "author": "Gregory W. Detwiler, Terry Dykstra",
+        "setting": "Dragon Magazine"
+    },
+    "Dragon249": {
+        "title": "Dragon249",
+        "year": "1998",
+        "author": "James Wyatt, Roger Raupp",
         "setting": "Dragon Magazine"
     },
     "Dragon262": {
