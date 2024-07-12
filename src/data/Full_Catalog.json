@@ -1420,7 +1420,7 @@
    },
    {
       "author" : "",
-      "monster_keys" : [ "agrutha", "croclima", "geckonid", "varanid" ],
+      "monster_keys" : [ "agrutha", "croclima", "geckonid", "iguanid", "varanid" ],
       "publish_id" : "Dragon268",
       "setting" : "Dragon Magazine",
       "title" : "Dragon268",
@@ -3632,7 +3632,7 @@
    },
    {
       "author" : "",
-      "monster_keys" : [ "catfstal", "tunmoudw" ],
+      "monster_keys" : [ "catfstal", "glitworm", "tunmoudw" ],
       "publish_id" : "Dragon267",
       "setting" : "Dragon Magazine",
       "title" : "Dragon267",
