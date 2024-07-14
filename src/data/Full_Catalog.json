@@ -4157,8 +4157,8 @@
       "year" : "1990"
    },
    {
-      "author" : "",
-      "monster_keys" : [ "dvati", "viscerai" ],
+      "author" : "Richard Sanders, Leon Chang, Talon Dunning, Dennis Caiero",
+      "monster_keys" : [ "dvati", "soulmask", "viscerai" ],
       "publish_id" : "Dragon271",
       "setting" : "Dragon Magazine",
       "title" : "Dragon271",
@@ -4911,6 +4911,14 @@
       "publish_id" : "Dragon205",
       "setting" : null,
       "year" : null
+   },
+   {
+      "author" : "Jason M. Walker, Thomas Baxa",
+      "monster_keys" : [ "undehulk" ],
+      "publish_id" : "Dragon184",
+      "setting" : "Dragon Magazine",
+      "title" : "Dragon184",
+      "year" : "1992"
    },
    {
       "author" : "",
