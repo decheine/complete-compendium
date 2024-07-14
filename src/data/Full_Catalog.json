@@ -2614,8 +2614,17 @@
       "year" : "1995"
    },
    {
-      "author" : "",
-      "monster_keys" : [ "armaphan", "catmoat", "duckbunn", "horsspid", "turtdrfl" ],
+      "author" : "Johnathan M. Richards, George Vrbanic, Steve Berman, Roger Raupp",
+      "monster_keys" : 
+      [
+         "armaphan",
+         "catmoat",
+         "duckbunn",
+         "equar",
+         "horsspid",
+         "turtdrfl",
+         "venomdog"
+      ],
       "publish_id" : "Dragon243",
       "setting" : "Dragon Magazine",
       "title" : "Dragon243",
@@ -3680,8 +3689,17 @@
       "year" : "1995"
    },
    {
-      "author" : "",
-      "monster_keys" : [ "catwater", "crocalbi", "lichsblo", "mothplag", "mummyice" ],
+      "author" : "John Baichtal, Brian Walton, Tom Baxa",
+      "monster_keys" : 
+      [
+         "catwater",
+         "crocalbi",
+         "lichsblo",
+         "mothplag",
+         "mummybog",
+         "mummyice",
+         "necroslu"
+      ],
       "publish_id" : "Dragon238",
       "setting" : "Dragon Magazine",
       "title" : "Dragon238",
