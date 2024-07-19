@@ -4199,6 +4199,13 @@
       "year" : "1991"
    },
    {
+      "author" : null,
+      "monster_keys" : [ "dwaratha", "elfathas", "gianhalf", "halfatha", "mul", "thrikree" ],
+      "publish_id" : "Dragon173",
+      "setting" : null,
+      "year" : null
+   },
+   {
       "author" : "Richard and Anne Brown",
       "monster_keys" : [ "dwarderr", "fishtori", "hookhorr", "meenlock" ],
       "publish_id" : "9302",
