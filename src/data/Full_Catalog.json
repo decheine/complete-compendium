@@ -1223,6 +1223,22 @@
       "year" : "1994"
    },
    {
+      "author" : "John Power, Terry Dykstra, Randy Maxwell, Tom Baxa",
+      "monster_keys" : 
+      [
+         "abyssant",
+         "golebrai",
+         "golehamm",
+         "golespst",
+         "incarnat",
+         "nautgian"
+      ],
+      "publish_id" : "Dragon193",
+      "setting" : "Dragon Magazine",
+      "title" : "Dragon193",
+      "year" : "1993"
+   },
+   {
       "author" : "Colin McComb, Wolfgang Baur",
       "monster_keys" : 
       [
