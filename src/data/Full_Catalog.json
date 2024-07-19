@@ -2614,7 +2614,7 @@
       "year" : "1995"
    },
    {
-      "author" : "Johnathan M. Richards, George Vrbanic, Steve Berman, Roger Raupp",
+      "author" : "Steve Berman, Roger Raupp, Johnathan M. Richards, George Vrbanic",
       "monster_keys" : 
       [
          "armaphan",
@@ -3429,7 +3429,7 @@
          "minilost",
          "seemer",
          "seemwalk",
-         "shade",
+         "shadecer",
          "shadstee",
          "shadwarr",
          "sluagh",
@@ -4778,6 +4778,14 @@
       "setting" : "Al-Qadim (Forgotten Realms)",
       "title" : "Fallen Kingdoms",
       "year" : "1994"
+   },
+   {
+      "author" : "Edward Bonny",
+      "monster_keys" : [ "shadecla" ],
+      "publish_id" : "Dragon213",
+      "setting" : "Dragon Magazine",
+      "title" : "Dragon213",
+      "year" : "1995"
    },
    {
       "author" : "",
