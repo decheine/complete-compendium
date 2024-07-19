@@ -1952,7 +1952,7 @@
    },
    {
       "author" : "",
-      "monster_keys" : [ "andeloid", "infernit" ],
+      "monster_keys" : [ "andeloid", "golemeta", "infernit" ],
       "publish_id" : "Dragon159",
       "setting" : "Dragon Magazine",
       "title" : "Dragon159",
@@ -3071,6 +3071,14 @@
       "setting" : "Forgotten Realms",
       "title" : "FRE1 Shadowdale",
       "year" : "1989"
+   },
+   {
+      "author" : "Ed Greenwood, Tom Baxa",
+      "monster_keys" : [ "banelar", "flamskul", "foulwing", "whipstin" ],
+      "publish_id" : "Dragon197",
+      "setting" : "Dragon Magazine",
+      "title" : "Dragon197",
+      "year" : "1993"
    },
    {
       "author" : "William W. Connors",
