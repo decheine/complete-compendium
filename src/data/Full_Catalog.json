@@ -2928,6 +2928,14 @@
       "year" : "1992"
    },
    {
+      "author" : "Timothy B. Brown, Brom",
+      "monster_keys" : [ "baazrag", "crodlu", "drik", "jalathga", "ruktoi", "watroach" ],
+      "publish_id" : "Dragon185",
+      "setting" : "Dragon Magazine",
+      "title" : "Dragon185",
+      "year" : "1992"
+   },
+   {
       "author" : "Jeff Grub and Tim Beach",
       "monster_keys" : [ "bacar", "hcalos" ],
       "publish_id" : "9340",
@@ -3598,14 +3606,6 @@
       "setting" : "Dark Sun",
       "title" : "Windriders of the Jagged Cliffs",
       "year" : "1995"
-   },
-   {
-      "author" : "",
-      "monster_keys" : [ "cariysbr", "watroach" ],
-      "publish_id" : "Dragon185",
-      "setting" : "Dragon Magazine",
-      "title" : "Dragon185",
-      "year" : "1992"
    },
    {
       "author" : "",
