@@ -4012,6 +4012,25 @@
       "year" : "1990"
    },
    {
+      "author" : "",
+      "monster_keys" : 
+      [
+         "dracimer",
+         "dragfech",
+         "dragfeco",
+         "dragfefe",
+         "dragfegr",
+         "dragfeni",
+         "dragfetu",
+         "mantidra",
+         "wyvedrak"
+      ],
+      "publish_id" : "Dragon170",
+      "setting" : "Dragon Magazine",
+      "title" : "Dragon170",
+      "year" : "1991"
+   },
+   {
       "author" : "Nigel Findley et al.",
       "monster_keys" : [ "dracohyd", "dragmerc", "dragsted", "dragyell" ],
       "publish_id" : "9297",
@@ -4060,22 +4079,6 @@
       "setting" : "Forgotten Realms",
       "title" : "The City of Ravens Bluff",
       "year" : "1998"
-   },
-   {
-      "author" : "",
-      "monster_keys" : 
-      [
-         "dragfech",
-         "dragfeco",
-         "dragfefe",
-         "dragfegr",
-         "dragfeni",
-         "dragfetu"
-      ],
-      "publish_id" : "Dragon170",
-      "setting" : "Dragon Magazine",
-      "title" : "Dragon170",
-      "year" : "1991"
    },
    {
       "author" : "Rick Swan",
