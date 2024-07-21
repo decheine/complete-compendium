@@ -3778,7 +3778,7 @@
       "year" : "1990"
    },
    {
-      "author" : "",
+      "author" : "Raymond E. Dyer, Toren Atkinson",
       "monster_keys" : [ "chraal", "dealinsh", "livihair", "sawflyde" ],
       "publish_id" : "Dungeon76",
       "setting" : "Dungeon Magazine",
@@ -3900,6 +3900,14 @@
       "setting" : "Planescape",
       "title" : "Hellbound: The Blood War",
       "year" : "1996"
+   },
+   {
+      "author" : "Michael D. Winkle, Mark Nelson",
+      "monster_keys" : [ "dealinsh", "livihair", "sawflyde", "webspect" ],
+      "publish_id" : "Dragon252",
+      "setting" : "Dragon Magazine",
+      "title" : "Dragon252",
+      "year" : "1998"
    },
    {
       "author" : "",
@@ -4804,6 +4812,14 @@
       "setting" : "Dungeon Magazine",
       "title" : "Dungeon #71",
       "year" : "1998"
+   },
+   {
+      "author" : "Nicky Rea, Matt Forbeck",
+      "monster_keys" : [ "scylchar" ],
+      "publish_id" : "9408",
+      "setting" : "Advanced Dungeons & Dragons 2nd Edition",
+      "title" : "HR6 Age of Heroes",
+      "year" : "1994"
    },
    {
       "author" : "Steven Kurtz, Richard Pike-Brown, John D. Rateliff",

@@ -16,7 +16,6 @@ const monster_data = require("@data/stats_df.json")
 
 
 
-
 class MonsterTable extends React.Component {
   el = React.createRef();
 
@@ -139,7 +138,7 @@ class MonsterTable extends React.Component {
 
 
 
-export function table() {
+function table() {
 
     return (
         // upper page with category links

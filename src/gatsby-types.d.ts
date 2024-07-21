@@ -1942,21 +1942,25 @@ type SiteFilterInput = {
 
 type SiteFlags = {
   readonly DEV_SSR: Maybe<Scalars['Boolean']>;
+  readonly PARALLEL_SOURCING: Maybe<Scalars['Boolean']>;
   readonly PARTIAL_HYDRATION: Maybe<Scalars['Boolean']>;
 };
 
 type SiteFlagsFieldSelector = {
   readonly DEV_SSR: InputMaybe<FieldSelectorEnum>;
+  readonly PARALLEL_SOURCING: InputMaybe<FieldSelectorEnum>;
   readonly PARTIAL_HYDRATION: InputMaybe<FieldSelectorEnum>;
 };
 
 type SiteFlagsFilterInput = {
   readonly DEV_SSR: InputMaybe<BooleanQueryOperatorInput>;
+  readonly PARALLEL_SOURCING: InputMaybe<BooleanQueryOperatorInput>;
   readonly PARTIAL_HYDRATION: InputMaybe<BooleanQueryOperatorInput>;
 };
 
 type SiteFlagsSortInput = {
   readonly DEV_SSR: InputMaybe<SortOrderEnum>;
+  readonly PARALLEL_SOURCING: InputMaybe<SortOrderEnum>;
   readonly PARTIAL_HYDRATION: InputMaybe<SortOrderEnum>;
 };
 

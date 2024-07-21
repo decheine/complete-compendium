@@ -16,6 +16,7 @@ const config: GatsbyConfig = {
   flags: {
     DEV_SSR: true,
     PARTIAL_HYDRATION: false,
+    PARALLEL_SOURCING: false,
   },
   plugins: [
     "gatsby-plugin-image", {
