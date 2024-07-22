@@ -3340,6 +3340,29 @@
       "year" : "1996"
    },
    {
+      "author" : "Mark Nelson, Bruce A. Heard",
+      "monster_keys" : 
+      [
+         "behirvar",
+         "deatshee",
+         "dragpink",
+         "drneppdr",
+         "gellmons",
+         "goletin",
+         "killspru",
+         "mandrake",
+         "pigeonto",
+         "tickler",
+         "unicow",
+         "werehare",
+         "woomambl"
+      ],
+      "publish_id" : "Dragon156",
+      "setting" : "Dragon Magazine",
+      "title" : "Dragon156",
+      "year" : "1990"
+   },
+   {
       "author" : "Jeff Grub",
       "monster_keys" : [ "behokash", "krrr", "lichmast", "shivak" ],
       "publish_id" : "1065",
@@ -3908,26 +3931,6 @@
       "setting" : "Dragon Magazine",
       "title" : "Dragon252",
       "year" : "1998"
-   },
-   {
-      "author" : "",
-      "monster_keys" : 
-      [
-         "deatshee",
-         "dragpink",
-         "drneppdr",
-         "gellmons",
-         "goletin",
-         "killspru",
-         "mandrake",
-         "pigeonto",
-         "tickler",
-         "woomambl"
-      ],
-      "publish_id" : "Dragon156",
-      "setting" : "Dragon Magazine",
-      "title" : "Dragon156",
-      "year" : "1990"
    },
    {
       "author" : "Ed Greenwood",

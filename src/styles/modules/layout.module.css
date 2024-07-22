@@ -18,6 +18,7 @@
     align-self: center;
     
     margin-bottom: auto;
+    padding-bottom: 2em;
     /* variable named responsive-width */
     max-width: var(--responsive-width);
     /* padding-left: calc(100vw - 100%); */

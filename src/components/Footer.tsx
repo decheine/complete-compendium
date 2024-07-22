@@ -11,7 +11,7 @@ function Footer() {
                 <div className="paragraph">
                     <p>Advanced Dungeons and Dragons 2nd Edition Complete Compendium.</p>
                     <p>
-                    All intellectual property mentioned is property of TSR inc. (Wizards of the Coast). This site is for archival and encyclopedic purposes only. This site has no revenue of any sort and tracks no user data of any sort. 
+                    All intellectual property mentioned is the intellectual property of TSR inc. (Wizards of the Coast). This site is for archival and encyclopedic purposes only. 
                     </p>
                 </div>
                 <div className="footer-links">
