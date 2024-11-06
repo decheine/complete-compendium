@@ -1491,8 +1491,8 @@
          "ghosanim",
          "golervfl",
          "golervmi",
-         "golervsn",
          "golervwx",
+         "golevsng",
          "gremishk",
          "hagspect",
          "headhunt",
@@ -4483,7 +4483,7 @@
    },
    {
       "author" : "Anne Brown, Mike Breault",
-      "monster_keys" : [ "golervsn", "lebendto", "stafisgi" ],
+      "monster_keys" : [ "golevsnl", "lebendto", "stafisgi" ],
       "publish_id" : "9321",
       "setting" : "Ravenloft",
       "title" : "RA2 Ship of Horrors",
