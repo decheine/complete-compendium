@@ -2411,7 +2411,7 @@
    },
    {
       "author" : "Johnathan M. Richards, David Day",
-      "monster_keys" : [ "antpiran", "pigeacid", "ratburgl" ],
+      "monster_keys" : [ "antpiran", "pigeacid", "polyroac", "ratburgl", "stonterm" ],
       "publish_id" : "DragonMagazineAnnual1998",
       "setting" : "Dragon Magazine",
       "title" : "Dragon Magazine Annual 3 - 1998",
