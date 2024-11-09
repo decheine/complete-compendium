@@ -1178,7 +1178,7 @@
     "Dragon162": {
         "title": "Dragon162",
         "year": "1990",
-        "author": "",
+        "author": "Spike Y. Jones, Thomas Baxa",
         "setting": "Dragon Magazine"
     },
     "Dragon163": {
@@ -1299,6 +1299,12 @@
         "title": "Dragon206",
         "year": "1994",
         "author": "",
+        "setting": "Dragon Magazine"
+    },
+    "Dragon209": {
+        "title": "Dragon209",
+        "year": "1994",
+        "author": "Don Webb, Terry Dykstra",
         "setting": "Dragon Magazine"
     },
     "Dragon210": {

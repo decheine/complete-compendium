@@ -2402,8 +2402,8 @@
       "year" : "1994"
    },
    {
-      "author" : "",
-      "monster_keys" : [ "ankou", "skotos" ],
+      "author" : "Spike Y. Jones, Thomas Baxa",
+      "monster_keys" : [ "ankou", "ghostone", "skotos", "sluagh", "spiranim" ],
       "publish_id" : "Dragon162",
       "setting" : "Dragon Magazine",
       "title" : "Dragon162",
@@ -3495,7 +3495,7 @@
          "shadecer",
          "shadstee",
          "shadwarr",
-         "sluagh",
+         "sluaghth",
          "specawns",
          "waff",
          "wildhunt",
@@ -4464,6 +4464,14 @@
       "setting" : "Ravenloft",
       "title" : "RA1 Feast of Goblyns",
       "year" : "1990"
+   },
+   {
+      "author" : "Don Webb, Terry Dykstra",
+      "monster_keys" : [ "golebrmi", "golebuma", "golephfl" ],
+      "publish_id" : "Dragon209",
+      "setting" : "Dragon Magazine",
+      "title" : "Dragon209",
+      "year" : "1994"
    },
    {
       "author" : "",
