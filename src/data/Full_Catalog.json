@@ -3524,7 +3524,7 @@
    },
    {
       "author" : "",
-      "monster_keys" : [ "boggart", "cluricha", "leprwick", "leshy" ],
+      "monster_keys" : [ "boggart", "cluricha", "leprwick", "leshy", "stirgede", "stirgeju" ],
       "publish_id" : "Dragon239",
       "setting" : "Dragon Magazine",
       "title" : "Dragon239",
