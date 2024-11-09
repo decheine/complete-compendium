@@ -4147,6 +4147,23 @@
       "year" : null
    },
    {
+      "author" : "",
+      "monster_keys" : 
+      [
+         "dragldre",
+         "draglfor",
+         "draglfro",
+         "dragllan",
+         "draglsea",
+         "lindworm",
+         "swampwyr"
+      ],
+      "publish_id" : "Dragon182",
+      "setting" : "Dragon Magazine",
+      "title" : "Dragon182",
+      "year" : "1992"
+   },
+   {
       "author" : "L. Richard Baker III",
       "monster_keys" : 
       [
@@ -4647,14 +4664,6 @@
       "setting" : "Ravenloft",
       "title" : "Van Richten's Monster Hunter's Compendium, Volume Two",
       "year" : "1999"
-   },
-   {
-      "author" : "",
-      "monster_keys" : [ "lindworm" ],
-      "publish_id" : "Dragon182",
-      "setting" : "Dragon Magazine",
-      "title" : "Dragon182",
-      "year" : "1992"
    },
    {
       "author" : "Ed Greenwood",
