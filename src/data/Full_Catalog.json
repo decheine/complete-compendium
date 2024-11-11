@@ -3834,6 +3834,42 @@
       "year" : "1995"
    },
    {
+      "author" : "Gregory W. Detwiler, Michael John Wybo II, Alan Pollack, Ruth Thompson",
+      "monster_keys" : 
+      [
+         "clamgiav",
+         "dragfish",
+         "eelsuper",
+         "foatturt",
+         "greatorm",
+         "longneck",
+         "manyfin",
+         "manyhump",
+         "marisaur",
+         "merhorse",
+         "octodeep",
+         "ottersup",
+         "unicalic",
+         "unicbay",
+         "unicbla2",
+         "unicbrow",
+         "uniccunn",
+         "unicfaer",
+         "unicgray",
+         "unicpalo",
+         "unicpint",
+         "unicsea",
+         "unicunis",
+         "uniczebr",
+         "wormtugi",
+         "yellbell"
+      ],
+      "publish_id" : "Dragon190",
+      "setting" : "Dragon Magazine",
+      "title" : "Dragon190",
+      "year" : "1993"
+   },
+   {
       "author" : "Scott Bennie",
       "monster_keys" : 
       [
@@ -5015,28 +5051,6 @@
       "setting" : "Dragon Magazine",
       "title" : "Dragon184",
       "year" : "1992"
-   },
-   {
-      "author" : "",
-      "monster_keys" : 
-      [
-         "unicalic",
-         "unicbay",
-         "unicbla2",
-         "unicbrow",
-         "uniccunn",
-         "unicfaer",
-         "unicgray",
-         "unicpalo",
-         "unicpint",
-         "unicsea",
-         "unicunis",
-         "uniczebr"
-      ],
-      "publish_id" : "Dragon190",
-      "setting" : "Dragon Magazine",
-      "title" : "Dragon190",
-      "year" : "1993"
    },
    {
       "author" : "Unknown",
