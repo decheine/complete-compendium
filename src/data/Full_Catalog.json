@@ -4037,8 +4037,8 @@
          "gentdece",
          "gentoabi",
          "gibbmout",
-         "ironcobr",
-         "marrashi"
+         "marrashi",
+         "snakgico"
       ],
       "publish_id" : "9431",
       "setting" : "Al-Qadim (Forgotten Realms)",
@@ -4605,6 +4605,14 @@
       "setting" : "Advanced Dungeons & Dragons 2nd Edition",
       "title" : "Dawn of the Overmind",
       "year" : "1998"
+   },
+   {
+      "author" : "Spike Y. Jones",
+      "monster_keys" : [ "ironcobr" ],
+      "publish_id" : "Dragon164",
+      "setting" : "Dragon Magazine",
+      "title" : "Dragon164",
+      "year" : "1990"
    },
    {
       "author" : "Tim Beach and Dori Hein",
