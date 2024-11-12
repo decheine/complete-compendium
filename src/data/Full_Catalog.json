@@ -4806,7 +4806,7 @@
    },
    {
       "author" : "",
-      "monster_keys" : [ "monginfi", "tasemyst" ],
+      "monster_keys" : [ "monginfi", "tasecara", "tasegene", "taseglad", "tasemyst" ],
       "publish_id" : "Dragon242",
       "setting" : "Dragon Magazine",
       "title" : "Dragon242",
