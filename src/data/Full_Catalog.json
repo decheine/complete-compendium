@@ -3968,6 +3968,14 @@
       "year" : "1994"
    },
    {
+      "author" : "Gregory W. Detwiler, George Vrbanic",
+      "monster_keys" : [ "daemwarr", "dragfire", "wighchao" ],
+      "publish_id" : "Dragon246",
+      "setting" : "Dragon Magazine",
+      "title" : "Dragon246",
+      "year" : "1998"
+   },
+   {
       "author" : "Jim Butler, Allison Lassieur, David Day",
       "monster_keys" : [ "darkbeas" ],
       "publish_id" : "9485",
