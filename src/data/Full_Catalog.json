@@ -3904,6 +3904,29 @@
       "year" : "1992"
    },
    {
+      "author" : "",
+      "monster_keys" : 
+      [
+         "crystall",
+         "fenhound",
+         "glomus",
+         "lichpsio",
+         "quaelcha",
+         "quaelege",
+         "quaelenp",
+         "quaelsha",
+         "quaelssh",
+         "quaeltcr",
+         "shadasp",
+         "wolfdrea",
+         "wolfston"
+      ],
+      "publish_id" : "Dragon174",
+      "setting" : "Dragon Magazine",
+      "title" : "Dragon174",
+      "year" : "1991"
+   },
+   {
       "author" : "Scott Bennie",
       "monster_keys" : [ "curotai", "dragspid", "handtakh", "icevampi", "spidhors", "weaplivi" ],
       "publish_id" : "9334",
@@ -4501,14 +4524,6 @@
       "setting" : "Greyhawk",
       "title" : "The Scarlet Brotherhood",
       "year" : "1999"
-   },
-   {
-      "author" : "",
-      "monster_keys" : [ "glomus" ],
-      "publish_id" : "Dragon174",
-      "setting" : "Dragon Magazine",
-      "title" : "Dragon174",
-      "year" : "1991"
    },
    {
       "author" : "Blake Mobley, William W. Connors, Stephen Fabian, Clyde Caldwell",
