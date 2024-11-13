@@ -2150,7 +2150,18 @@
    },
    {
       "author" : "",
-      "monster_keys" : [ "angreden", "ghougoop", "kamummy", "vartha", "wighking", "wraiking" ],
+      "monster_keys" : 
+      [
+         "angreden",
+         "ghougoop",
+         "kamigoro",
+         "kamummy",
+         "krakzakh",
+         "skulride",
+         "vartha",
+         "wighking",
+         "wraiking"
+      ],
       "publish_id" : "Dragon198",
       "setting" : "Dragon Magazine",
       "title" : "Dragon198",
@@ -4913,7 +4924,7 @@
       "monster_keys" : [ "segarran", "snakserp" ],
       "publish_id" : "9440",
       "setting" : "Al-Qadim (Forgotten Realms)",
-      "title" : "Fallen Kingdoms",
+      "title" : "Ruined Kingdoms",
       "year" : "1994"
    },
    {
