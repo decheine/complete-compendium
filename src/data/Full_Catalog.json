@@ -2432,7 +2432,7 @@
       ],
       "publish_id" : "2428",
       "setting" : "Dark Sun",
-      "title" : "Black Spine",
+      "title" : "DSE2 Black Spine",
       "year" : "1994"
    },
    {
@@ -2660,7 +2660,7 @@
       "monster_keys" : [ "archshad" ],
       "publish_id" : "9488",
       "setting" : "Forgotten Realms",
-      "title" : "The Return of Randal Morn",
+      "title" : "FRB3 The Return of Randal Morn",
       "year" : "1995"
    },
    {
@@ -3506,7 +3506,7 @@
    },
    {
       "author" : "Rob Letts, Wayne A. Haskett",
-      "monster_keys" : [ "blizzard" ],
+      "monster_keys" : [ "blizzard", "gargoyl2", "talon", "vertigo" ],
       "publish_id" : "Dragon223",
       "setting" : "Dragon Magazine",
       "title" : "Dragon223",
@@ -4014,7 +4014,7 @@
       "monster_keys" : [ "darkbeas" ],
       "publish_id" : "9485",
       "setting" : "Forgotten Realms",
-      "title" : "The Secret of Spiderhaunt",
+      "title" : "FRB1 The Secret of Spiderhaunt",
       "year" : "1995"
    },
    {
@@ -4755,7 +4755,7 @@
       "monster_keys" : [ "lichling" ],
       "publish_id" : "9341",
       "setting" : "Forgotten Realms",
-      "title" : "Nightmare Keep",
+      "title" : "FA2 Nightmare Keep",
       "year" : "1991"
    },
    {
@@ -5019,7 +5019,7 @@
       "monster_keys" : [ "specharp" ],
       "publish_id" : "9390",
       "setting" : "Forgotten Realms",
-      "title" : "FOR4 Code of the Harpers",
+      "title" : "FOR4 The Code of the Harpers",
       "year" : "1993"
    },
    {
