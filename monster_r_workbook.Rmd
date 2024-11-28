@@ -825,3 +825,38 @@ df <- tibble(
 ```{r}
 
 ```
+
+
+
+
+
+Books
+
+
+```{r}
+
+books_json_file <- "C:/Users/Nick/Development/complete-compendium/data/all_tsr.json"
+
+# json_data <- fromJSON(paste(readLines(json_file), collapse=""), simplifyDataFrame = TRUE)
+book_json_data <- rjson::fromJSON(paste(readLines(books_json_file), collapse=""), simplify=TRUE)
+
+```
+
+
+```{r}
+library(tidyjson)
+
+book_json_raw <-  rjson::fromJSON(paste(readLines(books_json_file), collapse=""), simplify=FALSE)
+books_df <- book_json_raw %>% spread_all %>% mutate(tsr_id = names(book_json_raw)) %>% select(tsr_id, title, year)
+
+books_df$"..JSON" <- NULL
+rownames(books_df) <- books_df$tsr_id
+books_df <- as.data.frame(books_df) %>% select(tsr_id, title)
+books_df
+# remove_rownames(books_df)
+# rownames(books_df)
+
+write.csv(books_df, "books_df.csv", row.names=FALSE)
+# as.data.frame(transpose(as.data.frame(book_json_data)))
+# book_json_data %>% enter_object(tsrid) %>% gather_array
+```
