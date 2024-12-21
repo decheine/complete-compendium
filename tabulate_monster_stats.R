@@ -1,6 +1,30 @@
-library(tidyverse)
-library(rjson)
-library(stringr)
+
+library(utils)
+
+# .libPaths(c("./.Rlibs"))
+
+package_deps <- c(
+  "tidyverse",
+  "rjson",
+  "stringr",
+  "rlist",
+  "purrr",
+  "tibble",
+  "jsonlite"
+)
+
+# .libPaths(c('~/.Rlibs',.libPaths()))
+dir.create(file.path("~/.Rlibs"), showWarnings = FALSE)
+
+install.packages(package_deps, repos="https://cloud.r-project.org", lib='~/.Rlibs')
+
+library(tidyverse, lib='~./.Rlibs')
+library(rjson, lib='~./.Rlibs')
+library(stringr, lib='~./.Rlibs')
+library(rlist, lib='~./.Rlibs')
+library(purrr, lib='~./.Rlibs')
+library(tibble, lib='~./.Rlibs')
+library(jsonlite, lib='~./.Rlibs')
 
 quotemeta <- function(string) {
   str_replace_all(string, "(\\W)", "\\\\\\1")
@@ -13,10 +37,6 @@ json_file <- paste(getwd(), "/src/data/ALL_MONSTERS.json", sep="")
 # json_data <- fromJSON(paste(readLines(json_file), collapse=""), simplifyDataFrame = TRUE)
 json_data <- rjson::fromJSON(paste(readLines(json_file), collapse=""), simplify=TRUE)
 
-
-library(rlist)
-library(purrr)
-library(tibble)
 
 
 # ----
@@ -139,7 +159,8 @@ xp_with_br <- ordered_subset %>% filter(grepl("(<br)|(, )",XP_Value))
 hd_with_br <- ordered_subset %>% filter(grepl("<br", Hit_Dice))
 
 
-xp_with_br %>% arrange(monster_key)
+# Output
+# xp_with_br %>% arrange(monster_key)
 
 # -----
 
@@ -150,14 +171,8 @@ split_xp_keys <- xp_with_br$monster_key
 split_hd_keys <- hd_with_br$monster_key
 
 
-thac0_matches <-thac0_with_br$THAC0 %>% 
+thac0_matches <- thac0_with_br$THAC0 %>% 
   str_match_all("<br>(.+?): (\\d+)")
-# thac0_matches
-
-# thac0_with_br %>% 
-#   mutate()
-
-
 
 xp_matches <- xp_with_br$XP_Value %>%
   str_match_all("<br>(.+?): (\\d|,)+")
@@ -185,8 +200,7 @@ is_base_xp <- function(xp_value) {
 xp_with_br$variant_count = sapply(xp_with_br$XP_Value, get_variants)
 xp_with_br$base = sapply(xp_with_br$XP_Value, is_base_xp)
 
-xp_with_br %>% select(monster_key, variant_count, Hit_Dice, THAC0, XP_Value, base)
-# data.frame(thac0_matches)
+# xp_with_br %>% select(monster_key, variant_count, Hit_Dice, THAC0, XP_Value, base)
 
 tagged_df <- xp_with_br %>% select(monster_key, variant_count, Hit_Dice, THAC0, XP_Value, base)
 
@@ -197,9 +211,9 @@ split_monsters_df <- xp_with_br[0,]
 # split_monsters_df$variant_title <- NULL
 split_monsters_df <- split_monsters_df %>% add_column(variant_title = "")
 
-split_monsters_df
+# split_monsters_df
 
-colnames(split_monsters_df)
+# colnames(split_monsters_df)
 
 split_add_rows <- function(row){
   monster_key = row["monster_key"] 
@@ -251,7 +265,7 @@ split_add_rows <- function(row){
     # Handle base case, add the original row to the new row 
     # in addition to the new rows.
   }
-  colnames(split_monsters_df)
+  # colnames(split_monsters_df)
   
   thac0_hd_matches_range <- str_match_all(THAC0, "([\\d|+|½|¼]{1,2} HD:|(\\d+)(?:-| or | to )(\\d+) HD:|) (\\d+)")
   
@@ -623,7 +637,7 @@ combined_monsters$xp_filtered <- NULL
 
 # ---- Write out result
 
-library(jsonlite)
+
 
 
 write(jsonlite::toJSON(combined_monsters, pretty = TRUE, auto_unbox = TRUE), "./src/data/stats_df.json")

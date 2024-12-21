@@ -23,6 +23,44 @@ quotemeta <- function(string) {
 ```
 
 
+Load TSR Data
+
+```{r}
+alltsr_file <- "C:/Users/Nick/Development/complete-compendium/data/all_tsr.json"
+
+tsr_data <- rjson::fromJSON(paste(readLines(alltsr_file), collapse=""), simplify=TRUE)
+
+
+
+# lapply( c(a=4,b=5), function(x) {nm <- deparse(substitute(x)); strsplit(nm, '\\[')} )
+
+# title_list <- lapply(tsr_data, `[`, c("author"))
+title_list <- lapply(tsr_data, `[`, deparse(quote(title)))
+author_list <- lapply(tsr_data, `[`, deparse(quote(author)))
+year_list <- lapply(tsr_data, `[`, deparse(quote(year)))
+setting_list <- lapply(tsr_data, `[`, deparse(quote(setting)))
+
+# title_list
+# names(tsr_data)
+# names(tsr_data)
+tsr_df <- data.frame(
+  key=names(tsr_data),
+  title=bind_rows(title_list),
+  year=bind_rows(year_list),
+  author=bind_rows(author_list),
+  setting=bind_rows(setting_list)
+)
+
+tsr_df
+
+
+tsr_df %>% 
+  arrange(title)
+  
+
+```
+
+
 
 Load the Monster JSON
 
@@ -31,6 +69,8 @@ json_file <- "C:/Users/Nick/Development/complete-compendium/src/data/ALL_MONSTER
 
 # json_data <- fromJSON(paste(readLines(json_file), collapse=""), simplifyDataFrame = TRUE)
 json_data <- rjson::fromJSON(paste(readLines(json_file), collapse=""), simplify=TRUE)
+
+
 ```
 
 

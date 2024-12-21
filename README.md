@@ -124,7 +124,7 @@ docker create --name harvester-container monster-harvester
 docker ps -a
 ```
 
-3. Copy Output from container
+4. Copy Output from container
 
 ```
 docker cp <container_id>:/usr/local/harvester/build/bin/json_files output
@@ -140,11 +140,23 @@ Run Harvester all in one command,
 docker build -t monster-harvester -f harvester/Dockerfile .; docker create --name harvester-container monster-harvester; Foreach-Object { docker cp "harvester-container:/usr/local/harvester/build/bin/json_files" output }
 ```
 
-4. Run copy script to copy the harvested data into the repository.
+5. Run copy script to copy the harvested data into the repository.
 
 ```
 node .\scripts\copy_monster_data.js
 ```
+
+## Data Tabulation
+
+Your system will require an installation of R, I recommend just installing RStudio. That should be all you need to do.
+
+6. To update new monsters into the data table, run the rdata script described in package.json with
+
+```
+npm run rdata
+```
+
+It should take around 20-30 seconds to complete and terminate with a "Tabulation Complete!" message. The `stats_df.json` file is updated with the new data.
 
 ## Docker commands
 

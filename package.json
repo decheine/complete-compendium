@@ -16,7 +16,8 @@
     "clean": "gatsby clean",
     "typecheck": "tsc --noEmit",
     "deploy": "gatsby build --prefix-paths && gh-pages -d public",
-    "deploy:ci": "gatsby build --prefix-paths && gh-pages -d public -r https://$GH_TOKEN@github.com/decheine/complete-compendium.git"
+    "deploy:ci": "gatsby build --prefix-paths && gh-pages -d public -r https://$GH_TOKEN@github.com/decheine/complete-compendium.git",
+    "rdata": "Rscript tabulate_monster_stats.R"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.4.0",
