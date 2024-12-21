@@ -1251,8 +1251,8 @@ std::string Harvester::GetFullBody(std::string in, std::string monster_key){
 
     // printf("combinedString: \n[%s]\n", combinedString.c_str());
 
-    splitTestResult = std::regex_replace(splitTestResult, std::regex("\n\n(.|\n)+"), "");
-    splitTestResult = std::regex_replace(splitTestResult, std::regex("\n *"), "");
+    // splitTestResult = std::regex_replace(splitTestResult, std::regex("\n\n(.|\n)+"), "");
+    // splitTestResult = std::regex_replace(splitTestResult, std::regex("\n *"), "");
 
     // replace these three lines with ""
     // <hr.*?> first and second match
