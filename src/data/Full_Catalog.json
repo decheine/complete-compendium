@@ -3904,6 +3904,13 @@
       "year" : "1993"
    },
    {
+      "author" : null,
+      "monster_keys" : [ "coelenit", "ogrima", "sartani" ],
+      "publish_id" : "9366",
+      "setting" : null,
+      "year" : null
+   },
+   {
       "author" : "Scott Bennie",
       "monster_keys" : 
       [
