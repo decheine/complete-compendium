@@ -3904,11 +3904,12 @@
       "year" : "1993"
    },
    {
-      "author" : null,
+      "author" : "David \"Zeb\" Cook",
       "monster_keys" : [ "coelenit", "ogrima", "sartani" ],
       "publish_id" : "9366",
-      "setting" : null,
-      "year" : null
+      "setting" : "Al-Qadim (Forgotten Realms)",
+      "title" : "ALQ1 Golden Voygages",
+      "year" : "1992"
    },
    {
       "author" : "Scott Bennie",
@@ -4940,6 +4941,14 @@
       "setting" : "Dungeon Magazine",
       "title" : "Dungeon #71",
       "year" : "1998"
+   },
+   {
+      "author" : "Bruce Nesmith",
+      "monster_keys" : [ "scro", "witcmara" ],
+      "publish_id" : "9343",
+      "setting" : "Spelljammer",
+      "title" : "SJS1 Goblins Return",
+      "year" : "1991"
    },
    {
       "author" : "Nicky Rea, Matt Forbeck",
