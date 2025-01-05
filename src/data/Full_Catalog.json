@@ -3405,6 +3405,13 @@
       "year" : "1991"
    },
    {
+      "author" : null,
+      "monster_keys" : [ "behomage", "sentinel", "slimsilv" ],
+      "publish_id" : "9273",
+      "setting" : null,
+      "year" : null
+   },
+   {
       "author" : "Ed Greenwood, Paul Jaquays, Anne Brown, Dell Barras, Brom, Jeff Grubb",
       "monster_keys" : 
       [
