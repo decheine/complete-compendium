@@ -4663,6 +4663,14 @@
       "year" : "1999"
    },
    {
+      "author" : "Nigel Findley",
+      "monster_keys" : [ "horg", "porton", "skykine" ],
+      "publish_id" : "9374",
+      "setting" : "Spelljammer",
+      "title" : "SJR6 Greyspace",
+      "year" : "1992"
+   },
+   {
       "author" : "Rick Swan",
       "monster_keys" : [ "hummefly", "scro", "witcmara" ],
       "publish_id" : "9347",
