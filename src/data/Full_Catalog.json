@@ -4305,6 +4305,14 @@
       "year" : "1990"
    },
    {
+      "author" : "Nigel Findley",
+      "monster_keys" : [ "drakspac", "shadeath" ],
+      "publish_id" : "9286",
+      "setting" : "Spelljammer",
+      "title" : "SJA2 Skull & Crossbows",
+      "year" : "1990"
+   },
+   {
       "author" : "William W. Connors, Lisa Smedman",
       "monster_keys" : [ "dreastal", "golemagg", "mummybog", "sirenrv" ],
       "publish_id" : "1146",
