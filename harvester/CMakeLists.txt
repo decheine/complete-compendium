@@ -30,7 +30,7 @@ include(FetchContent)
 # JSONCPP
 FetchContent_Declare(jsoncpp
     GIT_REPOSITORY https://github.com/open-source-parsers/jsoncpp.git
-    GIT_TAG master     # or a particular branch, tag or commit
+    GIT_TAG 1.9.5     # or a particular branch, tag or commit
     GIT_SHALLOW FALSE  # ensure submodules are checked out
 )
 

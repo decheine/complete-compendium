@@ -2,7 +2,7 @@
 FROM ubuntu:22.04
 LABEL Description="Monster Harvester Build Environment" Version="0.1"
 
-ENV HOME /root
+ENV HOME=/root
 
 SHELL ["/bin/bash", "-c"]
 
@@ -47,4 +47,4 @@ RUN cmake --build ./
 # Run the harvester
 WORKDIR /usr/local/harvester/build
 # CMD ["./LomionReader"]
-RUN ./LomionReader
+RUN ./bin/LomionReader
