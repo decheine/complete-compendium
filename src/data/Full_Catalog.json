@@ -5070,11 +5070,12 @@
       "year" : "1996"
    },
    {
-      "author" : null,
+      "author" : "Grant Boucher",
       "monster_keys" : [ "spidvodo", "vodonibr", "vodonien" ],
       "publish_id" : "9325",
-      "setting" : null,
-      "year" : null
+      "setting" : "Spelljammer",
+      "title" : "SJA4 Under the Dark Fist",
+      "year" : "1991"
    },
    {
       "author" : "Richard W and Anne Brown",
