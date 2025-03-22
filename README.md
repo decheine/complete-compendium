@@ -5,6 +5,8 @@
 
 Live at [completecompendium.com](https://completecompendium.com)
 
+Support the project at my [Ko-Fi](https://ko-fi.com/novicewizard)
+
 # Complete Compendium - Advanced Dungeons & Dragons 2nd Edition
 
 Quick Links
