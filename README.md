@@ -7,6 +7,8 @@ Live at [completecompendium.com](https://completecompendium.com)
 
 Support the project at my [Ko-Fi](https://ko-fi.com/novicewizard)
 
+<script type='text/javascript' src='https://storage.ko-fi.com/cdn/widget/Widget_2.js'></script><script type='text/javascript'>kofiwidget2.init('Support the project', '#1250a2', 'S6S7YQEOS');kofiwidget2.draw();</script> 
+
 # Complete Compendium - Advanced Dungeons & Dragons 2nd Edition
 
 Quick Links
