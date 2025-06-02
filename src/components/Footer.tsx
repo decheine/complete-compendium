@@ -25,6 +25,7 @@ function Footer() {
                             <Link to="/about">About</Link>
                             <Link to="/about/the-monsters">How To Use This Book</Link>
                             <Link to="/table">Table</Link>
+                            <Link to="https://ko-fi.com/novicewizard" target="_blank">Donate</Link>
                         </div>
                     </div>
                 </div>
