@@ -123,6 +123,7 @@ docker create --name harvester-container monster-harvester
 
 3. Get the container ID with
 
+
 ```bash
 docker ps -a
 ```
