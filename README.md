@@ -115,6 +115,7 @@ The data extraction process consists of the following commands:
 docker build -t monster-harvester -f harvester/Dockerfile .
 ```
 
+
 2. Create the container
 
 ```bash
