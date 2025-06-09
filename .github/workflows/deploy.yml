@@ -13,9 +13,9 @@ jobs:
     steps:
       - name: GitHub Config
         run: |
-          git config --global user.email $env:GIT_EMAIL 
-          git config --global user.name $env:GIT_USER
-          git config --global credential.helper "!f() { echo \`"username=`$env:GIT_USER`npassword=`$env:GIT_PASS\`"; }; f"
+          git config --global user.email "decheine@wisc.edu"
+          git config --global user.name "decheine"
+          # git config --global credential.helper "!f() { echo \`"username=`$env:GIT_USER`npassword=`$env:GIT_PASS\`"; }; f"
         shell: pwsh
         env:
           GIT_USER: ${{ vars.GITHUB_USER }}
