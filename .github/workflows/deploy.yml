@@ -6,6 +6,7 @@ on:
 
 env:
   GH_TOKEN: ${{ secrets.GH_PAGES }}
+  OTHER_VAR: ${{ vars.GH_VAR }} 
 
 jobs:
   build:
@@ -15,12 +16,12 @@ jobs:
         run: |
           git config --global user.email "decheine@wisc.edu"
           git config --global user.name "decheine"
-          # git config --global credential.helper "!f() { echo \`"username=`$env:GIT_USER`npassword=`$env:GIT_PASS\`"; }; f"
         shell: pwsh
         env:
           GIT_USER: ${{ vars.GITHUB_USER }}
           GIT_EMAIL: "decheine@wisc.edu"
           GIT_PASS: ${{ secrets.GH_PAGES_PASS }}
+          OTHER_VAR: 
       - name: Checkout
         uses: actions/checkout@v3
       - name: Install dependencies
