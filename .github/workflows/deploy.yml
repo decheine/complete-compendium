@@ -13,12 +13,12 @@ jobs:
     steps:
       - name: GitHub Config
         run: |
-          git config --global user.email decheine@wisc.edu
+          git config --global user.email $env:GIT_EMAIL
           git config --global user.name $env:GIT_USER
           git config --global credential.helper "!f() { echo \`"username=`$env:GIT_USER`npassword=`$env:GIT_PASS\`"; }; f"
         env:
           GIT_USER: ${{ secrets.GIT_USER }} 
-          GIT_EMAIL: ${{ secrets.GIT_EMAIL }} 
+          GIT_EMAIL: decheine@wisc.edu
           GIT_PASS: ${{ secrets.GIT_PASS }}
       - name: Checkout
         uses: actions/checkout@v3
