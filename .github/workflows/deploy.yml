@@ -13,8 +13,9 @@ jobs:
     steps:
       - name: GitHub Config
         run: |
-          git config --global user.email "decheine@wisc.edu"
-          git config --global user.name "decheine"
+          git config --global user.email $env:GIT_EMAIL
+          git config --global user.name $env:GIT_USER
+          git config --global credential.helper "!f() { echo \`"username=`${GIT_USER}`npassword=`${GIT_PASS}\`"; }; f"
       - name: Checkout
         uses: actions/checkout@v3
       - name: Install dependencies
