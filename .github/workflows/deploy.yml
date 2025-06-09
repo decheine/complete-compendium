@@ -20,7 +20,7 @@ jobs:
         env:
           GIT_USER: "decheine" 
           GIT_EMAIL: "decheine@wisc.edu"
-          GIT_PASS: ${{ secrets.GIT_PASS }}
+          GIT_PASS: ${{ secrets.GH_PAGES }}
       - name: Checkout
         uses: actions/checkout@v3
       - name: Install dependencies
