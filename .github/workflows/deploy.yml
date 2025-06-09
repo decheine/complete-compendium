@@ -15,7 +15,7 @@ jobs:
         run: |
           git config --global user.email $env:GIT_EMAIL
           git config --global user.name $env:GIT_USER
-          git config --global credential.helper "!f() { echo \`"username=`${GIT_USER}`npassword=`${GIT_PASS}\`"; }; f"
+          git config --global credential.helper "!f() { echo \`"username=`$env:GIT_USER`npassword=`$env:GIT_PASS\`"; }; f"
         env:
           GIT_USER: ${{ secrets.GIT_EMAIL }} 
           GIT_EMAIL: ${{ secrets.GIT_USER }} 
