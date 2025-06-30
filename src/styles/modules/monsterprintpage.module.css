@@ -76,12 +76,20 @@ blockquote {
     /* width: 100%; */
   }
 
+  hr { print-color-adjust: exact !important; }
+a { all: unset; }
+a:hover { text-decoration: underline; }
+p.f b { color: var(--color-add2_01); }
+
   @media print {
     div.top-header {
         /* position: fixed;
         top: 0; */
         /* margin-bottom: 108px; */
     }
+
+    /* From Ko-fi comment */
+    p { break-inside: avoid-page; }
 
     @page { 
         margin-top: 7mm; 
