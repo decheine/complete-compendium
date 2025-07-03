@@ -76,10 +76,6 @@ blockquote {
     /* width: 100%; */
   }
 
-  hr { print-color-adjust: exact !important; }
-a { all: unset; }
-a:hover { text-decoration: underline; }
-p.f b { color: var(--color-add2_01); }
 
   @media print {
     div.top-header {
@@ -88,7 +84,14 @@ p.f b { color: var(--color-add2_01); }
         /* margin-bottom: 108px; */
     }
 
+
     /* From Ko-fi comment */
+    
+    hr { print-color-adjust: exact !important; }
+    a { all: unset; }
+    a:hover { text-decoration: underline; }
+    p.f b { color: var(--color-add2_01); }
+
     p { break-inside: avoid-page; }
 
     @page { 
