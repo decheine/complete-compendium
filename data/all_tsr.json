@@ -479,18 +479,6 @@
         "author": "Monte Cook",
         "setting": "Planescape"
     },
-    "2800": {
-        "title": "Alternity Players Handbook",
-        "year": "1998",
-        "author": "Richard Baker, Bill Slavicsek",
-        "setting": "Alternity"
-    },
-    "2805": {
-        "title": "Alien Compendium: Creatures of the Verge",
-        "year": "1998",
-        "author": "Richard Baker, Bill Slavicsek",
-        "setting": "Alternity"
-    },
     "3100": {
         "title": "Birthright Campaign Setting Box Set",
         "year": "1995",
@@ -574,6 +562,12 @@
         "year": "1989",
         "author": "Jean Rabe",
         "setting": "Greyhawk"
+    },
+    "9273": {
+        "title": "SJA1 Wildspace",
+        "year": "1990",
+        "author": "Allen Varney",
+        "setting": "Spelljammer"
     },
     "9274": {
         "title": "FR10 Old Empires",

@@ -49,16 +49,6 @@
         "updatedAt": "2022-10-29T22:10:09.440Z"
     },
     {
-        "setting_key": "al",
-        "setting_name": "Alternity",
-        "source_books": [
-            "2800",
-            "2805"
-        ],
-        "createdAt": "2022-09-14T02:07:27.753Z",
-        "updatedAt": "2022-10-29T22:10:09.440Z"
-    },
-    {
         "setting_key": "br",
         "setting_name": "Birthright",
         "source_books": [
@@ -431,6 +421,7 @@
             "1065",
             "1049",
             "9280",
+            "9273",
             "9286",
             "9299",
             "9312",
