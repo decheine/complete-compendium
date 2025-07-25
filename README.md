@@ -174,6 +174,17 @@ It should take around 20-30 seconds to complete and terminate with a "Tabulation
 docker run -it --entrypoint /bin/bash monster-harvester
 ```
 
+## Scripts
+
+Some auxiliary scripts.
+
+### Missing image checker
+
+A python script that checks each monster html source file and corresponding image (if it calls for one) and tabulates if the monster has a missing image. The script outputs a list of monster keys that have missing images. As of writing this there are 145 known monsters with missing images.
+
+```
+python scripts/image_checker.py
+```
 
 ## Markdown Templating
 
