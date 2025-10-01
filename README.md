@@ -96,6 +96,22 @@ A brand new monster requires a new HTML file to be created for it at `/harvester
 
 ## Running locally
 
+In order to build and run the repository you will need Node which you can download from their website.
+
+First, clone the repository with
+
+```
+git clone https://github.com/decheine/complete-compendium.git
+```
+
+and `cd complete-compendium` into the directory.
+
+Install the dependencies with
+
+```
+npm install
+```
+
 Run web app development build
 
 ```
