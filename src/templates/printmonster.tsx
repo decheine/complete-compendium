@@ -202,7 +202,7 @@ export const Head: React.FC<Props> = ({ pageContext }) => (
   <>
     <title>{pageContext.title}</title>
     <meta property="og:site_name" content="AD&D 2nd Edition Complete Monstrous Compendium"/>
-    <meta property="og:title" content={pageContext.monster_data.title}/>
+    <meta property="og:title" content={pageContext.monster_key}/>
     <meta property="og:description" content={ getMonsterDescription(pageContext.monster_key ,pageContext.monster_data.fullBody) }/>
     <meta property="og:url" content={"https://www.completecompendium.com" + pageContext.monster_path}/>
     <meta property="og:type" content="website"/>
