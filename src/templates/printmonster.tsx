@@ -198,62 +198,43 @@ const PrintMonsterTemplate: React.FC<Props> = ({ pageContext }) => {
   )
 }
 
-// interface HeadProps {
-//   location: any,
-//   params: any,
-//   data: any,
-//   pageContext: MonsterPageContext
-// }
-
-
-
-// export function Head ({ location, params, data, pageContext }: HeadProps) => (
-//   <>
-//     <title>{pageContext.title}</title>
-//     <meta name="description" content={data.page.description} />
-//     <meta
-//       name="twitter:url"
-//       content={`https://www.foobar.tld/${location.pathname}`}
-//     />
-//   </>
-// )
-
-// export function Head(props: HeadProps<DataProps>){
-
-//   // Extract description.
-
-//   // Demo description for now.
-
-//   const monster_desc = `Description for ${props.data.sitePage.pageContext.title}`
-//   console.log("Head", props.data.sitePage.pageContext)
-
-//   return (
-//     <>
-//       <title>{props.data.sitePage.pageContext.title}</title>
-//       <meta name="description" content={monster_desc} />
-//     </>
-//   )
-// }
-
-
-
-// export const Head = () => (
-//   <>
-//     <title>Hello World</title>
-//     <meta name="description" content="Hello World" />
-//   </>
-// )
-
-// Function that takes in a fullBody string and 
-// returns the monster description (first paragraph) 
-//  
-
-
-
 export const Head: React.FC<Props> = ({ pageContext }) => (
   <>
+    <title>{pageContext.title}</title>
+    <meta property="og:site_name" content="AD&D 2nd Edition Complete Monstrous Compendium"/>
+    <meta property="og:title" content={pageContext.monster_data.title}/>
+    <meta property="og:description" content={ getMonsterDescription(pageContext.monster_key ,pageContext.monster_data.fullBody) }/>
+    <meta property="og:url" content={"https://www.completecompendium.com" + pageContext.monster_path}/>
+    <meta property="og:type" content="website"/>
+    {
+      pageContext.monster_data.images[1] && pageContext.monster_data.images[1].match(new RegExp(pageContext.monster_key, "g")) ?
+      <>
+      <meta property="og:image" content={"https://www.completecompendium.com/images/monsters/img/" + pageContext.monster_key + ".gif"}/>
+      <meta name="twitter:image" content={"https://www.completecompendium.com/images/monsters/img/" + pageContext.monster_key + ".gif"}/>
+    </>
+      :
+      <></>
+    }
+    <meta property="og:image:width" content="300"/>
+    <meta property="og:image:height" content="360"/>
+    
+          
+    {/* <meta name="description" content={ getMonsterDescription(pageContext.monster_key ,pageContext.monster_data.fullBody) } /> */}
+    {/* Image: "/images/monsters/img/" + monster_page_data.monster_key + ".gif" */}
+    <meta name="twitter:card" content="summary_large_image"/>
+    <meta name="twitter:url" content={"https://www.completecompendium.com" + pageContext.monster_path} />
+    <meta name="twitter:title" content="Advanced Dungeons & Dragons 2nd Edition Complete Compendium" />
+    <meta name="twitter:description" content={ getMonsterDescription(pageContext.monster_key ,pageContext.monster_data.fullBody) } />
+        
   </>
 )
+
+
+
+// export const Head: React.FC<Props> = ({ pageContext }) => (
+//   <>
+//   </>
+// )
 
 export default PrintMonsterTemplate
 
