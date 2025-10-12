@@ -25,6 +25,7 @@
          "dunereap",
          "dwaratha",
          "elebair",
+         "elebatha",
          "elebeart",
          "elebfire",
          "elebwate",
@@ -809,6 +810,7 @@
          "eladlcou",
          "eladlnov",
          "eladlshi",
+         "eladrin",
          "fhorge",
          "ghosligh",
          "guaravor",
@@ -1286,6 +1288,7 @@
          "dragmyja",
          "dragmyon",
          "dragmyru",
+         "dragmyst",
          "drakmyst",
          "drgnfly",
          "dusanu",
@@ -2333,6 +2336,7 @@
          "drakaair",
          "drakaear",
          "drakafir",
+         "drakatha",
          "drakawat",
          "dunerunn",
          "dunetrap",
@@ -2493,6 +2497,7 @@
          "cursdone",
          "deatmare",
          "dragsccr",
+         "dragscoa",
          "dragscrh",
          "echyan",
          "eeaar",
@@ -3002,6 +3007,26 @@
       "year" : "1991"
    },
    {
+      "author" : "",
+      "monster_keys" : 
+      [
+         "bainligo",
+         "beescagi",
+         "carapace",
+         "drgkinaw",
+         "elemdark",
+         "fireweed",
+         "glouras",
+         "mothwhis",
+         "octoblri",
+         "squivamp"
+      ],
+      "publish_id" : "Dragon227",
+      "setting" : "Dragon Magazine",
+      "title" : "Dragon227",
+      "year" : "1996"
+   },
+   {
       "author" : "Rick Swan",
       "monster_keys" : 
       [
@@ -3150,12 +3175,14 @@
          "darkling",
          "doomguar",
          "doppplan",
+         "eleravgi",
          "eleravlo",
          "ermorden",
          "ghoulord",
          "goblyn",
          "golem3",
          "golem4",
+         "golerv",
          "golervmz",
          "grimreap",
          "humaabno",
@@ -3363,14 +3390,6 @@
       "publish_id" : "1145",
       "setting" : "Planescape",
       "title" : "The Rod of Seven Parts",
-      "year" : "1996"
-   },
-   {
-      "author" : "",
-      "monster_keys" : [ "beescagi", "elemdark", "fireweed", "glouras", "octoblri" ],
-      "publish_id" : "Dragon227",
-      "setting" : "Dragon Magazine",
-      "title" : "Dragon227",
       "year" : "1996"
    },
    {
@@ -4189,6 +4208,7 @@
          "dragfefe",
          "dragfegr",
          "dragfeni",
+         "dragferr",
          "dragfetu",
          "mantidra",
          "wyvedrak"
