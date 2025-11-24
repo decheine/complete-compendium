@@ -38,7 +38,6 @@ ghoulank
 ghriest
 ghulkin
 gibbbroo
-glouras
 goledrol
 goleligh
 gossamer
@@ -107,6 +106,7 @@ snakston
 spacswin
 spidespy
 spirmyst
+squivamp
 staflypl
 strazomb
 stwinger
@@ -134,7 +134,6 @@ tyrg
 urd
 vacuous
 vampkend
-varkha
 virus1
 voat
 wraiworm

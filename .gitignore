@@ -20,6 +20,7 @@ public/*
 /public/~partytown/*
 /public/icons
 /output/
+/release/
 
 # harvester
 /harvester/build

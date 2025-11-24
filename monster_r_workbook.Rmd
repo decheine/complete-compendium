@@ -811,62 +811,10 @@ write(jsonlite::toJSON(combined_monsters, pretty = TRUE, auto_unbox = TRUE), "./
 
 
 ```{r}
-ordered_subset$id <- seq.int(nrow(ordered_subset))
+# ordered_subset$id <- seq.int(nrow(ordered_subset))
 
-write(toJSON(ordered_subset, pretty = TRUE, auto_unbox = TRUE), "stats_df.json")
+# write(toJSON(ordered_subset, pretty = TRUE, auto_unbox = TRUE), "stats_df.json")
 ```
-
-Regex testing
-
-```{r}
-br_df <- ordered_subset %>% filter(grepl("<br",XP.Value))
-test_string <- "10 HD: 10,000<br>11 HD: 11,000<br>12 HD: 12,000"
-matches <- str_match_all(test_string, '([\\d|+]* HD): ([\\d|,]*)')
-
-for (k in seq_along(matches)){
-  new_row <- current_row
-  # Set new values.
-  
-  # Append
-  
-}
-
-```
-
-```{r}
-
-
-
-monster_data1 <- json_data[[1]]$monster_data
-monster_data2 <- json_data[[2]]$monster_data
-
-# monster_data1
-# monster_data2
-
-# Get list of Monster Keys
-
-# json_data[]
-monster_keys <- lapply(json_data, function (x) x[c('monster_key')])
-
-data.frame(monster_keys = unlist(monster_keys))
-# as.data.frame(monster_data1)
-# monster_data1
-
-unnested_result <- unnest_wider(result, col="data.frame")
-
-df <- tibble(
-  monster_key = monster_keys,
-    col = unnest_wider(result_list_frame))
-
-```
-
-
-
-```{r}
-
-```
-
-
 
 
 
@@ -891,7 +839,7 @@ books_df <- book_json_raw %>% spread_all %>% mutate(tsr_id = names(book_json_raw
 
 books_df$"..JSON" <- NULL
 rownames(books_df) <- books_df$tsr_id
-books_df <- as.data.frame(books_df) %>% select(tsr_id, title)
+books_df <- as.data.frame(books_df) %>% select(tsr_id, title) %>% collect()
 books_df
 # remove_rownames(books_df)
 # rownames(books_df)
@@ -899,4 +847,98 @@ books_df
 write.csv(books_df, "books_df.csv", row.names=FALSE)
 # as.data.frame(transpose(as.data.frame(book_json_data)))
 # book_json_data %>% enter_object(tsrid) %>% gather_array
+```
+
+
+
+
+
+
+Monster Images
+
+```{r}
+missing_img_keys <- c(
+  'bloothor', 'boneless', 'buso', 'bussgeis', 'cactrock', 'carpgian', 'crittemp', 'crysmist', 'dabus', 'delphon', 'devete', 'dhaot', 'dhour', 'dragmyon', 'dragnmoo', 'drgnflgi', 'drgnfly', 'dwardapseu', 'feylaar', 'fhorge', 'figucrys', 'firebat', 'flawder', 'foocreat', 'garbug', 'gargguar', 'gentslay', 'ghoshord', 'ghoulank', 'ghriest', 'ghulkin', 'gibbbroo', 'glouras', 'goledrol', 'golel', 'ironmaw', 'ivycrawl', 'jarbo', 'jollroge', 'jorri', 'juhrion', 'kech', 'keeper', 'krotter', 'kuei', 'leecpsio', 'leucrgre', 'lhiashee', 'lycawehy', 'lycaweli', 'marikith', 'menglis', 'mujina',  'phiuhl', 'piranha', 'puddverm', 'rambatte', 'razowing', 'reave', 'recluse', 'retrieve', 'rhaumbus', 'rilmani', 'rilmplum', 'rockman', 'rushligh', 'scavver', 'seaspama', 'shaaz', 'shadelin', 'shk', 'slig', 'snakston', 'spacswin', 'spidespy', 'spirmyst', 'staflypl', 'strazomb', 'stwinger', 'sull', 'symbshad', 'tayling', 'thrapeli', 'tickhear', 'tiefling', 'tigeebon', 'tirichik', 'tliz',  'trolston', 'tsnng', 'tulk', 'tyrg', 'urd', 'vacuous', 'vampkend', 'varkha', 'virus1', 'voat', 'wraiworm', 'xagya', 'yelmuscr', 'yowler', 'yukionna', 'zombsea'
+)
+
+```
+
+```{r}
+# json_data[[1]]
+# 
+# ```
+# 
+# ```{r}
+# book_json_raw <-  rjson::fromJSON(paste(readLines(books_json_file), collapse=""), simplify=FALSE)
+books_df <- book_json_raw %>% spread_all %>% mutate(tsr_id = names(book_json_raw)) %>% collect()
+books_df
+```
+
+```{r}
+monster_key <- json_data[[2]]$monster_key
+monster_title <- json_data[[2]]$title
+monster_sources <- json_data[[2]]$sources
+
+test_frame1 <- data.frame(
+  monster_key = monster_key,
+  monster_title = monster_title, 
+  tsr_id = monster_sources
+)
+
+test_frame1
+colnames(test_frame1)
+
+books_trunc_df <- select(books_df, tsr_id, year, title)
+books_trunc_df$"..JSON" <- NULL
+books_trunc_df
+
+test_frame1 %>% 
+  left_join(books_trunc_df, by="tsr_id")
+```
+
+```{r}
+monster_sources_result_df <- data.frame(
+      monster_key = character(),
+      title = character(),
+      sources = character()
+    )
+
+for (i in seq_along(json_data))
+{
+  monster_key <- json_data[[i]]$monster_key
+  monster_title <- json_data[[i]]$title
+  monster_sources <- json_data[[i]]$sources
+  
+  if(is.null(monster_sources)){
+    monster_sources <- "NULL"
+  }
+  
+  source_df <- data.frame(
+      monster_key = monster_key,
+      monster_title = monster_title, 
+      tsr_id = monster_sources
+    )
+  
+  monster_sources_result_df <- rbind(monster_sources_result_df, source_df)
+
+}
+
+```
+
+```{r}
+monster_sources_result_df
+
+monster_sources_result_df %>% 
+  arrange(tsr_id)
+
+```
+
+
+```{r}
+
+monster_sources_result_df %>% 
+  filter(monster_key %in% missing_img_keys) %>% 
+  arrange(tsr_id)
+
+
 ```

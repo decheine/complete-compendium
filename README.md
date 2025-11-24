@@ -90,7 +90,8 @@ A brand new monster requires a new HTML file to be created for it at `/harvester
 3.  Add an image of the monster to the directory `/static/images/monsters/img/` named `<monster_key>.gif`
 4.  Make sure to copy the new monster to the `/harvester/cmm/` directory.
 5.  Run the harvester. See the following section for running the harvester with Docker. Make sure to run the `node .\scripts\copy_monster_data.js` to copy the output of the harvester once it's done. 
-6.  If everything runs successfully, run the gatsby web app with `gatsby develop` and see if the monster shows up correctly.
+6.  Add all of the monsters titles to the file `/data/Titles_Keys.json` with the Title as the key and the monster_key as the value. Add the title printed on the monster page, and additional reasonable permutations of it. For example, "Elf, Aquatic" also has the title entry "Aquatic Elf". Use your best judgement, usually it will be obvious if a monster should have multiple titles like this. Also include titles that appear in the text as an alternative name the monster is called, like how the "Sahuagin" are also called "Sea Devil."
+7.  If everything runs successfully, run the gatsby web app with `gatsby develop` and see if the monster shows up correctly.
 
 
 
