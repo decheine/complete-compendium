@@ -8,7 +8,7 @@
 .pnp.js
 package-lock.json
 yarn.lock
-
+/vcpkg_installed
 
 # testing
 /coverage
@@ -21,6 +21,7 @@ public/*
 /public/icons
 /output/
 /release/
+/harvester/out/
 
 # harvester
 /harvester/build
@@ -41,3 +42,6 @@ yarn-error.log*
 /.venv
 
 /trash
+
+
+CMakeUserPresets.json
