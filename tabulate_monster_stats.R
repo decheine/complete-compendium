@@ -33,14 +33,12 @@ quotemeta <- function(string) {
 # ---
 
 json_file <- paste(getwd(), "/src/data/ALL_MONSTERS.json", sep="")
-
-# json_data <- fromJSON(paste(readLines(json_file), collapse=""), simplifyDataFrame = TRUE)
 json_data <- rjson::fromJSON(paste(readLines(json_file), collapse=""), simplify=TRUE)
 
 
 
 # ----
-# 1
+# 1 - Statblock Split Setup
 
 
 result <- list()
@@ -133,7 +131,7 @@ for (i in seq_along(json_data))
 
 
 
-# ---- Statblock splitting
+# Statblock splitting
 
 options(max.print=4000)
 
@@ -153,7 +151,7 @@ ordered_subset$xp_filtered = strtoi(ordered_subset$xp_filtered, 10L)
 ordered_subset <- ordered_subset[order(ordered_subset$xp_filtered, decreasing = FALSE), ]
 # print(ordered_subset, n = 2000)
 
-# Subtypes, splitting by Hit Dice. 
+# Subtypes, splitting by Hit Dice, XP, and THAC0
 thac0_with_br <- ordered_subset %>% filter(grepl("<br",THAC0))
 xp_with_br <- ordered_subset %>% filter(grepl("(<br)|(, )",XP_Value))
 hd_with_br <- ordered_subset %>% filter(grepl("<br", Hit_Dice))

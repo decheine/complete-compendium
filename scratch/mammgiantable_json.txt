@@ -1,0 +1,91 @@
+
+statblock_mammgian["Badger, giant"]["No. Appearing"] = "2-5";
+statblock_mammgian["Badger, giant"]["Armor Class"] = "4";
+statblock_mammgian["Badger, giant"]["Movement"] = "6, Br 3";
+statblock_mammgian["Badger, giant"]["Hit Dice"] = "3";
+statblock_mammgian["Badger, giant"]["THAC0"] = "17";
+statblock_mammgian["Badger, giant"]["No. of Attacks"] = "3";
+statblock_mammgian["Badger, giant"]["Damage/Attack"] = "1d3/1d3/1d6";
+statblock_mammgian["Badger, giant"]["Morale"] = "Steady (11-12)";
+statblock_mammgian["Badger, giant"]["Special Attacks"] = "Nil";
+statblock_mammgian["Badger, giant"]["XP Value"] = "65";
+statblock_mammgian["Beaver, giant"]["No. Appearing"] = "4-40";
+statblock_mammgian["Beaver, giant"]["Armor Class"] = "6";
+statblock_mammgian["Beaver, giant"]["Movement"] = "6, Sw 12";
+statblock_mammgian["Beaver, giant"]["Hit Dice"] = "4";
+statblock_mammgian["Beaver, giant"]["THAC0"] = "17";
+statblock_mammgian["Beaver, giant"]["No. of Attacks"] = "1";
+statblock_mammgian["Beaver, giant"]["Damage/Attack"] = "4d4";
+statblock_mammgian["Beaver, giant"]["Morale"] = "Average (8-10)";
+statblock_mammgian["Beaver, giant"]["Special Attacks"] = "Nil";
+statblock_mammgian["Beaver, giant"]["XP Value"] = "120";
+statblock_mammgian["Boar, giant"]["No. Appearing"] = "2-8";
+statblock_mammgian["Boar, giant"]["Armor Class"] = "6";
+statblock_mammgian["Boar, giant"]["Movement"] = "12";
+statblock_mammgian["Boar, giant"]["Hit Dice"] = "7";
+statblock_mammgian["Boar, giant"]["THAC0"] = "13";
+statblock_mammgian["Boar, giant"]["No. of Attacks"] = "1";
+statblock_mammgian["Boar, giant"]["Damage/Attack"] = "3d6";
+statblock_mammgian["Boar, giant"]["Morale"] = "Steady (11-12)";
+statblock_mammgian["Boar, giant"]["Special Attacks"] = "Special";
+statblock_mammgian["Boar, giant"]["XP Value"] = "650";
+statblock_mammgian["Hyena (hyenodon)"]["No. Appearing"] = "2-8";
+statblock_mammgian["Hyena (hyenodon)"]["Armor Class"] = "7";
+statblock_mammgian["Hyena (hyenodon)"]["Movement"] = "12";
+statblock_mammgian["Hyena (hyenodon)"]["Hit Dice"] = "5";
+statblock_mammgian["Hyena (hyenodon)"]["THAC0"] = "15";
+statblock_mammgian["Hyena (hyenodon)"]["No. of Attacks"] = "1";
+statblock_mammgian["Hyena (hyenodon)"]["Damage/Attack"] = "3d4";
+statblock_mammgian["Hyena (hyenodon)"]["Morale"] = "Average (8-10)";
+statblock_mammgian["Hyena (hyenodon)"]["Special Attacks"] = "Nil";
+statblock_mammgian["Hyena (hyenodon)"]["XP Value"] = "175";
+statblock_mammgian["Porcupine, giant"]["No. Appearing"] = "1-2";
+statblock_mammgian["Porcupine, giant"]["Armor Class"] = "5";
+statblock_mammgian["Porcupine, giant"]["Movement"] = "6";
+statblock_mammgian["Porcupine, giant"]["Hit Dice"] = "6";
+statblock_mammgian["Porcupine, giant"]["THAC0"] = "15";
+statblock_mammgian["Porcupine, giant"]["No. of Attacks"] = "1";
+statblock_mammgian["Porcupine, giant"]["Damage/Attack"] = "3d6";
+statblock_mammgian["Porcupine, giant"]["Morale"] = "Average (8-10)";
+statblock_mammgian["Porcupine, giant"]["Special Attacks"] = "Nil";
+statblock_mammgian["Porcupine, giant"]["XP Value"] = "650";
+statblock_mammgian["Otter, giant"]["No. Appearing"] = "2-5";
+statblock_mammgian["Otter, giant"]["Armor Class"] = "5";
+statblock_mammgian["Otter, giant"]["Movement"] = "9, Sw 18";
+statblock_mammgian["Otter, giant"]["Hit Dice"] = "5";
+statblock_mammgian["Otter, giant"]["THAC0"] = "15";
+statblock_mammgian["Otter, giant"]["No. of Attacks"] = "1";
+statblock_mammgian["Otter, giant"]["Damage/Attack"] = "2d4";
+statblock_mammgian["Otter, giant"]["Morale"] = "Unsteady (5-7)";
+statblock_mammgian["Otter, giant"]["Special Attacks"] = "Shoot quills";
+statblock_mammgian["Otter, giant"]["XP Value"] = "175";
+statblock_mammgian["Skunk, giant"]["No. Appearing"] = "1";
+statblock_mammgian["Skunk, giant"]["Armor Class"] = "7";
+statblock_mammgian["Skunk, giant"]["Movement"] = "9";
+statblock_mammgian["Skunk, giant"]["Hit Dice"] = "5";
+statblock_mammgian["Skunk, giant"]["THAC0"] = "15";
+statblock_mammgian["Skunk, giant"]["No. of Attacks"] = "1";
+statblock_mammgian["Skunk, giant"]["Damage/Attack"] = "1d6";
+statblock_mammgian["Skunk, giant"]["Morale"] = "Average (8-10)";
+statblock_mammgian["Skunk, giant"]["Special Attacks"] = "Musk";
+statblock_mammgian["Skunk, giant"]["XP Value"] = "420";
+statblock_mammgian["Weasel, giant"]["No. Appearing"] = "14";
+statblock_mammgian["Weasel, giant"]["Armor Class"] = "6";
+statblock_mammgian["Weasel, giant"]["Movement"] = "15";
+statblock_mammgian["Weasel, giant"]["Hit Dice"] = "3+3";
+statblock_mammgian["Weasel, giant"]["THAC0"] = "17";
+statblock_mammgian["Weasel, giant"]["No. of Attacks"] = "1";
+statblock_mammgian["Weasel, giant"]["Damage/Attack"] = "2d6";
+statblock_mammgian["Weasel, giant"]["Morale"] = "Elite (13-14)";
+statblock_mammgian["Weasel, giant"]["Special Attacks"] = "Drain blood";
+statblock_mammgian["Weasel, giant"]["XP Value"] = "175";
+statblock_mammgian["Wolverine, giant"]["No. Appearing"] = "1";
+statblock_mammgian["Wolverine, giant"]["Armor Class"] = "4";
+statblock_mammgian["Wolverine, giant"]["Movement"] = "15";
+statblock_mammgian["Wolverine, giant"]["Hit Dice"] = "4+4";
+statblock_mammgian["Wolverine, giant"]["THAC0"] = "15";
+statblock_mammgian["Wolverine, giant"]["No. of Attacks"] = "3";
+statblock_mammgian["Wolverine, giant"]["Damage/Attack"] = "1d4+1/1d4+1/2d4";
+statblock_mammgian["Wolverine, giant"]["Morale"] = "Elite (13-14)";
+statblock_mammgian["Wolverine, giant"]["Special Attacks"] = ".+4 to hit, musk, intelligence";
+statblock_mammgian["Wolverine, giant"]["XP Value"] = "975";

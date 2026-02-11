@@ -15,6 +15,7 @@
 #include <json/value.h>
 #include "ThreadsafeData.h"
 #include "ThreadsafeArray.h"
+#include "SpecialStatblock.h"
 
 class Harvester
 {
@@ -32,6 +33,9 @@ private:
 
     // Json::Value monsterData;
     ThreadsafeData monsterData;
+
+    // Special Statblocks
+    SpecialStatblock special_statblocks;
 
 public:
     bool debug;

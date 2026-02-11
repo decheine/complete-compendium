@@ -1,0 +1,10 @@
+	Ape, Carnivorous	Baboon, Wild	Badger	Banderlog	Bhaergala	Boar, Wild	Chattur	Cooshee	Dakon	Debbi	Goat	Gorilla	Hsing-sing	Hyena	Jackal	Losel	Spider Monkey	Porcupine, Black	Porcupine, Brown	Rothé	Skunk	Sleek	Stag, Wild	Stench Kow	Taer	Tyrg	Warthog	Weasel	Wolverine
+No. Appearing	2-8	10-40	2-5	4-24	1	1-12	2-24	1-8	6-60	1-8	5-20	1-4	2-20	2-12	1-6	3-30	20-60	1-2	1-2	2-20	1-6	1-10	1-4	15-60	10-40	1-10	1-6	1-2	1
+Armor Class	6	7	4	6	6	7	7	5	5	7	7	6	6	7	7	7	6	6	6	7	8	3	7	2	4	5	7	6	5
+Movement	12, 9 in trees	12, 12 in trees	6, Br 3	6, 12 in trees	15	15	12	15, sprint 24	6	15, climb 6	15	12	6, Sw 9	12	12	6, 9 in trees	18, climb 18	9, climb 2	9, climb 2	9	12	36	24	15	18	18	12	15	12
+Hit Dice	5	1+1	1+2	4	4+4	3+3	1-1	3+3	1+1	1+1	1+2	4+1	2+1	3	½	2	1hp	½	½	2	¼	2+1	3	3+3	3+6	5-8	3	¼	3
+THAC0	15	19	19	15	15	17	20	17	20	19	19	17	19	17	20	19	18	20	20	19	20	19	17	17	17	5-6 HD: 15 7-8 HD: 13	17	20	17
+No. of Attacks	3	1	3	1	3	1	1	3	2	1	1	3	1	1	1	3	1	1	1	3	1	3	1 or 2	1	3	1	2	1	3
+Damage/Attack	1-4/1-4/1-8	1-4	1-2/1-2/1-3	2-5	1-6/1-6/1-8	3-12	1-4 (or weapon)	1-4/1-4/2-8	1-10/1-10	1-4	1-3	1-3/1-3/1-6	1-6 (or weapon)	2-8	1-2	1-3/1-3/1-4	1	1-3	1-4	1-3/1-3/1-8	1	1-4/1-4/2-12	1-3/1-3 or 2-8	2-8	1-6/1-4/1-4	1-12	2-8/1-8	1	1-4/1-4/2-5
+Morale	Steady (11-12)	Unsteady (5-7)	Average (8-10)	Average (8-10)	Elite (13-14)	Average (8-12)	Average (8-10)	Steady (11-12)	Champion (15-16)	Unsteady (5-7)	Average (8-10)	Average (8-10)	Average (8-10)	Unsteady (5-7)	Unreliable (2-4)	Unsteady (5-7)	Fanatic (17-18)	Unreliable (2-4)	Unreliable (2-4)	Elite (13-14)	Unsteady (57)	Steady (11-12)	Unsteady (5-7)	Average (8-10)	Steady (11-12)	Elite (13-14)	Average (8-10)	Steady (11-12)	Steady (11-12)
+XP Value	175	35	35	120	650	175	15	270	65	65	35	175	65	65	7	120	1	15	15	35	35	65	65	175	270	5 HD: 270 6 HD: 420 7 HD: 650 8 HD: 975	120	7	120

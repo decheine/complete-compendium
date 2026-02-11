@@ -17,7 +17,7 @@
 // #include <boost/algorithm/string.hpp>
 
 // Jsoncpp
-#include "json/value.h"
+#include <json/value.h>
 #include <json/json.h>
 #include <json/reader.h>
 #include <json/writer.h>
@@ -767,6 +767,8 @@ void Harvester::HarvestAll(bool threaded)
     auto full_start = std::chrono::high_resolution_clock::now();
     auto start = std::chrono::high_resolution_clock::now();
 
+    special_statblocks.fill_statblocks();
+
 
     std::set<std::string> skip = {
         // "modron",
@@ -774,6 +776,9 @@ void Harvester::HarvestAll(bool threaded)
         // "human",
         // "bird",
         // "fish",
+        // "dragosea",
+        // "dragorso",
+        // "dragospi",
         "index"};
 
     std::set<std::string> searchingMonsterNames;
@@ -1295,12 +1300,25 @@ std::string SanitizeLinks(std::string in){
     return out;
 }
 
-std::vector<std::string> statblock_skip_monsters{
+std::vector<std::string> statblock_special_monsters{
+    // Excluding bird because all listed monsters have existing pages will full statblocks
+    "bird", 
+    "fish"
+    "human",
+    "insect",
+    "lycanthg",
+    // "mammal",
+    "mammgian",
+    "mammher2",
+    // "mammmini",
+    // "mammsmal",
+    // "modron",
+    "snake",
     "human",
     "modron",
     "mammal",
     "mammmini",
-    "mammsmal",
+    "mammsmal"
 };
 
 
@@ -1452,8 +1470,45 @@ int Harvester::RunMonster(std::string monsterName)
     {
         if(debug)
             std::cout << "Getting Stats Table\n";
-        if (std::find(std::begin(statblock_skip_monsters), std::end(statblock_skip_monsters), monsterName) != std::end(statblock_skip_monsters)){
-
+        if (std::find(std::begin(statblock_special_monsters), std::end(statblock_special_monsters), monsterName) != std::end(statblock_special_monsters)){
+            // Inelegant but decisive and reliable solution
+            // Switch statement for each of the special monsters
+            // "human"
+            // "insect"
+            // "lycanthg"
+            // "mammal"
+            // "mammgian"
+            // "mammher2"
+            // "mammmini"
+            // "mammsmal"
+            // "modron"
+            // "snake"
+            printf("statblock_special! %s\n", monsterName.c_str());
+            if (monsterName == "human"){
+                monsterJson["statblock"] = special_statblocks.statblock_human;
+            }else if (monsterName == "insect"){
+                monsterJson["statblock"] = special_statblocks.statblock_insect;
+            }else if (monsterName == "lycanthg"){
+                // Not yet implemented
+                // monsterJson["statblock"] = special_statblocks.statblock_lycanthg;
+            }else if (monsterName == "mammal"){
+                monsterJson["statblock"] = special_statblocks.statblock_mammal;
+            }else if (monsterName == "mammgian"){
+                monsterJson["statblock"] = special_statblocks.statblock_mammgian;
+            }else if (monsterName == "mammher2"){
+                monsterJson["statblock"] = special_statblocks.statblock_mammher2;
+            }else if (monsterName == "mammmini"){   
+                monsterJson["statblock"] = special_statblocks.statblock_mammmini;
+            }else if (monsterName == "mammsmal"){
+                monsterJson["statblock"] = special_statblocks.statblock_mammsmal;
+            }else if (monsterName == "modron"){
+                monsterJson["statblock"] = special_statblocks.statblock_modron;
+            }else if (monsterName == "snake"){
+                monsterJson["statblock"] = special_statblocks.statblock_snake;
+            }else {
+                // Should not reach
+            } 
+        
         } else {
             Json::Value statblock = GetStatsTable(monsterString);
             monsterJson["statblock"] = statblock;

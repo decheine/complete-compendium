@@ -5,7 +5,7 @@
 #include <thread>
 #include <condition_variable>
 
-#include "json/value.h"
+#include <json/value.h>
 
 class ThreadsafeData
 {

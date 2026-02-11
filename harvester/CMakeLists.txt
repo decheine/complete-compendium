@@ -4,6 +4,7 @@ project(LomionReader VERSION 1.1)
 
 if(MSVC)
     set(CMAKE_USE_WIN32_THREADS_INIT 1)
+    set(CMAKE_WINDOWS_EXPORT_ALL_SYMBOLS ON)
 else()
     set(CMAKE_THREAD_LIBS_INIT "-lpthread")
     set(CMAKE_HAVE_THREADS_LIBRARY 1)
@@ -77,9 +78,11 @@ add_executable(${PROJECT_NAME} src/main.cpp)
 
 ##############################################################################
 # Linking
-
-target_link_libraries(${PROJECT_NAME} PRIVATE jsoncpp_object jsoncpp_static harvester_library pthread #${Boost_PROGRAM_OPTIONS_LIBRARY}
-)
+if(MSVC)
+target_link_libraries(${PROJECT_NAME} harvester_library)
+else()
+target_link_libraries(${PROJECT_NAME} harvester_library pthread)
+endif()
 
 target_compile_features(${PROJECT_NAME} PRIVATE cxx_std_17)
 

@@ -1,0 +1,29 @@
+{
+  "version": 3,
+  "configurePresets": [
+    {
+      "name": "release",
+      "cacheVariables": {
+        "CMAKE_TOOLCHAIN_FILE": "$env{VCPKG_ROOT}/scripts/buildsystems/vcpkg.cmake",
+        "CMAKE_BUILD_TYPE": "Release",
+        "VCPKG_ROOT": "$env{VCPKG_ROOT}"
+      }
+    },
+    {
+      "name": "debug",
+      "cacheVariables": {
+        "CMAKE_TOOLCHAIN_FILE": "$env{VCPKG_ROOT}/scripts/buildsystems/vcpkg.cmake",
+        "CMAKE_BUILD_TYPE": "Debug",
+        "VCPKG_ROOT": "$env{VCPKG_ROOT}"
+      }
+    },
+    {
+      "name": "release_docker",
+      "cacheVariables": {
+        "CMAKE_TOOLCHAIN_FILE": "/usr/local/vcpkg/scripts/buildsystems/vcpkg.cmake",
+        "CMAKE_BUILD_TYPE": "Release",
+        "VCPKG_ROOT": "/usr/local/vcpkg"
+      }
+    }
+  ]
+}

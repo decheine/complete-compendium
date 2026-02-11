@@ -276,6 +276,7 @@ tagged_df
 
 ```
 
+
 ```{r}
 tagged_df
 
@@ -688,6 +689,9 @@ split_monsters_df %>% arrange(monster_key)
 ```
 
 
+```{r}
+split_monsters_df %>% arrange(monster_key)
+```
 
 
 
@@ -909,7 +913,8 @@ for (i in seq_along(json_data))
   monster_title <- json_data[[i]]$title
   monster_sources <- json_data[[i]]$sources
   
-  if(is.null(monster_sources)){
+
+   if(is.null(monster_sources)){
     monster_sources <- "NULL"
   }
   
@@ -939,6 +944,94 @@ monster_sources_result_df %>%
 monster_sources_result_df %>% 
   filter(monster_key %in% missing_img_keys) %>% 
   arrange(tsr_id)
+
+
+```
+
+Checking for monsters missing from the statblock data table.
+
+```{r}
+source_keys <- monster_sources_result_df %>% 
+  select(monster_key) %>% 
+  unique()
+
+all_keys <- stat_result_df %>%
+  select(monster_key) %>% 
+  unique()
+
+source_keys
+all_keys
+
+# all_keys %>% right_join(source_keys)
+
+missing_keys <- setdiff(source_keys, all_keys)
+missing_keys
+```
+
+```{r}
+# rownames(missing_keys) <- $my_column
+# json_data[1]
+missing_keys$monster_key[[1]]
+```
+
+
+```{r}
+
+get_key_index <- function(target_key) {
+  for (i in seq_along(json_data)){
+    if (json_data[[i]]$monster_key == target_key) {
+      return (i);
+    }
+  }
+  return (-1)
+}
+
+missing_monsters_df <- data.frame(matrix(nrow = 0, ncol = 3))
+for (i in seq_along(missing_keys$monster_key))
+{
+  
+  # json_data[[get_key_index(missing_keys[[i]])]]
+  missing_monster <- json_data[[get_key_index(missing_keys$monster_key[[i]])]]
+  # result[[i]] = change_data_frame_to_named_list(json_data[[i]])
+  monster_key <- missing_monster$monster_key
+  monster_title <- missing_monster$monster_data$title
+  statblock <- missing_monster$monster_data$statblock
+  # print(missing_monster)
+  # print(c(monster_key, missing_monster$monster_data$title))
+  missing_monster_df <- data.frame(
+    monster_key = missing_monster$monster_key,
+    monster_title = missing_monster$title,
+    # TSR = missing_monster$monster_data$TSR
+    fullBody = missing_monster$monster_data$fullBody
+  )
+  # print(missing_monster_df)
+  # print(missing_monster_df)
+  missing_monsters_df <- rbind(missing_monsters_df, missing_monster_df)
+  # print(statblock)
+}
+
+missing_monsters_df
+
+```
+
+
+```{r}
+missing_monsters_df %>% 
+  filter(grepl('>XP', fullBody))
+
+
+```
+
+
+Testing HD variant creation
+Later
+
+
+
+```{r}
+
+combined_monsters %>% 
+  select(monster_key, title, statblock_title, variant_title, Hit_Dice, THAC0, XP_Value)
 
 
 ```

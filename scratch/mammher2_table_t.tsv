@@ -1,0 +1,11 @@
+Name	Bull (wild ox)	Caribou	Goat, giant	Hippopotamus	Llama	Ram, giant	Rhinoceros, 1-horn	Rinoceros, 2-horn	Stag, wild	Stag, giant
+No. Appearing	1-20	2-16	1-12	2-12	1-12	2-8	1-6	1-6	1-4	1-2
+Armor Class	7	7	7	6	7	6	6	6	7	7
+Movement	15	21	18	9/12	15	15	12	12	24	21
+Hit Dice	4	3+2	3+1	8	2	4	8	9	3	5
+THAC0	17	17	17	12	19	17	13	11	17	15
+No. of Attacks	2	1	1	1	1	1	1	1	1 (2)	1 (2)
+Damage/Attack	1d6/1d6	2d6 (1d3/1d3)	2d8	2d6 or 3d6	1d3	2d6	2d4	2d6	2d4 (1d3/1d3)	4d4 (1d4/1d4)
+Morale	Average (8-10)	Unsteady (5-7)	Unsteady (5-7)	Average (8-10)	Unreliable (2-4)	Average (8-10)	Unsteady (5-7)	Unsteady (5-7)	Unsteady (5-7)	Average (8-10)
+Special Attacks	Charge	Nil	Charge	Special	Spit	Charge	Charge	Charge	Nil	Nil
+XP Value	175	120	175	975	65	175	975	1,400	65	175

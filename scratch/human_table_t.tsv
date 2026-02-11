@@ -1,0 +1,10 @@
+	Aborigine/Caveman	Bandit/Brigand	Barbarian/Nomad	Berserker/Dervish	Farmer/Herder	Gentry	Knight	Mercenary	Merchant Sailor/Fisherman	Merchant/Trader	Middle Class	Peasant/Serf	Pilgrim	Pirate/Buccaneer	Police/Constabulary	Priest	Sailor	Slaver	Soldier	Thief/Thug	Tradesman/Craftsman	Tribesman	Wizard
+Frequency:	Rare	Common	Rare	Rare	Common	Common	Very rare	Rare	Common	Common	Common	Common	Uncommon	Common	Uncommon	Very rare	Common	Common	Uncommon	Common	Common	Rare	Very rare
+Treasure:	Nil	J,N,Q	L,M	Nil	Nil	J,K,L,M,N,Q	L,M	L,M	10-60 sp	10-1,000 gp	J,M,N	Nil	I	J,M,N,Q	10-60 sp	J,K,M	L,M	Nil	I	J,M,N,Q	1-100 gp	Nil	L,N,Q
+Alignment:	Neutral	Chaotic evil	Any	Neutral/L. good	Neutral (good)	Any	Any lawful	Any	Any	Any	Any	Any	Any	Any evil	Any lawful	Any	Any	Any	Any	Any evil	Any	Any	Any
+No. Appearing:	10-100 (10d10)	20-200 (20d10)	30-300 (30d10)	10-100 (10d10)	1-20	1-20	1-4	10-100 (10d10)	4-80 (4d20)	30-300 (3d10>010)	2-40 (2d20)	1-100	10-100 (10d10)	30-300 (30d10)	2-20 (2d10)	1-8	4-80 (4d20)	1-100	10-100 (10d10)	1-8	2-12 (2d6)	10-100 (10d10)	1-8
+Armor Class:	8	10 to 6	10 to 6	10 to 6	10	10	4 or 2	7 to 4	10 to 8	10 to 5	10	10	10 to 8	10 to 6	7 to 4	Varies	10 to 8	10	8 to 4	10 to 8	10	8	10
+Hit Dice:	1-6 hp/2 HD	1-6 hp	1-6 hp	1-6 hp	1-6 hp	1-6 hp	2+	2-8 hp	1-6 hp	1-6 hp	1-6 hp	1-6 hp	1-6 hp	1-6 hp	1-6 hp	1-6 hp	1-6 hp	1-6 hp	1-6 hp	1 to 3	1-6 hp	1-6 hp	Varies
+THAC0:	20 (19)	20	20	20	20	20	19 or less	20	20	20	20	20	20	20	20	20	20	20	20	20	20	20	Varies
+Morale:	Average (9)	Average (9)	Average (9)	Fearless (20)	Average (9)	Average (9)	Elite (14+)	Steady (11-12)	Average (9)	Average (9)	Average (9)	Average (9)	Average (9)	Average (9)	Steady (10)	Varies	Average (9)	Average (9)	Steady (10-12)	Varies	Average (8-9)	Average (9)	Varies
+XP Value:	15 (35)	15	15	15	15	15	Varies	15	15	15	15	15	15	15	15	Varies	15	15	15	Varies	15	15	Varies

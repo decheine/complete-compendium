@@ -1,0 +1,25 @@
+Mammal;HD;AC;#App.;#Att;Dmg/Att;MV;XP Value;Notes
+Beaver;1-4 hp;9;10-40;1;1;4, Sw 12;7; 
+Chipmunk;1 hp;7;1-6;1;1;12, Br 1;0; 
+Ermine;1;6;1-2;1;1;15;15; 
+Ferret;1;6;1-2;1;1;15;15
+Fox;1;7;1-2;1;1-3;15;15; 
+Gopher;1-3 hp;8;1-20;1;1;12, Br 2;27; 
+Hedgehog;1-2 hp;8;1-2;nil;nil;4;7; 
+Mink;1;6;1-2;1;1;15, Br 1;15; 
+Mole;1 hp;10;1;nil;nil;1, Br ½;0; 
+Monkey;1+1;8;1-50;1;1;9;35; 
+Mouse;1 hp;7;1-100;nil;nil;15, Br ½;0; 
+Muskrat;1-3 hp;10;1-2;1;1;4;7; 
+Opossum;1-3 hp;10;1-8;1;1;4;7; 
+Otter;1-1;5;1-4;1;1-2;12, Sw 18;7; 
+Otter, Sea;1+1;5;1-4;1;1-3;12, Sw 18;35; 
+Otter, Giant;5;5;2-5;1;3-18;9, Sw 18;175; 
+Pig, Domestic;2;10;1-20;1;1-4;12;35; 
+Pig, Wild;2;9;1-8;1;1-4;12;35; 
+Rabbit;1-3 hp;6;1-12;1;1;18;7; 
+Raccoon;1-6 hp;9;1-4;1;1-2;5;7; 
+Squirrel;1 hp;8;1-6;1;1;12;0; 
+Squirrel, Flying;1 hp;8;7;1;1;12, Fl 15 (E);0;Gliding 
+Squirrel, Giant black;1+1;6;1-12;1;1+3;12;35; 
+Woodchuck;1-6 hp;9;1-2;1;1;5, Br 2;7; 
