@@ -1035,3 +1035,49 @@ combined_monsters %>%
 
 
 ```
+
+Monster Stats convert to CSV
+
+
+```{r}
+library(jsonlite)
+stats_df_json <- read_json("src/data/stats_df.json", simplifyVector = TRUE)
+stats_df_json
+filter_monsters <- stats_df_json %>% filter(is.na(Diet)) %>% group_by(monster_key) %>% summarise()
+filter_monsters
+# which(is.na(stats_df_json))
+# sum(is.na(stats_df_json))
+filtered_df <- data.frame(MissingCount = sapply(stats_df_json, function(x) sum(is.na(x))))
+
+filtered_stats_df <- stats_df_json %>% filter(monster_key %in% filter_monsters$monster_key == 0)
+
+data.frame(MissingCountFiltered = sapply(stats_df_json %>% filter(monster_key %in% filter_monsters$monster_key == 0), function(x) sum(is.na(x))))
+
+
+```
+
+
+```{r}
+filtered_stats_df %>% filter(is.na(Activity_Cycle)) %>% group_by(monster_key) %>% summarise()
+filtered_stats_df %>% filter(is.na(Alignment)) %>% group_by(monster_key) %>% summarise()
+filtered_stats_df %>% filter(is.na(Armor_Class)) %>% group_by(monster_key) %>% summarise()
+filtered_stats_df %>% filter(is.na(Climate_Terrain)) %>% group_by(monster_key) %>% summarise()
+filtered_stats_df %>% filter(is.na(Damage_Attack)) %>% group_by(monster_key) %>% summarise()
+filtered_stats_df %>% filter(is.na(Frequency)) %>% group_by(monster_key) %>% summarise()
+filtered_stats_df %>% filter(is.na(Hit_Dice)) %>% group_by(monster_key) %>% summarise()
+filtered_stats_df %>% filter(is.na(Intelligence)) %>% group_by(monster_key) %>% summarise()
+filtered_stats_df %>% filter(is.na(Magic_Resistance)) %>% group_by(monster_key) %>% summarise()
+filtered_stats_df %>% filter(is.na(Morale)) %>% group_by(monster_key) %>% summarise()
+filtered_stats_df %>% filter(is.na(Movement)) %>% group_by(monster_key) %>% summarise()
+filtered_stats_df %>% filter(is.na(No_Appearing)) %>% group_by(monster_key) %>% summarise()
+filtered_stats_df %>% filter(is.na(No_of_Attacks)) %>% group_by(monster_key) %>% summarise()
+filtered_stats_df %>% filter(is.na(Organization)) %>% group_by(monster_key) %>% summarise()
+filtered_stats_df %>% filter(is.na(Size)) %>% group_by(monster_key) %>% summarise()
+filtered_stats_df %>% filter(is.na(Special_Attacks)) %>% group_by(monster_key) %>% summarise()
+filtered_stats_df %>% filter(is.na(Special_Defenses)) %>% group_by(monster_key) %>% summarise()
+filtered_stats_df %>% filter(is.na(THAC0)) %>% group_by(monster_key) %>% summarise()
+filtered_stats_df %>% filter(is.na(Treasure)) %>% group_by(monster_key) %>% summarise()
+filtered_stats_df %>% filter(is.na(XP_Value)) %>% group_by(monster_key) %>% summarise()
+
+filter_monsters <- stats_df_json %>% filter(is.na(Diet)) %>% group_by(monster_key) %>% summarise()
+```
