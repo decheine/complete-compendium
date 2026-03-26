@@ -54,12 +54,12 @@ export function themonsters() {
         <hr style={hr1Style}/>
         <hr style={hr2Style}/>
             
-            <p>The thoughtful creativity of the authors allows for these monsters to be readily adapted to many other TTRPGs that have a similar dice system to D&D.</p>
-            <p><b>Adapting to D&D 5th Edition</b> Many 5th edition monsters can trace their origins to the monsters laid out here. I've found using the detailed Habitat/Society and Ecology sections to be invaluable supplemental material to the modern iterations. Combat can also provide tactics in detail.
+            <p>The thoughtful creativity of the authors allows for these monsters to be readily adapted to many other TTRPGs that have a similar combat system to AD&D 2nd Edition.</p>
+            <p><b>Adapting to D&D 5th Edition</b> Many 5th Edition monsters can trace their origins to the monsters laid out here. I've found using the detailed Habitat/Society and Ecology sections to be invaluable supplemental material to the modern iterations. Combat can also provide tactics in detail.</p>
             
-            The most apparent combat elements that differ between 2nd Edition and 5th edition are only THAC0 and Armor Class, which are very easy to convert to 5th edition. 2nd Edition AC counts down from 10, 5th counts up from 10. 2nd Edition THAC0 counts down from 20. So to get the 5th edition AC, subtract the 2e AC from 10, and to get the 5th Edition to hit bonus, subtract the THAC0 from 20. For example, the <Link to="/appendix/aboleth">aboleth</Link> has THAC0 of 13 and an AC of 4. Therefore a 5th edition conversion would give it an AC of 16 and +7 to hit. The real 5e aboleth has an AC of 17 and +9 to hit.
+            <p>The most apparent combat differences between 2nd Edition and 5th Edition are only THAC0 and Armor Class, which are very easy to convert to 5th Edition. 2nd Edition AC counts down from 20, 5th counts up from 10. 2nd Edition THAC0 counts down from 20. So to get the 5th Edition AC, subtract the 2e AC from 20, and to get the 5th Edition to hit bonus, subtract the THAC0 from 20. Lastly you can add +1 or +2 to AC and to-hit to account for the scaling difference between 2e and 5e. For example, the <Link to="/appendix/aboleth">aboleth</Link> has THAC0 of 13 and an AC of 4. Therefore a 5th Edition conversion would give it an AC of 16 and +7 to hit. The 5e aboleth has an AC of 17 and +9 to hit.</p>
             
-            Saving throws, however, do not translate at all so you will have to come up with a realistic save and DC based on your judgement of the spell or ability.</p> 
+            <p>Saving throws, however, do not translate at all so you will have to come up with a realistic save and DC based on your judgement of the spell or ability.</p> 
 
             <blockquote>The following text is taken mostly from the <i>AD&D 2nd Edition Monsterous Manual</i> (<a href="/catalog/add2_01/2140/">2140</a>).  
             </blockquote>
@@ -160,7 +160,7 @@ export function themonsters() {
             <p>The rest of the listing indicates, by discipline, which powers the creature has, sometimes listing the most common powers, sometimes listing only the powers that all members of the species have. Unless otherwise noted, the creature always knows powers marked by an asterisk. For information regarding psionic powers, see PHBR5, <i>The Complete Psionics Handbook</i>. If the DM chooses not to use psionics in the campaign, the powers can be changed to magical equivalents or simply ignored, though the latter severely impedes certain monsters.</p>
             <hr style={hrBottomStyle}/>
             Archivist's footnotes:
-            <p id="footnote-1">* Listed THAC0 <i>usually</i> does not include any listed bonuses. Read each monster's text carefully, I recall exceptions to this statement.</p>
+            <p id="footnote-1">* Listed THAC0 will occasionally not include listed bonuses—<Link to="/appendix/skelwarr">skeleton warrior</Link>'s for example. Read each monster's text carefully, especially more complicated monsters.</p>
         </main>
     </Layout>
             
