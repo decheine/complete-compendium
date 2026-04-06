@@ -11,14 +11,14 @@ Support the project at my [Ko-Fi](https://ko-fi.com/novicewizard)
 # Complete Compendium - Advanced Dungeons & Dragons 2nd Edition
 
 Quick Links
-
+- [DEVELOPMENT PLAN](https://github.com/decheine/complete-compendium/DEVELOPMENT_PLAN.MD)
 - [Book validation checklist](https://github.com/decheine/complete-compendium/issues/2)
 
 ## What is the Complete Compendium?
 
-This is a project to compile and catalog all monsters from the Advanced Dungeons & Dragons 2nd Edition tabletop roleplaying game. There are currently 23 campaign settings, over 200 books, and over 2000 unique monster pages, with still more to be catalogued.
+This is a project that compiles and catalogs all monsters from the Advanced Dungeons & Dragons 2nd Edition tabletop roleplaying game. There are currently 23 campaign settings, over 200 books, and over 2000 unique monster pages, with still more to be catalogued.
 
-These thousands of monster pages were scraped with the help of the Wayback machine from an old website at `lomion.de/cmm` that contained (almost) every AD&D 2nd Edition monster. The drawback was the site was minimally navigable, having only an appendix list. This project seeks to finish what the original creator started and catalog every monster, book, and setting from oldschool D&D. 
+These thousands of monster pages were scraped with the help of the Wayback machine from an old website at `lomion.de/cmm` that contained (almost) every AD&D 2nd Edition monster. The drawback to that site was that it was minimally navigable, having only an appendix list. This project seeks to finish the task and catalog every monster, book, and setting from oldschool D&D. 
 
 
 ## The Data (the monsters)
