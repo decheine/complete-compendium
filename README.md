@@ -11,7 +11,7 @@ Support the project at my [Ko-Fi](https://ko-fi.com/novicewizard)
 # Complete Compendium - Advanced Dungeons & Dragons 2nd Edition
 
 Quick Links
-- [DEVELOPMENT PLAN](https://github.com/decheine/complete-compendium/DEVELOPMENT_PLAN.MD)
+- [DEVELOPMENT PLAN](https://github.com/decheine/complete-compendium/blob/main/DEVELOPMENT_PLAN.MD)
 - [Book validation checklist](https://github.com/decheine/complete-compendium/issues/2)
 
 ## What is the Complete Compendium?
