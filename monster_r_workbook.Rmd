@@ -1041,7 +1041,7 @@ Monster Stats convert to CSV
 
 ```{r}
 library(jsonlite)
-stats_df_json <- read_json("src/data/stats_df.json", simplifyVector = TRUE)
+stats_df_json <- jsonlite::read_json("src/data/stats_df.json", simplifyVector = TRUE)
 stats_df_json
 filter_monsters <- stats_df_json %>% filter(is.na(Diet)) %>% group_by(monster_key) %>% summarise()
 filter_monsters
@@ -1081,3 +1081,31 @@ filtered_stats_df %>% filter(is.na(XP_Value)) %>% group_by(monster_key) %>% summ
 
 filter_monsters <- stats_df_json %>% filter(is.na(Diet)) %>% group_by(monster_key) %>% summarise()
 ```
+
+
+```{R}
+books_df
+
+books_df %>% filter(setting == "Dragon Magazine")
+
+```
+
+
+
+
+
+
+
+
+
+## TESTING
+
+Testing monster splitting by HD, XP, THAC0, etc.
+
+
+```{r}
+
+
+```
+
+
