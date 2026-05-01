@@ -4541,20 +4541,6 @@
       "year" : "1990"
    },
    {
-      "author" : null,
-      "monster_keys" : [ "fraal" ],
-      "publish_id" : "2800",
-      "setting" : null,
-      "year" : null
-   },
-   {
-      "author" : null,
-      "monster_keys" : [ "fraal" ],
-      "publish_id" : "2805",
-      "setting" : null,
-      "year" : null
-   },
-   {
       "author" : "",
       "monster_keys" : [ "frogarch", "frogghou", "toadleec", "toadspin" ],
       "publish_id" : "Dragon247",
