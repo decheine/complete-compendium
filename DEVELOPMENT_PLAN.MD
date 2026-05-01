@@ -23,7 +23,7 @@ Pre-release priority items will likely focus on design and architecture.
     * List - List view, does not have book covers (or very small), includes title, author, year, monster count, tsr id, and maybe some of the other publishing data, setting, all in one line so the list view is very dense. 
 * [ ] Solve the homebrew problem.
   * [ ] Create design for marking homebrew monsters and filtering them. 
-  * The following sources are from old websites and included by the author of the lomion compenium: Book of Sacrifices, Book of Secrets, Book of Shadows, Book of Sorrows, Book of Souls, as well as Terrors from Above, The Lonesome Road, and "Shawn Mulder". The over 30 monsters contained from these sources are all fan-created, although very well written. I cannot in good conscience remove any of them because
+  * The following sources are from old websites and included by the author of the lomion compenium: Book of Sacrifices, Book of Secrets, Book of Shadows, Book of Sorrows, Book of Souls, as well as Terrors from Above, The Lonesome Road, and "Shawn Mulder". The over 30 monsters contained from these sources are all fan-created, although very well written. I cannot in good conscience remove any of them because these monsters may be in current use by users of the compendium. 
 * [ ] Create processor to Generate a "raw" version that is standalone html with appendix and catalog, and maybe a few other pages. This would be the "offline" version. But more like a 'simplified' version. 
   * [ ] Going down this road could actually just lead it all back around to a raw html+css+js static site without the need for any framework. Because whatever raw solution that can generate itself is strictly better than using a framework. The one thing I really don't want to make is the filterable tables. But it could be a fun project to rebuild the whole website with raw HTML+css+js, but that means building *everything* by hand, including the generation, search tools, data table.
 * [ ] Social media account set up, with better donation method.
@@ -35,11 +35,13 @@ Pre-release priority items will likely focus on design and architecture.
   * Might be tricky because monsters can have multiple climate/terrain types/biomes, so that data structure would have to capture each of them separately.
   * This could be pushed to Release, too.
 * [ ] Statblock data fully tested and monsters split. 
-* [ ] All dead links fixed.
-* [ ] TSR_Product_Matrix with all TSR products
+  * [ ] Create subprocess for splitting dragons by their age category.
+* [ ] Create 'canon' category for monsters, like in Echohawk's index.
+* [ ] Dead links checked and fixed. 
+* [ ] TSR_Product_Matrix with all TSR products.
   * [ ] List all products and magazines and mark if they have monsters. 
   * Whole thing does not need to be completed before starting release work, just the monsters. Most of them have already been checked, just need Dungeon magazines mostly. While doing any further books I do want to mark down if the book I'm reviewing contains any of the following other data fields. 
-  * Will include data such as publishing year (trying for month too), listed author, editors, artists, typesetters and other credits, as well as if the books contain monsters/spells/magic items/equipment/kits+classes/ 
+  * Will include data such as publishing year (trying for month too), listed author, editors, artists, typesetters and other credits, as well as if the books contain monsters/spells/magic items/equipment/kits+classes/see below expansions. Only need monsters for this stage. 
   * Will feature products as early as Advanced Dungeons and Dragons, the earliest being the Monstrous Manual, and as late as any supporting the 2nd edition combat syste, which the latest was Die, Vecna, Die! if I'm not mistaken. 
 
 ## Release

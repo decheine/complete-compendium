@@ -1,0 +1,123 @@
+---
+title: "monster_index_data"
+output: html_document
+---
+
+```{r}
+library(tidyverse)
+library(rjson)
+library(stringr)
+library(readODS)
+
+quotemeta <- function(string) {
+  str_replace_all(string, "(\\W)", "\\\\\\1")
+}
+```
+
+```{r}
+options(print_min = 15)
+options(dplyr.print_max = 1e9)
+options(dplyr.tibble.print = 15)
+options(max.print = 1000)
+options(min.print = 20)
+
+```
+
+
+
+Reading in Echohawk's monstrous index and TSR product list
+
+```{r}
+options(max.print = 15)
+options(dplyr.print_max = 1e9)
+options(dplyr.tibble.print = 15)
+read_ods("Echohawk's Complete D&D Monster Index (2008-12-29).ods")
+```
+
+```{r}
+products <- read_ods("Products_2008-12-30.ods")
+products
+
+```
+
+```{r}
+
+
+```
+
+
+
+```{r}
+data.frame(unique(products$Rules))
+
+
+```
+
+```{r}
+# products %>% filter(Rules == "AD&D2/D&D3")
+# products %>% filter(Rules == "AD&D/AD&D2")
+adnd2_products <- products %>% filter(Rules == "AD&D2")
+
+tsr_product_monsters <- read_ods("TSRProductMonsters.ods", sheet = "Main")
+
+adnd2_products
+
+tsr_product_monsters
+
+
+```
+
+
+```{r}
+missing_codes <- data.frame(tsr = unique(adnd2_products$`Product Code`)) %>% filter(!tsr %in% tsr_product_monsters$TSR)
+
+missing_codes <- missing_codes %>% slice(-1)
+
+adnd2_products %>% filter(`Product Code` %in% missing_codes$tsr)
+
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
