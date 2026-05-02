@@ -3878,7 +3878,7 @@
       "author" : "Rick Swan, Mike Breault, Valerie Valusek",
       "monster_keys" : [ "chrolily", "chulcrix", "gkloklok" ],
       "publish_id" : "9294",
-      "setting" : "Greyhawk",
+      "setting" : "Dragonlance",
       "title" : "DLA3 Dragon's Rest",
       "year" : "1990"
    },
@@ -4020,7 +4020,7 @@
       "author" : "Scott Bennie",
       "monster_keys" : [ "curotai", "dragspid", "handtakh", "icevampi", "spidhors", "weaplivi" ],
       "publish_id" : "9334",
-      "setting" : "Forgotten Realms",
+      "setting" : "Dragonlance",
       "title" : "Wild Elves",
       "year" : "1991"
    },
@@ -4298,11 +4298,12 @@
       "year" : "1989"
    },
    {
-      "author" : null,
+      "author" : "",
       "monster_keys" : [ "draglcot", "draglfla", "draglgra", "draglmid", "draglrai" ],
       "publish_id" : "Dragon183",
-      "setting" : null,
-      "year" : null
+      "setting" : "Dragon Magazine",
+      "title" : "Dragon183",
+      "year" : "1992"
    },
    {
       "author" : "",
@@ -4428,11 +4429,12 @@
       "year" : "1991"
    },
    {
-      "author" : null,
+      "author" : "",
       "monster_keys" : [ "dwaratha", "elfathas", "gianhalf", "halfatha", "mul", "thrikree" ],
       "publish_id" : "Dragon173",
-      "setting" : null,
-      "year" : null
+      "setting" : "Dragon Magazine",
+      "title" : "Dragon173",
+      "year" : "1991"
    },
    {
       "author" : "Richard and Anne Brown",
@@ -4753,11 +4755,12 @@
       "year" : "1996"
    },
    {
-      "author" : null,
+      "author" : "Norman Abrahamsen, Terry Dykstra; Johnathan M. Richards, Scott Rosema",
       "monster_keys" : [ "kercpa", "owlbear2" ],
       "publish_id" : "Dragon214",
-      "setting" : null,
-      "year" : null
+      "setting" : "Dragon Magazine",
+      "title" : "Dragon214",
+      "year" : "1995"
    },
    {
       "author" : "",
@@ -5184,11 +5187,12 @@
       "year" : "1998"
    },
    {
-      "author" : null,
+      "author" : "",
       "monster_keys" : [ "undedrsl" ],
       "publish_id" : "Dragon205",
-      "setting" : null,
-      "year" : null
+      "setting" : "Dragon Magazine",
+      "title" : "Dragon205",
+      "year" : "1994"
    },
    {
       "author" : "Jason M. Walker, Thomas Baxa",
@@ -5215,11 +5219,12 @@
       "year" : "1995"
    },
    {
-      "author" : null,
+      "author" : "Skip Williams, Terry Dykstra",
       "monster_keys" : [ "vaati" ],
       "publish_id" : "Dragon224",
-      "setting" : null,
-      "year" : null
+      "setting" : "Dragon Magazine",
+      "title" : "Dragon224",
+      "year" : "1995"
    },
    {
       "author" : "Monte Cook",

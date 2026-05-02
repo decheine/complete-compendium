@@ -639,7 +639,7 @@
         "title": "DLA3 Dragon's Rest",
         "year": "1990",
         "author": "Rick Swan, Mike Breault, Valerie Valusek",
-        "setting": "Greyhawk"
+        "setting": "Dragonlance"
     },
     "9295": {
         "title": "LNR1 Wonders of Lankhmar",
@@ -765,7 +765,7 @@
         "title": "Wild Elves",
         "year": "1991",
         "author": "Scott Bennie",
-        "setting": "Forgotten Realms"
+        "setting": "Dragonlance"
     },
     "9336": {
         "title": "RR2 Book of Crypts",
@@ -1253,6 +1253,12 @@
         "author": "",
         "setting": "Dragon Magazine"
     },
+    "Dragon173": {
+        "title": "Dragon173",
+        "year": "1991",
+        "author": "",
+        "setting": "Dragon Magazine"
+    },
     "Dragon174": {
         "title": "Dragon174",
         "year": "1991",
@@ -1267,6 +1273,12 @@
     },
     "Dragon182": {
         "title": "Dragon182",
+        "year": "1992",
+        "author": "",
+        "setting": "Dragon Magazine"
+    },
+    "Dragon183": {
+        "title": "Dragon183",
         "year": "1992",
         "author": "",
         "setting": "Dragon Magazine"
@@ -1343,6 +1355,12 @@
         "author": "Gregory W. Detwiler, Tony DiTerlizzi",
         "setting": "Dragon Magazine"
     },
+    "Dragon205": {
+        "title": "Dragon205",
+        "year": "1994",
+        "author": "",
+        "setting": "Dragon Magazine"
+    },
     "Dragon206": {
         "title": "Dragon206",
         "year": "1994",
@@ -1367,6 +1385,12 @@
         "author": "Edward Bonny",
         "setting": "Dragon Magazine"
     },
+    "Dragon214": {
+        "title": "Dragon214",
+        "year": "1995",
+        "author": "Norman Abrahamsen, Terry Dykstra; Johnathan M. Richards, Scott Rosema",
+        "setting": "Dragon Magazine"
+    },
     "Dragon221": {
         "title": "Dragon221",
         "year": "1995",
@@ -1377,6 +1401,12 @@
         "title": "Dragon223",
         "year": "1995",
         "author": "Rob Letts, Wayne A. Haskett",
+        "setting": "Dragon Magazine"
+    },
+    "Dragon224": {
+        "title": "Dragon224",
+        "year": "1995",
+        "author": "Skip Williams, Terry Dykstra",
         "setting": "Dragon Magazine"
     },
     "Dragon227": {
