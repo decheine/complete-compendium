@@ -42,6 +42,9 @@ yarn-error.log*
 /.venv
 
 /trash
+/workspace
 
 
 CMakeUserPresets.json
+
+TSRProductMonsters.ods

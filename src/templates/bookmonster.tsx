@@ -218,12 +218,17 @@ const BookMonsterTemplate: React.FC<Props> = ({pageContext }) => {
       <div>
         {monsterNavWidgets}
 
-      {/* TITLE */}
+      {/* TITLE and SETTING */}
       <div className={monsterPageStyles.topHeader}>
           <h1 style={titleStyle}>{monster_page_data.monster_data.title}</h1>
+          {
+          cat_acronyms[monster_page_data.monster_data.setting] != "al" ?
           <Link to={"/catalog/" + cat_acronyms[monster_page_data.monster_data.setting]}>
               <img className={monsterPageStyles.settingImage} src={`/img_settings/${cat_acronyms[monster_page_data.monster_data.setting]}.gif`}  alt={monster_page_data.monster_data.setting + "Campaign Setting Logo"} title={monster_page_data.monster_data.setting}/>
           </Link>
+          :
+            <img className={monsterPageStyles.settingImage} src={`/img_settings/${cat_acronyms[monster_page_data.monster_data.setting]}.gif`}  alt={monster_page_data.monster_data.setting + "Setting Logo"} title={monster_page_data.monster_data.setting}/>
+          }
       </div>
       
       <hr className ={hrClass}/>
